@@ -1,0 +1,633 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- Took this out for IE6ites "http://www.w3.org/TR/REC-html40/loose.dtd" -->
+<html lang="en">
+  <head id="stdcontainer">
+    <title>
+      splitting punctuation in a text
+    </title>
+
+    <!-- Theme : Web safe blue PerlMonks Theme    -->
+
+    <script language="javascript" type="text/javascript" src="?node=list%20replies%20toggle%20javascript"></script>
+<link rel="stylesheet" href="/css/common.css" type="text/css" />
+
+    <link rel="stylesheet" href="?node_id=204962" type="text/css" />
+
+    <!-- No CSS Link in Display Settings -->
+
+    <!-- No CSS Data in Display Settings -->
+
+    <link rel="icon" href="/favicon.ico" />
+
+    
+
+
+  </head>
+
+  <body id="id-703692">
+<!-- monktainer -->
+<!-- monkbar2001 -->
+
+    <table id="monkbar" width="100%" border="0"
+        cellpadding="0" cellspacing="0">
+      <tr class="bannerrow">
+        <td align="left" width="100%">
+        <a href="http://pair.com">
+ <img src="http://promote.pair.com/i/pair-banner-current.gif"
+  height = "60"
+  width  = "468"
+  alt    = "Beefy Boxes and Bandwidth Generously Provided by pair Networks"
+ />
+</a>
+        </td>
+        <td rowspan="2" align="right" valign="bottom">
+          <!-- Monk Pic Turned Off In User Settings -->
+        </td>
+      </tr>
+      <tr class="monkquip">
+        <td class="monkquip"
+            valign="bottom" width="100%" >
+          We don't bite newbies here... much
+        </td>
+      </tr>
+      <tr class="titlebar">
+        <td class="titlebar">
+
+          <form method="get" action="?"
+              enctype="application/x-www-form-urlencoded" >
+            &nbsp;
+            <input type="text" name="node"
+                id="search_text"
+                size="20" maxlength="300" />
+            <input class="titlebar" type="submit"
+                value="Search" />
+          </form>
+        </td>
+        <td class="titlebar" id="mb2001titlebar" align="right" >
+          <a class="titlebar" href="?">PerlMonks</a>&nbsp;&nbsp;
+        </td>
+      </tr>
+    </table>
+
+<!-- /monkbar2001 -->
+<!-- Begin title bar -->
+<table width="98%" align="center" id="titlebar-top">
+  <tbody>
+    <tr>
+      <td valign="middle" class="titlechooser">
+        <!-- node_info_string: (h3)Title and (span)Author -->
+
+<h3 class="other">splitting punctuation in a text</h3>
+<span class="attribution">by <a href="?node_id=961">Anonymous Monk</a> </span>
+
+        <!-- /node_info_string -->
+      </td>
+      <td valign="top" align="right" class="monktitlebar">
+        <!-- monktitlebar -->
+        <ul class="topnavmenu inline-list">
+<li><a href="?node_id=109">Log&nbsp;in</a></li><li><a href="?node_id=101">Create&nbsp;a&nbsp;new&nbsp;user</a></li>
+<li><a href="?">The&nbsp;Monastery&nbsp;Gates</a></li>
+<li><a href="?node=Super%20Search">Super&nbsp;Search</a></li>
+<br />
+<li><a href="?node=Seekers%20of%20Perl%20Wisdom">Seekers&nbsp;of&nbsp;Perl&nbsp;Wisdom</a></li>
+<li><a href="?node=Meditations">Meditations</a></li>
+<li><a href="?node=Perl%20Monks%20Discussion">PerlMonks&nbsp;Discussion</a></li>
+<br />
+<li><a href="?node=Obfuscated%20Code">Obfuscation</a></li>
+<li><a href="?node=Reviews">Reviews</a></li>
+<li><a href="?node=Cool%20Uses%20for%20Perl">Cool&nbsp;Uses&nbsp;For&nbsp;Perl</a></li>
+<li><a href="?node=Perl%20News">Perl&nbsp;News</a></li>
+<li><a href="?node=Categorized%20Questions%20and%20Answers">Q&amp;A</a></li>
+<li><a href="?node=Tutorials">Tutorials</a></li>
+<br />
+<li><a href="?node=Perl%20Poetry">Poetry</a></li>
+<li><a href="?node=Recently%20Active%20Threads">Recent&nbsp;Threads</a></li>
+<li><a href="?node=Newest%20Nodes">Newest&nbsp;Nodes</a></li>
+<li><a href="?node=Offering%20Plate">Donate</a></li>
+<li><a href="?node=Tidings">What's&nbsp;New</a></li>
+</ul>
+
+
+<!--
+args=(monktitlebar sitedoclet -TOPNAV_SPECIAL <li><a href="?node_id=109">Log&nbsp;in</a></li><li><a href="?node_id=101">Create&nbsp;a&nbsp;new&nbsp;user</a></li>)
+NODE.title = splitting punctuation in a text
+NODE.owner = 961
+N.title = monktitlebar sitedoclet
+N.owner = 17342
+-->
+
+        <!-- /monktitlebar -->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width="98%" align="center" id="titlebar-bottom">
+  <tbody>
+    <tr>
+      <td valign="middle" class="titlechooser">
+        <!-- node_info_string: (span)Date and (span)Links -->
+
+<span class="attribution">on Aug 11, 2008 at 16:35&nbsp;UTC</span>
+<span class="addlinks">( #<a href="?node_id=703692">703692</a>=<a href="?node_id=115">perlquestion</a>: <a href="?displaytype=print;node_id=703692">print</a> <a href="?replies=1;node_id=703692;displaytype=print">w/replies</a>, <a href="?node_id=703692;displaytype=xml">xml</a> )</span>
+
+        <!-- /node_info_string -->
+      </td>
+      <td valign="middle" align="right" class="monktitlebar">
+        <a href="?node=PerlMonks%20FAQ">Need Help??</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- End title bar -->
+<!-- Begin main (monktainer) -->
+
+<center>
+  <table width="98%">
+    <tr>
+      <td  width="80%" valign="top"  class="main_content">
+        <!--contained stuff-->
+        <!-- BEGIN general container -->
+
+<i>
+<a href="?node_id=961">Anonymous Monk</a> has asked for the
+wisdom of the Perl Monks concerning the following question:
+</i>
+<p><div class="doctext" id="writeup">
+<!-- [{parselinks,}] -->
+hello all,
+
+I am very new to perl usage and need help to split punctuation like comma, space and ampersand in a same sentence. For eg: sentence like: "earth, wind & fire". The final result which I need in an array sould contain elements like(I mean words after splitting): "earth",",","wind","&", and "fire". 
+
+If I split spaces using split function then, I am not getting the result as stated above.
+
+help me.
+
+thanks.<div class="comment-on notes"><center><table width="100%" cellpadding="1" cellspacing="1" border="0" ><tr><th colspan="2" class="comment-on"><ul class="inline-list"><li><a href="?parent=703692;node_id=3333"><u>Comment on</u></a> splitting punctuation in a text</li></ul></th></tr>
+</table></center>
+</div></div></p><div class="notes"><center><table width="100%" cellpadding="1" cellspacing="1" border="0" id="replies_table"><tr><th colspan="2" class="comment-on"><span class="note-ordering">Replies are listed 'Best First'.</span></th></tr>
+<tr class="reply" bgcolor="#eeeeee"><td  colspan=2>
+<a name="703693"></a>
+
+<a href="?node_id=703693">Re: splitting punctuation in a text</a>
+<br />
+<span class="attribution">by <a href="?node_id=585085">kyle</a><span class="attribution-title"> (Abbot)</span> on Aug 11, 2008 at 16:45&nbsp;UTC</span>
+
+</td></tr>
+<tr class='reply-body pmnote-585085' bgcolor='ffffff'><td class='reply-body'><ul class='indent'><p>If you have capturing parentheses in the regex in <a href="http://perldoc.perl.org/functions/split.html">split</a>, the stuff in there comes out in the resulting list.
+<pre class="code"><div class='codeblock'><tt class='codetext'>use Data::Dumper;
+
+my $s = &#39;earth, wind &amp; fire&#39;;
+my @out = split /\s*(&#91;,&amp;&#93;)\s*/, $s;
+print Dumper \@out;
+__END__
+$VAR1 = &#91;
+          &#39;earth&#39;,
+          &#39;,&#39;,
+          &#39;wind&#39;,
+          &#39;&amp;&#39;,
+          &#39;fire&#39;
+    &#93;;
+</tt></div><div class='embed-code-dl'><a href="?abspart=1;displaytype=displaycode;part=1;node_id=703693">&#91;download&#93;</a></div></pre>
+
+<p>Of course, make "<tt class='inlinecode'>&#91;,&amp;&#93;</tt>" the class of punctuation you actually care about.</ul></td><td class='reply-body adjunct-links' align='left' valign='bottom'><a href="?parent=703693;node_id=3333">&#91;reply&#93;</a><br /><a href="?displaytype=displaycode;node_id=703693">[d/l]</a><br /><a href="?node_id=703693;displaytype=selectcode">[select]</a></td></tr>
+<tr class="reply" bgcolor="#eeeeee"><td  colspan=2>
+<a name="703704"></a>
+<ul class="indent">
+<a href="?node_id=703704">Re^2: splitting punctuation in a text</a>
+<br />
+<span class="attribution">by <a href="?node_id=248054">Your Mother</a><span class="attribution-title"> (Chancellor)</span> on Aug 11, 2008 at 17:38&nbsp;UTC</span>
+</ul>
+</td></tr>
+<tr class='reply-body pmnote-248054' bgcolor='ffffff'><td class='reply-body'><ul class='indent'><ul class='indent'><p>This also might be a good modification-
+</p>
+<tt class='inlinecode'>my @out = split /\s*(&#91;&#91;:punct:&#93;&#93;)\s*/, $s;</tt>
+<p>Depending on input and what the OP needs in the end. I think the POSIX classes, like <tt class='inlinecode'>punct</tt>, came in with 5.6. Someone will correct me if that's not right.
+</p></ul></ul></td><td class='reply-body adjunct-links' align='left' valign='bottom'><a href="?node_id=3333;parent=703704">&#91;reply&#93;</a><br /><a href="?node_id=703704;displaytype=displaycode">[d/l]</a><br /><a href="?node_id=703704;displaytype=selectcode">[select]</a></td></tr>
+<tr class="reply" bgcolor="#eeeeee"><td  colspan=2>
+<a name="703696"></a>
+
+<a href="?node_id=703696">Re: splitting punctuation in a text</a>
+<br />
+<span class="attribution">by <a href="?node_id=277600">injunjoel</a><span class="attribution-title"> (Priest)</span> on Aug 11, 2008 at 16:59&nbsp;UTC</span>
+
+</td></tr>
+<tr class='reply-body pmnote-277600' bgcolor='ffffff'><td class='reply-body'><ul class='indent'>Greetings,<br />
+I would suggest using a word boundary <tt class='inlinecode'>\b</tt>.
+for instance...
+<pre class="code"><div class='codeblock'><tt class='codetext'>#!/usr/bin/perl -w
+use strict;
+use Data::Dumper;
+
+my $line = &quot;earth, wind &amp; fire&quot;;
+my @chunks = split /\b/, $line;
+
+print Dumper(\@chunks);
+</tt></div><div class='embed-code-dl'><a href="?node_id=703696;part=2;displaytype=displaycode;abspart=1">&#91;download&#93;</a></div></pre>
+
+Which produces what you want... well close. If you don't want the spaces around your punctuation marks this
+<pre class="code"><div class='codeblock'><tt class='codetext'>#need the grep to filter for truth! 
+#basically checking if 
+#the element is defined/filled-in/not-blank
+my @chunks = grep{$_} split /\b|\s/, $line;
+</tt></div><div class='embed-code-dl'><a href="?displaytype=displaycode;abspart=1;node_id=703696;part=3">&#91;download&#93;</a></div></pre>
+
+should do the trick.
+<br />
+<br />
+<hr />
+<strong>Update!</strong>
+Upon re-reading your post I am a bit unclear... Do you want to keep the punctuations or not?<br />
+if not
+<pre class="code"><div class='codeblock'><tt class='codetext'>#either this
+my @no_punct = $line =~ /(\w+)/g;
+#or this
+my @no_punct = grep{$_}split /\W|\s/, $line;
+</tt></div><div class='embed-code-dl'><a href="?displaytype=displaycode;abspart=1;node_id=703696;part=4">&#91;download&#93;</a></div></pre>
+
+will work.
+<br />
+<br />
+-InjunJoel<br />
+<!-- Node text goes above. Div tags should contain sig only -->
+<div class="pmsig"><div class="pmsig-277600">
+"I do not feel obliged to believe that the same God who endowed us with sense, reason and intellect has intended us to forego their use." -Galileo
+</div></div></ul></td><td class='reply-body adjunct-links' align='left' valign='bottom'><a href="?parent=703696;node_id=3333">&#91;reply&#93;</a><br /><a href="?node_id=703696;displaytype=displaycode">[d/l]</a><br /><a href="?node_id=703696;displaytype=selectcode">[select]</a></td></tr>
+<tr class="reply" bgcolor="#eeeeee"><td  colspan=2>
+<a name="703698"></a>
+
+<a href="?node_id=703698">Re: splitting punctuation in a text</a>
+<br />
+<span class="attribution">by <a href="?node_id=494652">swampyankee</a><span class="attribution-title"> (Parson)</span> on Aug 11, 2008 at 17:10&nbsp;UTC</span>
+
+</td></tr>
+<tr class='reply-body pmnote-494652' bgcolor='ffffff'><td class='reply-body'><ul class='indent'><p>
+<a href="http://perldoc.perl.org/functions/split.html">Split</a> takes a regex as its first argument, the string to be split as its second, and the maximum number of fields to be returned as the optional third.  Write a capturing regex with the punctuation characters of interest, and, <em>voila</em>, there you have it.</p>
+<p>As a piece of <em>de rigueur</em> advice: read the article "<a href="?node_id=174051">How do I post a question effectively?</a>".<!-- Node text goes above. Div tags should contain sig only -->
+<div class="pmsig"><div class="pmsig-494652">
+<hr /><p>
+Information about American English usage  <a href="http://wsu.edu/~brians/errors/index.html">here</a> and <a href="http://andromeda.rutgers.edu/~jlynch/Writing/">here</a>. Floating point issues? Please read <a href="http://docs.sun.com/source/806-3568/ncg_goldberg.html">this</a> before posting. &mdash; emc</p>
+</div></div></ul></td><td class='reply-body adjunct-links' align='left' valign='bottom'><a href="?parent=703698;node_id=3333">&#91;reply&#93;</a></td></tr>
+<tr class="reply" bgcolor="#eeeeee"><td  colspan=2>
+<a name="703700"></a>
+
+<a href="?node_id=703700">Re: splitting punctuation in a text</a>
+<br />
+<span class="attribution">by <a href="?node_id=622051">toolic</a><span class="attribution-title"> (Bishop)</span> on Aug 11, 2008 at 17:18&nbsp;UTC</span>
+
+</td></tr>
+<tr class='reply-body pmnote-622051' bgcolor='ffffff'><td class='reply-body'><ul class='indent'>Before I saw <a href="?node_id=703693">kyle</a>'s solution, my first thought was to inject whitespace around each punctuation mark, then use <a href="http://perldoc.perl.org/functions/split.html">split</a> on just whitespace:
+<pre class="code"><div class='codeblock'><tt class='codetext'>use strict;
+use warnings;
+use Data::Dumper;
+
+my $str = &#39;earth, wind &amp; fire&#39;;
+$str =~ s/(&#91;,&amp;&#93;)/ $1 /g;
+my @arr = split /\s+/, $str;
+
+print Dumper(\@arr);
+
+__END__
+
+$VAR1 = &#91;
+          &#39;earth&#39;,
+          &#39;,&#39;,
+          &#39;wind&#39;,
+          &#39;&amp;&#39;,
+          &#39;fire&#39;
+        &#93;;
+</tt></div><div class='embed-code-dl'><a href="?displaytype=displaycode;abspart=1;node_id=703700;part=1">&#91;download&#93;</a></div></pre>
+
+<p>I definitely think kyle's is simpler (and better), but sometimes it's worth seeing a different approach.
+</ul></td><td class='reply-body adjunct-links' align='left' valign='bottom'><a href="?node_id=3333;parent=703700">&#91;reply&#93;</a><br /><a href="?node_id=703700;displaytype=displaycode">[d/l]</a></td></tr>
+<tr class="reply" bgcolor="#eeeeee"><td  colspan=2>
+<a name="703714"></a>
+
+<a href="?node_id=703714">Re: splitting punctuation in a text</a>
+<br />
+<span class="attribution">by <a href="?node_id=482313">eff_i_g</a><span class="attribution-title"> (Curate)</span> on Aug 11, 2008 at 18:35&nbsp;UTC</span>
+
+</td></tr>
+<tr class='reply-body pmnote-482313' bgcolor='ffffff'><td class='reply-body'><ul class='indent'>In addition to what has been provided, don't forget about Unicode properties: <tt class='inlinecode'>\p{P}</tt>
+<br /><br />
+For more information, see <a href="http://perldoc.perl.org/perlre.html">perlre</a> and <a href="http://www.regular-expressions.info/unicode.html">Unicode Regular Expressions</a>.</ul></td><td class='reply-body adjunct-links' align='left' valign='bottom'><a href="?node_id=3333;parent=703714">&#91;reply&#93;</a><br /><a href="?node_id=703714;displaytype=displaycode">[d/l]</a></td></tr>
+<tr class="reply" bgcolor="#eeeeee"><td  colspan=2>
+<a name="703694"></a>
+
+<a href="?node_id=703694">Re: splitting punctuation in a text</a>
+<br />
+<span class="attribution">by <a href="?node_id=58196">Fletch</a><span class="attribution-title"> (Chancellor)</span> on Aug 11, 2008 at 16:46&nbsp;UTC</span>
+
+</td></tr>
+<tr class='reply-body pmnote-58196' bgcolor='ffffff'><td class='reply-body'><ul class='indent'><p>
+So what have you tried?  Show some code and you'll be more likely to get help (save from the benighted souls who'll go ahead and do your homework for you, but I digress . . .).  See also <a href="?node_id=172086">How (Not) To Ask A Question</a>.
+</p>
+<div class="pmsig"><div class="pmsig-58196">
+<p>
+The cake is a lie.<br />
+The cake is a lie.<br />
+The cake is a lie.<br />
+</p>
+</div></div></ul></td><td class='reply-body adjunct-links' align='left' valign='bottom'><a href="?parent=703694;node_id=3333">&#91;reply&#93;</a></td></tr>
+<tr class="reply" bgcolor="#eeeeee"><td  colspan=2>
+<a name="703710"></a>
+
+<a href="?node_id=703710">Re: splitting punctuation in a text</a>
+<br />
+<span class="attribution">by <a href="?node_id=697258">eosbuddy</a><span class="attribution-title"> (Scribe)</span> on Aug 11, 2008 at 18:13&nbsp;UTC</span>
+
+</td></tr>
+<tr class='reply-body pmnote-697258' bgcolor='ffffff'><td class='reply-body'><ul class='indent'><pre class="code"><div class='codeblock'><tt class='codetext'>#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my $s = &#39;earth, wind &amp; fire&#39;;
+my @out = split /\b/, $s;
+print &quot;$_\n&quot; foreach (@out);
+</tt></div><div class='embed-code-dl'><a href="?node_id=703710;part=1;displaytype=displaycode;abspart=1">&#91;download&#93;</a></div></pre>
+
+
+and if you just needed the words without the punctuation marks:
+
+<pre class="code"><div class='codeblock'><tt class='codetext'>foreach (@out) {
+        print &quot;$_\n&quot; if ($_ =~ /\w/);
+}
+</tt></div><div class='embed-code-dl'><a href="?part=2;node_id=703710;abspart=1;displaytype=displaycode">&#91;download&#93;</a></div></pre>
+</ul></td><td class='reply-body adjunct-links' align='left' valign='bottom'><a href="?node_id=3333;parent=703710">&#91;reply&#93;</a><br /><a href="?node_id=703710;displaytype=displaycode">[d/l]</a><br /><a href="?displaytype=selectcode;node_id=703710">[select]</a></td></tr>
+</table></center>
+</div><p><div class="link-back back-to">
+Back to
+<a href="?node=Seekers%20of%20Perl%20Wisdom">Seekers of Perl Wisdom</a>
+</div></p>
+<!-- END general container -->
+
+        <!--/contained stuff-->
+      </td>
+      <!--nodelet handling code (monktainer)-->
+      <td  width="20%" valign="top" align="right"  class="nodelets">
+        <!-- Begin nodelets -->
+<table class='nodelet_container' id='nodelet_container'>
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Log_In">
+      <tr><th class="nodelet_head">
+          <span class="title">Log In</span><a href="?node=About the Log In" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<form method="post" action="?" enctype="multipart/form-data" name="login">
+<span><input type="hidden" name="node_id" value="703692"  ></input></span>
+<input type="hidden" name="op" value="login" />
+<input type="hidden" name="lastnode_id" value="703692" />
+<table border="0"><tr><td>
+Username:</td><td>
+<input type="text" name="user"  size="10" maxlength="34" />
+</td></tr><tr><td>
+Password:</td><td>
+<input type="password" name="passwd"  size="10" maxlength="10" />
+
+</td></tr></table>
+<label><input type="checkbox" name="expires" value="+10y" />remember me</label>
+<input type="submit" name="login" value="Login" />
+<br />
+<a href="?node_id=2513">What's my password?</a>
+<br />
+<a href="?node_id=101">Create A New User</a>
+</form>
+
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Node_Status">
+      <tr><th class="nodelet_head">
+          <span class="title">Node Status</span><a href="?node=About the Node Status" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<a href="?node_id=703692;displaytype=edithistory">node history</a><br />Node Type: perlquestion [id://703692]<br />Approved by <a href="?node_id=622051">toolic</a><br /><a href="?node_id=17645">help</a>
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Chatterbox">
+      <tr><th class="nodelet_head">
+          <span class="title">Chatterbox</span><a href="?node=About the Chatterbox" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<form method="get" action="?" enctype="multipart/form-data">
+<span><input type="hidden" name="node_id" value="703692"  ></input></span><i class="cb_quiet">and all is quiet...</i><br />
+<input type="submit" name="foo" value="Refresh" />
+</form>
+<i><br /> <a href="?node=ChatterBox%20FAQ">How do I use this?</a>  |  <a href="?node_id=20842">Other CB clients</a></i>
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Other_Users">
+      <tr><th class="nodelet_head">
+          <span class="title">Other Users</span><a href="?node=About the Other Users" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<span class="other-users-text">Others <span class="other-users-blurb">wandering</span> the Monastery:</span> (3)<br /><ul class="spacey-list"><li><span class='even-row'><span class='item-000'><span class='user-level-25'><span class='user-461912'><a title="GrandFather's home node. Level 25. Member of: janitors, pmdev" href="?node_id=461912">GrandFather</a></span></span></span></span></li>
+<li><span class='odd-row'><span class='item-001'><span class='user-level-21'><span class='user-968231'><a href="?node_id=968231" title="Athanasius's home node. Level 21. Member of: janitors">Athanasius</a></span></span></span></span></li>
+<li><span class='even-row'><span class='item-002'><span class='user-level-18'><span class='user-70929'><a href="?node_id=70929" title="atcroft's home node. Level 18">atcroft</a></span></span></span></span></li>
+</ul><span class='update-time'><small>As of 2017-06-24 07:34 GMT</small></span>
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Sections">
+      <tr><th class="nodelet_head">
+          <span class="title">Sections</span><a href="?node=About the Sections" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<ul class="spacey-list">
+<li><a href="?node=Seekers%20of%20Perl%20Wisdom">Seekers of Perl Wisdom</a></li>
+<li><a href="?node=Cool%20Uses%20for%20Perl">Cool Uses for Perl</a></li>
+<li><a href="?node=Meditations">Meditations</a></li>
+<li><a href="?node=Perl%20Monks%20Discussion">PerlMonks Discussion</a></li>
+<li><a href="?node=Categorized%20Questions%20and%20Answers">Categorized Q&amp;A</a></li>
+<li><a href="?node=Tutorials">Tutorials</a></li>
+<li><a href="?node=Obfuscated%20Code">Obfuscated Code</a></li>
+<li><a href="?node=Perl%20Poetry">Perl Poetry</a></li>
+<li><a href="?node=Perl%20News">Perl News</a></li>
+<li><a href="?node_id=483086">about</a></li>
+</ul>
+
+<!--
+args=(Sections)
+NODE.title = splitting punctuation in a text
+NODE.owner = 961
+N.title = Sections sitedoclet
+N.owner = 17342
+-->
+
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Information">
+      <tr><th class="nodelet_head">
+          <span class="title">Information</span><a href="?node=About the Information" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<ul class="spacey-list">
+<li><a href="?node=PerlMonks%20FAQ">PerlMonks FAQ</a></li>
+<li><a href="?node=the%20Perl%20Monks%20guide%20to%20the%20Monastery">Guide to the Monastery</a></li>
+<li><a href="?node=Tidings">What's New at PerlMonks</a></li>
+<li><a href="?node=Voting%2FExperience%20System">Voting/Experience System</a></li>
+<li><a href="?node=Tutorials">Tutorials</a></li>
+<li><a href="?node=Reviews">Reviews</a></li>
+<li><a href="?node=Library">Library</a></li>
+<li><a href="?node=perlman%3Aperlfaq">Perl FAQs</a></li>
+<li><a href="?node=Where%20can%20I%20find%20more%20information%20on...">Other Info Sources</a></li>
+</ul>
+
+<!--
+args=(Information sitedoclet -TIDINGS_NEW )
+NODE.title = splitting punctuation in a text
+NODE.owner = 961
+N.title = Information sitedoclet
+N.owner = 17342
+-->
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Find_Nodes">
+      <tr><th class="nodelet_head">
+          <span class="title">Find Nodes</span><a href="?node=About the Find Nodes" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<ul class="spacey-list">
+<li><a href="?node_id=6364;user=961">Nodes You Wrote</a></li>
+<li><a href="?node=Super%20Search">Super Search</a></li>
+<li><a href="?node=Perl%20Monks%20User%20Search">List Nodes By Users</a></li>
+<li><a href="?node=Newest%20Nodes">Newest Nodes</a></li>
+<li><a href="?node=Recently%20Active%20Threads">Recently Active Threads</a></li>
+<li><a href="?node=Selected%20Best%20Nodes">Selected Best Nodes</a></li>
+<li><a href="?node=Best%20Nodes">Best Nodes</a></li>
+<li><a href="?node=Worst%20Nodes">Worst Nodes</a></li>
+<li><a href="?node=Saints%20in%20our%20Book">Saints in our Book</a></li>
+</ul>
+
+<!--
+args=(Find Nodes sitedoclet -USER 961)
+NODE.title = splitting punctuation in a text
+NODE.owner = 961
+N.title = Find Nodes sitedoclet
+N.owner = 17342
+-->
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Leftovers">
+      <tr><th class="nodelet_head">
+          <span class="title">Leftovers</span><a href="?node=About the Leftovers" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<ul class="spacey-list" id="user"></ul>
+<ul class="spacey-list" id="internal">
+<li><a href="?node=The%20St.%20Larry%20Wall%20Shrine">The St. Larry Wall Shrine</a></li>
+<li><a href="?node_id=781756">Buy PerlMonks Gear</a></li>
+<li><a href="?node=Offering%20Plate">Offering Plate</a></li>
+<li><a href="?node=Awards">Awards</a></li>
+<li><a href="?op=randomnode">Random Node</a></li>
+<li><a href="?node=Quests">Quests</a></li>
+<li><a href="?node=Craft">Craft</a></li>
+<li><a href="?node=Snippets%20Section">Snippets</a></li>
+<li><a href="?node=Code%20Catacombs">Code Catacombs</a></li>
+<li><a href="?node=Editor%20Requests">Editor Requests</a></li>
+</ul><ul class="spacey-list" id="external">
+<li><a href="http://blogs.perl.org/">blogs.perl.org</a></li>
+<!--<li>[http://planet.perl.org/|Planet Perl]</li>-->
+<li><a href="http://perlsphere.net/">Perlsphere</a></li>
+<li><a href="http://ironman.enlightenedperl.org/">Perl Ironman Blog</a></li>
+<li><a href="http://perlweekly.com/">Perl Weekly</a></li>
+<li><a href="http://perl.com/">Perl.com</a></li>
+<li><a href="http://www.perlfoundation.org/perl5/index.cgi">Perl 5 Wiki</a></li>
+<li><a href="http://jobs.perl.org/">Perl Jobs</a></li>
+<li><a href="http://www.pm.org/">Perl Mongers</a></li>
+<li><a href="http://www.perl.org/">Perl Directory</a></li>
+<li><a href="http://perldoc.perl.org/">Perl documentation</a></li>
+<li><a href="https://metacpan.org/">MetaCPAN</a></li>
+<li><a href="http://cpan.perl.org/">CPAN</a></li>
+</ul>
+
+<!--
+args=(Leftovers sitedoclet -USER_LINKS )
+NODE.title = splitting punctuation in a text
+NODE.owner = 961
+N.title = Leftovers sitedoclet
+N.owner = 17342
+-->
+
+
+      </td></tr>
+
+    </tbody>
+
+<!-- Nodelet Break -->
+    <tbody class="nodelet" id="Voting_Booth">
+      <tr><th class="nodelet_head">
+          <span class="title">Voting Booth</span><a href="?node=About the Voting Booth" class="nodelethead-annot"><sup>?</sup></a>
+      </th></tr>
+      <tr><td class="nodelet_body">
+
+<div class="poll-vote-form"><b>How many monitors do you use while coding?</b><form method="post" action="?" enctype="multipart/form-data">
+<span><input type="hidden" name="displaytype" value="display"  ></input></span><span><input type="hidden" name="node_id" value="1191826"  ></input></span><p><label><input type="radio" name="vote" value="0" />None - I don't code</label><br /><label><input type="radio" name="vote" value="1" />0 - Ticker-tape is a purer representation of a Turing Machine</label><br /><label><input type="radio" name="vote" value="2" />1 - A laptop screen or single monitor desktop workstation</label><br /><label><input type="radio" name="vote" value="3" />1 - And it's cracked. And I like practicing my trade while lying on a bed of nails</label><br /><label><input type="radio" name="vote" value="4" />2 - The standard dev kit suits me fine</label><br /><label><input type="radio" name="vote" value="5" />3 - Fewer than three monitors wouldn't present enough insight into what I'm working on</label><br /><label><input type="radio" name="vote" value="6" />4 - Everyone else has two or three. I'm not like everyone else</label><br /><label><input type="radio" name="vote" value="7" />5 - This configuration reminds me of the 1987 5-cylinder VW Passat my parents let me drive in high school</label><br /><label><input type="radio" name="vote" value="8" />6 - I saw such a thing on the Internet, and had to have it</label><br /><label><input type="radio" name="vote" value="9" />6 - Because I haven't figured out how to <a href="https://www.theregister.co.uk/2015/03/18/sir_terry_pratchett_http_header/">add more</a></label><br /><label><input type="radio" name="vote" value="10" />7 - I need all the luck I can get, for this code to work</label><br /><label><input type="radio" name="vote" value="11" />8 - Because my power strip had eight outlets available</label><br /><label><input type="radio" name="vote" value="12" />9 - A 3x3 array was the the most I could fit into my Faraday shielded <a href="http://www.shtfplan.com/">SHTF</a> headquarters</label><br /><label><input type="radio" name="vote" value="13" />More than 9 - Most of them are just displaying graphs / mock code to make the boss think I'm doing something critical</label><br /><input type="submit" value="Vote" /></p></form><p><a href="?node_id=1191826">Results (557 votes)</a>.  Check out <a href="?node=past%20polls">past polls</a>.</p></div>
+      </td></tr>
+
+    </tbody>
+
+
+</table>
+
+        <!-- End nodelets -->
+      </td>
+
+      <!--/nodelet handling code (monktainer)-->
+
+    </tr>
+  </table>
+</center>
+
+<!-- End main (monktainer)-->
+<br />
+<br />
+
+<div id="footer">
+          PerlMonks graciously bestowed by <a href="?node=vroom">Tim Vroom</a>.<br/>
+      PerlMonks went on a couple dates, and then decided to shack up with
+      <a href="http://www.perlfoundation.org">The Perl Foundation</a>.<br />
+      Beefy Boxes and Bandwidth Generously Provided by
+      <a href="http://promote.pair.com/direct.pl?perlmonks.org">
+      pair Networks</a>
+
+  <br/>Built with the <a href="http://perl.org">Perl programming language</a>.
+</div>
+<!-- /monktainer -->
+
+  
+  </body>    
+</html>

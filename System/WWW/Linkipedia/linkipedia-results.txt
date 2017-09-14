@@ -1,0 +1,560 @@
+andrewdo@ai:/var/lib/myfrdcsa/codebases/internal/perllib/scripts$ ./test-system-www-linkipedia.pl -t temp.txt
+$VAR1 = '"So now you ask someone to be extradited, you\'re my strategic partner, I do obey, I do abide by that, but you don\'t do the same thing -- well, of course, there should be reciprocity in the types of things," the President continued. U.S. Secretary of State John Kerry said the United States hadn\'t yet received a formal request from Turkey for Gulen\'s extradition.';
+$VAR1 = {
+          'query' => 'So now you ask someone to be extradited, you\'re my strategic partner, I do obey, I do abide by that, but you don\'t do the same thing -- well, of course, there should be reciprocity in the types of things, the President continued. U.S. Secretary of State John Kerry said the United States hadn\'t yet received a formal request from Turkey for Gulen\'s extradition.',
+          'results' => [
+                         {
+                           'entity_end' => '347',
+                           'annotations' => [
+                                              {
+                                                'types' => [
+                                                             {
+                                                               'type' => 'PER'
+                                                             }
+                                                           ],
+                                                'db_types' => [
+                                                                {
+                                                                  'db_type' => 'causal agent'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'emigrant'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'living people'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'living thing'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'migrant'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'object'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'organism'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'person'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'physical entity'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'traveler'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'turkish emigrants to the united states'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'whole'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago legal actor'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago legal actor geo'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'agent'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'person'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'philosopher'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'person'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'thing'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'person'
+                                                                }
+                                                              ],
+                                                'score' => '0.604382',
+                                                'context_score' => '0.45690694',
+                                                'url' => '<http://dbpedia.org/resource/Fethullah_G%C3%BClen>'
+                                              }
+                                            ],
+                           'entity_mention' => 'GULEN',
+                           'entity_start' => '343'
+                         },
+                         {
+                           'entity_mention' => 'UNITED STATES',
+                           'entity_start' => '276',
+                           'entity_end' => '288',
+                           'annotations' => [
+                                              {
+                                                'url' => '<http://dbpedia.org/resource/United_States>',
+                                                'context_score' => '0.86202323',
+                                                'score' => '0.87154204',
+                                                'db_types' => [
+                                                                {
+                                                                  'db_type' => 'abstraction'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'administrative district'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'bicontinental countries'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'countries bordering the arctic ocean'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'countries bordering the atlantic ocean'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'countries bordering the pacific ocean'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'country'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'district'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'economy'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'english speaking countries and territories'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'federal countries'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'group'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'location'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'member states of n a t o'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'member states of the united nations'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'northern american countries'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'object'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'physical entity'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'region'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'states and territories established in'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'system'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'united states'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago geo entity'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago legal actor geo'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago permanently located entity'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'country'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'place'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'populated place'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'country'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'place'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'feature'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'thing'
+                                                                }
+                                                              ],
+                                                'types' => [
+                                                             {
+                                                               'type' => 'GPE'
+                                                             }
+                                                           ]
+                                              }
+                                            ]
+                         },
+                         {
+                           'entity_mention' => 'JOHN KERRY',
+                           'entity_start' => '256',
+                           'entity_end' => '265',
+                           'annotations' => [
+                                              {
+                                                'context_score' => '0.80253613',
+                                                'url' => '<http://dbpedia.org/resource/John_Kerry>',
+                                                'types' => [
+                                                             {
+                                                               'type' => 'PER'
+                                                             }
+                                                           ],
+                                                'score' => '0.8220321',
+                                                'db_types' => [
+                                                                {
+                                                                  'db_type' => 'adult'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'alumnus'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'american anti vietnam war activists'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'american people of jewish descent'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'american people of scottish descent'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'american people of the vietnam war'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'boston college law school alumni'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'cancer survivors'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'causal agent'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'child'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'democratic party united states senators'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'disputant'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'district attorney'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'district attorneys'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'elected official'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'foreign service brats'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'imp'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'intellectual'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'juvenile'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'lawgiver'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'lawyer'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'leader'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'legislator'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'lieutenant governor'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'lieutenant governors of massachusetts'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'living people'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'living thing'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'massachusetts lawyers'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'militant'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'military officer'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'object'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'official'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'organism'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'people from aurora colorado'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'person'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'physical entity'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'politician'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'professional'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'prosecutor'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'reformer'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'scholar'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'senator'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'serviceman'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'skilled worker'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'st paul s school concord new hampshire alumni'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'survivor'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'terror'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'unfortunate'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'united states navy officers'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'united states senators from massachusetts'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'whole'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'worker'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago legal actor'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago legal actor geo'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yale university alumni'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'agent'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'office holder'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'person'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'person'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'thing'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'person'
+                                                                }
+                                                              ]
+                                              }
+                                            ]
+                         },
+                         {
+                           'entity_end' => '235',
+                           'annotations' => [
+                                              {
+                                                'url' => '<http://dbpedia.org/resource/United_States>',
+                                                'context_score' => '0.8893017',
+                                                'db_types' => [
+                                                                {
+                                                                  'db_type' => 'abstraction'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'administrative district'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'bicontinental countries'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'countries bordering the arctic ocean'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'countries bordering the atlantic ocean'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'countries bordering the pacific ocean'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'country'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'district'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'economy'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'english speaking countries and territories'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'federal countries'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'group'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'location'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'member states of n a t o'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'member states of the united nations'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'northern american countries'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'object'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'physical entity'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'region'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'states and territories established in'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'system'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'united states'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago geo entity'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago legal actor geo'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'yago permanently located entity'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'country'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'place'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'populated place'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'country'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'place'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'feature'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'thing'
+                                                                }
+                                                              ],
+                                                'score' => '0.8954288',
+                                                'types' => [
+                                                             {
+                                                               'type' => 'GPE'
+                                                             }
+                                                           ]
+                                              }
+                                            ],
+                           'entity_mention' => 'U.S.',
+                           'entity_start' => '232'
+                         },
+                         {
+                           'entity_end' => '337',
+                           'annotations' => [
+                                              {
+                                                'db_types' => [
+                                                                {
+                                                                  'db_type' => 'country'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'place'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'populated place'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'country'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'place'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'feature'
+                                                                },
+                                                                {
+                                                                  'db_type' => 'thing'
+                                                                }
+                                                              ],
+                                                'score' => '0.8264611',
+                                                'types' => [
+                                                             {
+                                                               'type' => 'GPE'
+                                                             }
+                                                           ],
+                                                'context_score' => '0.808036',
+                                                'url' => '<http://dbpedia.org/resource/Turkey>'
+                                              }
+                                            ],
+                           'entity_mention' => 'TURKEY',
+                           'entity_start' => '332'
+                         }
+                       ],
+          'time' => '1412'
+        };
+andrewdo@ai:/var/lib/myfrdcsa/codebases/internal/perllib/scripts$ 

@@ -1,0 +1,32 @@
+#!/usr/bin/perl -w
+
+use BOSS::Config;
+use Lingua::EN::Sentence qw(get_sentences);
+use PerlLib::SwissArmyKnife;
+
+$specification = q(
+	<files>...	Searches to be acted upon
+);
+
+my $config =
+  BOSS::Config->new
+  (Spec => $specification);
+my $conf = $config->CLIConfig;
+# $UNIVERSAL::systemdir = "/var/lib/myfrdcsa/codebases/minor/system";
+
+my @out;
+foreach my $file (@{$conf->{'<files>'}}) {
+  if (-f $file) {
+    my $contents = read_file($file);
+    my $sentences = get_sentences($contents);
+    foreach my $sentence (@$sentences) {
+      $sentence =~ s/\s+/ /sg;
+      push @out, $sentence;
+    }
+    my $fh = IO::File->new;
+    if ($fh->open('>'.$file.'.sent')) {
+      print $fh join("\n",@out);
+      $fh->close;
+    }
+  }
+}

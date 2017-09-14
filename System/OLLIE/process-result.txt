@@ -1,0 +1,84 @@
+#!/usr/bin/perl -w
+
+use PerlLib::SwissArmyKnife;
+use Text::Capitalize;
+
+my @final;
+my $state = 0;
+my $d = {};
+my $c = read_file('result.txt');
+foreach my $line (split /\n/, $c) {
+  if ($state == 1) {
+    if ($line =~ /^([\d\.]+):\s\((.+)\)(\[(.+?)\])?$/) {
+      if (! exists $d->{results}) {
+	$d->{results} = [];
+      }
+      push @{$d->{results}},
+	{
+	 extractions => [split /\s*;\s*/, $2],
+	 weight => $1,
+	};
+      if ($4) {
+	$d->{results}[-1]{additional} = $4;
+      }
+    } elsif ($line eq '' or $line =~ /No extractions found/) {
+
+    } else {
+      print "ERROR: $line\n";
+    }
+
+    # if ($line =~ /^([\d\.]+):\s\((.+)\)$/) {
+    #   if (exists $d->{extractions}) {
+    # 	push @{$d->{extractions}}, [split /\s*;\s*/, $2];
+    # 	push @{$d->{weights}}, $1;
+    #   } else {
+    # 	$d->{extractions} = [[split /\s*;\s*/, $2]];
+    # 	$d->{weights} = [$1];
+    #   }
+    # } else {
+    #   print "ERROR: $line\n";
+    # }
+  }
+  if ($state == 0) {
+    $d->{sentence} = $line;
+    $state = 1;
+  }
+  if ($line eq '' or $line =~ /No extractions found/) {
+    my %copy = %$d;
+    push @final, \%copy;
+    $d = {};
+    $state = 0;
+  }
+}
+my %copy = %$d;
+push @final, \%copy;
+$d = {};
+
+print Dumper({Final => \@final});
+
+print Dumper({Result => GenerateProlog(OLLIEOutput => \@final)});
+
+sub GenerateProlog {
+  my (%args) = @_;
+  my @res;
+  my $ollieoutput = $args{OLLIEOutput};
+  foreach my $entry (@$ollieoutput) {
+    foreach my $subentry (@{$entry->{results}}) {
+      my $e = $subentry->{extractions};
+      push @res, ConvertToRegularAtom(Value => $e->[1]).'('.ConvertToRegularAtom(Value => $e->[0]).','.ConvertToRegularAtom(Value => $e->[2]).')';
+    }
+  }
+  return \@res;
+}
+
+sub ConvertToRegularAtom {
+  my (%args) = @_;
+  my $v = $args{Value};
+  my @list;
+  my $sentence = capitalize($v);
+  foreach my $item (split /[^a-zA-Z0-9]+/, $sentence) {
+    push @list, $item;
+  }
+  $list[0] = lc($list[0]);
+  return join('',@list);
+}

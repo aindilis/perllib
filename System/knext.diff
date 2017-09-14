@@ -1,0 +1,31 @@
+diff --git a/perllib-0.1/perllib-0.1/System/KNext.pm b/perllib-0.1/perllib-0.1/System/KNext.pm
+index e1efef7..97fe025 100644
+--- a/perllib-0.1/perllib-0.1/System/KNext.pm
++++ b/perllib-0.1/perllib-0.1/System/KNext.pm
+@@ -68,7 +68,7 @@ sub init {
+   $self->Debug($self->Configuration->{'Debug'});
+   $self->HasBeenInitialized({});
+   $self->Regex
+-    (qr/^\[\d+\]> /sm);
++    (qr/^> ?/sm);
+   $self->MySayer
+     ($args{Sayer} ||
+      Sayer->new
+@@ -288,7 +288,7 @@ sub ProcessTreebank {
+   print "Submitting expect\n" if $self->Debug;
+   $System::KNext::gotResult = 0;
+   $self->MyServerManager->MyExpect->expect
+-    (5, [qr/.*^(Break \d+ )?\[\d+\]>/sm, sub {$System::KNext::gotResult = 1; print "Got result\n";} ]);
++    (5, [qr/.*^(Break \d+ )?(\[\d+\])?>+/sm, sub {$System::KNext::gotResult = 1; print "Got result\n";} ]);
+   my $res = $self->MyServerManager->MyExpect->match();
+   if (! $System::KNext::gotResult or $res =~ /The following restarts are available:/) {
+     $self->MyServerManager->MyExpect->hard_close();
+@@ -328,7 +328,7 @@ sub ProcessResults {
+   }
+   my $formalism = $entries[2];	# could probably clean this up
+   $formalism =~ s/_{20,}//s;
+-  $formalism =~ s/\[\d+\]>$//s;
++  $formalism =~ s/(\[\d+\])?>+$//s;
+   $formalism =~ s/\s*$//s;
+ 
+   my $result =

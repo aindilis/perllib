@@ -1,0 +1,853 @@
+A Generative Dialogue System for Arguing
+about Plans in Situation Calculus
+Alexandros Belesiotis1
+, Michael Rovatsos1
+, and Iyad Rahwan2,1
+1
+School of Informatics, The University of Edinburgh,
+Edinburgh EH8 9LE, UK
+{A.Belesiotis,Michael.Rovatsos}@ed.ac.uk
+2
+Faculty of Informatics, The British University in Dubai,
+P.O. Box 502216, Dubai, UAE
+irahwan@acm.org
+Abstract. This paper presents an argumentation mechanism for recon-
+ciling conﬂicts between planning agents related to plan proposals, which
+are caused by inconsistencies between basic beliefs regarding the state of
+the world or the speciﬁcation of the planning operators.
+We introduce simple and eﬃcient argument moves that enable discus-
+sion about planning steps, and show how these can be integrated into
+an existing protocol for belief argumentation. The resulting protocol is
+provably sound with regard to the defeasible semantics of the resulting
+agreements. We show how argument generation can be treated, for the
+speciﬁc task of argumentation about plans, by replacing the burden of
+ﬁnding proofs in a knowledge base by guided search.
+1 Introduction
+In recent years, argumentation [1] has attracted much attention as a technique
+for resolving conﬂicts between agents, mainly due to its strong logical foundation
+and its suitability for use in multiagent situations.
+One area in which argumentation has been recently employed is that of col-
+laborative practical decision making [2–4], e.g. deciding on task allocation in
+teamwork frameworks [5]. In this case, it can be imagined that diﬀerent agents
+come up with proposals for joint action, such as multiagent plans, and discuss
+such plans with their teammates in order to reach agreement. The need for
+conﬂict resolution may arise from the agents having diﬀerent viewpoints due
+to locality of sensing, diﬀerent fundamental assumptions about the domain, or
+simply because diﬀerent agents may have conducted diﬀerent inferences and
+therefore their beliefs may not be aligned.
+In cooperative distributed problem solving [6] (e.g. frameworks like GPGP
+[7]), conﬂicts are normally resolved by merging agents’ diﬀerent views. However,
+this is only feasible if agents use highly structured knowledge bases that contain
+only knowledge relevant to the task in hand. In more general agent designs (where
+agents have arbitrary beliefs about the world), detecting conﬂicts when merging
+beliefs is computationally complex and, in some cases, completely unnecessary
+2 A. Belesiotis, M. Rovatsos, I. Rahwan
+and wasteful. Eﬃciency can be increased by identifying conﬂicts that are related
+to plans that are currently being debated, and resolving only disagreements that
+aﬀect the viability of concrete plan proposals.
+In this paper, we propose a method that aims to tackle precisely this problem.
+Based on the observation that logical theories of planning are highly structured
+and fairly simple, we devise an argumentation protocol that allows agents to
+discuss plan proposals and to identify reasons for potential disagreements that
+originate in diﬀerences regarding beliefs about the planning domain. We provide
+an algorithm and explain how the proposed protocol can be used to guide the
+search for relevant disagreements in a focused way. We also show that it is easy to
+integrate our argument moves with conventional belief argumentation protocols,
+and discuss useful properties of the resulting framework for reasoning about
+plans. An overview of the process is described in Figure 1. In this paper we do
+not focus on the process of planning itself, but on how structured argumentation-
+based dialogue can be employed as the means for identiﬁcation of disagreements
+regarding plans.
+Planning
+Plan Validation
+Is Accepted
+Is Justiﬁable
+TRUE
+TRUE
+FALSE
+FALSE
+Plan Communication
+Identiﬁcation of Conﬂicting Beliefs
+Conﬂict Resolution
+Fig. 1. Outline of how the employed protocol can be used to identify and resolve
+conﬂicts about plans
+Arguing about Plans in Situation Calculus 3
+The paper advances the state-of-the-art in multiagent planning in two ways.
+Firstly, we present the ﬁrst dialogue protocol that is speciﬁcally designed to
+enable agents to detect and resolve disagreements about a plan generated via
+conventional planning algorithms. This contrasts with other approaches [8, 3]
+which are concerned with the process of planning itself. The second contribution
+of this paper is to show that the dialogue generation process can be simpliﬁed
+by exploiting the structure of the planning problem to systematically discover
+disagreements over only the beliefs relevant to the plan structure. In particu-
+lar, in contrast to general protocols [2] which allow very expressive dialogues
+about goals, intentions, etc, but come with no clear bounds on the length of
+dialogues, we give exact upper bounds on the number of messages exchanged
+before disagreements are identiﬁed.
+The remainder of this paper is structured as follows: Section 2 introduces the
+argumentation and planning background required for the development of our
+framework. Section 3 introduces the suggested protocol, followed by an example
+illustrating the protocol. Section 5 provides an analysis of protocol properties,
+and in Section 6 we present an algorithm for argument generation. Section 7
+concludes.
+2 Preliminaries
+2.1 Planning framework
+Our planning framework follows the situation calculus framework [9], a logical
+language designed for representing dynamic domains. Three disjoint sorts are
+supported. The sort action represents actions, the sort situation represents situa-
+tions and the sort object all the rest. S0 is a constant symbol representing the ini-
+tial situation. The binary function symbol do : action×situation → situation de-
+notes the successor situation after performing an action. Poss : action×situation
+is a binary predicate symbol representing whether an action is applicable in a
+situation. The binary predicate symbol : situation×situation deﬁnes an order-
+ing relation over situations, where s s denotes that s is a proper subsequence
+of s . Symbols whose value change in diﬀerent situations are called ﬂuents (rela-
+tional or functional), and they have an argument of sort situation as their ﬁnal
+argument.
+Each agent maintains the representation of the domain as a Basic Action
+Theory, as proposed by Reiter [10]. A basic action theory D has the form:
+D = Σ ∪ Dss ∪ Dap ∪ Duna ∪ DS0
+.
+Σ is a set of fundamental domain-independent axioms providing the basic prop-
+erties for situations. Successor state axioms Dss are introduced for each rela-
+tional or functional ﬂuent in the domain, and specify the conditions that govern
+its value in a situation. The conditions under which an action can be performed
+are speciﬁed by the action precondition axioms, Dap. Duna contains the unique
+4 A. Belesiotis, M. Rovatsos, I. Rahwan
+names axioms for actions. DS0
+is a set of ﬁrst-order sentences that represent the
+initial state of the world.
+We follow the following convention: Variables begin with a lower case letter
+and are universally quantiﬁed with maximum scope, unless stated otherwise.
+Constants begin with an upper-case letter.
+Each Successor State axiom (Ass) describes the conditions that should hold
+in situation s so that a relational or functional ﬂuent takes a certain value in
+the situation do(a, s), which follows from the application of action a in s. For
+relational and functional ﬂuents respectively, they have the following form:
+F(x1, ..., xn, do(a, s)) ≡ ΦF (x1, ..., xn, a, s)
+f(x1, ..., xn, do(a, s)) = y ≡ Φf (x1, ..., xn, y, a, s)
+Action Precondition axioms (Aap) specify the preconditions of actions:
+Poss(A(x1, ..., xn), s) ≡ ΠA(x1, ..., xn, s)
+A plan in the situation calculus is treated as an executable situation that satisﬁes
+a goal statement.
+Deﬁnition 1. Given a basic action theory D, a plan in the situation calculus
+for a goal sentence G is a variable-free situation term sπ iﬀ D executable(sπ)∧
+G(sπ), where executable(sπ)
+def
+= (∀a, s∗
+).do(a, s∗
+) sπ ⊃ Poss(a, s∗
+).
+Deﬁnition 2. A planning problem P is a tuple D, G , where D is a basic action
+theory denoting the planning domain and G is a ﬂuent sentence specifying the
+goal.
+A consequence of the deﬁnition of a plan and the foundational axioms for situ-
+ations is that executable(do(a, s)) ≡ executable(s) ∧ Poss(a, s). This enables the
+transformation of the deﬁnition of a plan. For the remainder of the paper plans
+will follow the following deﬁnition.
+Deﬁnition 3. A plan π = A1; A2; . . . ; An is a solution to a planning problem
+P iﬀ D Poss(A1, S0) ∧ do(A1, S0) = S1 ∧ Poss(A2, S1) ∧ do(A2, S1) = S2 ∧ . . . ∧
+Poss(An, Sn−1) ∧ do(An, Sn−1) = Sn ∧ G(Sn).
+This deﬁnition asserts that the actions in the plan can be performed in sequence,
+and that after preforming the ﬁnal action the goal sentence G will be true.
+In classical AI planning, domain knowledge is assumed to be conﬂict-free.
+In a multiagent setting, however, there are cases where agents have mutually
+conﬂicting beliefs. In order to ﬁnd a plan that satisﬁes all parties, the agents
+need to solve a planning problem involving conﬂicting knowledge.
+Assume two agents i and −i each of which has an (internally consistent)
+domain knowledge Di/D−i. A planning problem P is said to be potentially con-
+ﬂicted among agents i and −i, if there exist statements in Di that conﬂict with
+statements in D−i.3
+3
+This paper assumes two-player situations; in case of more than two agents, our results
+carry over assuming dialogues are conducted between all pairs to reach agreement.
+Arguing about Plans in Situation Calculus 5
+Assuming that the goal has been agreed upon, then due to the contradictory
+beliefs of the agents, it can be challenging to discover a plan that satisﬁes both
+i and −i, since from each agent’s local perspective, the plan needs to solve a
+diﬀerent planning problem: i is looking for a solution to Pi = Di, G , whereas
+agent −i wants to solve P−i = D−i, G . An acceptable plan that can be agreed
+upon by two agents i and −i is therefore deﬁned as follows:
+Deﬁnition 4. Given the domain representations for the two agents Di and D−i,
+and a common goal G, a plan is acceptable if and only if it is a solution to both
+planning problems Pi = Di, G and P−i = D−i, G .
+With this, the purpose of our argumentation protocol can be speciﬁed as follows:
+for a potentially conﬂicted planning problem P between two agents and an initial
+proposed plan π, determine whether this plan is acceptable.
+2.2 Argumentation Framework
+Argumentation is a mechanism that can be used for the resolution of conﬂicts.
+Our basic argumentation framework follows [1]:
+Deﬁnition 5. An argumentation system is a structure H = A, → where A is
+a set of arguments and →⊆ A×A is a binary attack relation between arguments.
+The following additional deﬁnitions on sets of arguments are useful:
+1. A set of arguments S ⊆ A is conﬂict-free iﬀ ( A, B ∈ S).A → B
+2. An argument A ∈ A is acceptable with respect to a set S ⊆ A of arguments
+iﬀ (∀B ∈ A).(B → A ⇒ [(∃C ∈ S).C → B])
+3. A set of arguments S ⊆ A is called admissible if it is conﬂict-free and if each
+argument in S is acceptable with respect to S
+4. A preferred extension of an argumentation framework is a maximal (with
+respect to set inclusion) admissible set of the argumentation framework.
+5. S is a stable extension of an argumentation framework, if S is conﬂict-free
+and (∀A ∈ S).[(∃B ∈ S).(B → A)]
+Further reﬁnements that we use below include (i) credulous preferred seman-
+tics, which require an argument to be part of at least one preferred extension
+to be considered acceptable, and (ii) sceptical preferred semantics, which require
+that the argument is contained in all preferred extensions of the argumentation
+framework.
+To apply these notions in a logic-based framework, we deﬁne arguments based
+on an inference procedure in a knowledge base, and reinterpret the attack
+relation:
+Deﬁnition 6. Arguments for agent i are pairs A = H, h , where H ⊆ Di, and
+i. H is consistent (i.e. H ⊥),
+ii. H h,
+iii. H is minimal (no subset of H satisﬁes both i. and ii.).
+6 A. Belesiotis, M. Rovatsos, I. Rahwan
+H is called the support of the argument and h its conclusion.
+If an argument follows the aforementioned deﬁnition then we can refer to it as
+being a valid argument.
+Deﬁnition 7. An argument A1 = H1, h1 attacks an argument A2 = H2, h2 ,
+denoted A1 → A2, if either ∃φ in H2 such that h1 ≡ ¬φ, or h1 = (F ≡ Ψ),
+φ = (F ≡ Φ) and Φ ≡ Ψ.
+The attack relation considers contradictory beliefs and formulas providing diﬀer-
+ent deﬁnitions of the same symbol. Reasoning about dynamic domains is based
+on the axioms representing the domain. It is essential that the domain theory
+does not include diﬀerent axioms regarding the same ﬂuent.
+3 Dialogue protocol
+We suggest a protocol that is a two-party immediate response dispute (TPI-
+dispute) type protocol and builds on [11, 12]. It extends the protocol presented in
+[11] to include planning-related argument moves (for proposing a plan, attacking
+a plan and attacking the attackers of a plan).
+In the protocol described in [11], the dialogue moves COUNTER, BACKUP
+and RETRACT may be employed to progress the dialogue by attacking the
+other party’s most recent argument, or by returning to an earlier point in the
+dialogue and providing an alternative attack. Rules are provided formulating
+the conditions under which the moves can be used, depending on the “current”
+state of the dispute and the arguments that are available to each agent. We have
+adapted this protocol so that the applicability of moves can be evaluated only
+with respect to the state of the dialogue. This is necessary for our system as
+agents do not know all the possible arguments that can be created from their
+beliefs. Instead they construct candidate responses before making their next
+move.
+Planning-related moves are provided as instantiations of TPI-dispute moves,
+through further restrictions on the preconditions and the form of the exchanged
+argument. These restrictions also depend on the state of the dialogue.
+3.1 TPI-Disputes
+In order to discover if an argument to follow a plan is acceptable (and therefore
+if a plan is acceptable), the agents engage in an argumentation game. The agent
+proposing the plan, initiates the game, and plays the role of the proponent PRO,
+leaving the role of opponent OPP to the other party. The proponent agent is
+responsible for constructing arguments in favour of the plan, while the opponent
+is attempting to attack the validity of the plan. The game progresses with the
+agents exchanging arguments attacking the previous argument of their rival. The
+proponent attempts to create an admissible set containing the initial argument,
+which in this case proposes a plan believed to achieve the shared objective. The
+following deﬁnitions follow [11].
+Arguing about Plans in Situation Calculus 7
+Deﬁnition 8. Let H = A, → be an argumentation system with A = APRO ∪
+AOPP the union of the arguments that can be constructed by the proponent and
+the opponent. A dispute tree for some argument X in APRO , denoted by T H
+A , is
+a tree with root X whose vertices and edges are subsets of A and →, respectively.
+Note that the edges in a dispute tree are directed from vertices to their parent
+node. A dispute line is a path in the dispute tree, and is of the form
+t = vk → ... → v1 → v0 = X
+A dispute line is called open/closed if the agent who has to make the following
+move is able/unable to construct an argument following Deﬁnition 6. A closed
+dispute line for some argument X is a failing defence of X if the leaf node
+argument move has been made by the opponent. On the contrary, if the ﬁnal
+argument has been raised by the proponent the dispute line is considered a failing
+attack of X.
+A TPI-dispute for some argument X of a system H is a sequence of moves
+M = µ1, µ2, ..., µi, ...
+The agents have a ﬁnite repertoire of available move types. The moves avail-
+able to the proponent are COUNTERPRO
+and RETRACTPRO
+, whereas the moves
+available to the opponent are COUNTEROPP
+and BACKUPOPP
+. Whether it is
+possible for an agent to perform a move is decided depending on move precon-
+ditions and the current state of the dispute. The state of the dispute after the
+kth move, with (k ≥ 0), is described by the following tuple:
+σk = Tk, vk, CSPRO
+k , CSOPP
+k , Pk, Qk
+Tk is the dispute tree after move k. The last argument proposed is denoted by vk.
+CSPRO
+k /CSOPP
+k contain the proponent’s/opponent’s commitments. Pk contains
+arguments that are presented as a subset of the admissible set, and Qk contains
+sets that have been shown not to be a subset of an admissible set. The initial
+state of the dispute for some argument X is
+σ0 = X , X, {X}, {}, {X}, ∅ .
+Turntaking in the dialogue is determined by the running index of the current
+move. The current player is OPP if the index of the current move k is odd, and
+PRO otherwise. If the current player has a legal move available, then the dispute
+is active; if not, then it terminates. When a dialogue terminates, the winner can
+be determined using the number of moves, |M|. If |M| is odd/even, then the
+proponent/opponent wins the argument, respectively.
+The repertoire of moves available to the agents and their applicability will be
+presented in terms of preconditions and eﬀects related to the state of the dispute
+before the moves are applied.
+If k is odd, the opponent may attack the most recent argument presented by
+the proponent by putting forward argument Y , using the µk = COUNTEROP P
+k (Y )
+move.
+8 A. Belesiotis, M. Rovatsos, I. Rahwan
+µk = COUNTEROP P
+k (Y )
+Preconditions:
+- Y is a valid argument;
+- Y → vk−1;
+- Y ∈ CSOPP
+k−1 ;
+- Y ∈ CSPRO
+k−1 ;
+- ( Z ∈ CSPRO
+k−1 ). Z → Y .
+Eﬀects:
+- Tk := Tk−1 + Y, vk−1 ;
+- vk := Y ;
+- CSPRO
+k := CSPRO
+k−1 ;
+- CSOPP
+k := CSOPP
+k−1 ∪ Y ;
+- Pk := Pk−1;
+- Qk := Qk−1.
+The deﬁnition of this move asserts that in order to respond to the most recent
+argument put forward by the proponent, the opponent must construct a valid
+argument, according to Deﬁnition 6, that attacks the proponent’s previous
+argument vk−1. The opponent cannot reuse arguments that have already been
+presented by her or by the proponent, or any arguments that can be attacked by
+arguments previously proposed by the proponent. This dialogue move aﬀects the
+state of the dialogue by including the new argument in the dispute tree as the
+most recently presented argument, as well as in the opponent’s commitments.
+A variation of the counter available to the proponent is deﬁned in a similar
+fashion.
+µk = COUNTERP RO
+k (Y )
+Preconditions:
+- Y is a valid argument;
+- Y → vk−1;
+- Y ∈ CSPRO
+k−1 ;
+- ( Z ∈ CSPRO
+k−1 ). Z → Y .
+Eﬀects:
+- Tk := Tk−1 + Y, vk−1 ;
+- vk := Y ;
+- CSPRO
+k := CSPRO
+k−1 ∪ Y ;
+- CSOPP
+k := CSOPP
+k−1 ;
+- Pk := Pk−1 ∪ Y ;
+- Qk := Qk−1.
+The proponent, when using the counter move, cannot repeat arguments or state
+arguments that contradict her commitments. This move progresses the dispute
+by adding Y to the dispute tree, the proponent’s commitments, and to the
+subset of the admissible set that the proponent is attempting to construct.
+The backup move can be used by the opponent if a counter move responding
+to the proponent’s most recent argument is not possible. This move returns to
+the most recent point in the dispute, in which the opponent can proceed with
+an alternative attack. This point is represented by j, which must be even and
+0 ≤ j ≤ k − 3.
+µk = BACKUPOP P
+k (j, Y )
+Preconditions:
+- Cannot construct a valid argument that attacks vk−1;
+- For each r in {j + 2, j + 4, . . . , k − 3}, no argument Y exists that
+· Y is a valid argument;
+· Y → vr;
+· Y ∈ CSOPP
+r ∪ {vr+1, vr+3, . . . , vk−2};
+Arguing about Plans in Situation Calculus 9
+· Y ∈ CSPRO
+r ∪ {vr+2, vr+4 . . . , vk−3};
+· ( Z ∈ CSPRO
+r ∪ {vr, vr+2, . . . , vk−3}). Z → Y .
+- Y is a valid argument;
+- Y → vj;
+- Y ∈ CSOPP
+j ∪ {vj+1, vj+3, . . . , vk−2};
+- Y ∈ CSPRO
+j ∪ {vj+2, vj+4 . . . , vk−3};
+- ( Z ∈ CSPRO
+j ∪ {vj, vj+2, . . . , vk−3}). Z → Y .
+Eﬀects:
+- Tk := Tk−1 + Y, vj ;
+- vk := Y ;
+- CSPRO
+k := CSPRO
+k−1 ;
+- CSOPP
+k := CSOPP
+j ∪ Y ∪ {vj+1, vj+3, . . . , vk−2};
+- Pk := Pk−1;
+- Qk := Qk−1.
+This move can be used by the opponent to attack the argument presented by
+the proponent in move µj, if there do not exist any more recent points in which
+the opponent can mount an alternative attack. The argument Y must not have
+been repeated by the proponent or the opponent, and it must not be attacked
+by any arguments presented by the proponent.
+The following move can be used by the proponent in order to retract and
+provide an alternative justiﬁcation for X, if the opponent has shown that Pk
+is not part of an admissible set. By retracting, PRO attempts to construct a
+diﬀerent admissible set containing X.
+µk = RETRACTP RO
+k
+Preconditions:
+- PRO cannot attack uk−1;
+- Pk = {X}.
+Eﬀects:
+- Tk := X ;
+- vk := X;
+- CSPRO
+k := CSPRO
+0 ;
+- CSOPP
+k := CSOPP
+0 ;
+- Pk := P0;
+- Qk := Qk−1 ∪ {Pk−1}.
+According to [11], if there exists a terminated TPI-dispute over an argument
+X in the argument system H that is a successful defence of X (i.e. k is even),
+then at least one preferred extension of A contains X, and X is said to be
+credulously accepted in H.
+To deﬁne sceptical acceptance semantics, Dunne and Bench-Capon [11] use
+the notion of an x-augmented system Ha which is formed for an argument sys-
+tem H(A, →) and X ∈ A, by introducing a new argument Xa and an attack
+X, Xa . For an argument system H(A, →), in which every preferred extension
+is a stable extension, an argument X ∈ A is sceptically accepted (i.e. is part of
+every preferred extension) in H, if and only if there is a dispute M, providing a
+successful rebuttal of Xa in the x-augmented system Ha.
+10 A. Belesiotis, M. Rovatsos, I. Rahwan
+3.2 Arguments in Situation Calculus
+Dialogue about plans may be broken down to two distinct levels. The Plan Level
+Dispute (PLD) involves arguments regarding future states of the world, explain-
+ing the agents’ views on how the proposed plan will aﬀect the environment. The
+Domain Level Dispute (DLD) involves arguments about the planning domain,
+and involve beliefs about the initial state of the world or the speciﬁcation of
+the planning operators. All PLD and DLD arguments need to follow Deﬁnition
+6 and attack the most recent argument proposed by the other party, according
+to the preconditions of the dialogue moves. In order for the following argument
+types to be instantiated into arguments respecting Deﬁnition 6, the conditions
+for using each argument type need to be followed.
+Plan Level Dispute. The argument game is initiated through a plan Proposal
+argument. The agent that introduces this argument plays the role of the pro-
+ponent. The proposed plan is considered to be acceptable with respect to the
+proponent’s beliefs:
+Proposal (P), for π = A1; A2; . . . ; An
+◦ Argument:
+{Poss(A1, S0), S1 = do(A1, S0), . . . , Poss(An, Sn−1), Sn = do(An, Sn−1), G(Sn)}
+Poss(A1, S0)∧S1 = do(A1, S0)∧. . .∧Poss(An, Sn−1)∧Sn = do(An, Sn−1)∧
+G(Sn)
+Invalid Action arguments show that a certain action in the plan cannot be ap-
+plied in the relevant situation. The support of such arguments contains the
+relevant Action Precondition axiom and a statement, ¬ΠA(S), describing that
+the conditions that make the action applicable are not satisﬁed in the situation
+in which the action needs to be performed.
+Invalid Action (IA)
+◦ Preconditions:
+- Poss(A, S) ∈ Hvk−1 , where Hvk−1 contains the support for vk−1
+◦ Argument:
+{¬ΠA(S), Poss(A(x1, . . . , xn), s) ≡ ΠA(x1, x2 . . . , xn, s)} ¬Poss(A, S)
+Statement does Not Hold in S arguments can be used to attack statements Φ(S)
+regarding a future situation. Support is provided as one step regression [10].
+They explain that a series of (relational or functional ﬂuent and non-ﬂuent)
+terms which appear in Φ(S), take values that assert that Φ(S) is not satisﬁed.
+As support, such arguments use the relevant successor state axioms, in order to
+describe the conditions in the previous situation that led speciﬁc ﬂuents to take
+certain values that make the statement Φ(S) to be false.
+Statement does Not Hold in S (NHS)
+◦ Preconditions:
+Arguing about Plans in Situation Calculus 11
+- Φ(S) ∈ Hvk−1
+- S = S0
+◦ Argument:
+{{Assi }i∈{1..n}, {(¬)Fi(S )}i∈{1..m}, {(¬)(fi(S ) = yi)}i∈{1..k}, {Yi}i∈{1..l},
+S = do(A, S )} ¬Φ(S)
+The notation (¬) means that the symbol ¬ may or may not be present. AFi
+ss /Afi
+ss
+denotes the relevant Successor State axioms, F/f relational/functional ﬂuents,
+Y non-ﬂuent symbols, and {Ψi}i∈{1..n} denotes a sequence of n statements of
+the form Ψ.
+Domain Level Dispute. Ultimately, PLDs identify disagreements about the
+domain. These disagreements may involve diﬀerences in the operator speciﬁ-
+cation, conﬂicting initial situation beliefs, or contradicting situation-less state-
+ments. To resolve such disagreements, agents proceed to the domain level phase
+of the dialogue.
+Statement does Not Hold Initially arguments explain why a statement re-
+garding initial situation beliefs is incorrect. The justiﬁcation is based on formu-
+las regarding initial state beliefs of relevant situation-less beliefs.
+Statement does Not Hold Initially (NHI )
+◦ Preconditions: Φ(S0) ∈ Hvk−1
+◦ Argument: {Φ1(S0), . . . , Φn(S0)} ¬Φ(S0)
+Situation-less Statement does Not Hold arguments explain why a statement re-
+garding non-ﬂuent facts is not correct. The justiﬁcation is based on other non-
+ﬂuent formulae.
+Situation-less Statement does Not Hold (NH )
+◦ Preconditions: Φ ∈ Hvk−1
+◦ Argument: {Φ1, Φ2, . . . , Φn} ¬Φ
+Invalid Successor State axiom arguments can be used to attack statements re-
+garding the eﬀects of actions. They explain that a proposed successor state axiom
+is wrong as it does not match the correct axiom.
+Invalid Successor State axiom (ISS)
+◦ Preconditions:
+- F(x1, x2, . . . , xn, do(a, s)) ≡ ΦF (x1, x2, . . . , xn, a, s) ∈ Hvk−1 or
+f(x1, x2, . . . , xn, do(a, s)) = y ≡ Φf (x1, x2, . . . , xn, y, a, s) ∈ Hvk−1
+- ΦF (x1, x2, . . . , xn, a, s) ≡ ΦF (x1, x2, . . . , xn, a, s) or
+Φf (x1, x2, . . . , xn, y, a, s) ≡ Φf (x1, x2, . . . , xn, y, a, s)
+◦ Argument for relational ﬂuents:
+{(F(x1, x2, . . . , xn, do(a, s)) ≡ ΦF (x1, x2, . . . , xn, a, s)}
+F(x1, x2, . . . , xn, do(a, s)) ≡ ΦF (x1, x2, . . . , xn, a, s))
+◦ Argument for functional ﬂuents:
+{f(x1, x2, . . . , xn, do(a, s)) = y ≡ Φf (x1, x2, . . . , xn, y, a, s)}
+f(x1, x2, . . . , xn, do(a, s)) = y ≡ Φf (x1, x2, . . . , xn, a, s)
+12 A. Belesiotis, M. Rovatsos, I. Rahwan
+Invalid Action Precondition axiom arguments can attack statements regarding
+the preconditions of planning operators.
+Invalid Action Precondition axiom (IAP)
+◦ Preconditions:
+- Poss(A, s) ≡ ΠA(x1, x2 . . . , xn, s) ∈ Hvk−1
+- ΠA(x1, x2 . . . , xn, s) ≡ ΠA(x1, x2 . . . , xn, s)
+◦ Argument:
+{Poss(A, s) ≡ ΠA(x1, x2 . . . , xn, s)} Poss(A, s) ≡ ΠA(x1, x2 . . . , xn, s)
+If the opponent cannot make any valid DLD attacks, and cannot backup to
+attempt an alternative attack, then the dispute is a failing attack. Therefore,
+the plan proposal that initiated the dispute as well as the arguments that the
+proponent employed to support it are acceptable.
+4 Parcel World Domain Example
+In this section, we present a simple example, revealing the key aspects of how
+the framework works. Two agents need to decide on a plan that will get an
+object processed. Agent A is the delivery agent, and is able to move(⇑, ⇓, ⇒,
+⇐), pickup and deliver parcels. Agent B is the processing agent and can only
+process deliveries. Actions pickup and deliver have no preconditions, but produce
+conditional eﬀects depending on the position of the object. The process action
+requires B to hold the object. Agents have conﬂicting beliefs about the position
+of the object. The shared objective of the two agents is to process the object.
+The “view” of the initial state of the world for agents A and B is described in
+Figure 2.
+Agent A constructs a plan and makes a proposal. B validates the plan and
+discovers that the ﬁnal action of the plan is inapplicable. Figure 2 describes the
+state of the world after each action in the plan for the two agents. Figure 3 de-
+o
+o o o o o o
+A
+A
+A A
+B B B
+B B B BAB BA A
+AOAo AO
+B
+A
+BO
+A
+B Op
+⇑A ⇒ApickupA deliverA processB
+Fig. 2. How a plan aﬀects the environment according to each agent’s beliefs in the
+Parcel World Domain example
+Arguing about Plans in Situation Calculus 13
+scribes the argumentation-based dialogue regarding the validity of the plan and
+the beliefs supporting it. If A convinces B, the plan will be followed; otherwise,
+replanning will be required. The dialogue shows that B will attack the proposal,
+because she believes that she will not have the object in the situation that the
+process action will be performed. A disagrees and bases her next argument on
+statements about the previous situation, explaining that B will have the object,
+since it will be delivered to her. The messages show that each NHS argument
+is supported by statements regarding a situation closer to the initial situation.
+Eventually, an initial situation belief disagreement is identiﬁed. Resolution can
+be attempted through belief argumentation.
+(1) : P(⇑A, pickupA, ⇒A, deliverA, processB)
+(2) : IA processB because ¬holds(B, O, S4)
+(3) : NHS ¬holds(B, O, S4) because of action deliverA under condition holds(A, O, S3)
+(4) : NHS holds(A, O, S3) because ¬holds(A, O, S2)
+(5) : NHS ¬holds(A, O, S2) because of action pickupA and
+(6) : NHS at(O, pos(1, 2), S1) because ¬at(O, pos(1, 2), S0)
+(7) : NHI ¬at(A, pos(1, 2), S0)
+Agent B
+Agent A
+Plan Level
+Domain
+Level
+conditions at(O, pos(1, 2), S1) and at(A, pos(1, 2), S1)
+Fig. 3. Messages exchanged by the agents in the Parcel World Domain example
+5 Protocol properties
+In this section, we will present some properties of the dialogue. In order to do
+so, the introduction of assumptions is necessary.
+5.1 Assumptions
+We consider the beliefs of each agent to be independently consistent. So there
+cannot be contradictory statements following from an agent’s beliefs. We con-
+sider cooperative agents, which are truthful with respect to the facts that they
+introduce to the dialogue. They can employ statements that follow from their
+beliefs or appear in the other party’s commitments. We also assume that the
+14 A. Belesiotis, M. Rovatsos, I. Rahwan
+agents are trying to achieve a common goal, i.e. all plans that are discussed have
+to achieve this predeﬁned goal.4
+We consider the agents to have a conﬁdent assertion attitude and a sceptical
+acceptance attitude. Agents with a conﬁdent assertion attitude will present any
+valid argument they can construct. Sceptical acceptance attitude ensures that
+only claims of acceptable arguments will be accepted. Agent attitudes are nec-
+essary because protocols usually deﬁne preconditions that make some argument
+moves available to an agent, but do not prescribe which of the available moves
+an agent will actually perform. By assuming underlying attitudes we can predict
+what these moves will be. The eﬀects of diﬀerent agent attitudes on dialogues
+have been studied in [13].
+We follow the Causal Completeness Assumption, which ensures that all the
+eﬀects of the planning operators are explicitly enumerated in the Successor State
+axioms. This assumption is employed to treat the ramiﬁcation problem in the
+same way treated in [10]. Therefore, there are no side eﬀects of any action that
+are not listed explicitly through the Successor State axioms. In other words,
+there is no distinction between direct and indirect action eﬀects (if this was the
+case, a standard planner would not be able to construct a plan in every case,
+since only direct eﬀects would be considered during planning; see [8] for planning
+under defeasible knowledge).
+5.2 Properties
+The following properties explain that the proposed protocol produces sound re-
+sults. Completeness has to do with the construction of the proposals, and is
+closely related to the planning problem. In this paper we do not focus on plan-
+ning. We consider agents that construct proposals through conventional planning
+methods [14]. The protocol enables the exchange of proposals for any plans that
+can be expressed in Situation Calculus and follow the relevant deﬁnitions.
+Proposition 1. If a plan is acceptable to both agents, no argument attacking
+the proponent’s proposal argument will be raised by the opponent.
+Proof. From the speciﬁcation of the arguments and the dialogue moves, the
+opponent can attack a ‘Proposal’ argument (P) either by raising an ‘Invalid
+Action’ (IA) or a ‘Not holds in Situation S’ (NHS) argument. An attack can
+be made if OPP believes that either an action a proposed by the proponent
+is not applicable, DOPP ¬Poss(A, S), or the plan does not achieve the goal,
+DOPP ¬G(Sn). This contradicts the claim that the plan is acceptable to the
+opponent, according to Deﬁnition 4.
+The following proposition identiﬁes bounds on the length of Plan Level Dispute
+(PLD) sub-dialogues, showing that it is linear in the number of actions in the
+plan.
+4
+Note that other protocols could be used for goal negotiation prior to the use of the
+protocols we suggest, if necessary.
+Arguing about Plans in Situation Calculus 15
+Proposition 2. If the plan is not acceptable, a ﬁnite number of PLD arguments
+will be exchanged. The length of the PLD |Mp| will always be |Mp| ≤ n+1, where
+n is the number of actions in the plan.
+Proof. The PLD dispute is formed by a sequence of arguments, initiated by P. A
+PLD sequence is terminated either if a Domain Level Dispute (DLD) argument
+is raised or if one of the agents is unable to perform a counter move (resulting in
+either retraction, backup, or dialogue termination). We will show that if the plan
+is not acceptable with respect to the opponent’s beliefs, then a ﬁnite sequence
+of COUNTER moves will be made, until a DLD argument is raised, terminating
+the PLD. The intuition guiding this proof is that until the dispute focuses on
+domain beliefs, agents can always perform a valid COUNTER move, which is
+supported by statements regarding a situation closer to S0.
+From the deﬁnition of an acceptable plan, if the plan is not acceptable to
+the opponent, we can infer that OPP will either believe that one of the pro-
+posed actions is not applicable in the relevant situation, DOPP ¬Poss(A, S),
+or that the plan does not achieve the goal, DOPP ¬G(Sn). In the second case,
+the disagreement lies in a statement of the form Φ(S). In the ﬁrst case, using
+the relevant Action Precondition axiom, OPP can infer the required support
+for constructing a IA argument of the form {¬ΠA(S), Poss(A(x1, . . . , xn), s) ≡
+ΠA(x1, x2 . . . , xn, s)} ¬Poss(A, S). If the proponent disagrees with the pre-
+sented Action Precondition Axiom, then an ‘Invalid Action Precondition Axiom’
+(IAP) argument can be raised terminating the PLD. If this is not the case, then
+the disagreement lies on whether ΠA(S) or ¬ΠA(S) is true. Again the disagree-
+ment lies in a statement of the form Φ(S).
+We will focus on disagreements on statements of the form Φ(S). In such cases,
+agent i presented an argument which included the sentence Φ(S), but the other
+agent −i disagrees with this statement (i.e. Di Φ(S) and D−i ¬Φ(S)). If
+S = S0, and the disagreement is about a non-ﬂuent statement responsible for
+¬Φ(S) (in both cases DLD moves can be constructed terminating the PLD),
+agent −i may employ the relevant Successor State axiom to show that some
+relational or functional ﬂuents (F(S) or f(S)) take particular values in S that
+make Φ(S) false. To construct the necessary support, −i identiﬁes the conditions,
+which are speciﬁed in each relevant Successor State axiom (either ΦF (S ) or
+Φf (S )), which hold in the previous situation S .
+Since the agents disagree about Φ(S), they would disagree also on some
+statements regarding the conditions in the previous state or on whether the
+employed axioms are correct. If the second is the case, agent i would introduce
+an ‘Invalid Successor State axiom’ argument, initiating a DLD. In the ﬁrst case,
+disagreement lies again on a statement Φ(S ).
+Therefore, if a DLD argument is not introduced, the agent that needs to
+make the next move can always come up with a NHS argument attacking a
+statement the previous argument put forward by the other party. The state-
+ments mentioned in the support of this argument (and can be attacked by a
+PLD argument) refer to situation S , the ﬂuents that are in the claim of the
+argument refer to S, and S = do(A, S ). Each attack made by a NHS argument
+16 A. Belesiotis, M. Rovatsos, I. Rahwan
+is justiﬁed by statements regarding a situation closer to the initial situation.
+Therefore, since NHS arguments cannot attack statements regarding the initial
+situation, the maximum length of a sequence of consecutive NHS statements is
+n, if the argument initiating the sequence attacks a statement referring to situa-
+tion sn. Moreover, from the speciﬁcation of the argument types, ‘Proposal’ and
+the ‘Invalid Action’ arguments can only appear once in a sequence of COUNTER
+moves. Therefore, the amount of consecutive PLD arguments can be at most
+n + 1. Such a sequence, will always result in a DLD argument, since agents are
+always able to construct either a PLD or a DLD argument when presented with
+a PLD argument. All arguments in a PLD argument sequence will be unique,
+since they refer to statements regarding diﬀerent situations.
+Proposition 3. The proponent will present a successful (credulous) defence of
+the plan proposal if and only if either (i) the plan is acceptable with respect to
+the opponent’s beliefs, or (ii) if the dispute terminates as a failing attack of the
+plan proposal argument.
+Proof. If the plan is acceptable, then no argument will be raised against the plan
+proposal argument (Proposition 1). PRO wins the dispute.
+If the dispute terminates as a failing attack of the plan proposal argument,
+then the ﬁnal argument is presented by the proponent. Therefore, the length of
+the dialogue is odd, and PRO wins the dispute.
+If the plan is not acceptable with respect to the opponent’s beliefs, and
+the dispute terminates as a failing defence of the plan proposal argument, then
+the opponent would have presented an argument that the proponent could not
+counter, or backup. This will be the ﬁnal move of the dispute, making the number
+of moves even. Therefore, the opponent would win the dispute.
+Proposition 4. If the dispute for a Proposal argument terminates as a failing
+attack after move k, then the plan will be acceptable with respect to the set of
+beliefs Dacc = DOPP \{Φ(S0)|(∃ H, h ∈ Pk).[(∃Φ (S0) ∈ H ∪ {h}).Φ(S0) ∧ Φ (S0)
+⊥]} ∪ {Φ(S0)|(∃ H, h ∈ Pk).[(∃Φ (S0) ∈ H ∪ {h})]}
+Proof. Since all runs are failing attacks, Pk is the set of the acceptable arguments
+the proponent presented during the dialogue. In addition, a Domain Level Dis-
+pute phase would have been initiated for every domain belief that is not shared
+among the agents and is relevant to the plan. Let Dconf
+OPP be the set of all the
+statements from the domain beliefs of the opponent that conﬂict with statements
+appearing in an argument in Pk. These are the beliefs that were responsible for
+OPP not accepting the plan initially.
+The plan will be acceptable with the set containing all statements appear-
+ing in Pk and all statements in DOPP that do not conﬂict with the statements
+from Pk. By excluding all statements that were used to construct the arguments
+attacking the plan, and the arguments that supported these, we have excluded
+all the statements that are responsible for the arguments that were employed
+by the opponent. Therefore, no other arguments attacking the plan can be con-
+structed using the opponent’s remaining beliefs, since if this was the case, the
+Arguing about Plans in Situation Calculus 17
+switch Type of received argument vk−1 do
+case P
+if Poss(A, S) ∈ Hvk−1 and Di ¬Poss(A, S) then return IA for action A
+and relevant Aap;
+if Di ¬G(Sn) then return NH or NHS argument for the relevant ﬂuent(s)
+and Ass that explain ¬G(Sn);
+case IA
+if Aap ∈ Hvk−1 and Aap ∈ Di then return IAP argument for correct Aap;
+if Φ(S) ∈ Hvk−1 and Di ¬Φ(S) then return NH , NHI or NHS argument
+for the relevant ﬂuent(s) and Ass that explain ¬Φ(S);
+case NHS
+if Ass ∈ Hvk−1 and Ass ∈ Di then return ISS argument for correct Ass;
+if Φ(S) ∈ Hvk−1 and Di ¬Φ(S) then return NH , NHI or NHS argument
+for the relevant ﬂuent(s) and Ass that explain ¬Φ(S);
+case NHI if Φ(S0) ∈ Hvk−1 and Di ¬Φ(S0) then return NH/NHI argument
+for ¬Φ(S0);
+case NH if Φ ∈ Hvk−1 and Di ¬Φ then return NH argument against Φ;
+case ISS return ISS argument for correct Ass;
+case IAP return IAP argument for correct Aap;
+return no move;
+Algorithm 1: Argument generation algorithm
+opponent would have constructed them in move k continuing the dialogue (since
+we consider agents with conﬁdent assertion attitude).
+6 Argument Generation
+In order for the protocol to be eﬀective, the agents need eﬃcient mechanisms for
+argument generation. In general, argument generation is a complex task. Even
+with the assumptions that i) the agents’ knowledge bases are propositional and
+ii) conﬂict-free, argument generation is co-NP-complete, since it is as complex
+as ﬁnding a proof in propositional logic (a further analysis can be found in [13]).
+Moreover, the support of such arguments will chain back to beliefs about the
+initial situation, resulting in extensive proofs, if there are no heuristics to restrict
+them. In this section, we will provide an algorithm for argument generation
+related to plans and will explain how this algorithm guides the search through
+the agents beliefs. The algorithm is based on the evaluation of the executability
+of all the actions in the plan, and on the projection of the actions’ eﬀects, in order
+to evaluate the values of statements in the resulting situations. The complexity
+of these processes is related to the expressive power of the employed planning
+formalism [15].
+The proponent constructs the initial plan proposal argument by bootstrap-
+ping a plan from her beliefs. After being presented with an argument, agents
+search for valid attackers. The task of argument generation can be performed by
+searching through the plan projection data. The search is guided by the type of
+the received argument. The constructed argument must follow the speciﬁcation
+18 A. Belesiotis, M. Rovatsos, I. Rahwan
+of the employed dialogue move, for example the rules regarding repetition of
+arguments.
+If the agent receives a plan proposal, it can attack it if she identiﬁes that
+according to her beliefs an action is not possible to be performed, using a IA
+argument, or if she believes that the plan does not succeed in achieving the goal.
+Diﬀerences of opinion regarding the operator speciﬁcation (i.e. Successor State
+axioms or Action Precondition axioms) can be identiﬁed through the introduc-
+tion of ISS or IAP arguments. Arguments supported by statements of the form
+Φ(S) that the agent believes to be incorrect (the validity of which may be eval-
+uated through projection), can be attacked by NH , NHI or NHS arguments.
+In order to construct such arguments, the agent needs to identify the symbols
+that appear in Φ(S) and are responsible for Φ(S) to be false. If S is not S0,
+then the agent needs to construct a proof, explaining that the necessary condi-
+tions hold in the previous situation, so that these symbols have certain values
+in the resulting situation that falsify Φ(S). In this case a NHS argument can
+be constructed. If S is S0, then the statement is about the initial situation and
+the agent can respond with a NHI argument. Finally, if the statement is false
+because of non-ﬂuent statements, a NH argument can be employed.
+Argument generation for the DLD subdialogues will need to be based on
+logical proofs, since it involves unstructured initial world beliefs. In this case,
+a large subset of the agent’s beliefs are no longer relevant, since for DLD ar-
+gument generation, only beliefs regarding the initial state of the world should
+be considered. All beliefs regarding the operator speciﬁcation and the planning
+theory are irrelevant. This greatly reduces the set of the statements the agents
+have to search over when constructing a DLD argument. Moreover, if argument
+generation is implemented in propositional logic, the ﬁrst order representation
+for all statements needs to be translated to propositional logic. The size of a
+propositional representation is exponentially larger in the worst case than the
+size of a corresponding ﬁrst-order representation. This means that the proposi-
+tional representation is considerably smaller without the operator speciﬁcation
+and the planning theory axioms, i.e. a naive inclusion of planning axioms in
+propositional logic would be completely intractable for any real-world domain.
+7 Conclusion
+In this paper, we presented a novel dialogue protocol that allows cooperating
+agents to jointly evaluate plan proposals and to identify relevant conﬂicts in
+agents’ beliefs. Moreover, we proposed eﬃcient search-based algorithms for ar-
+gument generation based on the speciﬁc characteristics of the planning domain.
+Our approach is inﬂuenced by recent work on argumentation for practical
+reasoning and deliberation [2–4] and planning over defeasible knowledge [8].
+While related to this work, we maintain a closer relation to classical AI planning,
+as no assumptions are made regarding plan generation and therefore any eﬃcient
+planner can be employed for this task.
+Arguing about Plans in Situation Calculus 19
+In the future we would like to investigate diﬀerent strategies for argument se-
+lection, in cases where the opponent has a choice over various IA or NHS moves.
+In addition, our research can be complemented with heuristics for planning un-
+der uncertainty, considering multiagent planning among cooperative agents with
+diﬀerent beliefs. It would be interesting to extend our protocol to include moves
+that enable distributed planning, especially in cases in which there is no agent
+that can construct a plan alone.
+References
+1. Dung, P.M.: On the acceptability of arguments and its fundamental role in non-
+monotonic reasoning, logic programming and n-person games. Artiﬁcial Intelli-
+gence 77(2) (1995) 321–357
+2. Atkinson, K., Bench-Capon, T.: Practical reasoning as presumptive argumentation
+using action based alternating transition systems. Artiﬁcial Intelligence 171(10-15)
+(2007) 855–874
+3. Rahwan, I., Amgoud, L.: An argumentation based approach for practical reasoning.
+In: Proceedings of AAMAS-06, New York, NY, USA, ACM (2006) 347–354
+4. Tang, Y., Parsons, S.: Argumentation-based dialogues for deliberation. In: Pro-
+ceedings of AAMAS-05, USA, ACM (2005) 552–559
+5. Pynadath, D.V., Tambe, M.: The Communicative Multiagent Team Decision Prob-
+lem: Analyzing Teamwork Theories and Models. Journal of Artiﬁcial Intelligence
+Research 16 (2002) 389–423
+6. Durfee, E.: Distributed Problem Solving and Planning. In Weiß, G., ed.: Multiagent
+Systems. A Modern Approach to Distributed Artiﬁcial Intelligence. MIT Press,
+USA (1999) 121–164
+7. Lesser, V., Decker, K., Carver, N., Garvey, A., Neiman, D., Prasad, M., Wagner, T.:
+Evolution of the GPGP domain-independent coordination framework. Technical
+Report 98-05, Computer Science Department, UMASS (1998)
+8. Garcia, D., Garcia, A., Simari, G.: Planning and defeasible reasoning. In: Pro-
+ceedings of AAMAS-07, USA, ACM (2007)
+9. McCarthy, J., Hayes, P.J.: Some philosophical problems from the standpoint of
+artiﬁcial intelligence. Machine Intelligence 4 (1969)
+10. Reiter, R.: Knowledge in Action: Logical Foundations for Specifying and Imple-
+menting Dynamical Systems. MIT Press (2001)
+11. Dunne, P.E., Bench-Capon, T.: Two party immediate response disputes: properties
+and eﬃciency. Artiﬁcial Intelligence 149(2) (2003) 221–250
+12. Vreeswijk, G., Prakken, H.: Credulous and sceptical argument games for preferred
+semantics. In: Proceedings of JELIA ’00, UK, Springer-Verlag (2000) 239–253
+13. Parsons, S., Wooldridge, M.J., Amgoud, L.: An analysis of formal inter-agent
+dialogues. In: Proceedings of AAMAS-02, USA, ACM (2002) 394–401
+14. Nau, D., Ghallab, M., Traverso, P.: Automated Planning: Theory & Practice.
+Morgan Kaufmann Publishers Inc., San Francisco, CA, USA (2004)
+15. Nebel, B.: On the compilability and expressive power of propositional planning
+formalisms. Journal of Artiﬁcial Intelligence Research 12 (2000) 271–315
+

@@ -1,0 +1,20 @@
+#include "flrheader.flh"
+
+FLORA_THIS_WORKSPACE(isa)(flapply(acute,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(apparent,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(basic,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(clear,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(compelling,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(desperate,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(dire,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(fundamental,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(great,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(high,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(imperative,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(overwhelming,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(paramount,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(pressing,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(reduced,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(strong,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(urgent,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).
+FLORA_THIS_WORKSPACE(isa)(flapply(vital,need),flapply(flapply(degree,of),need),[_CallerModuleVar,tracing(__newcallervar1,__newcallervar2)]).

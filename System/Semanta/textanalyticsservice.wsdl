@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://semanticdesktop.org/services/textanalyticsservice" xmlns:tns="http://semanticdesktop.org/services/textanalyticsservice" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://net.java" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:ns2="http://keyphraserec.services.semanticdesktop.org" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://net.java">
+<xsd:complexType name="URL">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="authority" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="content" nillable="true" type="xsd:anyType"/>
+<xsd:element minOccurs="0" name="defaultPort" type="xsd:int"/>
+<xsd:element minOccurs="0" name="file" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="host" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="path" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="port" type="xsd:int"/>
+<xsd:element minOccurs="0" name="protocol" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="query" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="ref" nillable="true" type="xsd:string"/>
+<xsd:element minOccurs="0" name="userInfo" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://semanticdesktop.org/services/textanalyticsservice">
+<xsd:element name="getKeywordsFromUrl">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="ns1:URL"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="anyType2anyTypeMap">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="entry">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="0" name="key" type="xsd:anyType"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="value" type="xsd:anyType"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="getKeywordsFromUrlResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:anyType2anyTypeMap"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="UnsupportedFileTypeException" type="ns2:UnsupportedFileTypeException"/>
+<xsd:element name="KeyphraseRecNotAvailableException" type="ns2:KeyphraseRecNotAvailableException"/>
+<xsd:element name="getKeywordsFromString">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getKeywordsFromStringResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:anyType2anyTypeMap"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="ArrayOfString">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="string" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="getSpeechActs">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="tns:ArrayOfString"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getSpeechActsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://keyphraserec.services.semanticdesktop.org">
+<xsd:complexType name="UnsupportedFileTypeException"/>
+<xsd:complexType name="KeyphraseRecNotAvailableException"/>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getSpeechActsResponse">
+    <wsdl:part name="parameters" element="tns:getSpeechActsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getKeywordsFromStringResponse">
+    <wsdl:part name="parameters" element="tns:getKeywordsFromStringResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getKeywordsFromUrlRequest">
+    <wsdl:part name="parameters" element="tns:getKeywordsFromUrl">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getKeywordsFromStringRequest">
+    <wsdl:part name="parameters" element="tns:getKeywordsFromString">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSpeechActsRequest">
+    <wsdl:part name="parameters" element="tns:getSpeechActs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UnsupportedFileTypeException">
+    <wsdl:part name="UnsupportedFileTypeException" element="tns:UnsupportedFileTypeException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getKeywordsFromUrlResponse">
+    <wsdl:part name="parameters" element="tns:getKeywordsFromUrlResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="KeyphraseRecNotAvailableException">
+    <wsdl:part name="KeyphraseRecNotAvailableException" element="tns:KeyphraseRecNotAvailableException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="TextAnalyticsService">
+    <wsdl:operation name="getKeywordsFromUrl">
+      <wsdl:input name="getKeywordsFromUrlRequest" message="tns:getKeywordsFromUrlRequest">
+    </wsdl:input>
+      <wsdl:output name="getKeywordsFromUrlResponse" message="tns:getKeywordsFromUrlResponse">
+    </wsdl:output>
+      <wsdl:fault name="UnsupportedFileTypeException" message="tns:UnsupportedFileTypeException">
+    </wsdl:fault>
+      <wsdl:fault name="KeyphraseRecNotAvailableException" message="tns:KeyphraseRecNotAvailableException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getKeywordsFromString">
+      <wsdl:input name="getKeywordsFromStringRequest" message="tns:getKeywordsFromStringRequest">
+    </wsdl:input>
+      <wsdl:output name="getKeywordsFromStringResponse" message="tns:getKeywordsFromStringResponse">
+    </wsdl:output>
+      <wsdl:fault name="KeyphraseRecNotAvailableException" message="tns:KeyphraseRecNotAvailableException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSpeechActs">
+      <wsdl:input name="getSpeechActsRequest" message="tns:getSpeechActsRequest">
+    </wsdl:input>
+      <wsdl:output name="getSpeechActsResponse" message="tns:getSpeechActsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TextAnalyticsServiceHttpBinding" type="tns:TextAnalyticsService">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getKeywordsFromUrl">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getKeywordsFromUrlRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getKeywordsFromUrlResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="UnsupportedFileTypeException">
+        <wsdlsoap:fault name="UnsupportedFileTypeException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="KeyphraseRecNotAvailableException">
+        <wsdlsoap:fault name="KeyphraseRecNotAvailableException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getKeywordsFromString">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getKeywordsFromStringRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getKeywordsFromStringResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="KeyphraseRecNotAvailableException">
+        <wsdlsoap:fault name="KeyphraseRecNotAvailableException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSpeechActs">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getSpeechActsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSpeechActsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TextAnalyticsService">
+    <wsdl:port name="TextAnalyticsServiceHttpPort" binding="tns:TextAnalyticsServiceHttpBinding">
+      <wsdlsoap:address location="http://localhost:8181/services/TextAnalyticsService"/>
+      </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

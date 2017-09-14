@@ -1,0 +1,264 @@
+:- multifile     sem/5, id/2.
+:- discontiguous sem/5, id/2.
+:- dynamic       sem/5, id/2.
+
+id(1,1).
+
+%%% I am tired of those who claim that good is subjective . 
+
+sem(1,
+    [word(1001, \'I\'), word(1002, am), word(1003, tired), word(1004, of), word(1005, those), word(1006, who), word(1007, claim), word(1008, that), word(1009, good), word(1010, is), word(1011, subjective), word(1012, \'.\')],
+    [pos(1001, \'PRP\'), pos(1002, \'VBP\'), pos(1003, \'JJ\'), pos(1004, \'IN\'), pos(1005, \'DT\'), pos(1006, \'WP\'), pos(1007, \'VBP\'), pos(1008, \'DT\'), pos(1009, \'NN\'), pos(1010, \'VBZ\'), pos(1011, \'JJ\'), pos(1012, \'.\')],
+    [],
+    alfa(pro, drs([[1001]:_G18463], [[1001]:pred(_G18463, person, n, 1)]), merge(drs([[1003]:_G18519], [[1003]:prop(_G18519, drs([], [[1003]:pred(_G18463, tired, a, 0)]))]), merge(alfa(def, drs([[1005]:_G18609], [[1005]:pred(_G18609, thing, n, 12)]), drs([[1007]:_G18659, []:_G18680], [[1007]:pred(_G18659, claim, v, 0), [1007]:pred(_G18680, proposition, n, 1), []:pred(_G18659, event, n, 1), [1007]:rel(_G18659, _G18609, agent, 0), [1007]:rel(_G18659, _G18680, theme, 0), [1004]:rel(_G18519, _G18609, of, 0), [1007]:prop(_G18680, drs([[1009]:_G18866, [1011]:_G18887], [[1009]:pred(_G18866, good, n, 0), []:pred(_G18887, event, n, 1), [1011]:prop(_G18887, drs([], [[1011]:pred(_G18866, subjective, a, 0)]))]))])), drs([], [[]:pred(_G18519, event, n, 1)])))) ).
+
+id(2,2).
+
+%%% I am also ntired of those who debate the practical importance of AI , questioning whether there exists a recursive function that is AI-complete . 
+
+sem(2,
+    [word(2001, \'I\'), word(2002, am), word(2003, also), word(2004, ntired), word(2005, of), word(2006, those), word(2007, who), word(2008, debate), word(2009, the), word(2010, practical), word(2011, importance), word(2012, of), word(2013, \'AI\'), word(2014, (\',\')), word(2015, questioning), word(2016, whether), word(2017, there), word(2018, exists), word(2019, a), word(2020, recursive), word(2021, function), word(2022, that), word(2023, is), word(2024, \'AI-complete\'), word(2025, \'.\')],
+    [pos(2001, \'PRP\'), pos(2002, \'VBP\'), pos(2003, \'RB\'), pos(2004, \'VBN\'), pos(2005, \'IN\'), pos(2006, \'DT\'), pos(2007, \'WP\'), pos(2008, \'VB\'), pos(2009, \'DT\'), pos(2010, \'JJ\'), pos(2011, \'NN\'), pos(2012, \'IN\'), pos(2013, \'NNP\'), pos(2014, (\',\')), pos(2015, \'VBG\'), pos(2016, \'IN\'), pos(2017, \'EX\'), pos(2018, \'VBZ\'), pos(2019, \'DT\'), pos(2020, \'JJ\'), pos(2021, \'NN\'), pos(2022, \'WDT\'), pos(2023, \'VBZ\'), pos(2024, \'JJ\'), pos(2025, \'.\')],
+    [ne(2013, \'I-ORG\')],
+    merge(alfa(pro, drs([[2001]:_G16035], [[2001]:pred(_G16035, person, n, 1)]), merge(drs([[2004]:_G16091], [[2004]:pred(_G16091, ntire, v, 0), [2004]:rel(_G16091, _G16035, patient, 0)]), merge(alfa(def, drs([[2006]:_G16180], [[2006]:pred(_G16180, thing, n, 12)]), merge(alfa(def, merge(drs([[2009]:_G16249], [[2010]:pred(_G16249, practical, a, 0), [2011]:pred(_G16249, importance, n, 0)]), alfa(nam, drs([[2013]:_G16329], [[2013]:named(_G16329, ai, org, 0)]), drs([], [[2012]:rel(_G16249, _G16329, of, 0)]))), drs([[2008]:_G16411], [[2008]:pred(_G16411, debate, v, 0), []:pred(_G16411, event, n, 1), [2008]:rel(_G16411, _G16180, agent, 0), [2008]:rel(_G16411, _G16249, patient, 0)])), drs([], [[2005]:rel(_G16091, _G16180, of, 0)]))), drs([], [[2003]:pred(_G16091, also, a, 0), []:pred(_G16091, event, n, 1)])))), drs([[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]:_G16620, [2015]:_G16641, []:_G16662], [[2015]:pred(_G16641, question, v, 0), [2015]:pred(_G16662, proposition, n, 1), []:pred(_G16641, event, n, 1), [2015]:rel(_G16641, _G16620, agent, 0), [2015]:rel(_G16641, _G16662, theme, 0), [2015]:prop(_G16662, drs([[2017]:_G16822, [2019]:_G16843, [2024]:_G16864, [2018]:_G16885], [[2020]:pred(_G16843, recursive, a, 0), [2021]:pred(_G16843, function, n, 0), []:pred(_G16864, event, n, 1), [2018]:pred(_G16885, exist, v, 0), []:pred(_G16885, event, n, 1), [2018]:rel(_G16885, _G16822, rel, 0), [2018]:rel(_G16885, _G16843, patient, 0), [2024]:prop(_G16864, drs([], [[2024]:pred(_G16843, \'ai-complete\', a, 0)]))]))])) ).
+
+id(3,3).
+
+%%% People claim that AI can not be created , because the human mind is infinite . 
+
+sem(3,
+    [word(3001, \'People\'), word(3002, claim), word(3003, that), word(3004, \'AI\'), word(3005, can), word(3006, not), word(3007, be), word(3008, created), word(3009, (\',\')), word(3010, because), word(3011, the), word(3012, human), word(3013, mind), word(3014, is), word(3015, infinite), word(3016, \'.\')],
+    [pos(3001, \'NNS\'), pos(3002, \'VBP\'), pos(3003, \'IN\'), pos(3004, \'NNP\'), pos(3005, \'MD\'), pos(3006, \'RB\'), pos(3007, \'VB\'), pos(3008, \'VBN\'), pos(3009, (\',\')), pos(3010, \'IN\'), pos(3011, \'DT\'), pos(3012, \'JJ\'), pos(3013, \'NN\'), pos(3014, \'VBZ\'), pos(3015, \'JJ\'), pos(3016, \'.\')],
+    [],
+    drs([[3001]:_G38390, [3002]:_G38411, []:_G38432], [[3001]:pred(_G38390, people, n, 0), [3002]:pred(_G38411, claim, v, 0), [3002]:pred(_G38432, proposition, n, 1), []:pred(_G38411, event, n, 1), [3002]:rel(_G38411, _G38390, agent, 0), [3002]:rel(_G38411, _G38432, theme, 0), [3002]:prop(_G38432, drs([], [[3006]:not(alfa(nam, drs([[3004]:_G38636], [[3004]:named(_G38636, ai, nam, 0)]), drs([[3008]:_G38686, [3010]:_G38707], [[3008]:pred(_G38686, create, v, 0), [3010]:pred(_G38707, proposition, n, 1), []:pred(_G38686, event, n, 1), [3008]:rel(_G38686, _G38636, patient, 0), [3010]:rel(_G38686, _G38707, because, 0), [3010]:prop(_G38707, alfa(def, drs([[3011]:_G38874], [[3012]:pred(_G38874, human, a, 0), [3013]:pred(_G38874, mind, n, 0)]), drs([[3015]:_G38947], [[]:pred(_G38947, event, n, 1), [3015]:prop(_G38947, drs([], [[3015]:pred(_G38874, infinite, a, 0)]))])))])))]))]) ).
+
+id(4,4).
+
+%%% What do they mean infinite ? 
+
+sem(4,
+    [word(4001, \'What\'), word(4002, do), word(4003, they), word(4004, mean), word(4005, infinite), word(4006, ?)],
+    [pos(4001, \'WP\'), pos(4002, \'VBP\'), pos(4003, \'PRP\'), pos(4004, \'VB\'), pos(4005, \'NN\'), pos(4006, \'.\')],
+    [],
+    alfa(pro, drs([[4003]:_G45934], [[4003]:pred(_G45934, thing, n, 12)]), drs([[4005]:_G45984, [4004]:_G46005], [[4005]:pred(_G45984, infinite, n, 0), [4004]:pred(_G46005, mean, v, 0), [4004]:rel(_G46005, _G45934, agent, 0), [4004]:rel(_G46005, _G45984, patient, 0), [4001]:whq([], drs([[4001]:_G46128], [[4001]:pred(_G46128, thing, n, 12)]), _G46128, drs([], [[]:pred(_G46005, event, n, 1), [4001]:rel(_G46005, _G46128, rel, 0)]))])) ).
+
+id(5,5).
+
+%%% Limitless ? 
+
+sem(5,
+    [word(5001, \'Limitless\'), word(5002, ?)],
+    [pos(5001, \'JJ\'), pos(5002, \'.\')],
+    [],
+    drs([[]:_G48406, [5001]:_G48427], [[]:pred(_G48406, thing, n, 12), []:pred(_G48427, event, n, 1), [5001]:prop(_G48427, drs([], [[5001]:pred(_G48406, limitless, a, 0)]))]) ).
+
+id(6,6).
+
+%%% Then , obviously there is no reason they could n\'t create AI . 
+
+sem(6,
+    [word(6001, \'Then\'), word(6002, (\',\')), word(6003, obviously), word(6004, there), word(6005, is), word(6006, no), word(6007, reason), word(6008, they), word(6009, could), word(6010, \'n\\\'t\'), word(6011, create), word(6012, \'AI\'), word(6013, \'.\')],
+    [pos(6001, \'RB\'), pos(6002, (\',\')), pos(6003, \'RB\'), pos(6004, \'EX\'), pos(6005, \'VBZ\'), pos(6006, \'DT\'), pos(6007, \'NN\'), pos(6008, \'PRP\'), pos(6009, \'MD\'), pos(6010, \'RB\'), pos(6011, \'VB\'), pos(6012, \'NNP\'), pos(6013, \'.\')],
+    [],
+    drs([[6004]:_G5595], [[6006]:imp(drs([[6006]:_G5631], [[6007]:pred(_G5631, reason, n, 0)]), drs([], [[6006]:not(drs([[6005]:_G5695], [[6003]:pred(_G5695, obviously, a, 0), [6001]:pred(_G5695, then, a, 0), []:pred(_G5695, event, n, 1), [6005]:prop(_G5695, drs([], [[6005]:eq(_G5595, _G5631)])), [6010]:not(alfa(pro, drs([[6008]:_G5857], [[6008]:pred(_G5857, thing, n, 12)]), alfa(nam, drs([[6012]:_G5914], [[6012]:named(_G5914, ai, nam, 0)]), drs([[6011]:_G5964], [[6011]:pred(_G5964, create, v, 0), []:pred(_G5964, event, n, 1), [6011]:rel(_G5964, _G5857, agent, 0), [6011]:rel(_G5964, _G5914, patient, 0), []:rel(_G5964, _G5631, rel, 0)]))))]))]))]) ).
+
+id(7,7).
+
+%%% People say that they are not sure whether human behaviour can be represented in terms of recursive functions . 
+
+sem(7,
+    [word(7001, \'People\'), word(7002, say), word(7003, that), word(7004, they), word(7005, are), word(7006, not), word(7007, sure), word(7008, whether), word(7009, human), word(7010, behaviour), word(7011, can), word(7012, be), word(7013, represented), word(7014, in), word(7015, terms), word(7016, of), word(7017, recursive), word(7018, functions), word(7019, \'.\')],
+    [pos(7001, \'NNS\'), pos(7002, \'VBP\'), pos(7003, \'IN\'), pos(7004, \'PRP\'), pos(7005, \'VBP\'), pos(7006, \'RB\'), pos(7007, \'JJ\'), pos(7008, \'IN\'), pos(7009, \'JJ\'), pos(7010, \'NN\'), pos(7011, \'MD\'), pos(7012, \'VB\'), pos(7013, \'VBN\'), pos(7014, \'IN\'), pos(7015, \'NNS\'), pos(7016, \'IN\'), pos(7017, \'JJ\'), pos(7018, \'NNS\'), pos(7019, \'.\')],
+    [],
+    drs([[7001]:_G38684, [7002]:_G38705, []:_G38726], [[7001]:pred(_G38684, people, n, 0), [7002]:pred(_G38705, say, v, 0), [7002]:pred(_G38726, proposition, n, 1), []:pred(_G38705, event, n, 1), [7002]:rel(_G38705, _G38684, agent, 0), [7002]:rel(_G38705, _G38726, theme, 0), [7002]:prop(_G38726, drs([], [[7006]:not(alfa(pro, drs([[7004]:_G38930], [[7004]:pred(_G38930, thing, n, 12)]), drs([[7007]:_G38980, [7008]:_G39001], [[7008]:pred(_G39001, proposition, n, 1), []:pred(_G38980, event, n, 1), [7008]:rel(_G38980, _G39001, whether, 0), [7007]:prop(_G38980, drs([], [[7007]:pred(_G38930, sure, a, 0)])), [7008]:prop(_G39001, drs([[7009, 7010]:_G39162, [7013]:_G39183, [7015, 7016, 7017, 7018]:_G39204, [7017, 7018]:_G39225], [[7009]:pred(_G39162, human, a, 0), [7010]:pred(_G39162, behaviour, n, 0), [7013]:pred(_G39183, represent, v, 0), [7015]:pred(_G39204, term, n, 0), [7017]:pred(_G39225, recursive, a, 0), [7018]:pred(_G39225, function, n, 0), []:pred(_G39183, event, n, 1), [7013]:rel(_G39183, _G39162, patient, 0), [7016]:rel(_G39204, _G39225, of, 0), [7014]:rel(_G39183, _G39204, in, 0)]))])))]))]) ).
+
+id(8,8).
+
+%%% They wonder whether recursive functions are sufficient and AI-complete , and yet every piece of human reasoning yet invented has been . 
+
+sem(8,
+    [word(8001, \'They\'), word(8002, wonder), word(8003, whether), word(8004, recursive), word(8005, functions), word(8006, are), word(8007, sufficient), word(8008, and), word(8009, \'AI-complete\'), word(8010, (\',\')), word(8011, and), word(8012, yet), word(8013, every), word(8014, piece), word(8015, of), word(8016, human), word(8017, reasoning), word(8018, yet), word(8019, invented), word(8020, has), word(8021, been), word(8022, \'.\')],
+    [pos(8001, \'PRP\'), pos(8002, \'VBP\'), pos(8003, \'IN\'), pos(8004, \'JJ\'), pos(8005, \'NNS\'), pos(8006, \'VBP\'), pos(8007, \'JJ\'), pos(8008, \'CC\'), pos(8009, \'JJ\'), pos(8010, (\',\')), pos(8011, \'CC\'), pos(8012, \'RB\'), pos(8013, \'DT\'), pos(8014, \'NN\'), pos(8015, \'IN\'), pos(8016, \'JJ\'), pos(8017, \'NN\'), pos(8018, \'RB\'), pos(8019, \'VBD\'), pos(8020, \'VBZ\'), pos(8021, \'VBN\'), pos(8022, \'.\')],
+    [],
+    alfa(pro, drs([[8001]:_G32029], [[8001]:pred(_G32029, thing, n, 12)]), drs([[8002]:_G32079, []:_G32100], [[8002]:pred(_G32079, wonder, v, 0), [8002]:pred(_G32100, proposition, n, 1), []:pred(_G32079, event, n, 1), [8002]:rel(_G32079, _G32029, agent, 0), [8002]:rel(_G32079, _G32100, theme, 0), [8002]:prop(_G32100, drs([[8004, 8005]:_G32260, [8007, 8008, 8009, 8011, 8012, 8013, 8014, 8015, 8016, 8017]:_G32281, [8016, 8017]:_G32302, [8016, 8017]:_G32323, [8016, 8017]:_G32344, [8019]:_G32365, [8021]:_G32386, [8006]:_G32407], [[8004]:pred(_G32260, recursive, a, 0), [8005]:pred(_G32260, function, n, 0), [8007]:pred(_G32281, sufficient, a, 0), [8014]:pred(_G32281, piece, n, 0), [8016]:pred(_G32302, human, a, 0), [8017]:pred(_G32302, reasoning, n, 0), [8009]:pred(_G32281, \'ai-complete\', a, 0), [8014]:pred(_G32281, piece, n, 0), [8016]:pred(_G32323, human, a, 0), [8017]:pred(_G32323, reasoning, n, 0), [8013]:pred(_G32281, every, a, 0), [8014]:pred(_G32281, piece, n, 0), [8016]:pred(_G32344, human, a, 0), [8017]:pred(_G32344, reasoning, n, 0), [8012]:pred(_G32281, yet, a, 0), [8019]:pred(_G32365, invent, v, 0), [8018]:pred(_G32365, yet, a, 0), []:pred(_G32365, event, n, 1), [8021]:pred(_G32386, be, v, 0), []:pred(_G32386, event, n, 1), []:pred(_G32407, event, n, 1), [8015]:rel(_G32281, _G32302, of, 0), [8015]:rel(_G32281, _G32323, of, 0), [8015]:rel(_G32281, _G32344, of, 0), [8019]:rel(_G32365, _G32281, agent, 0), [8021]:rel(_G32386, _G32281, agent, 0), [8006]:prop(_G32407, drs([], [[8006]:eq(_G32260, _G32281)]))]))])) ).
+
+id(9,9).
+
+%%% But I wo n\'t test my arguments against them , I will propose solutions . 
+
+sem(9,
+    [word(9001, \'But\'), word(9002, \'I\'), word(9003, wo), word(9004, \'n\\\'t\'), word(9005, test), word(9006, my), word(9007, arguments), word(9008, against), word(9009, them), word(9010, (\',\')), word(9011, \'I\'), word(9012, will), word(9013, propose), word(9014, solutions), word(9015, \'.\')],
+    [pos(9001, \'CC\'), pos(9002, \'PRP\'), pos(9003, \'MD\'), pos(9004, \'RB\'), pos(9005, \'VB\'), pos(9006, \'PRP$\'), pos(9007, \'NNS\'), pos(9008, \'IN\'), pos(9009, \'PRP\'), pos(9010, (\',\')), pos(9011, \'PRP\'), pos(9012, \'MD\'), pos(9013, \'VB\'), pos(9014, \'NNS\'), pos(9015, \'.\')],
+    [],
+    merge(alfa(pro, drs([[9011]:_G53729], [[9011]:pred(_G53729, person, n, 1)]), drs([[9014]:_G53779, [9013]:_G53800], [[9014]:pred(_G53779, solution, n, 0), [9013]:pred(_G53800, propose, v, 0), []:pred(_G53800, event, n, 1), [9013]:rel(_G53800, _G53729, agent, 0), [9013]:rel(_G53800, _G53779, patient, 0)])), drs([], [[9004]:not(alfa(pro, drs([[9002]:_G53969], [[9002]:pred(_G53969, person, n, 1)]), alfa(pro, drs([[9006]:_G54026], [[9006]:pred(_G54026, person, n, 1)]), alfa(def, drs([[9006]:_G54083], [[9007]:pred(_G54083, argument, n, 0), [9006]:rel(_G54083, _G54026, of, 0)]), merge(drs([[9005]:_G54165], [[9005]:pred(_G54165, test, v, 0), [9005]:rel(_G54165, _G53969, agent, 0), [9005]:rel(_G54165, _G54083, patient, 0)]), alfa(pro, drs([[9009]:_G54274], [[9009]:pred(_G54274, thing, n, 12)]), drs([], [[9001]:pred(_G54165, but, a, 0), []:pred(_G54165, event, n, 1), [9008]:rel(_G54165, _G54274, against, 0)])))))))])) ).
+
+id(10,10).
+
+%%% There are no smart people . 
+
+sem(10,
+    [word(10001, \'There\'), word(10002, are), word(10003, no), word(10004, smart), word(10005, people), word(10006, \'.\')],
+    [pos(10001, \'EX\'), pos(10002, \'VBP\'), pos(10003, \'DT\'), pos(10004, \'JJ\'), pos(10005, \'NNS\'), pos(10006, \'.\')],
+    [],
+    drs([[10001]:_G59774], [[10003]:imp(drs([[10003]:_G59810], [[10004]:pred(_G59810, smart, a, 0), [10005]:pred(_G59810, people, n, 0)]), drs([], [[10003]:not(drs([[10002]:_G59897], [[]:pred(_G59897, event, n, 1), [10002]:prop(_G59897, drs([], [[10002]:eq(_G59774, _G59810)]))]))]))]) ).
+
+id(11,11).
+
+%%% There are people who have more than others , there are the rich and the poor . 
+
+sem(11,
+    [word(11001, \'There\'), word(11002, are), word(11003, people), word(11004, who), word(11005, have), word(11006, more), word(11007, than), word(11008, others), word(11009, (\',\')), word(11010, there), word(11011, are), word(11012, the), word(11013, rich), word(11014, and), word(11015, the), word(11016, poor), word(11017, \'.\')],
+    [pos(11001, \'EX\'), pos(11002, \'VBP\'), pos(11003, \'NNS\'), pos(11004, \'WP\'), pos(11005, \'VBP\'), pos(11006, \'JJR\'), pos(11007, \'IN\'), pos(11008, \'NNS\'), pos(11009, (\',\')), pos(11010, \'EX\'), pos(11011, \'VBP\'), pos(11012, \'DT\'), pos(11013, \'JJ\'), pos(11014, \'CC\'), pos(11015, \'DT\'), pos(11016, \'NN\'), pos(11017, \'.\')],
+    [],
+    merge(drs([[11001]:_G28829, [11003]:_G28850], [[11003]:pred(_G28850, people, n, 0)]), merge(merge(drs([[11006, 11007, 11008]:_G28912, [11008]:_G28933, [11005]:_G28954, [11010]:_G28975], [[11006]:pred(_G28912, more, n, 0), [11008]:pred(_G28933, other, n, 0), [11005]:pred(_G28954, have, v, 0), []:pred(_G28954, event, n, 1), [11007]:rel(_G28912, _G28933, than, 0), [11005]:rel(_G28954, _G28850, agent, 0), [11005]:rel(_G28954, _G28912, patient, 0)]), merge(alfa(def, drs([[11012]:_G29185], [[11013]:pred(_G29185, rich, a, 0), [11016]:pred(_G29185, poor, n, 0)]), drs([[11011]:_G29258], [[]:pred(_G29258, event, n, 1), []:rel(_G29258, _G28912, rel, 0), [11011]:prop(_G29258, drs([], [[11011]:eq(_G28975, _G29185)]))])), alfa(def, drs([[11015]:_G29392], [[11016]:pred(_G29392, poor, n, 0)]), drs([[11011]:_G29442], [[]:pred(_G29442, event, n, 1), []:rel(_G29442, _G28912, rel, 0), [11011]:prop(_G29442, drs([], [[11011]:eq(_G28975, _G29392)]))])))), drs([[11002]:_G29569], [[]:pred(_G29569, event, n, 1), [11002]:prop(_G29569, drs([], [[11002]:eq(_G28829, _G28850)]))]))) ).
+
+id(12,12).
+
+%%% But they are equally unable to make adequate use of their resources . 
+
+sem(12,
+    [word(12001, \'But\'), word(12002, they), word(12003, are), word(12004, equally), word(12005, unable), word(12006, to), word(12007, make), word(12008, adequate), word(12009, use), word(12010, of), word(12011, their), word(12012, resources), word(12013, \'.\')],
+    [pos(12001, \'CC\'), pos(12002, \'PRP\'), pos(12003, \'VBP\'), pos(12004, \'RB\'), pos(12005, \'JJ\'), pos(12006, \'TO\'), pos(12007, \'VB\'), pos(12008, \'JJ\'), pos(12009, \'NN\'), pos(12010, \'IN\'), pos(12011, \'PRP$\'), pos(12012, \'NNS\'), pos(12013, \'.\')],
+    [],
+    alfa(pro, drs([[12002]:_G51285], [[12002]:pred(_G51285, thing, n, 12)]), drs([[12005]:_G51335, []:_G51356], [[12005]:pred(_G51335, unable, v, 0), [12005]:pred(_G51356, proposition, n, 1), [12004]:pred(_G51335, equally, a, 0), [12001]:pred(_G51335, but, a, 0), []:pred(_G51335, event, n, 1), [12005]:rel(_G51335, _G51285, agent, 0), [12005]:rel(_G51335, _G51356, theme, 0), [12005]:prop(_G51356, merge(merge(drs([[12008, 12009, 12010, 12011, 12012]:_G51574], [[12008]:pred(_G51574, adequate, a, 0), [12009]:pred(_G51574, use, n, 0)]), alfa(pro, drs([[12011]:_G51654], [[12011]:pred(_G51654, thing, n, 12)]), alfa(def, drs([[12011]:_G51711], [[12012]:pred(_G51711, resource, n, 0), [12011]:rel(_G51711, _G51654, of, 0)]), drs([], [[12010]:rel(_G51574, _G51711, of, 0)])))), drs([[12007]:_G51819], [[12007]:pred(_G51819, make, v, 0), []:pred(_G51819, event, n, 1), [12007]:rel(_G51819, _G51285, agent, 0), [12007]:rel(_G51819, _G51574, patient, 0)])))])) ).
+
+id(13,13).
+
+%%% To do so requires systematic intelligence . 
+
+sem(13,
+    [word(13001, \'To\'), word(13002, do), word(13003, so), word(13004, requires), word(13005, systematic), word(13006, intelligence), word(13007, \'.\')],
+    [pos(13001, \'TO\'), pos(13002, \'VB\'), pos(13003, \'RB\'), pos(13004, \'VBZ\'), pos(13005, \'JJ\'), pos(13006, \'NN\'), pos(13007, \'.\')],
+    [],
+    drs([[13001, 13002]:_G60564, [13002]:_G60585, [13003]:_G60606, [13005, 13006]:_G60627, [13004]:_G60648], [[13002]:pred(_G60585, do, v, 0), []:pred(_G60585, event, n, 1), [13003]:pred(_G60606, so, n, 0), [13005]:pred(_G60627, systematic, a, 0), [13006]:pred(_G60627, intelligence, n, 0), [13004]:pred(_G60648, require, v, 0), []:pred(_G60648, event, n, 1), [13002]:rel(_G60585, _G60564, agent, 0), [13004]:rel(_G60648, _G60606, agent, 0), [13004]:rel(_G60648, _G60627, patient, 0)]) ).
+
+id(14,14).
+
+%%% Fortunately , the computer provides us with systematic intelligence . 
+
+sem(14,
+    [word(14001, \'Fortunately\'), word(14002, (\',\')), word(14003, the), word(14004, computer), word(14005, provides), word(14006, us), word(14007, with), word(14008, systematic), word(14009, intelligence), word(14010, \'.\')],
+    [pos(14001, \'RB\'), pos(14002, (\',\')), pos(14003, \'DT\'), pos(14004, \'NN\'), pos(14005, \'VBZ\'), pos(14006, \'PRP\'), pos(14007, \'IN\'), pos(14008, \'JJ\'), pos(14009, \'NN\'), pos(14010, \'.\')],
+    [],
+    alfa(def, drs([[14003]:_G10436], [[14004]:pred(_G10436, computer, n, 0)]), alfa(pro, drs([[14006]:_G10493], [[14006]:pred(_G10493, person, n, 1)]), drs([[14005]:_G10543, [14008, 14009]:_G10564], [[14005]:pred(_G10543, provide, v, 0), [14008]:pred(_G10564, systematic, a, 0), [14009]:pred(_G10564, intelligence, n, 0), [14001]:pred(_G10543, fortunately, a, 0), []:pred(_G10543, event, n, 1), [14005]:rel(_G10543, _G10436, agent, 0), [14005]:rel(_G10543, _G10493, patient, 0), [14007]:rel(_G10543, _G10564, with, 0)]))) ).
+
+id(15,15).
+
+%%% Because expertise may now be copied instantly , there is no reason why anyone should go without the benefit of expert knowledge at all times . 
+
+sem(15,
+    [word(15001, \'Because\'), word(15002, expertise), word(15003, may), word(15004, now), word(15005, be), word(15006, copied), word(15007, instantly), word(15008, (\',\')), word(15009, there), word(15010, is), word(15011, no), word(15012, reason), word(15013, why), word(15014, anyone), word(15015, should), word(15016, go), word(15017, without), word(15018, the), word(15019, benefit), word(15020, of), word(15021, expert), word(15022, knowledge), word(15023, at), word(15024, all), word(15025, times), word(15026, \'.\')],
+    [pos(15001, \'IN\'), pos(15002, \'NN\'), pos(15003, \'MD\'), pos(15004, \'RB\'), pos(15005, \'VB\'), pos(15006, \'VBN\'), pos(15007, \'RB\'), pos(15008, (\',\')), pos(15009, \'EX\'), pos(15010, \'VBZ\'), pos(15011, \'DT\'), pos(15012, \'NN\'), pos(15013, \'WRB\'), pos(15014, \'DT\'), pos(15015, \'MD\'), pos(15016, \'VB\'), pos(15017, \'IN\'), pos(15018, \'DT\'), pos(15019, \'NN\'), pos(15020, \'IN\'), pos(15021, \'NN\'), pos(15022, \'NN\'), pos(15023, \'IN\'), pos(15024, \'DT\'), pos(15025, \'NNS\'), pos(15026, \'.\')],
+    [],
+    drs([[15001]:_G4200, [15001]:_G4221, [15001]:_G4242], [[15001]:pred(_G4221, proposition, n, 1), [15001]:pred(_G4242, proposition, n, 1), []:pred(_G4200, event, n, 1), [15001]:prop(_G4200, drs([], [[15001]:rel(_G4221, _G4242, because, 0)])), [15001]:prop(_G4221, drs([[15002]:_G4403, [15006]:_G4424], [[15002]:pred(_G4403, expertise, n, 0), [15006]:pred(_G4424, copy, v, 0), [15007]:pred(_G4424, instantly, a, 0), [15004]:pred(_G4424, now, a, 0), []:pred(_G4424, event, n, 1), [15006]:rel(_G4424, _G4403, patient, 0)])), [15001]:prop(_G4242, drs([[15009]:_G4613], [[15011]:imp(drs([[15011]:_G4649], [[15012]:pred(_G4649, reason, n, 0)]), drs([], [[15011]:not(drs([[15013]:_G4713, [15010]:_G4734], [[15013]:pred(_G4713, proposition, n, 1), []:pred(_G4734, event, n, 1), [15013]:rel(_G4649, _G4713, why, 0), [15013]:prop(_G4713, drs([], [[15014]:imp(drs([[15014]:_G4860], [[15014]:pred(_G4860, person, n, 1)]), merge(drs([[15016]:_G4916], [[15016]:pred(_G4916, go, v, 0), [15016]:rel(_G4916, _G4860, agent, 0)]), alfa(def, drs([[15021]:_G4999, [15018]:_G5020, [15021, 15022]:_G5041], [[15021]:pred(_G4999, expert, n, 0), [15019]:pred(_G5020, benefit, n, 0), [15022]:pred(_G5041, knowledge, n, 0), []:rel(_G4999, _G5041, nn, 0), [15020]:rel(_G5020, _G5041, of, 0)]), drs([], [[15017]:rel(_G4916, _G5020, without, 0), [15024]:imp(drs([[15024]:_G5230], [[15025]:pred(_G5230, time, n, 0)]), drs([], [[]:pred(_G4916, event, n, 1), [15023]:rel(_G4916, _G5230, at, 0)]))]))))])), [15010]:prop(_G4734, drs([], [[15010]:eq(_G4613, _G4649)]))]))]))]))]) ).
+
+id(16,16).
+
+%%% For instance , everyone \'s basic intelligence needs ought to be met , by having a uniform Social Security System . 
+
+sem(16,
+    [word(16001, \'For\'), word(16002, instance), word(16003, (\',\')), word(16004, everyone), word(16005, \'\\\'s\'), word(16006, basic), word(16007, intelligence), word(16008, needs), word(16009, ought), word(16010, to), word(16011, be), word(16012, met), word(16013, (\',\')), word(16014, by), word(16015, having), word(16016, a), word(16017, uniform), word(16018, \'Social\'), word(16019, \'Security\'), word(16020, \'System\'), word(16021, \'.\')],
+    [pos(16001, \'IN\'), pos(16002, \'NN\'), pos(16003, (\',\')), pos(16004, \'DT\'), pos(16005, \'VBZ\'), pos(16006, \'JJ\'), pos(16007, \'NN\'), pos(16008, \'NNS\'), pos(16009, \'MD\'), pos(16010, \'TO\'), pos(16011, \'VB\'), pos(16012, \'VBN\'), pos(16013, (\',\')), pos(16014, \'IN\'), pos(16015, \'VBG\'), pos(16016, \'DT\'), pos(16017, \'JJ\'), pos(16018, \'NNP\'), pos(16019, \'NNP\'), pos(16020, \'NNP\'), pos(16021, \'.\')],
+    [],
+    drs([], [[16004]:imp(drs([[16004]:_G45014], [[16004]:pred(_G45014, person, n, 1)]), drs([[16007]:_G45064, [16006, 16007, 16008]:_G45085, [16005]:_G45106, [16009]:_G45127, []:_G45148, [16002]:_G45169], [[16007]:pred(_G45064, intelligence, n, 0), [16006]:pred(_G45085, basic, a, 0), [16008]:pred(_G45085, need, n, 0), [16005]:pred(_G45106, \'\\\'s\', v, 0), []:pred(_G45106, event, n, 1), [16009]:pred(_G45127, ought, v, 0), [16009]:pred(_G45148, proposition, n, 1), [16002]:pred(_G45169, instance, n, 0), []:pred(_G45127, event, n, 1), []:rel(_G45064, _G45085, nn, 0), [16005]:rel(_G45106, _G45014, agent, 0), [16005]:rel(_G45106, _G45085, patient, 0), [16009]:rel(_G45127, _G45014, agent, 0), [16009]:rel(_G45127, _G45148, theme, 0), [16001]:rel(_G45127, _G45169, for, 0), [16009]:prop(_G45148, drs([[16012]:_G45571, [16014]:_G45592, [16016]:_G45613, [16015]:_G45634], [[16012]:pred(_G45571, meet, v, 0), [16017]:pred(_G45613, uniform, a, 0), [16015]:pred(_G45634, have, v, 0), []:pred(_G45571, event, n, 1), [16012]:rel(_G45571, _G45014, patient, 0), [16015]:rel(_G45634, _G45592, agent, 0), [16015]:rel(_G45634, _G45613, patient, 0), [16014]:rel(_G45571, _G45634, by, 0), [16018, 16019, 16020]:named(_G45613, social_security_system, nam, 0)]))]))]) ).
+
+id(17,17).
+
+%%% Debian Social Security System 
+
+sem(17,
+    [word(17001, \'Debian\'), word(17002, \'Social\'), word(17003, \'Security\'), word(17004, \'System\')],
+    [pos(17001, \'JJ\'), pos(17002, \'NNP\'), pos(17003, \'NNP\'), pos(17004, \'NNP\')],
+    [],
+    drs([[]:_G49441], [[]:pred(_G49441, topic, a, 1), [17001]:pred(_G49441, debian, a, 0), [17002, 17003, 17004]:named(_G49441, social_security_system, nam, 0)]) ).
+
+id(18,18).
+
+%%% The idea of the Debian Social Security System is that expertise may now be copied instantly , and there is no reason that someone should be bereft of basic knowledge that could be taught to them by a computer . 
+
+sem(18,
+    [word(18001, \'The\'), word(18002, idea), word(18003, of), word(18004, the), word(18005, \'Debian\'), word(18006, \'Social\'), word(18007, \'Security\'), word(18008, \'System\'), word(18009, is), word(18010, that), word(18011, expertise), word(18012, may), word(18013, now), word(18014, be), word(18015, copied), word(18016, instantly), word(18017, (\',\')), word(18018, and), word(18019, there), word(18020, is), word(18021, no), word(18022, reason), word(18023, that), word(18024, someone), word(18025, should), word(18026, be), word(18027, bereft), word(18028, of), word(18029, basic), word(18030, knowledge), word(18031, that), word(18032, could), word(18033, be), word(18034, taught), word(18035, to), word(18036, them), word(18037, by), word(18038, a), word(18039, computer), word(18040, \'.\')],
+    [pos(18001, \'DT\'), pos(18002, \'NN\'), pos(18003, \'IN\'), pos(18004, \'DT\'), pos(18005, \'JJ\'), pos(18006, \'NNP\'), pos(18007, \'NNP\'), pos(18008, \'NNP\'), pos(18009, \'VBZ\'), pos(18010, \'IN\'), pos(18011, \'NN\'), pos(18012, \'MD\'), pos(18013, \'RB\'), pos(18014, \'VB\'), pos(18015, \'VBN\'), pos(18016, \'RB\'), pos(18017, (\',\')), pos(18018, \'CC\'), pos(18019, \'EX\'), pos(18020, \'VBZ\'), pos(18021, \'DT\'), pos(18022, \'NN\'), pos(18023, \'IN\'), pos(18024, \'DT\'), pos(18025, \'MD\'), pos(18026, \'VB\'), pos(18027, \'JJ\'), pos(18028, \'IN\'), pos(18029, \'JJ\'), pos(18030, \'NN\'), pos(18031, \'WDT\'), pos(18032, \'MD\'), pos(18033, \'VB\'), pos(18034, \'VBN\'), pos(18035, \'TO\'), pos(18036, \'PRP\'), pos(18037, \'IN\'), pos(18038, \'DT\'), pos(18039, \'NN\'), pos(18040, \'.\')],
+    [],
+    alfa(def, merge(drs([[18001]:_G61308], [[18002]:pred(_G61308, idea, n, 0)]), alfa(def, drs([[18004]:_G61365], [[18005]:pred(_G61365, debian, a, 0), [18006, 18007, 18008]:named(_G61365, social_security_system, nam, 0)]), drs([], [[18003]:rel(_G61308, _G61365, of, 0)]))), drs([[18009]:_G61470, []:_G61491], [[18009]:pred(_G61470, be, v, 0), [18009]:pred(_G61491, proposition, n, 1), []:pred(_G61470, event, n, 1), [18009]:rel(_G61470, _G61308, agent, 0), [18009]:rel(_G61470, _G61491, theme, 0), [18009]:prop(_G61491, drs([[18011]:_G61651, [18015]:_G61672, [18019]:_G61693], [[18011]:pred(_G61651, expertise, n, 0), [18015]:pred(_G61672, copy, v, 0), [18016]:pred(_G61672, instantly, a, 0), [18013]:pred(_G61672, now, a, 0), []:pred(_G61672, event, n, 1), [18015]:rel(_G61672, _G61651, patient, 0), [18021]:imp(drs([[18021]:_G61870], [[18022]:pred(_G61870, reason, n, 0)]), drs([], [[18021]:not(drs([[18023]:_G61934, [18020]:_G61955], [[18023]:pred(_G61934, proposition, n, 1), []:pred(_G61955, event, n, 1), [18023]:rel(_G61870, _G61934, that, 0), [18023]:prop(_G61934, merge(drs([[18024]:_G62072, [18027]:_G62093], [[18024]:pred(_G62072, person, n, 1), [18027]:prop(_G62093, drs([], [[18027]:pred(_G62072, bereft, a, 0)]))]), merge(merge(drs([[18029, 18030]:_G62205], [[18029]:pred(_G62205, basic, a, 0), [18030]:pred(_G62205, knowledge, n, 0)]), merge(merge(drs([[18034]:_G62290], [[18034]:pred(_G62290, teach, v, 0), [18034]:rel(_G62290, _G62205, patient, 0)]), merge(alfa(pro, drs([[18036]:_G62379], [[18036]:pred(_G62379, thing, n, 12)]), drs([], [[18035]:rel(_G62290, _G62379, to, 0)])), drs([[18038]:_G62461], [[18039]:pred(_G62461, computer, n, 0), []:pred(_G62290, event, n, 1), [18037]:rel(_G62290, _G62461, by, 0)]))), drs([], [[18028]:rel(_G62093, _G62205, of, 0)]))), drs([], [[]:pred(_G62093, event, n, 1)])))), [18020]:prop(_G61955, drs([], [[18020]:eq(_G61693, _G61870)]))]))]))]))])) ).
+
+id(19,19).
+
+%%% As such , a general purpose system which starts from ground up , including meal planning , 
+
+sem(19,
+    [word(19001, \'As\'), word(19002, such), word(19003, (\',\')), word(19004, a), word(19005, general), word(19006, purpose), word(19007, system), word(19008, which), word(19009, starts), word(19010, from), word(19011, ground), word(19012, up), word(19013, (\',\')), word(19014, including), word(19015, meal), word(19016, planning), word(19017, (\',\'))],
+    [pos(19001, \'IN\'), pos(19002, \'JJ\'), pos(19003, (\',\')), pos(19004, \'DT\'), pos(19005, \'JJ\'), pos(19006, \'NN\'), pos(19007, \'NN\'), pos(19008, \'WDT\'), pos(19009, \'VBZ\'), pos(19010, \'IN\'), pos(19011, \'NN\'), pos(19012, \'IN\'), pos(19013, (\',\')), pos(19014, \'VBG\'), pos(19015, \'JJ\'), pos(19016, \'NN\'), pos(19017, (\',\'))],
+    [],
+    drs([[]:_G27033, [19007]:_G27054, [19009]:_G27075, [19011]:_G27096, [19015, 19016]:_G27117, [19004]:_G27138], [[]:pred(_G27033, event, n, 1), [19007]:pred(_G27054, system, n, 0), [19009]:pred(_G27075, start, v, 0), [19011]:pred(_G27096, ground, n, 0), [19012]:pred(_G27075, up, a, 0), []:pred(_G27075, event, n, 1), [19015]:pred(_G27117, meal, a, 0), [19016]:pred(_G27117, planning, n, 0), [19005]:pred(_G27138, general, a, 0), [19006]:pred(_G27138, purpose, n, 0), []:pred(_G27033, event, n, 1), [19009]:rel(_G27075, _G27054, agent, 0), [19010]:rel(_G27075, _G27096, from, 0), [19014]:rel(_G27054, _G27117, include, 0), []:rel(_G27033, _G27054, rel, 0), [19001]:rel(_G27033, _G27138, as, 0)]) ).
+
+id(20,20).
+
+%%% Currently , there is no software available in Debian which provides for meal planning , or even realtime life planning in general . 
+
+sem(20,
+    [word(20001, \'Currently\'), word(20002, (\',\')), word(20003, there), word(20004, is), word(20005, no), word(20006, software), word(20007, available), word(20008, in), word(20009, \'Debian\'), word(20010, which), word(20011, provides), word(20012, for), word(20013, meal), word(20014, planning), word(20015, (\',\')), word(20016, or), word(20017, even), word(20018, realtime), word(20019, life), word(20020, planning), word(20021, in), word(20022, general), word(20023, \'.\')],
+    [pos(20001, \'RB\'), pos(20002, (\',\')), pos(20003, \'EX\'), pos(20004, \'VBZ\'), pos(20005, \'DT\'), pos(20006, \'NN\'), pos(20007, \'JJ\'), pos(20008, \'IN\'), pos(20009, \'JJ\'), pos(20010, \'WDT\'), pos(20011, \'VBZ\'), pos(20012, \'IN\'), pos(20013, \'JJ\'), pos(20014, \'NN\'), pos(20015, (\',\')), pos(20016, \'CC\'), pos(20017, \'RB\'), pos(20018, \'JJ\'), pos(20019, \'NN\'), pos(20020, \'NN\'), pos(20021, \'IN\'), pos(20022, \'JJ\'), pos(20023, \'.\')],
+    [],
+    drs([[20003]:_G20098], [[20005]:imp(drs([[20005]:_G20134, [20007]:_G20155, [20009]:_G20176], [[20009]:pred(_G20176, debian, n, 0), []:pred(_G20155, event, n, 1), [20006]:pred(_G20134, software, n, 0), [20008]:rel(_G20155, _G20176, in, 0), [20007]:prop(_G20155, drs([], [[20007]:pred(_G20134, available, a, 0)]))]), drs([], [[20005]:not(drs([[20011]:_G20362, [20021]:_G20383, [20022]:_G20404, [20004]:_G20425], [[20011]:pred(_G20362, provide, v, 0), []:pred(_G20362, event, n, 1), [20001]:pred(_G20425, currently, a, 0), []:pred(_G20425, event, n, 1), [20011]:rel(_G20362, _G20134, agent, 0), [20021]:rel(_G20362, _G20404, in, 0), [20016]:or(drs([[20013, 20014]:_G20605], [[20013]:pred(_G20605, meal, a, 0), [20014]:pred(_G20605, planning, n, 0), [20012]:rel(_G20362, _G20605, for, 0)]), drs([[20019]:_G20704, [20017, 20018, 20019, 20020]:_G20725], [[20019]:pred(_G20704, life, n, 0), [20017]:pred(_G20725, even, a, 0), [20018]:pred(_G20725, realtime, a, 0), [20020]:pred(_G20725, planning, n, 0), []:rel(_G20704, _G20725, nn, 0), [20012]:rel(_G20362, _G20725, for, 0)])), [20022]:prop(_G20404, drs([], [[20022]:pred(_G20383, general, a, 0)])), [20004]:prop(_G20425, drs([], [[20004]:eq(_G20098, _G20134)]))]))]))]) ).
+
+id(21,21).
+
+%%% I argue that having these abilities given to them will not make the person less intelligent . 
+
+sem(21,
+    [word(21001, \'I\'), word(21002, argue), word(21003, that), word(21004, having), word(21005, these), word(21006, abilities), word(21007, given), word(21008, to), word(21009, them), word(21010, will), word(21011, not), word(21012, make), word(21013, the), word(21014, person), word(21015, less), word(21016, intelligent), word(21017, \'.\')],
+    [pos(21001, \'PRP\'), pos(21002, \'VBP\'), pos(21003, \'IN\'), pos(21004, \'VBG\'), pos(21005, \'DT\'), pos(21006, \'NNS\'), pos(21007, \'VBN\'), pos(21008, \'TO\'), pos(21009, \'PRP\'), pos(21010, \'MD\'), pos(21011, \'RB\'), pos(21012, \'VB\'), pos(21013, \'DT\'), pos(21014, \'NN\'), pos(21015, \'RBR\'), pos(21016, \'JJ\'), pos(21017, \'.\')],
+    [],
+    alfa(pro, drs([[21001]:_G56738], [[21001]:pred(_G56738, person, n, 1)]), drs([[21002]:_G56788, []:_G56809], [[21002]:pred(_G56788, argue, v, 0), [21002]:pred(_G56809, proposition, n, 1), []:pred(_G56788, event, n, 1), [21002]:rel(_G56788, _G56738, agent, 0), [21002]:rel(_G56788, _G56809, theme, 0), [21002]:prop(_G56809, drs([], [[21011]:not(merge(drs([[]:_G56989], [[]:pred(_G56989, thing, n, 12)]), alfa(def, merge(drs([[21005]:_G57052], []), merge(merge(drs([[21007]:_G57091], [[21007]:pred(_G57091, give, v, 0), [21007]:rel(_G57091, _G57052, patient, 0)]), merge(alfa(pro, drs([[21009]:_G57180], [[21009]:pred(_G57180, thing, n, 12)]), drs([], [[21008]:rel(_G57091, _G57180, to, 0)])), drs([], [[]:pred(_G57091, event, n, 1)]))), drs([], [[21006]:pred(_G57052, ability, n, 0)]))), merge(drs([[21004]:_G57326], [[21004]:pred(_G57326, have, v, 0), [21004]:rel(_G57326, _G56989, agent, 0), [21004]:rel(_G57326, _G57052, patient, 0)]), alfa(def, drs([[21013]:_G57435], [[21014]:pred(_G57435, person, n, 0)]), drs([[21012]:_G57485, []:_G57506], [[21012]:pred(_G57485, make, v, 0), [21012]:pred(_G57506, proposition, n, 1), []:pred(_G57485, event, n, 1), [21012]:rel(_G57485, _G57435, patient, 0), [21012]:rel(_G57485, _G57326, agent, 0), [21012]:prop(_G57506, drs([[21016]:_G57666], [[21015]:pred(_G57666, less, a, 0), []:pred(_G57666, event, n, 1), [21016]:prop(_G57666, drs([], [[21016]:pred(_G57435, intelligent, a, 0)]))]))]))))))]))])) ).
+
+id(22,22).
+
+%%% Rather , I think that intelligence and motivation can be instructed . 
+
+sem(22,
+    [word(22001, \'Rather\'), word(22002, (\',\')), word(22003, \'I\'), word(22004, think), word(22005, that), word(22006, intelligence), word(22007, and), word(22008, motivation), word(22009, can), word(22010, be), word(22011, instructed), word(22012, \'.\')],
+    [pos(22001, \'RB\'), pos(22002, (\',\')), pos(22003, \'PRP\'), pos(22004, \'VBP\'), pos(22005, \'IN\'), pos(22006, \'NN\'), pos(22007, \'CC\'), pos(22008, \'NN\'), pos(22009, \'MD\'), pos(22010, \'VB\'), pos(22011, \'VBN\'), pos(22012, \'.\')],
+    [],
+    alfa(pro, drs([[22003]:_G1438], [[22003]:pred(_G1438, person, n, 1)]), drs([[22004]:_G1464, []:_G1476], [[22004]:pred(_G1464, think, v, 0), [22004]:pred(_G1476, proposition, n, 1), [22001]:pred(_G1464, rather, a, 0), []:pred(_G1464, event, n, 1), [22004]:rel(_G1464, _G1438, agent, 0), [22004]:rel(_G1464, _G1476, theme, 0), [22004]:prop(_G1476, drs([[22006, 22007, 22008]:_G1576, [22011]:_G1588], [[22011]:pred(_G1588, instruct, v, 0), []:pred(_G1588, event, n, 1), [22011]:rel(_G1588, _G1576, patient, 0), [22007]:or(drs([], [[22006]:pred(_G1576, intelligence, n, 0)]), drs([], [[22008]:pred(_G1576, motivation, n, 0)]))]))])) ).
+
+id(23,23).
+
+%%% The reason I believe this is that people can be taught with both negative reinforcement , such as life often treats us with , but also positive reinforcement . 
+
+sem(23,
+    [word(23001, \'The\'), word(23002, reason), word(23003, \'I\'), word(23004, believe), word(23005, this), word(23006, is), word(23007, that), word(23008, people), word(23009, can), word(23010, be), word(23011, taught), word(23012, with), word(23013, both), word(23014, negative), word(23015, reinforcement), word(23016, (\',\')), word(23017, such), word(23018, as), word(23019, life), word(23020, often), word(23021, treats), word(23022, us), word(23023, with), word(23024, (\',\')), word(23025, but), word(23026, also), word(23027, positive), word(23028, reinforcement), word(23029, \'.\')],
+    [pos(23001, \'DT\'), pos(23002, \'NN\'), pos(23003, \'PRP\'), pos(23004, \'VBP\'), pos(23005, \'DT\'), pos(23006, \'VBZ\'), pos(23007, \'IN\'), pos(23008, \'NNS\'), pos(23009, \'MD\'), pos(23010, \'VB\'), pos(23011, \'VBN\'), pos(23012, \'IN\'), pos(23013, \'DT\'), pos(23014, \'JJ\'), pos(23015, \'NN\'), pos(23016, (\',\')), pos(23017, \'JJ\'), pos(23018, \'IN\'), pos(23019, \'NN\'), pos(23020, \'RB\'), pos(23021, \'VBZ\'), pos(23022, \'PRP\'), pos(23023, \'IN\'), pos(23024, (\',\')), pos(23025, \'CC\'), pos(23026, \'RB\'), pos(23027, \'JJ\'), pos(23028, \'NN\'), pos(23029, \'.\')],
+    [],
+    merge(alfa(def, drs([[23001]:_G32318], [[23002]:pred(_G32318, reason, n, 0)]), alfa(pro, drs([[23003]:_G32375], [[23003]:pred(_G32375, person, n, 1)]), drs([[23004]:_G32425, []:_G32446], [[23004]:pred(_G32425, believe, v, 0), [23004]:pred(_G32446, proposition, n, 1), []:pred(_G32425, event, n, 1), [23004]:rel(_G32425, _G32375, agent, 0), [23004]:rel(_G32425, _G32446, theme, 0), [23004]:prop(_G32446, alfa(def, drs([[23005]:_G32613], [[23005]:pred(_G32613, thing, n, 12)]), merge(drs([[23006]:_G32669, []:_G32690, [23019]:_G32711], [[23006]:pred(_G32669, be, v, 0), [23006]:pred(_G32690, proposition, n, 1), []:pred(_G32669, event, n, 1), [23019]:pred(_G32711, life, n, 0), [23006]:rel(_G32669, _G32613, agent, 0), [23006]:rel(_G32669, _G32690, theme, 0), [23018]:rel(_G32613, _G32711, as, 0), [23006]:prop(_G32690, merge(drs([[23008]:_G32926, [23011]:_G32947], [[23008]:pred(_G32926, people, n, 0), [23011]:pred(_G32947, teach, v, 0), [23011]:rel(_G32947, _G32926, patient, 0)]), merge(alfa(def, drs([[23013]:_G33059], [[23014]:pred(_G33059, negative, a, 0), [23015]:pred(_G33059, reinforcement, n, 0)]), drs([], [[23012]:rel(_G32947, _G33059, with, 0)])), drs([], [[]:pred(_G32947, event, n, 1)]))))]), alfa(pro, drs([[23022]:_G33209], [[23022]:pred(_G33209, person, n, 1)]), drs([[23021]:_G33259], [[23021]:pred(_G33259, treat, v, 0), []:pred(_G32318, topic, a, 1), [23020]:pred(_G33259, often, a, 0), []:pred(_G33259, event, n, 1), [23021]:rel(_G33259, _G32613, agent, 0), [23021]:rel(_G33259, _G33209, patient, 0), [23023]:rel(_G33259, _G32318, with, 0)])))))]))), merge(alfa(def, drs([[23001]:_G33478], [[23002]:pred(_G33478, reason, n, 0)]), drs([], [[]:pred(_G33478, topic, a, 1)])), drs([[23027, 23028]:_G33557, [23026]:_G33578], [[23027]:pred(_G33557, positive, a, 0), [23028]:pred(_G33557, reinforcement, n, 0), [23026]:pred(_G33578, also, n, 0), []:pred(_G33557, topic, a, 1), [23026]:rel(_G33557, _G33578, rel, 0)]))) ).
+
+id(24,24).
+
+%%% There is no reason for making mistakes if they do n\'t have to be made . 
+
+sem(24,
+    [word(24001, \'There\'), word(24002, is), word(24003, no), word(24004, reason), word(24005, for), word(24006, making), word(24007, mistakes), word(24008, if), word(24009, they), word(24010, do), word(24011, \'n\\\'t\'), word(24012, have), word(24013, to), word(24014, be), word(24015, made), word(24016, \'.\')],
+    [pos(24001, \'EX\'), pos(24002, \'VBZ\'), pos(24003, \'DT\'), pos(24004, \'NN\'), pos(24005, \'IN\'), pos(24006, \'VBG\'), pos(24007, \'NNS\'), pos(24008, \'IN\'), pos(24009, \'PRP\'), pos(24010, \'VBP\'), pos(24011, \'RB\'), pos(24012, \'VB\'), pos(24013, \'TO\'), pos(24014, \'VB\'), pos(24015, \'VBN\'), pos(24016, \'.\')],
+    [],
+    drs([[24001]:_G64248], [[24003]:imp(drs([[24003]:_G64284], [[24004]:pred(_G64284, reason, n, 0)]), drs([], [[24003]:not(drs([[24008]:_G64348, [24002]:_G64369], [[]:pred(_G64348, event, n, 1), []:pred(_G64369, event, n, 1), [24008]:imp(drs([], [[24011]:not(alfa(pro, drs([[24009]:_G64472], [[24009]:pred(_G64472, thing, n, 12)]), drs([[24012]:_G64522, []:_G64543], [[24012]:pred(_G64522, have, v, 0), [24012]:pred(_G64543, proposition, n, 1), []:pred(_G64522, event, n, 1), [24012]:rel(_G64522, _G64472, agent, 0), [24012]:rel(_G64522, _G64543, theme, 0), [24012]:prop(_G64543, drs([[24015]:_G64703], [[24015]:pred(_G64703, make, v, 0), []:pred(_G64703, event, n, 1), [24015]:rel(_G64703, _G64472, patient, 0)]))])))]), drs([[24007]:_G64820, [24006]:_G64841], [[24007]:pred(_G64820, mistake, n, 0), [24006]:pred(_G64841, make, v, 0), []:pred(_G64841, event, n, 1), [24006]:rel(_G64841, _G64284, agent, 0), [24006]:rel(_G64841, _G64820, patient, 0)])), [24002]:prop(_G64369, drs([], [[24002]:eq(_G64248, _G64284)]))]))]))]) ).
+
+id(25,25).
+
+%%% My worldview is basically that the universe is a problem , and is defective , for instance , thermodynamics , etc , are all defective . 
+
+sem(25,
+    [word(25001, \'My\'), word(25002, worldview), word(25003, is), word(25004, basically), word(25005, that), word(25006, the), word(25007, universe), word(25008, is), word(25009, a), word(25010, problem), word(25011, (\',\')), word(25012, and), word(25013, is), word(25014, defective), word(25015, (\',\')), word(25016, for), word(25017, instance), word(25018, (\',\')), word(25019, thermodynamics), word(25020, (\',\')), word(25021, etc), word(25022, (\',\')), word(25023, are), word(25024, all), word(25025, defective), word(25026, \'.\')],
+    [pos(25001, \'PRP$\'), pos(25002, \'NN\'), pos(25003, \'VBZ\'), pos(25004, \'RB\'), pos(25005, \'IN\'), pos(25006, \'DT\'), pos(25007, \'NN\'), pos(25008, \'VBZ\'), pos(25009, \'DT\'), pos(25010, \'NN\'), pos(25011, (\',\')), pos(25012, \'CC\'), pos(25013, \'VBZ\'), pos(25014, \'JJ\'), pos(25015, (\',\')), pos(25016, \'IN\'), pos(25017, \'NN\'), pos(25018, (\',\')), pos(25019, \'NNS\'), pos(25020, (\',\')), pos(25021, \'NN\'), pos(25022, (\',\')), pos(25023, \'VBP\'), pos(25024, \'DT\'), pos(25025, \'JJ\'), pos(25026, \'.\')],
+    [],
+    alfa(pro, drs([[25001]:_G35056], [[25001]:pred(_G35056, person, n, 1)]), alfa(def, drs([[25001]:_G35113], [[25002]:pred(_G35113, worldview, n, 0), [25001]:rel(_G35113, _G35056, of, 0)]), drs([[25003]:_G35189, []:_G35210], [[25003]:pred(_G35189, be, v, 0), [25003]:pred(_G35210, proposition, n, 1), [25004]:pred(_G35189, basically, a, 0), []:pred(_G35189, event, n, 1), [25003]:rel(_G35189, _G35113, agent, 0), [25003]:rel(_G35189, _G35210, theme, 0), [25003]:prop(_G35210, merge(drs([[25019]:_G35399, [25021]:_G35420, [25020]:_G35441, [25025]:_G35462, [25017]:_G35483], [[25019]:pred(_G35399, thermodynamics, n, 0), [25021]:pred(_G35420, etc, n, 0), [25024]:pred(_G35462, all, a, 0), [25017]:pred(_G35483, instance, n, 0), []:pred(_G35462, event, n, 1), [25016]:rel(_G35462, _G35483, for, 0), [25020]:prop(_G35441, drs([], [[25020]:eq(_G35399, _G35420)])), [25025]:prop(_G35462, drs([], [[25025]:pred(_G35399, defective, a, 0)]))]), merge(alfa(def, drs([[25006]:_G35765], [[25007]:pred(_G35765, universe, n, 0)]), drs([[25009]:_G35815, [25008]:_G35836], [[25010]:pred(_G35815, problem, n, 0), []:pred(_G35836, event, n, 1), [25008]:prop(_G35836, drs([], [[25008]:eq(_G35765, _G35815)]))])), alfa(def, drs([[25006]:_G35967], [[25007]:pred(_G35967, universe, n, 0)]), drs([[25014]:_G36017], [[]:pred(_G36017, event, n, 1), [25014]:prop(_G36017, drs([], [[25014]:pred(_G35967, defective, a, 0)]))])))))]))) ).
+
+id(26,26).
+
+%%% My religous view is that the afterlife is something which is in actually accomplished by our race as transform existing reality into an increasingly heavenlike world , until we have replaced the earth with heaven . 
+
+sem(26,
+    [word(26001, \'My\'), word(26002, religous), word(26003, view), word(26004, is), word(26005, that), word(26006, the), word(26007, afterlife), word(26008, is), word(26009, something), word(26010, which), word(26011, is), word(26012, in), word(26013, actually), word(26014, accomplished), word(26015, by), word(26016, our), word(26017, race), word(26018, as), word(26019, transform), word(26020, existing), word(26021, reality), word(26022, into), word(26023, an), word(26024, increasingly), word(26025, heavenlike), word(26026, world), word(26027, (\',\')), word(26028, until), word(26029, we), word(26030, have), word(26031, replaced), word(26032, the), word(26033, earth), word(26034, with), word(26035, heaven), word(26036, \'.\')],
+    [pos(26001, \'PRP$\'), pos(26002, \'JJ\'), pos(26003, \'NN\'), pos(26004, \'VBZ\'), pos(26005, \'IN\'), pos(26006, \'DT\'), pos(26007, \'NN\'), pos(26008, \'VBZ\'), pos(26009, \'DT\'), pos(26010, \'WDT\'), pos(26011, \'VBZ\'), pos(26012, \'IN\'), pos(26013, \'RB\'), pos(26014, \'VBN\'), pos(26015, \'IN\'), pos(26016, \'PRP$\'), pos(26017, \'NN\'), pos(26018, \'IN\'), pos(26019, \'VB\'), pos(26020, \'VBG\'), pos(26021, \'NN\'), pos(26022, \'IN\'), pos(26023, \'DT\'), pos(26024, \'RB\'), pos(26025, \'JJ\'), pos(26026, \'NN\'), pos(26027, (\',\')), pos(26028, \'IN\'), pos(26029, \'PRP\'), pos(26030, \'VBP\'), pos(26031, \'VBN\'), pos(26032, \'DT\'), pos(26033, \'NN\'), pos(26034, \'IN\'), pos(26035, \'NN\'), pos(26036, \'.\')],
+    [],
+    alfa(pro, drs([[26001]:_G69303], [[26001]:pred(_G69303, person, n, 1)]), alfa(def, drs([[26001]:_G69360], [[26002]:pred(_G69360, religous, a, 0), [26003]:pred(_G69360, view, n, 0), [26001]:rel(_G69360, _G69303, of, 0)]), drs([[26004]:_G69459, []:_G69480], [[26004]:pred(_G69459, be, v, 0), [26004]:pred(_G69480, proposition, n, 1), []:pred(_G69459, event, n, 1), [26004]:rel(_G69459, _G69360, agent, 0), [26004]:rel(_G69459, _G69480, theme, 0), [26004]:prop(_G69480, alfa(def, drs([[26006]:_G69647], [[26007]:pred(_G69647, afterlife, n, 0)]), merge(drs([[26009]:_G69703, [26013]:_G69724], [[26009]:pred(_G69703, thing, n, 12), [26012]:pred(_G69724, in, a, 0), []:pred(_G69724, event, n, 1), [26013]:prop(_G69724, drs([], [[26013]:pred(_G69703, actually, a, 0)]))]), merge(merge(drs([[26014]:_G69882], [[26014]:pred(_G69882, accomplish, v, 0), [26014]:rel(_G69882, _G69703, patient, 0)]), alfa(pro, drs([[26016]:_G69965], [[26016]:pred(_G69965, person, n, 1)]), alfa(def, drs([[26016]:_G70022, [26019, 26020, 26021, 26022, 26023, 26024, 26025, 26026]:_G70043, [26023]:_G70064], [[26017]:pred(_G70022, race, n, 0), [26019]:pred(_G70043, transform, a, 0), [26020]:pred(_G70043, exist, a, 0), [26021]:pred(_G70043, reality, n, 0), [26025]:pred(_G70064, heavenlike, a, 0), [26026]:pred(_G70064, world, n, 0), [26024]:pred(_G70064, increasingly, a, 0), [26016]:rel(_G70022, _G69965, of, 0), [26022]:rel(_G70043, _G70064, into, 0), [26018]:rel(_G70022, _G70043, as, 0)]), drs([[26028]:_G70330], [[26028]:pred(_G70330, proposition, n, 1), []:pred(_G69882, event, n, 1), [26015]:rel(_G69882, _G70022, by, 0), [26028]:rel(_G69882, _G70330, until, 0), [26028]:prop(_G70330, alfa(pro, drs([[26029]:_G70474], [[26029]:pred(_G70474, person, n, 1)]), alfa(def, drs([[26032]:_G70531], [[26033]:pred(_G70531, earth, n, 0)]), drs([[26031]:_G70581, [26035]:_G70602], [[26031]:pred(_G70581, replace, v, 0), [26035]:pred(_G70602, heaven, n, 0), []:pred(_G70581, event, n, 1), [26031]:rel(_G70581, _G70474, agent, 0), [26031]:rel(_G70581, _G70531, patient, 0), [26034]:rel(_G70581, _G70602, with, 0)]))))])))), drs([[26008]:_G70785], [[]:pred(_G70785, event, n, 1), [26008]:prop(_G70785, drs([], [[26008]:eq(_G69647, _G69703)]))])))))]))) ).
+

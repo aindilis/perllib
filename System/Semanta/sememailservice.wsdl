@@ -1,0 +1,1807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://semanticdesktop.org/services/sememailservice" xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:tns="http://semanticdesktop.org/services/sememailservice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://semanticdesktop.org/services/sememailservice">
+<xsd:element name="processOutgoingWorkflows">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="processOutgoingWorkflowsResponse">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="defineCustomSpeechAct">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in6" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in7" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in8" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in9" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in10" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in11" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in12" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="defineCustomSpeechActResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="pimRequired">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="pimRequiredResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getUserStatistics">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getUserStatisticsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getRelatedEmailID">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getRelatedEmailIDResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="requiresSubject">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="requiresSubjectResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getSpeechActsFromRDF">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="ArrayOfString">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="string" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="getSpeechActsFromRDFResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getRDFFromEmailID">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getRDFFromEmailIDResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateHeaders">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateHeadersResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateWorkflowStatusOnSave">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateWorkflowStatusOnSaveResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="applyPredictiveModel">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="applyPredictiveModelResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="createEmailRDF">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="createEmailRDFResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getObjects">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getObjectsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="requiresResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="requiresResponseResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="buildToolTip">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="buildToolTipResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="applyRole">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="applyRoleResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="returnLabel">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="returnLabelResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="requiresInitiativeResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="requiresInitiativeResponseResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateRDF">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="updateRDFResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getSpeechActContext">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getSpeechActContextResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="createCalendarRDF">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in6" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in7" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="createCalendarRDFResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getIncomingPendingSpeechActs">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getIncomingPendingSpeechActsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getOutgoingPendingSpeechActs">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getOutgoingPendingSpeechActsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getSmailRDF">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getSmailRDFResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getActionObject">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getActionObjectResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getRelatedActivityIDs">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getRelatedActivityIDsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getSucceedingEmailIDs">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getSucceedingEmailIDsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getAllWorkflows">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getAllWorkflowsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getWorkflowStatusForSpeechAct">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getWorkflowStatusForSpeechActResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="determineUpdatedStatus">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="determineUpdatedStatusResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getActions">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="getActionsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="processIncomingWorkflows">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="processIncomingWorkflowsResponse">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="removeRDFFromRepository">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="removeRDFFromRepositoryResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getEmailID">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getEmailIDResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="fileInputRequired">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="fileInputRequiredResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="isInList">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="isInListResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addCurrentDesktopInfo">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addCurrentDesktopInfoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="replaceSmailHeader">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="replaceSmailHeaderResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getAutoText">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getAutoTextResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getContextURI">
+<xsd:complexType/>
+</xsd:element>
+<xsd:element name="getContextURIResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="extractSpeechActsFromContent">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="extractSpeechActsFromContentResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="returnURI">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="returnURIResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getResponseOptions">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getResponseOptionsResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getPreceedingEmailID">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getPreceedingEmailIDResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="tns:ArrayOfString"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getTargetLabel">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="getTargetLabelResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="createTaskRDF">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in1" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in2" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in3" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in4" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in5" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in6" nillable="true" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="in7" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="createTaskRDFResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addRDFToRepository">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="in0" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="addRDFToRepositoryResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="out" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getRDFFromEmailIDResponse">
+    <wsdl:part name="parameters" element="tns:getRDFFromEmailIDResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getObjectsResponse">
+    <wsdl:part name="parameters" element="tns:getObjectsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fileInputRequiredResponse">
+    <wsdl:part name="parameters" element="tns:fileInputRequiredResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="applyPredictiveModelResponse">
+    <wsdl:part name="parameters" element="tns:applyPredictiveModelResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getContextURIResponse">
+    <wsdl:part name="parameters" element="tns:getContextURIResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getOutgoingPendingSpeechActsRequest">
+    <wsdl:part name="parameters" element="tns:getOutgoingPendingSpeechActs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createEmailRDFResponse">
+    <wsdl:part name="parameters" element="tns:createEmailRDFResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTargetLabelRequest">
+    <wsdl:part name="parameters" element="tns:getTargetLabel">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllWorkflowsResponse">
+    <wsdl:part name="parameters" element="tns:getAllWorkflowsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateHeadersResponse">
+    <wsdl:part name="parameters" element="tns:updateHeadersResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="replaceSmailHeaderResponse">
+    <wsdl:part name="parameters" element="tns:replaceSmailHeaderResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getWorkflowStatusForSpeechActResponse">
+    <wsdl:part name="parameters" element="tns:getWorkflowStatusForSpeechActResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getResponseOptionsResponse">
+    <wsdl:part name="parameters" element="tns:getResponseOptionsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="requiresInitiativeResponseResponse">
+    <wsdl:part name="parameters" element="tns:requiresInitiativeResponseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="returnURIRequest">
+    <wsdl:part name="parameters" element="tns:returnURI">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="returnURIResponse">
+    <wsdl:part name="parameters" element="tns:returnURIResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="removeRDFFromRepositoryResponse">
+    <wsdl:part name="parameters" element="tns:removeRDFFromRepositoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateRDFResponse">
+    <wsdl:part name="parameters" element="tns:updateRDFResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="applyPredictiveModelRequest">
+    <wsdl:part name="parameters" element="tns:applyPredictiveModel">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="returnLabelResponse">
+    <wsdl:part name="parameters" element="tns:returnLabelResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isInListRequest">
+    <wsdl:part name="parameters" element="tns:isInList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getActionObjectResponse">
+    <wsdl:part name="parameters" element="tns:getActionObjectResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateHeadersRequest">
+    <wsdl:part name="parameters" element="tns:updateHeaders">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="buildToolTipRequest">
+    <wsdl:part name="parameters" element="tns:buildToolTip">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processIncomingWorkflowsRequest">
+    <wsdl:part name="parameters" element="tns:processIncomingWorkflows">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateWorkflowStatusOnSaveRequest">
+    <wsdl:part name="parameters" element="tns:updateWorkflowStatusOnSave">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addCurrentDesktopInfoResponse">
+    <wsdl:part name="parameters" element="tns:addCurrentDesktopInfoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSpeechActContextRequest">
+    <wsdl:part name="parameters" element="tns:getSpeechActContext">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserStatisticsResponse">
+    <wsdl:part name="parameters" element="tns:getUserStatisticsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getWorkflowStatusForSpeechActRequest">
+    <wsdl:part name="parameters" element="tns:getWorkflowStatusForSpeechAct">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRelatedEmailIDResponse">
+    <wsdl:part name="parameters" element="tns:getRelatedEmailIDResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getOutgoingPendingSpeechActsResponse">
+    <wsdl:part name="parameters" element="tns:getOutgoingPendingSpeechActsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSmailRDFRequest">
+    <wsdl:part name="parameters" element="tns:getSmailRDF">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSucceedingEmailIDsResponse">
+    <wsdl:part name="parameters" element="tns:getSucceedingEmailIDsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getIncomingPendingSpeechActsRequest">
+    <wsdl:part name="parameters" element="tns:getIncomingPendingSpeechActs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createTaskRDFResponse">
+    <wsdl:part name="parameters" element="tns:createTaskRDFResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="replaceSmailHeaderRequest">
+    <wsdl:part name="parameters" element="tns:replaceSmailHeader">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="removeRDFFromRepositoryRequest">
+    <wsdl:part name="parameters" element="tns:removeRDFFromRepository">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="isInListResponse">
+    <wsdl:part name="parameters" element="tns:isInListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="applyRoleRequest">
+    <wsdl:part name="parameters" element="tns:applyRole">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createCalendarRDFRequest">
+    <wsdl:part name="parameters" element="tns:createCalendarRDF">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSpeechActsFromRDFRequest">
+    <wsdl:part name="parameters" element="tns:getSpeechActsFromRDF">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getActionsRequest">
+    <wsdl:part name="parameters" element="tns:getActions">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllWorkflowsRequest">
+    <wsdl:part name="parameters" element="tns:getAllWorkflows">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="requiresResponseResponse">
+    <wsdl:part name="parameters" element="tns:requiresResponseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPreceedingEmailIDRequest">
+    <wsdl:part name="parameters" element="tns:getPreceedingEmailID">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="buildToolTipResponse">
+    <wsdl:part name="parameters" element="tns:buildToolTipResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRelatedEmailIDRequest">
+    <wsdl:part name="parameters" element="tns:getRelatedEmailID">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="requiresSubjectResponse">
+    <wsdl:part name="parameters" element="tns:requiresSubjectResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSpeechActContextResponse">
+    <wsdl:part name="parameters" element="tns:getSpeechActContextResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createEmailRDFRequest">
+    <wsdl:part name="parameters" element="tns:createEmailRDF">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="defineCustomSpeechActRequest">
+    <wsdl:part name="parameters" element="tns:defineCustomSpeechAct">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="returnLabelRequest">
+    <wsdl:part name="parameters" element="tns:returnLabel">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSucceedingEmailIDsRequest">
+    <wsdl:part name="parameters" element="tns:getSucceedingEmailIDs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getObjectsRequest">
+    <wsdl:part name="parameters" element="tns:getObjects">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEmailIDResponse">
+    <wsdl:part name="parameters" element="tns:getEmailIDResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addRDFToRepositoryRequest">
+    <wsdl:part name="parameters" element="tns:addRDFToRepository">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="extractSpeechActsFromContentResponse">
+    <wsdl:part name="parameters" element="tns:extractSpeechActsFromContentResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPreceedingEmailIDResponse">
+    <wsdl:part name="parameters" element="tns:getPreceedingEmailIDResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="requiresSubjectRequest">
+    <wsdl:part name="parameters" element="tns:requiresSubject">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getActionsResponse">
+    <wsdl:part name="parameters" element="tns:getActionsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAutoTextResponse">
+    <wsdl:part name="parameters" element="tns:getAutoTextResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getIncomingPendingSpeechActsResponse">
+    <wsdl:part name="parameters" element="tns:getIncomingPendingSpeechActsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateWorkflowStatusOnSaveResponse">
+    <wsdl:part name="parameters" element="tns:updateWorkflowStatusOnSaveResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserStatisticsRequest">
+    <wsdl:part name="parameters" element="tns:getUserStatistics">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pimRequiredRequest">
+    <wsdl:part name="parameters" element="tns:pimRequired">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getTargetLabelResponse">
+    <wsdl:part name="parameters" element="tns:getTargetLabelResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processIncomingWorkflowsResponse">
+    <wsdl:part name="parameters" element="tns:processIncomingWorkflowsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEmailIDRequest">
+    <wsdl:part name="parameters" element="tns:getEmailID">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSmailRDFResponse">
+    <wsdl:part name="parameters" element="tns:getSmailRDFResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="extractSpeechActsFromContentRequest">
+    <wsdl:part name="parameters" element="tns:extractSpeechActsFromContent">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processOutgoingWorkflowsResponse">
+    <wsdl:part name="parameters" element="tns:processOutgoingWorkflowsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateRDFRequest">
+    <wsdl:part name="parameters" element="tns:updateRDF">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="determineUpdatedStatusResponse">
+    <wsdl:part name="parameters" element="tns:determineUpdatedStatusResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createTaskRDFRequest">
+    <wsdl:part name="parameters" element="tns:createTaskRDF">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getContextURIRequest">
+    <wsdl:part name="parameters" element="tns:getContextURI">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRelatedActivityIDsRequest">
+    <wsdl:part name="parameters" element="tns:getRelatedActivityIDs">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addRDFToRepositoryResponse">
+    <wsdl:part name="parameters" element="tns:addRDFToRepositoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSpeechActsFromRDFResponse">
+    <wsdl:part name="parameters" element="tns:getSpeechActsFromRDFResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="determineUpdatedStatusRequest">
+    <wsdl:part name="parameters" element="tns:determineUpdatedStatus">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="fileInputRequiredRequest">
+    <wsdl:part name="parameters" element="tns:fileInputRequired">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="defineCustomSpeechActResponse">
+    <wsdl:part name="parameters" element="tns:defineCustomSpeechActResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="pimRequiredResponse">
+    <wsdl:part name="parameters" element="tns:pimRequiredResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRDFFromEmailIDRequest">
+    <wsdl:part name="parameters" element="tns:getRDFFromEmailID">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getResponseOptionsRequest">
+    <wsdl:part name="parameters" element="tns:getResponseOptions">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAutoTextRequest">
+    <wsdl:part name="parameters" element="tns:getAutoText">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createCalendarRDFResponse">
+    <wsdl:part name="parameters" element="tns:createCalendarRDFResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getActionObjectRequest">
+    <wsdl:part name="parameters" element="tns:getActionObject">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="requiresResponseRequest">
+    <wsdl:part name="parameters" element="tns:requiresResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processOutgoingWorkflowsRequest">
+    <wsdl:part name="parameters" element="tns:processOutgoingWorkflows">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="applyRoleResponse">
+    <wsdl:part name="parameters" element="tns:applyRoleResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addCurrentDesktopInfoRequest">
+    <wsdl:part name="parameters" element="tns:addCurrentDesktopInfo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRelatedActivityIDsResponse">
+    <wsdl:part name="parameters" element="tns:getRelatedActivityIDsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="requiresInitiativeResponseRequest">
+    <wsdl:part name="parameters" element="tns:requiresInitiativeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="SemEmailService">
+    <wsdl:operation name="processOutgoingWorkflows">
+      <wsdl:input name="processOutgoingWorkflowsRequest" message="tns:processOutgoingWorkflowsRequest">
+    </wsdl:input>
+      <wsdl:output name="processOutgoingWorkflowsResponse" message="tns:processOutgoingWorkflowsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="defineCustomSpeechAct">
+      <wsdl:input name="defineCustomSpeechActRequest" message="tns:defineCustomSpeechActRequest">
+    </wsdl:input>
+      <wsdl:output name="defineCustomSpeechActResponse" message="tns:defineCustomSpeechActResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pimRequired">
+      <wsdl:input name="pimRequiredRequest" message="tns:pimRequiredRequest">
+    </wsdl:input>
+      <wsdl:output name="pimRequiredResponse" message="tns:pimRequiredResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserStatistics">
+      <wsdl:input name="getUserStatisticsRequest" message="tns:getUserStatisticsRequest">
+    </wsdl:input>
+      <wsdl:output name="getUserStatisticsResponse" message="tns:getUserStatisticsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRelatedEmailID">
+      <wsdl:input name="getRelatedEmailIDRequest" message="tns:getRelatedEmailIDRequest">
+    </wsdl:input>
+      <wsdl:output name="getRelatedEmailIDResponse" message="tns:getRelatedEmailIDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requiresSubject">
+      <wsdl:input name="requiresSubjectRequest" message="tns:requiresSubjectRequest">
+    </wsdl:input>
+      <wsdl:output name="requiresSubjectResponse" message="tns:requiresSubjectResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSpeechActsFromRDF">
+      <wsdl:input name="getSpeechActsFromRDFRequest" message="tns:getSpeechActsFromRDFRequest">
+    </wsdl:input>
+      <wsdl:output name="getSpeechActsFromRDFResponse" message="tns:getSpeechActsFromRDFResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRDFFromEmailID">
+      <wsdl:input name="getRDFFromEmailIDRequest" message="tns:getRDFFromEmailIDRequest">
+    </wsdl:input>
+      <wsdl:output name="getRDFFromEmailIDResponse" message="tns:getRDFFromEmailIDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHeaders">
+      <wsdl:input name="updateHeadersRequest" message="tns:updateHeadersRequest">
+    </wsdl:input>
+      <wsdl:output name="updateHeadersResponse" message="tns:updateHeadersResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateWorkflowStatusOnSave">
+      <wsdl:input name="updateWorkflowStatusOnSaveRequest" message="tns:updateWorkflowStatusOnSaveRequest">
+    </wsdl:input>
+      <wsdl:output name="updateWorkflowStatusOnSaveResponse" message="tns:updateWorkflowStatusOnSaveResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="applyPredictiveModel">
+      <wsdl:input name="applyPredictiveModelRequest" message="tns:applyPredictiveModelRequest">
+    </wsdl:input>
+      <wsdl:output name="applyPredictiveModelResponse" message="tns:applyPredictiveModelResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createEmailRDF">
+      <wsdl:input name="createEmailRDFRequest" message="tns:createEmailRDFRequest">
+    </wsdl:input>
+      <wsdl:output name="createEmailRDFResponse" message="tns:createEmailRDFResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getObjects">
+      <wsdl:input name="getObjectsRequest" message="tns:getObjectsRequest">
+    </wsdl:input>
+      <wsdl:output name="getObjectsResponse" message="tns:getObjectsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requiresResponse">
+      <wsdl:input name="requiresResponseRequest" message="tns:requiresResponseRequest">
+    </wsdl:input>
+      <wsdl:output name="requiresResponseResponse" message="tns:requiresResponseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buildToolTip">
+      <wsdl:input name="buildToolTipRequest" message="tns:buildToolTipRequest">
+    </wsdl:input>
+      <wsdl:output name="buildToolTipResponse" message="tns:buildToolTipResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="applyRole">
+      <wsdl:input name="applyRoleRequest" message="tns:applyRoleRequest">
+    </wsdl:input>
+      <wsdl:output name="applyRoleResponse" message="tns:applyRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnLabel">
+      <wsdl:input name="returnLabelRequest" message="tns:returnLabelRequest">
+    </wsdl:input>
+      <wsdl:output name="returnLabelResponse" message="tns:returnLabelResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requiresInitiativeResponse">
+      <wsdl:input name="requiresInitiativeResponseRequest" message="tns:requiresInitiativeResponseRequest">
+    </wsdl:input>
+      <wsdl:output name="requiresInitiativeResponseResponse" message="tns:requiresInitiativeResponseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRDF">
+      <wsdl:input name="updateRDFRequest" message="tns:updateRDFRequest">
+    </wsdl:input>
+      <wsdl:output name="updateRDFResponse" message="tns:updateRDFResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSpeechActContext">
+      <wsdl:input name="getSpeechActContextRequest" message="tns:getSpeechActContextRequest">
+    </wsdl:input>
+      <wsdl:output name="getSpeechActContextResponse" message="tns:getSpeechActContextResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createCalendarRDF">
+      <wsdl:input name="createCalendarRDFRequest" message="tns:createCalendarRDFRequest">
+    </wsdl:input>
+      <wsdl:output name="createCalendarRDFResponse" message="tns:createCalendarRDFResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIncomingPendingSpeechActs">
+      <wsdl:input name="getIncomingPendingSpeechActsRequest" message="tns:getIncomingPendingSpeechActsRequest">
+    </wsdl:input>
+      <wsdl:output name="getIncomingPendingSpeechActsResponse" message="tns:getIncomingPendingSpeechActsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOutgoingPendingSpeechActs">
+      <wsdl:input name="getOutgoingPendingSpeechActsRequest" message="tns:getOutgoingPendingSpeechActsRequest">
+    </wsdl:input>
+      <wsdl:output name="getOutgoingPendingSpeechActsResponse" message="tns:getOutgoingPendingSpeechActsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSmailRDF">
+      <wsdl:input name="getSmailRDFRequest" message="tns:getSmailRDFRequest">
+    </wsdl:input>
+      <wsdl:output name="getSmailRDFResponse" message="tns:getSmailRDFResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActionObject">
+      <wsdl:input name="getActionObjectRequest" message="tns:getActionObjectRequest">
+    </wsdl:input>
+      <wsdl:output name="getActionObjectResponse" message="tns:getActionObjectResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRelatedActivityIDs">
+      <wsdl:input name="getRelatedActivityIDsRequest" message="tns:getRelatedActivityIDsRequest">
+    </wsdl:input>
+      <wsdl:output name="getRelatedActivityIDsResponse" message="tns:getRelatedActivityIDsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSucceedingEmailIDs">
+      <wsdl:input name="getSucceedingEmailIDsRequest" message="tns:getSucceedingEmailIDsRequest">
+    </wsdl:input>
+      <wsdl:output name="getSucceedingEmailIDsResponse" message="tns:getSucceedingEmailIDsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllWorkflows">
+      <wsdl:input name="getAllWorkflowsRequest" message="tns:getAllWorkflowsRequest">
+    </wsdl:input>
+      <wsdl:output name="getAllWorkflowsResponse" message="tns:getAllWorkflowsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWorkflowStatusForSpeechAct">
+      <wsdl:input name="getWorkflowStatusForSpeechActRequest" message="tns:getWorkflowStatusForSpeechActRequest">
+    </wsdl:input>
+      <wsdl:output name="getWorkflowStatusForSpeechActResponse" message="tns:getWorkflowStatusForSpeechActResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="determineUpdatedStatus">
+      <wsdl:input name="determineUpdatedStatusRequest" message="tns:determineUpdatedStatusRequest">
+    </wsdl:input>
+      <wsdl:output name="determineUpdatedStatusResponse" message="tns:determineUpdatedStatusResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActions">
+      <wsdl:input name="getActionsRequest" message="tns:getActionsRequest">
+    </wsdl:input>
+      <wsdl:output name="getActionsResponse" message="tns:getActionsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processIncomingWorkflows">
+      <wsdl:input name="processIncomingWorkflowsRequest" message="tns:processIncomingWorkflowsRequest">
+    </wsdl:input>
+      <wsdl:output name="processIncomingWorkflowsResponse" message="tns:processIncomingWorkflowsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeRDFFromRepository">
+      <wsdl:input name="removeRDFFromRepositoryRequest" message="tns:removeRDFFromRepositoryRequest">
+    </wsdl:input>
+      <wsdl:output name="removeRDFFromRepositoryResponse" message="tns:removeRDFFromRepositoryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmailID">
+      <wsdl:input name="getEmailIDRequest" message="tns:getEmailIDRequest">
+    </wsdl:input>
+      <wsdl:output name="getEmailIDResponse" message="tns:getEmailIDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fileInputRequired">
+      <wsdl:input name="fileInputRequiredRequest" message="tns:fileInputRequiredRequest">
+    </wsdl:input>
+      <wsdl:output name="fileInputRequiredResponse" message="tns:fileInputRequiredResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isInList">
+      <wsdl:input name="isInListRequest" message="tns:isInListRequest">
+    </wsdl:input>
+      <wsdl:output name="isInListResponse" message="tns:isInListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCurrentDesktopInfo">
+      <wsdl:input name="addCurrentDesktopInfoRequest" message="tns:addCurrentDesktopInfoRequest">
+    </wsdl:input>
+      <wsdl:output name="addCurrentDesktopInfoResponse" message="tns:addCurrentDesktopInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="replaceSmailHeader">
+      <wsdl:input name="replaceSmailHeaderRequest" message="tns:replaceSmailHeaderRequest">
+    </wsdl:input>
+      <wsdl:output name="replaceSmailHeaderResponse" message="tns:replaceSmailHeaderResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAutoText">
+      <wsdl:input name="getAutoTextRequest" message="tns:getAutoTextRequest">
+    </wsdl:input>
+      <wsdl:output name="getAutoTextResponse" message="tns:getAutoTextResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getContextURI">
+      <wsdl:input name="getContextURIRequest" message="tns:getContextURIRequest">
+    </wsdl:input>
+      <wsdl:output name="getContextURIResponse" message="tns:getContextURIResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="extractSpeechActsFromContent">
+      <wsdl:input name="extractSpeechActsFromContentRequest" message="tns:extractSpeechActsFromContentRequest">
+    </wsdl:input>
+      <wsdl:output name="extractSpeechActsFromContentResponse" message="tns:extractSpeechActsFromContentResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnURI">
+      <wsdl:input name="returnURIRequest" message="tns:returnURIRequest">
+    </wsdl:input>
+      <wsdl:output name="returnURIResponse" message="tns:returnURIResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getResponseOptions">
+      <wsdl:input name="getResponseOptionsRequest" message="tns:getResponseOptionsRequest">
+    </wsdl:input>
+      <wsdl:output name="getResponseOptionsResponse" message="tns:getResponseOptionsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPreceedingEmailID">
+      <wsdl:input name="getPreceedingEmailIDRequest" message="tns:getPreceedingEmailIDRequest">
+    </wsdl:input>
+      <wsdl:output name="getPreceedingEmailIDResponse" message="tns:getPreceedingEmailIDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTargetLabel">
+      <wsdl:input name="getTargetLabelRequest" message="tns:getTargetLabelRequest">
+    </wsdl:input>
+      <wsdl:output name="getTargetLabelResponse" message="tns:getTargetLabelResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createTaskRDF">
+      <wsdl:input name="createTaskRDFRequest" message="tns:createTaskRDFRequest">
+    </wsdl:input>
+      <wsdl:output name="createTaskRDFResponse" message="tns:createTaskRDFResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addRDFToRepository">
+      <wsdl:input name="addRDFToRepositoryRequest" message="tns:addRDFToRepositoryRequest">
+    </wsdl:input>
+      <wsdl:output name="addRDFToRepositoryResponse" message="tns:addRDFToRepositoryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SemEmailServiceHttpBinding" type="tns:SemEmailService">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="processOutgoingWorkflows">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="processOutgoingWorkflowsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="processOutgoingWorkflowsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="defineCustomSpeechAct">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="defineCustomSpeechActRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="defineCustomSpeechActResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pimRequired">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="pimRequiredRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="pimRequiredResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserStatistics">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getUserStatisticsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserStatisticsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRelatedEmailID">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getRelatedEmailIDRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRelatedEmailIDResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requiresSubject">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="requiresSubjectRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="requiresSubjectResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSpeechActsFromRDF">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getSpeechActsFromRDFRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSpeechActsFromRDFResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRDFFromEmailID">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getRDFFromEmailIDRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRDFFromEmailIDResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateHeaders">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="updateHeadersRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateHeadersResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateWorkflowStatusOnSave">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="updateWorkflowStatusOnSaveRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateWorkflowStatusOnSaveResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="applyPredictiveModel">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="applyPredictiveModelRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="applyPredictiveModelResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createEmailRDF">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="createEmailRDFRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createEmailRDFResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getObjects">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getObjectsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getObjectsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requiresResponse">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="requiresResponseRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="requiresResponseResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buildToolTip">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="buildToolTipRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buildToolTipResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="applyRole">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="applyRoleRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="applyRoleResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnLabel">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="returnLabelRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="returnLabelResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requiresInitiativeResponse">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="requiresInitiativeResponseRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="requiresInitiativeResponseResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateRDF">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="updateRDFRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateRDFResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSpeechActContext">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getSpeechActContextRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSpeechActContextResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createCalendarRDF">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="createCalendarRDFRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createCalendarRDFResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIncomingPendingSpeechActs">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getIncomingPendingSpeechActsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getIncomingPendingSpeechActsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOutgoingPendingSpeechActs">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getOutgoingPendingSpeechActsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getOutgoingPendingSpeechActsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSmailRDF">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getSmailRDFRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSmailRDFResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActionObject">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getActionObjectRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getActionObjectResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRelatedActivityIDs">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getRelatedActivityIDsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRelatedActivityIDsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSucceedingEmailIDs">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getSucceedingEmailIDsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSucceedingEmailIDsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllWorkflows">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getAllWorkflowsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllWorkflowsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWorkflowStatusForSpeechAct">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getWorkflowStatusForSpeechActRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getWorkflowStatusForSpeechActResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="determineUpdatedStatus">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="determineUpdatedStatusRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="determineUpdatedStatusResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActions">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getActionsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getActionsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="processIncomingWorkflows">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="processIncomingWorkflowsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="processIncomingWorkflowsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeRDFFromRepository">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="removeRDFFromRepositoryRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="removeRDFFromRepositoryResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEmailID">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getEmailIDRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getEmailIDResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fileInputRequired">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="fileInputRequiredRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="fileInputRequiredResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isInList">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="isInListRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isInListResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCurrentDesktopInfo">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addCurrentDesktopInfoRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addCurrentDesktopInfoResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="replaceSmailHeader">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="replaceSmailHeaderRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="replaceSmailHeaderResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAutoText">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getAutoTextRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAutoTextResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getContextURI">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getContextURIRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getContextURIResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="extractSpeechActsFromContent">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="extractSpeechActsFromContentRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="extractSpeechActsFromContentResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnURI">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="returnURIRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="returnURIResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getResponseOptions">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getResponseOptionsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getResponseOptionsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPreceedingEmailID">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getPreceedingEmailIDRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPreceedingEmailIDResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTargetLabel">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getTargetLabelRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTargetLabelResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createTaskRDF">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="createTaskRDFRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createTaskRDFResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addRDFToRepository">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addRDFToRepositoryRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addRDFToRepositoryResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+ <wsdl:service name="SemEmailService">
+    <wsdl:port name="SemEmailServiceHttpPort" binding="tns:SemEmailServiceHttpBinding">
+      <wsdlsoap:address location="http://localhost:8181/soap/SemEmailService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

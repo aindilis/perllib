@@ -1,0 +1,311 @@
+<!--Use of the Calais Web Service is governed by the Terms of Service located at http://www.opencalais.com. By using this service or the results of the service you agree to these terms of service.--><!--Relations: 
+
+IndustryTerm: input output devices, intelligent
+software, intelligent software, larger  systems, search procedures, wireless
+adhoc  network
+OperatingSystem: Debian GNU/Linux
+ProvinceOrState: Iowa
+SportsGame: chess
+Technology: Linux
+system, artificial intelligence, existing technology, intelligent  agent, simulation, underlying  technology--><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:c="http://s.opencalais.com/1/pred/"><rdf:Description c:calaisRequestID="2925f83f-6027-4a9d-b04c-05486435facc" c:id="http://id.opencalais.com/DaxRTB0ATC2qsIfmx-uDuQ" rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/DocInfo"/><c:document><![CDATA[<Document><Date>2009-02-05</Date><Body>The AI I work on has  nothing to do with human intelligence, or trying
+to  make a  sentient being.   If you  make that  assumption  about me,
+that\'s  like hearing  that  someone  is a  religious  person and  then
+chastising them  for believing in Buddha  (when in fact  they might be
+Christian).  There are many aspects  to the field of AI.  Probably the
+best way for you to think of this is that I work on IA, or intelligent
+agents.  These are programs which are capable of solving problems that
+are considered useful by people.
+
+AI concerns itself with minimizing unnecessary psychological suffering
+due to  avoidable accidents.  We  use techniques from logic,  the same
+techniques that,  for instance,  make optimal chess  playing programs,
+etc,  and treat  the world  as a  game  and try  to win  the game,  by
+mathematical optimizations  and proofs  that bad things  don\'t happen.
+You can do this, you can make certain guarantees that certain failures
+don\'t happen for reasons that you are in control of - of course no one
+can yet control certain things, but  at least you do the best you know
+how to  do with what you have  all the time.  For  instance, you won\'t
+make  bad moves  at chess,  you  won\'t not  know the  definition of  a
+certain word, etc.
+
+Anyone who thinks AI is  about taking control away from people doesn\'t
+really realize  that a person  and an AI  together are still  going to
+face difficult problems, it will  make us better able to avoid certain
+common, unnecessary  mistakes, and to help us  mount higher challenges
+by  providing   rigour  in  situations  where   it  wasn\'t  previously
+available.  It will not make us lazier, it will in fact make us harder
+working  because we won\'t  be burned  and worn  out and  feel helpless
+towards mistakes we know ought not happen.
+
+People  are good  at learning  complex systems  but  sacrifice perfect
+memory  in  exchange  for  other  skills suited  to  learning  complex
+systems,  but some  problems require  specialized solutions,  and this
+solution is the computer.
+
+We can look at a world with AI  in the same way we look at the current
+world, and we can introduce AI  in a way such that no requirements any
+person may  have are rendered  invalid by the  AI.  That is  the goal,
+actually, to  satisfy everyone\'s requirements.   We model requirements
+in the usual logical way.
+
+A requirement is something that a person could express in English, and
+is  represented  by  association  to  the intended  semantics  of  the
+statement (as opposed to misreads  of the requirement).  The goal then
+is   for  the   system  to   make  as   many  of   these  requirements
+simulataneously  true  based on  its  laws  (the  requirements of  all
+people) and its algorithm.
+
+algorithm
+     n : a precise rule (or set of rules) specifying how to solve
+         some problem [syn: {algorithmic rule}, {algorithmic
+         program}]
+
+When I say that AI solves problems,  it is in the sense of problems of
+logic.  However,  many real world  problems may be solved  by reducing
+them to problems of logic and the interpretting the solution.
+
+Dad\'s draconian measures
+
+
+
+
+
+
+
+
+
+Let me describe  to you in perhaps the clearest  way possible the goal
+of what I work on.
+
+I realize that EVERY FAILED DEDUCTION LEADS TO FUTURE ACCIDENTS.
+
+Let me describe an accident.  This is by no means pleasant.  So if the
+accident  I am about  to describe  were avoidable,  it would  make the
+world more pleasant.
+
+This accident involves a young boy  being hit by a train.  I know that
+what  I work  on would  be  capable of  preventing his  death and  the
+consequent psychological suffering of all that knew him.
+
+While  we cannot  protect one  hundred percent  of people  against one
+hundred percent of  the hazards and vissicitudes of  life, we can make
+relative improvements.  We  can in a formal sense  make 100% safety in
+restricted systems, and  of course the goal is to  grow that safety to
+larger  and  larger  systems.    It  is  exactly  the  consistency  of
+computers, which don\'t  make them rigid thinkers, but  which make them
+conditional and highly reliable system, that allows computers to solve
+with  100% completeness  subclasses  of existing  problems.  That  is,
+prevent whole categories of accidents.
+
+The accident  involving the  boy follows a  template that I  have seen
+multiple times  in videos of  accidents, and even  experienced myself.
+In a  different video, the exact  same failure situation  leads to the
+death of a gazelle.
+
+This failure  situation is one that I  am aware now and  which to some
+extent motivates unswerving commitment to the completion of my task.
+
+Since it will be easier to describe the gazelle scenario, I will start
+with that.  The typical feature is that it is two animals, two deer in
+this case,  and a  threat which  is perceived by  one of  the animals,
+which steps clear without thinking  to alert the other.  In this case,
+the deer are  drinking from a water hole.  The  first deer is blocking
+the view  of the second deer of  the water hole.  The  first deer sees
+something approaching  at it (an alligator), and  quietly turns around
+and leaves the water.  From the  point of view of the second dear, the
+movement of  the first  deer conceals the  movement of  the alligator,
+which proceeds to jump up and trap and kill the second deer.
+
+I am  very offended by the  existence of such scenarios  in nature.  I
+think they should be stopped.  I understand methods that would prevent
+this and a great many other classes of accidents.
+
+Now we will describe the death of the boy, which parallels closely the
+death of the deer.  Two young  boys are walking towards a train track.
+There is  a stationary train on  the track which  conceals an oncoming
+train.  A  train horn is blowing,  and the boys fatally  presume it is
+the stationary  train.  From the point  of view of the  camera, as the
+boys near the  tracks we see that the second train  moving at about 80
+MPH is the  real source of the horn sound.  The  boys are walking side
+by side, let us call the first boy the boy who is closer to the train.
+The first  boy blocks the view of  the second boy.  When  the train is
+now within about  80 feet the first boy perceives it  and stops on the
+very  edge of  track.  He  turns around  and steps  back automatically
+(clearly is not thinking at  all about the second boy), barely missing
+the train.  The second  boy is now about 4 feet in  front of the first
+boy, and his head  may be seen to hesitate for about  a 6th of second,
+an short moment of  psychological confusion before his hopelessly lost
+position is  impacted by the  approaching train.  Needless to  say the
+child\'s body is instantly  accelerated and rockets about three hundred
+feet  in a  second actually  hitting the  cameraman at  a  velocity of
+roughly 75 MPH.
+
+This  death   may  have  been   prevented  as  a  matter   of  logical
+completeness.  All that is needing is a facility to alert the child to
+avoid  that position.   A  deduction was  necessary  which would  have
+triggered a communication that the child should stop, we in advance of
+the precipitious  accident.  I understand  how to implement  this, and
+how to set up the correspondances between the mind and the system.
+
+It is  in this spirit  that I pursue  the development of AI,  a system
+which I know can prevent large classes of accidents.  It is sufficient
+to prevent an accident to have  a proof that it will not happen.  Here
+we  take proof  in  the formal  mathematical  sense.  By  establishing
+correspondances between the physical  world and the simulated computer
+world, simulation  occuring with knowledge based  systems, etc, (which
+is more akin  to a very precise, somewhat  accurate human mental model
+than to  say a simple  physics simulation), correspondences  that take
+place through  input output devices  like mind to  machine interfaces,
+cameras,  etc.,  we  will  be  able to  eliminate  large  ammounts  of
+psychological  suffering   as  the   result  of  accidents   that  are
+preventable by these systems.
+
+To give a  simple account of a simple  implementation, suppose that we
+have image  understanding routines.  &lt;Show  video of VSAM&gt;  The camera
+agent, an IA (intelligent  agent) with image understanding intelligent
+software, would be creating and  forwarding live information to an AI,
+perhaps in the camera, perhaps  at a nearby station, across a wireless
+adhoc  network, etc.   The information  would be  complex, but  in the
+spirit of the existing technology,  would look about equal to a length
+novel worth of statements of the following form.
+
+(#$approaching #$OurPoorFriendForWhomWeGrieve #$railtrack-39423)
+(#$approaching #$OurUnfortunateSurvivor #$railtrack-39423)
+(#$emittingSound #$train-32488)
+
+Of course, there would be  optimizations, etc, such as dialogs between
+the camera and the IA.
+
+Now, when  the camera reports  the approaching train (or  even before,
+there might be a system  which is devoted to general purpose collision
+avoidance, which has already contacted  the IA with information of the
+approaching train), the IA makes the inference that there is 
+
+(#$likelyEvent
+	(#$and
+		(#$dies OurPoorFriendForWhomWeGrieve)
+		(#$collisionWith #$train-32488)))
+
+I.E. It is  able to prove this.  &lt;Show cyc  knowledge base&gt;.  In which
+case  the IA contacts  the agent  present with  the child.   The agent
+advises  the child to  stop, 100  feet in  advance of  the approaching
+train.  This child, if contacted in advance, would not have died.
+
+Here  we have shown  how this  child\'s death  may have  been prevented
+using existing technology.  Now, people might make the claim that this
+is a pathological singular point and that in reality we cannot prevent
+such things in  all cases.  Their argument is  overly general and, for
+what?!   The fact is  that it  is both  obviously highly  important to
+protect people from accidents, and it is also not a singular point, it
+is the rigour and completeness  of the search procedures of logic that
+make this  possible, and it does  not rely on  serendipity.  It cannot
+prove everything, but it could have saved the lives of everyone I have
+personally known who has died, and it can do much more than that.
+
+I am  motivated on account of  the horrible experience  of the similar
+way in which my beloved  sister died and an intuitive understanding of
+the underlying  technology to pursue without  hesitation or disruption
+the development of  this technology, and I sincerely  hope that people
+will join me in this effort.  (Cruelly, she alone would have supported
+my work  unconditionally.)  I  have obtained what  I feel is  the main
+necessary result, that we may  consider for the purposes of our system
+the world  as a large set of  problems, which need to  be decided, but
+for any  program offered as a  solution, there are  always much larger
+fragments  of the  problems that  are  not solvable  by that  program.
+Therefore  I  believe  it  to  be  the case  that  by  collecting  and
+distributing complex and intelligent software via the Debian GNU/Linux
+system, we will be rapidly  reducing the number of unsolvable problems
+of logic,  which when they remain  unsolved, are exactly  the cause of
+every accident in the world and a majority of psychological suffering.
+</Body></Document>]]></c:document><c:docTitle/><c:docDate>2009-02-05 00:00:00</c:docDate><c:externalMetadata/></rdf:Description><rdf:Description c:contentType="text/txt" c:emVer="UnifiedIM-DJ" c:langIdVer="DefaultLangId" c:language="English" c:processingVer="CalaisJob01" c:submissionDate="2009-02-05 19:29:33.013" rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/meta"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/DocInfoMeta"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:submitterCode>3f7d48a9-1b64-5cc4-b3d6-c32cc5218fb0</c:submitterCode><c:signature>digestalg-1|R+8UeH1AdOfcAl5Q224Bz/yx8g0=|jTOJcCpN30LFUl03kV3ZZ7FZF8crmlKr1V0s7kbwid7IWxzqd0ZgGg==</c:signature></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/lid/DefaultLangId"><rdf:type rdf:resource="http://s.opencalais.com/1/type/lid/DefaultLangId"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:lang rdf:resource="http://d.opencalais.com/lid/DefaultLangId/English"/></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/cat/1"><rdf:type rdf:resource="http://s.opencalais.com/1/type/cat/DocCat"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:category rdf:resource="http://d.opencalais.com/cat/Calais/Other"/><c:classifierName>Calais</c:classifierName><c:categoryName>Other</c:categoryName></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/Technology"/><c:name>artificial intelligence</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/1"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"/><!--Technology: artificial intelligence; --><c:detection>[&lt;Document&gt;&lt;Date&gt;2009-02-05&lt;/Date&gt;&lt;Body&gt;The ]AI[ I work on has  nothing to do with human]</c:detection><c:prefix>&lt;Document&gt;&lt;Date&gt;2009-02-05&lt;/Date&gt;&lt;Body&gt;The </c:prefix><c:exact>AI</c:exact><c:suffix> I work on has  nothing to do with human</c:suffix><c:offset>43</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/2"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"/><!--Technology: artificial intelligence; --><c:detection>[ There are many aspects  to the field of ]AI[.  Probably the
+best way for you to think of this]</c:detection><c:prefix> There are many aspects  to the field of </c:prefix><c:exact>AI</c:exact><c:suffix>.  Probably the
+best way for you to think of this</c:suffix><c:offset>376</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/3"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"/><!--Technology: artificial intelligence; --><c:detection>[problems that
+are considered useful by people.
+
+]AI[ concerns itself with minimizing unnecessary]</c:detection><c:prefix>problems that
+are considered useful by people.
+
+</c:prefix><c:exact>AI</c:exact><c:suffix> concerns itself with minimizing unnecessary</c:suffix><c:offset>570</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/4"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"/><!--Technology: artificial intelligence; --><c:detection>[of  a
+certain word, etc.
+
+Anyone who thinks ]AI[ is  about taking control away from people]</c:detection><c:prefix>of  a
+certain word, etc.
+
+Anyone who thinks </c:prefix><c:exact>AI</c:exact><c:suffix> is  about taking control away from people</c:suffix><c:offset>1318</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/5"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"/><!--Technology: artificial intelligence; --><c:detection>[doesn\'t
+really realize  that a person  and an ]AI[  together are still  going to
+face difficult]</c:detection><c:prefix>doesn\'t
+really realize  that a person  and an </c:prefix><c:exact>AI</c:exact><c:suffix>  together are still  going to
+face difficult</c:suffix><c:offset>1409</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/6"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"/><!--Technology: artificial intelligence; --><c:detection>[is the computer.
+
+We can look at a world with ]AI[  in the same way we look at the current
+world,]</c:detection><c:prefix>is the computer.
+
+We can look at a world with </c:prefix><c:exact>AI</c:exact><c:suffix>  in the same way we look at the current
+world,</c:suffix><c:offset>2109</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/7"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"/><!--Technology: artificial intelligence; --><c:detection>[look at the current
+world, and we can introduce ]AI[  in a way such that no requirements any
+person]</c:detection><c:prefix>look at the current
+world, and we can introduce </c:prefix><c:exact>AI</c:exact><c:suffix>  in a way such that no requirements any
+person</c:suffix><c:offset>2180</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/8"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"/><!--Technology: artificial intelligence; --><c:detection>[may  have are rendered  invalid by the  ]AI[.  That is  the goal,
+actually, to  satisfy]</c:detection><c:prefix>may  have are rendered  invalid by the  </c:prefix><c:exact>AI</c:exact><c:suffix>.  That is  the goal,
+actually, to  satisfy</c:suffix><c:offset>2270</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/1"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9d7dc33f-e6bd-3dfa-8008-cb39ad48abe6"/><c:relevance>0.723</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/ca5dc650-3baf-3b86-b050-db255eb8b3f9"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/IndustryTerm"/><c:name>input output devices</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/9"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/ca5dc650-3baf-3b86-b050-db255eb8b3f9"/><!--IndustryTerm: input output devices; --><c:detection>[correspondences  that take
+place through  ]input output devices[  like mind to  machine interfaces,
+cameras, ]</c:detection><c:prefix>correspondences  that take
+place through  </c:prefix><c:exact>input output devices</c:exact><c:suffix>  like mind to  machine interfaces,
+cameras, </c:suffix><c:offset>7870</c:offset><c:length>20</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/2"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/ca5dc650-3baf-3b86-b050-db255eb8b3f9"/><c:relevance>0.155</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/21b9385f-633f-393f-a80f-d9607a1ff724"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/Technology"/><c:name>Linux
+system</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/10"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/21b9385f-633f-393f-a80f-d9607a1ff724"/><!--Technology: Linux
+system; --><c:detection>[and intelligent software via the Debian GNU/]Linux
+system[, we will be rapidly  reducing the number of]</c:detection><c:prefix>and intelligent software via the Debian GNU/</c:prefix><c:exact>Linux
+system</c:exact><c:suffix>, we will be rapidly  reducing the number of</c:suffix><c:offset>11118</c:offset><c:length>12</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/3"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/21b9385f-633f-393f-a80f-d9607a1ff724"/><c:relevance>0.048</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/61d9f9ce-187c-31d9-bb33-9b3af6e0b72f"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/Technology"/><c:name>intelligent  agent</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/11"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/61d9f9ce-187c-31d9-bb33-9b3af6e0b72f"/><!--Technology: intelligent  agent; --><c:detection>[ video of VSAM&gt;  The camera
+agent, an IA (]intelligent  agent[) with image understanding intelligent
+software,]</c:detection><c:prefix> video of VSAM&gt;  The camera
+agent, an IA (</c:prefix><c:exact>intelligent  agent</c:exact><c:suffix>) with image understanding intelligent
+software,</c:suffix><c:offset>8261</c:offset><c:length>18</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/4"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/61d9f9ce-187c-31d9-bb33-9b3af6e0b72f"/><c:relevance>0.133</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/12fef35e-0ad5-3cba-b20b-4346a93fed27"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/ProvinceOrState"/><c:name>Iowa</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/12"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/12fef35e-0ad5-3cba-b20b-4346a93fed27"/><!--ProvinceOrState: Iowa; --><c:detection>[way for you to think of this is that I work on ]IA[, or intelligent
+agents.  These are programs]</c:detection><c:prefix>way for you to think of this is that I work on </c:prefix><c:exact>IA</c:exact><c:suffix>, or intelligent
+agents.  These are programs</c:suffix><c:offset>446</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/13"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/12fef35e-0ad5-3cba-b20b-4346a93fed27"/><!--ProvinceOrState: Iowa; --><c:detection>[etc, such as dialogs between
+the camera and the ]IA[.
+
+Now, when  the camera reports  the approaching]</c:detection><c:prefix>etc, such as dialogs between
+the camera and the </c:prefix><c:exact>IA</c:exact><c:suffix>.
+
+Now, when  the camera reports  the approaching</c:suffix><c:offset>8899</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/14"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/12fef35e-0ad5-3cba-b20b-4346a93fed27"/><!--ProvinceOrState: Iowa; --><c:detection>[which has already contacted  the ]IA[ with information of the
+approaching train), the]</c:detection><c:prefix>which has already contacted  the </c:prefix><c:exact>IA</c:exact><c:suffix> with information of the
+approaching train), the</c:suffix><c:offset>9090</c:offset><c:length>2</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/5"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/12fef35e-0ad5-3cba-b20b-4346a93fed27"/><c:relevance>0.654</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/6fadeeee-9f8d-3934-b22b-038241d93d52"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/Technology"/><c:name>existing technology</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/15"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/6fadeeee-9f8d-3934-b22b-038241d93d52"/><!--Technology: existing technology; --><c:detection>[ would be  complex, but  in the
+spirit of ]the existing technology[,  would look about equal to a length
+novel worth]</c:detection><c:prefix> would be  complex, but  in the
+spirit of </c:prefix><c:exact>the existing technology</c:exact><c:suffix>,  would look about equal to a length
+novel worth</c:suffix><c:offset>8541</c:offset><c:length>23</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/6"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/6fadeeee-9f8d-3934-b22b-038241d93d52"/><c:relevance>0.113</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/8d920b4e-6c2c-3682-9546-84d07e36bef3"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/IndustryTerm"/><c:name>intelligent
+software</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/16"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/8d920b4e-6c2c-3682-9546-84d07e36bef3"/><!--IndustryTerm: intelligent
+software; --><c:detection>[ IA (intelligent  agent) with image understanding ]intelligent
+software[, would be creating and  forwarding live]</c:detection><c:prefix> IA (intelligent  agent) with image understanding </c:prefix><c:exact>intelligent
+software</c:exact><c:suffix>, would be creating and  forwarding live</c:suffix><c:offset>8306</c:offset><c:length>20</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/17"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/8d920b4e-6c2c-3682-9546-84d07e36bef3"/><!--IndustryTerm: intelligent
+software; --><c:detection>[ by  collecting  and
+distributing complex and ]intelligent software[ via the Debian GNU/Linux
+system, we will be]</c:detection><c:prefix> by  collecting  and
+distributing complex and </c:prefix><c:exact>intelligent software</c:exact><c:suffix> via the Debian GNU/Linux
+system, we will be</c:suffix><c:offset>11078</c:offset><c:length>20</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/7"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/8d920b4e-6c2c-3682-9546-84d07e36bef3"/><c:relevance>0.186</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/1f07e45e-267a-314c-a8db-c107b861b5d9"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/IndustryTerm"/><c:name>search procedures</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/18"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/1f07e45e-267a-314c-a8db-c107b861b5d9"/><!--IndustryTerm: search procedures; --><c:detection>[ point, it
+is the rigour and completeness  of the ]search procedures[ of logic that
+make this  possible, and it does ]</c:detection><c:prefix> point, it
+is the rigour and completeness  of the </c:prefix><c:exact>search procedures</c:exact><c:suffix> of logic that
+make this  possible, and it does </c:suffix><c:offset>10031</c:offset><c:length>17</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/8"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/1f07e45e-267a-314c-a8db-c107b861b5d9"/><c:relevance>0.067</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/db2c40e9-9be1-3ccb-8fc9-98500585c0a0"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/IndustryTerm"/><c:name>wireless
+adhoc  network</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/19"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/db2c40e9-9be1-3ccb-8fc9-98500585c0a0"/><!--IndustryTerm: wireless
+adhoc  network; --><c:detection>[camera, perhaps  at a nearby station, across a ]wireless
+adhoc  network[, etc.   The information  would be  complex, but ]</c:detection><c:prefix>camera, perhaps  at a nearby station, across a </c:prefix><c:exact>wireless
+adhoc  network</c:exact><c:suffix>, etc.   The information  would be  complex, but </c:suffix><c:offset>8451</c:offset><c:length>23</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/9"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/db2c40e9-9be1-3ccb-8fc9-98500585c0a0"/><c:relevance>0.133</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/7b9097c7-fc22-3789-96bf-772a207cdcd5"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/SportsGame"/><c:name>chess</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/20"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/7b9097c7-fc22-3789-96bf-772a207cdcd5"/><!--SportsGame: chess; --><c:detection>[that,  for instance,  make optimal ]chess[  playing programs,
+etc,  and treat  the world ]</c:detection><c:prefix>that,  for instance,  make optimal </c:prefix><c:exact>chess</c:exact><c:suffix>  playing programs,
+etc,  and treat  the world </c:suffix><c:offset>758</c:offset><c:length>5</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/21"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/7b9097c7-fc22-3789-96bf-772a207cdcd5"/><!--SportsGame: chess; --><c:detection>[ For  instance, you won\'t
+make  bad moves  at ]chess[,  you  won\'t not  know the  definition of ]</c:detection><c:prefix> For  instance, you won\'t
+make  bad moves  at </c:prefix><c:exact>chess</c:exact><c:suffix>,  you  won\'t not  know the  definition of </c:suffix><c:offset>1229</c:offset><c:length>5</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/10"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/7b9097c7-fc22-3789-96bf-772a207cdcd5"/><c:relevance>0.284</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/er/geo/ralg-geo1/f67d9681-b153-9d98-8259-9fbff68ce7ef"><rdf:type rdf:resource="http://s.opencalais.com/1/type/er/Geo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><!--Iowa--><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/12fef35e-0ad5-3cba-b20b-4346a93fed27"/><c:name>Iowa,United States</c:name><c:latitude>42.054646</c:latitude><c:longitude>-93.37183</c:longitude></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/1f5e583e-1aaf-3b48-ba93-21d0786e9a53"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/OperatingSystem"/><c:name>Debian GNU/Linux</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/22"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/1f5e583e-1aaf-3b48-ba93-21d0786e9a53"/><!--OperatingSystem: Debian GNU/Linux; --><c:detection>[complex and intelligent software via the ]Debian GNU/Linux[
+system, we will be rapidly  reducing the number]</c:detection><c:prefix>complex and intelligent software via the </c:prefix><c:exact>Debian GNU/Linux</c:exact><c:suffix>
+system, we will be rapidly  reducing the number</c:suffix><c:offset>11107</c:offset><c:length>16</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/11"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/1f5e583e-1aaf-3b48-ba93-21d0786e9a53"/><c:relevance>0.048</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/fe7545b4-8acf-3c5f-8a58-000a31587c75"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/Technology"/><c:name>simulation</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/23"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/fe7545b4-8acf-3c5f-8a58-000a31587c75"/><!--Technology: simulation; --><c:detection>[ world and the simulated computer
+world, ]simulation[  occuring with knowledge based  systems, etc,]</c:detection><c:prefix> world and the simulated computer
+world, </c:prefix><c:exact>simulation</c:exact><c:suffix>  occuring with knowledge based  systems, etc,</c:suffix><c:offset>7649</c:offset><c:length>10</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/24"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/fe7545b4-8acf-3c5f-8a58-000a31587c75"/><!--Technology: simulation; --><c:detection>[mental model
+than to  say a simple  physics ]simulation[), correspondences  that take
+place through ]</c:detection><c:prefix>mental model
+than to  say a simple  physics </c:prefix><c:exact>simulation</c:exact><c:suffix>), correspondences  that take
+place through </c:suffix><c:offset>7815</c:offset><c:length>10</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/12"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/fe7545b4-8acf-3c5f-8a58-000a31587c75"/><c:relevance>0.166</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/9bdc2dbb-ef48-3e75-8065-675afec4717f"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/IndustryTerm"/><c:name>larger  systems</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/25"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9bdc2dbb-ef48-3e75-8065-675afec4717f"/><!--IndustryTerm: larger  systems; --><c:detection>[ the goal is to  grow that safety to
+larger  and  ]larger  systems[.    It  is  exactly  the  consistency ]</c:detection><c:prefix> the goal is to  grow that safety to
+larger  and  </c:prefix><c:exact>larger  systems</c:exact><c:suffix>.    It  is  exactly  the  consistency </c:suffix><c:offset>3989</c:offset><c:length>15</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/13"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/9bdc2dbb-ef48-3e75-8065-675afec4717f"/><c:relevance>0.178</c:relevance></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/genericHasher-1/e7de901e-734c-37df-ac46-f43f9599b138"><rdf:type rdf:resource="http://s.opencalais.com/1/type/em/e/Technology"/><c:name>underlying  technology</c:name></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Instance/26"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/InstanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/e7de901e-734c-37df-ac46-f43f9599b138"/><!--Technology: underlying  technology; --><c:detection>[ sister died and an intuitive understanding of
+]the underlying  technology[ to pursue without  hesitation or disruption
+the]</c:detection><c:prefix> sister died and an intuitive understanding of
+</c:prefix><c:exact>the underlying  technology</c:exact><c:suffix> to pursue without  hesitation or disruption
+the</c:suffix><c:offset>10414</c:offset><c:length>26</c:length></rdf:Description><rdf:Description rdf:about="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d/Relevance/14"><rdf:type rdf:resource="http://s.opencalais.com/1/type/sys/RelevanceInfo"/><c:docId rdf:resource="http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d"/><c:subject rdf:resource="http://d.opencalais.com/genericHasher-1/e7de901e-734c-37df-ac46-f43f9599b138"/><c:relevance>0.056</c:relevance></rdf:Description></rdf:RDF>

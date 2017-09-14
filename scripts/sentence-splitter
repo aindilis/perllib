@@ -1,0 +1,7 @@
+#!/usr/bin/perl -w
+
+use Lingua::EN::Sentence qw(get_sentences);
+
+my $c = `cat $ARGV[0]`;
+my $s = get_sentences($c);
+print join("\n",@$s);

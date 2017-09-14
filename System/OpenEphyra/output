@@ -1,0 +1,1174 @@
++++++ Initializing engine (2008-06-23 04:29:51) +++++
+Creating tokenizer...
+Creating sentence detector...
+Creating stemmer...
+Creating POS tagger...
+Creating chunker...
+Creating syntactic parser...
+Creating NE taggers...
+  ...loading lists
+    ...for NEacademicTitle
+    ...for NEactor
+    ...for NEairport
+    ...for NEanimal
+    ...for NEanthem
+    ...for NEauthor
+    ...for NEaward
+    ...for NEbacteria
+    ...for NEbird
+    ...for NEbirthstone
+    ...for NEbodyPart
+    ...for NEbook
+    ...for NEcanal
+    ...for NEcapital
+    ...for NEcauseOfDeath
+    ...for NEchemicalElement
+    ...for NEcolor
+    ...for NEcompetition
+    ...for NEconflict
+    ...for NEcontinent
+    ...for NEcountry
+    ...for NEcrime
+    ...for NEcurrency
+    ...for NEdaytime
+    ...for NEdirector
+    ...for NEdisease
+    ...for NEdrug
+    ...for NEeducationalInstitution
+    ...for NEethnicGroup
+    ...for NEfestival
+    ...for NEfilm
+    ...for NEfilmType
+    ...for NEfirstName
+    ...for NEflower
+    ...for NEfruit
+    ...for NEhemisphere
+    ...for NEhour
+    ...for NEisland
+    ...for NElake
+    ...for NElanguage
+    ...for NEmaterial
+    ...for NEmathematician
+    ...for NEmedicalTreatment
+    ...for NEmedicinal
+    ...for NEmetal
+    ...for NEmilitaryRank
+    ...for NEmineral
+    ...for NEministry
+    ...for NEmonth
+    ...for NEmountain
+    ...for NEmountainRange
+    ...for NEmusicType
+    ...for NEmusical
+    ...for NEmusicalInstrument
+    ...for NEnarcotic
+    ...for NEnationalPark
+    ...for NEnationality
+    ...for NEnewspaper
+    ...for NEnobleTitle
+    ...for NEocean
+    ...for NEopera
+    ...for NEorganization
+    ...for NEpathogen
+    ...for NEpeninsula
+    ...for NEplanet
+    ...for NEplant
+    ...for NEplaywright
+    ...for NEpoliceRank
+    ...for NEpoliticalParty
+    ...for NEprofession
+    ...for NEprovince
+    ...for NEradioStation
+    ...for NErelation
+    ...for NEreligion
+    ...for NEriver
+    ...for NEscientist
+    ...for NEsea
+    ...for NEseason
+    ...for NEshow
+    ...for NEshowType
+    ...for NEsocialTitle
+    ...for NEsport
+    ...for NEstadium
+    ...for NEstate
+    ...for NEstone
+    ...for NEstyle
+    ...for NEteam
+    ...for NEtherapy
+    ...for NEtimezone
+    ...for NEtvChannel
+    ...for NEusPresident
+    ...for NEvaccine
+    ...for NEvirus
+    ...for NEwater
+    ...for NEzodiacSign
+  ...loading patterns
+    ...for NEproperName
+    ...for NEacronym
+    ...for NEangle
+    ...for NEarea
+    ...for NEcentury
+    ...for NEcounty
+    ...for NEdate
+    ...for NEday
+    ...for NEdayMonth
+    ...for NEdays
+    ...for NEdecade
+    ...for NEduration
+    ...for NEeducationalInstitution
+    ...for NEfeet
+    ...for NEfrequency
+    ...for NEgallons
+    ...for NEgrams
+    ...for NElegalSentence
+    ...for NElength
+    ...for NEliters
+    ...for NEmiles
+    ...for NEmoney
+    ...for NEmph
+    ...for NEnumber
+    ...for NEordinal
+    ...for NEounces
+    ...for NEpercentage
+    ...for NEphoneNumber
+    ...for NEpounds
+    ...for NErange
+    ...for NErate
+    ...for NEreef
+    ...for NEscore
+    ...for NEsize
+    ...for NEspeed
+    ...for NEsquareMiles
+    ...for NEstreet
+    ...for NEtemperature
+    ...for NEtime
+    ...for NEtons
+    ...for NEurl
+    ...for NEvolume
+    ...for NEweekday
+    ...for NEweight
+    ...for NEyear
+    ...for NEyears
+    ...for NEzipcode
+  ...loading models
+  ...done
+Creating WordNet dictionary...
+Loading function verbs...
+Loading prepositions...
+Loading irregular verbs...
+Loading word frequencies...
+Loading query reformulators...
+Loading question patterns...
+Loading answer patterns...
+  ...for ABBREVIATION
+  ...for ACTOR
+  ...for AGE
+  ...for ANCESTOR
+  ...for AUTHOR
+  ...for AWARD
+  ...for CAPITAL
+  ...for CAUSE
+  ...for CAUSEOFDEATH
+  ...for COACH
+  ...for COMPETITOR
+  ...for CREATOR
+  ...for DATE
+  ...for DATEOFBIRTH
+  ...for DATEOFCREATION
+  ...for DATEOFDEATH
+  ...for DATEOFDISCOVERY
+  ...for DATEOFEND
+  ...for DATEOFFOUNDATION
+  ...for DATEOFINAUGURATION
+  ...for DATEOFINVENTION
+  ...for DATEOFLIVING
+  ...for DATEOFMARRIAGE
+  ...for DATEOFRETIREMENT
+  ...for DATEOFSTART
+  ...for DATEOFSTARTOFOPERATION
+  ...for DATEOFWINNING
+  ...for DEFINITION
+  ...for DISCOVERER
+  ...for DISCOVERY
+  ...for DISTANCE
+  ...for DURATION
+  ...for ETHNICGROUP
+  ...for FATHER
+  ...for FOOD
+  ...for FOUNDATION
+  ...for FOUNDER
+  ...for FUNCTION
+  ...for FUNDER
+  ...for FUNDING
+  ...for GRADUATE
+  ...for HABITAT
+  ...for HEIGHT
+  ...for IDENTITY
+  ...for INSTRUMENT
+  ...for INVENTOR
+  ...for KILLER
+  ...for LANGUAGE
+  ...for LEADER
+  ...for LEADERSHIP
+  ...for LENGTH
+  ...for LIFESPAN
+  ...for LONGFORM
+  ...for MEDICINE
+  ...for MEMBER
+  ...for MEMBERSHIP
+  ...for MONEY
+  ...for MOTHER
+  ...for MOVIE
+  ...for NAME
+  ...for NAMER
+  ...for NATIONALITY
+  ...for NUMBER
+  ...for NUMBEROFCHILDREN
+  ...for NUMBEROFMEMBER
+  ...for NUMBEROFVICTIMS
+  ...for NUMBEROFVICTORIES
+  ...for NUMBEROFVISITORS
+  ...for OPPONENT
+  ...for ORIGIN
+  ...for OWNER
+  ...for PLACE
+  ...for PLACEOFBIRTH
+  ...for PLACEOFDEATH
+  ...for PLACEOFFOUNDATION
+  ...for PLACEOFFUNERAL
+  ...for PLACEOFLIVING
+  ...for PLACEOFOCCURRENCE
+  ...for PLACEOFORIGIN
+  ...for POPULATION
+  ...for PRODUCT
+  ...for PROFESSION
+  ...for PROVIDER
+  ...for PUBLICATION
+  ...for RESOURCE
+  ...for SCHOOL
+  ...for SIZE
+  ...for SPECIALTY
+  ...for SPECIES
+  ...for SPEED
+  ...for SPOUSE
+  ...for SYMPTOM
+  ...for SYNONYM
+  ...for VALUE
+  ...for WEIGHT
+  ...for WIDTH
+  ...for WINNER
+  ...done
+
+Question: Who killed Kennedy?
+
++++++ Analyzing question (2008-06-23 04:31:11) +++++
+Normalization: who kill kennedy
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: KILLER
+Target: Kennedy
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:31:21) +++++
+Query strings:
+killed Kennedy
+killed (Kennedy OR "John Fitzgerald Kennedy" OR JFK OR "President Kennedy" OR "Jack Kennedy" OR "President John F. Kennedy")
+"Kennedy" killed Kennedy
+"killed Kennedy"
+
++++++ Searching (2008-06-23 04:31:21) +++++
+
++++++ Selecting Answers (2008-06-23 04:31:24) +++++
+Filter "AnswerTypeFilter" started, 353 Results (2008-06-23 04:31:24)
+Filter "AnswerTypeFilter" finished, 464 Results (2008-06-23 04:31:31)
+Filter "AnswerPatternFilter" started, 464 Results (2008-06-23 04:31:31)
+Filter "AnswerPatternFilter" finished, 690 Results (2008-06-23 04:31:42)
+Filter "WebDocumentFetcherFilter" started, 690 Results (2008-06-23 04:31:42)
+Filter "WebDocumentFetcherFilter" finished, 690 Results (2008-06-23 04:31:42)
+Filter "PredicateExtractionFilter" started, 690 Results (2008-06-23 04:31:42)
+Filter "PredicateExtractionFilter" finished, 690 Results (2008-06-23 04:31:42)
+Filter "FactoidsFromPredicatesFilter" started, 690 Results (2008-06-23 04:31:42)
+Filter "FactoidsFromPredicatesFilter" finished, 690 Results (2008-06-23 04:31:42)
+Filter "TruncationFilter" started, 690 Results (2008-06-23 04:31:42)
+Filter "TruncationFilter" finished, 658 Results (2008-06-23 04:31:42)
+Filter "StopwordFilter" started, 658 Results (2008-06-23 04:31:42)
+Filter "StopwordFilter" finished, 616 Results (2008-06-23 04:31:42)
+Filter "QuestionKeywordsFilter" started, 616 Results (2008-06-23 04:31:42)
+Filter "QuestionKeywordsFilter" finished, 574 Results (2008-06-23 04:31:42)
+Filter "ScoreNormalizationFilter" started, 574 Results (2008-06-23 04:31:42)
+Filter "ScoreNormalizationFilter" finished, 574 Results (2008-06-23 04:31:42)
+Filter "ScoreCombinationFilter" started, 574 Results (2008-06-23 04:31:42)
+Filter "ScoreCombinationFilter" finished, 553 Results (2008-06-23 04:31:43)
+Filter "FactoidSubsetFilter" started, 553 Results (2008-06-23 04:31:43)
+Filter "FactoidSubsetFilter" finished, 553 Results (2008-06-23 04:31:44)
+Filter "DuplicateFilter" started, 553 Results (2008-06-23 04:31:44)
+Filter "DuplicateFilter" finished, 477 Results (2008-06-23 04:31:45)
+Filter "ScoreSorterFilter" started, 477 Results (2008-06-23 04:31:45)
+Filter "ScoreSorterFilter" finished, 477 Results (2008-06-23 04:31:45)
+
+Answer:
+[1]	John F
+	Score: 1.195956
+	Document: http://en.wikipedia.org/wiki/John_F._Kennedy_assassination
+
+Question: Who played Gandalf in The Lord of the Rings?
+
++++++ Analyzing question (2008-06-23 04:32:12) +++++
+Normalization: who play gandalf in the lord of the ring
+
+Answer types:
+NEproperName->NEperson->NEactor
+NEproperName->NEperson
+
+Interpretations:
+Property: ACTOR
+Target: Gandalf
+Context: Lord of the Rings
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:32:15) +++++
+Query strings:
+played Gandalf Lord Rings
+played Gandalf (Lord OR "God Almighty" OR Creator OR Almighty OR Godhead OR Divine OR Jehovah OR Maker) "the Rings"
+"Gandalf" "Lord of the Rings" played Gandalf Lord Rings
+"played Gandalf in The Lord of the Rings"
+
++++++ Searching (2008-06-23 04:32:15) +++++
+
++++++ Selecting Answers (2008-06-23 04:32:27) +++++
+Filter "AnswerTypeFilter" started, 555 Results (2008-06-23 04:32:27)
+Filter "AnswerTypeFilter" finished, 651 Results (2008-06-23 04:32:37)
+Filter "AnswerPatternFilter" started, 651 Results (2008-06-23 04:32:37)
+Filter "AnswerPatternFilter" finished, 751 Results (2008-06-23 04:32:43)
+Filter "WebDocumentFetcherFilter" started, 751 Results (2008-06-23 04:32:43)
+Filter "WebDocumentFetcherFilter" finished, 751 Results (2008-06-23 04:32:43)
+Filter "PredicateExtractionFilter" started, 751 Results (2008-06-23 04:32:43)
+Filter "PredicateExtractionFilter" finished, 751 Results (2008-06-23 04:32:43)
+Filter "FactoidsFromPredicatesFilter" started, 751 Results (2008-06-23 04:32:43)
+Filter "FactoidsFromPredicatesFilter" finished, 751 Results (2008-06-23 04:32:43)
+Filter "TruncationFilter" started, 751 Results (2008-06-23 04:32:43)
+Filter "TruncationFilter" finished, 733 Results (2008-06-23 04:32:43)
+Filter "StopwordFilter" started, 733 Results (2008-06-23 04:32:43)
+Filter "StopwordFilter" finished, 721 Results (2008-06-23 04:32:43)
+Filter "QuestionKeywordsFilter" started, 721 Results (2008-06-23 04:32:43)
+Filter "QuestionKeywordsFilter" finished, 693 Results (2008-06-23 04:32:43)
+Filter "ScoreNormalizationFilter" started, 693 Results (2008-06-23 04:32:43)
+Filter "ScoreNormalizationFilter" finished, 693 Results (2008-06-23 04:32:43)
+Filter "ScoreCombinationFilter" started, 693 Results (2008-06-23 04:32:43)
+Filter "ScoreCombinationFilter" finished, 682 Results (2008-06-23 04:32:44)
+Filter "FactoidSubsetFilter" started, 682 Results (2008-06-23 04:32:44)
+Filter "FactoidSubsetFilter" finished, 678 Results (2008-06-23 04:32:44)
+Filter "DuplicateFilter" started, 678 Results (2008-06-23 04:32:44)
+Filter "DuplicateFilter" finished, 650 Results (2008-06-23 04:32:45)
+Filter "ScoreSorterFilter" started, 650 Results (2008-06-23 04:32:45)
+Filter "ScoreSorterFilter" finished, 650 Results (2008-06-23 04:32:45)
+
+Answer:
+[1]	Ian McKellen
+	Score: 1.6695913
+	Document: http://thekove.tripod.com/gandalf.html
+
+Question: Who was the king of Ireland?
+
++++++ Analyzing question (2008-06-23 04:32:59) +++++
+Normalization: who be the king of ireland
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: NAME
+Target: king
+Context: Ireland
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:33:01) +++++
+Query strings:
+king Ireland
+(king OR Rex OR "male monarch") (Ireland OR "Irish Republic" OR Eire OR "Republic of Ireland")
+"king" "Ireland" king Ireland
+"was the king of Ireland"
+"the king of Ireland was"
+
++++++ Searching (2008-06-23 04:33:01) +++++
+
++++++ Selecting Answers (2008-06-23 04:33:03) +++++
+Filter "AnswerTypeFilter" started, 659 Results (2008-06-23 04:33:03)
+Filter "AnswerTypeFilter" finished, 859 Results (2008-06-23 04:33:07)
+Filter "AnswerPatternFilter" started, 859 Results (2008-06-23 04:33:07)
+Filter "AnswerPatternFilter" finished, 1629 Results (2008-06-23 04:33:17)
+Filter "WebDocumentFetcherFilter" started, 1629 Results (2008-06-23 04:33:17)
+Filter "WebDocumentFetcherFilter" finished, 1629 Results (2008-06-23 04:33:17)
+Filter "PredicateExtractionFilter" started, 1629 Results (2008-06-23 04:33:17)
+Filter "PredicateExtractionFilter" finished, 1629 Results (2008-06-23 04:33:17)
+Filter "FactoidsFromPredicatesFilter" started, 1629 Results (2008-06-23 04:33:17)
+Filter "FactoidsFromPredicatesFilter" finished, 1629 Results (2008-06-23 04:33:17)
+Filter "TruncationFilter" started, 1629 Results (2008-06-23 04:33:17)
+Filter "TruncationFilter" finished, 1384 Results (2008-06-23 04:33:18)
+Filter "StopwordFilter" started, 1384 Results (2008-06-23 04:33:18)
+Filter "StopwordFilter" finished, 1299 Results (2008-06-23 04:33:19)
+Filter "QuestionKeywordsFilter" started, 1299 Results (2008-06-23 04:33:19)
+Filter "QuestionKeywordsFilter" finished, 1165 Results (2008-06-23 04:33:19)
+Filter "ScoreNormalizationFilter" started, 1165 Results (2008-06-23 04:33:19)
+Filter "ScoreNormalizationFilter" finished, 1165 Results (2008-06-23 04:33:19)
+Filter "ScoreCombinationFilter" started, 1165 Results (2008-06-23 04:33:19)
+Filter "ScoreCombinationFilter" finished, 1134 Results (2008-06-23 04:33:19)
+Filter "FactoidSubsetFilter" started, 1134 Results (2008-06-23 04:33:19)
+Filter "FactoidSubsetFilter" finished, 1129 Results (2008-06-23 04:33:21)
+Filter "DuplicateFilter" started, 1129 Results (2008-06-23 04:33:21)
+Filter "DuplicateFilter" finished, 918 Results (2008-06-23 04:33:24)
+Filter "ScoreSorterFilter" started, 918 Results (2008-06-23 04:33:24)
+Filter "ScoreSorterFilter" finished, 918 Results (2008-06-23 04:33:24)
+
+Answer:
+[1]	John
+	Score: 0.53231984
+	Document: http://www.deremilitari.org/resources/articles/duffy.htm
+
+Question: Who is the founder of the FRDCSA project?
+
++++++ Analyzing question (2008-06-23 04:33:38) +++++
+Normalization: who be the founder of the frdcsa project
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: FOUNDER
+Target: FRDCSA project
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:33:40) +++++
+Query strings:
+founder FRDCSA project
+(founder OR laminitis) FRDCSA (project OR task OR labor OR undertaking)
+"FRDCSA project" founder FRDCSA project
+"is the founder of the FRDCSA project"
+"the founder of the FRDCSA project is"
+
++++++ Searching (2008-06-23 04:33:40) +++++
+
++++++ Selecting Answers (2008-06-23 04:33:41) +++++
+Filter "AnswerTypeFilter" started, 22 Results (2008-06-23 04:33:41)
+Filter "AnswerTypeFilter" finished, 28 Results (2008-06-23 04:33:41)
+Filter "AnswerPatternFilter" started, 28 Results (2008-06-23 04:33:41)
+Filter "AnswerPatternFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "WebDocumentFetcherFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "WebDocumentFetcherFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "PredicateExtractionFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "PredicateExtractionFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "FactoidsFromPredicatesFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "FactoidsFromPredicatesFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "TruncationFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "TruncationFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "StopwordFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "StopwordFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "QuestionKeywordsFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "QuestionKeywordsFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "ScoreNormalizationFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "ScoreNormalizationFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "ScoreCombinationFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "ScoreCombinationFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "FactoidSubsetFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "FactoidSubsetFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "DuplicateFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "DuplicateFilter" finished, 29 Results (2008-06-23 04:33:41)
+Filter "ScoreSorterFilter" started, 29 Results (2008-06-23 04:33:41)
+Filter "ScoreSorterFilter" finished, 29 Results (2008-06-23 04:33:41)
+
+Answer:
+[1]	Peter
+	Score: 0.08635158
+	Document: http://www.archive.org/search.php?query=mediatype%3A"texts"&page=11
+
+Question: Who founded the FRDCSA?
+
++++++ Analyzing question (2008-06-23 04:34:28) +++++
+Normalization: who found the frdcsa
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: FOUNDER
+Target: FRDCSA
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:34:29) +++++
+Query strings:
+founded FRDCSA
+(founded OR launched OR "set uped" OR established) FRDCSA
+"FRDCSA" founded FRDCSA
+"founded the FRDCSA"
+
++++++ Searching (2008-06-23 04:34:29) +++++
+
++++++ Selecting Answers (2008-06-23 04:34:30) +++++
+Filter "AnswerTypeFilter" started, 102 Results (2008-06-23 04:34:30)
+Filter "AnswerTypeFilter" finished, 122 Results (2008-06-23 04:34:31)
+Filter "AnswerPatternFilter" started, 122 Results (2008-06-23 04:34:31)
+Filter "AnswerPatternFilter" finished, 133 Results (2008-06-23 04:34:32)
+Filter "WebDocumentFetcherFilter" started, 133 Results (2008-06-23 04:34:32)
+Filter "WebDocumentFetcherFilter" finished, 133 Results (2008-06-23 04:34:32)
+Filter "PredicateExtractionFilter" started, 133 Results (2008-06-23 04:34:32)
+Filter "PredicateExtractionFilter" finished, 133 Results (2008-06-23 04:34:32)
+Filter "FactoidsFromPredicatesFilter" started, 133 Results (2008-06-23 04:34:32)
+Filter "FactoidsFromPredicatesFilter" finished, 133 Results (2008-06-23 04:34:32)
+Filter "TruncationFilter" started, 133 Results (2008-06-23 04:34:32)
+Filter "TruncationFilter" finished, 129 Results (2008-06-23 04:34:32)
+Filter "StopwordFilter" started, 129 Results (2008-06-23 04:34:32)
+Filter "StopwordFilter" finished, 128 Results (2008-06-23 04:34:32)
+Filter "QuestionKeywordsFilter" started, 128 Results (2008-06-23 04:34:32)
+Filter "QuestionKeywordsFilter" finished, 128 Results (2008-06-23 04:34:32)
+Filter "ScoreNormalizationFilter" started, 128 Results (2008-06-23 04:34:32)
+Filter "ScoreNormalizationFilter" finished, 128 Results (2008-06-23 04:34:32)
+Filter "ScoreCombinationFilter" started, 128 Results (2008-06-23 04:34:32)
+Filter "ScoreCombinationFilter" finished, 128 Results (2008-06-23 04:34:32)
+Filter "FactoidSubsetFilter" started, 128 Results (2008-06-23 04:34:32)
+Filter "FactoidSubsetFilter" finished, 128 Results (2008-06-23 04:34:32)
+Filter "DuplicateFilter" started, 128 Results (2008-06-23 04:34:32)
+Filter "DuplicateFilter" finished, 125 Results (2008-06-23 04:34:32)
+Filter "ScoreSorterFilter" started, 125 Results (2008-06-23 04:34:32)
+Filter "ScoreSorterFilter" finished, 125 Results (2008-06-23 04:34:32)
+
+Answer:
+[1]	Jon
+	Score: 0.09639202
+	Document: http://myspace.com/5027141
+
+Question: Who developed the FRDCSA?
+
++++++ Analyzing question (2008-06-23 04:34:39) +++++
+Normalization: who develop the frdcsa
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: INVENTOR
+Target: FRDCSA
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:34:39) +++++
+Query strings:
+developed FRDCSA
+developed FRDCSA
+"FRDCSA" developed FRDCSA
+"developed the FRDCSA"
+
++++++ Searching (2008-06-23 04:34:39) +++++
+
++++++ Selecting Answers (2008-06-23 04:34:41) +++++
+Filter "AnswerTypeFilter" started, 110 Results (2008-06-23 04:34:41)
+Filter "AnswerTypeFilter" finished, 140 Results (2008-06-23 04:34:42)
+Filter "AnswerPatternFilter" started, 140 Results (2008-06-23 04:34:42)
+Filter "AnswerPatternFilter" finished, 159 Results (2008-06-23 04:34:43)
+Filter "WebDocumentFetcherFilter" started, 159 Results (2008-06-23 04:34:43)
+Filter "WebDocumentFetcherFilter" finished, 159 Results (2008-06-23 04:34:43)
+Filter "PredicateExtractionFilter" started, 159 Results (2008-06-23 04:34:43)
+Filter "PredicateExtractionFilter" finished, 159 Results (2008-06-23 04:34:43)
+Filter "FactoidsFromPredicatesFilter" started, 159 Results (2008-06-23 04:34:43)
+Filter "FactoidsFromPredicatesFilter" finished, 159 Results (2008-06-23 04:34:43)
+Filter "TruncationFilter" started, 159 Results (2008-06-23 04:34:43)
+Filter "TruncationFilter" finished, 156 Results (2008-06-23 04:34:43)
+Filter "StopwordFilter" started, 156 Results (2008-06-23 04:34:43)
+Filter "StopwordFilter" finished, 155 Results (2008-06-23 04:34:43)
+Filter "QuestionKeywordsFilter" started, 155 Results (2008-06-23 04:34:43)
+Filter "QuestionKeywordsFilter" finished, 155 Results (2008-06-23 04:34:43)
+Filter "ScoreNormalizationFilter" started, 155 Results (2008-06-23 04:34:43)
+Filter "ScoreNormalizationFilter" finished, 155 Results (2008-06-23 04:34:43)
+Filter "ScoreCombinationFilter" started, 155 Results (2008-06-23 04:34:43)
+Filter "ScoreCombinationFilter" finished, 155 Results (2008-06-23 04:34:43)
+Filter "FactoidSubsetFilter" started, 155 Results (2008-06-23 04:34:43)
+Filter "FactoidSubsetFilter" finished, 155 Results (2008-06-23 04:34:43)
+Filter "DuplicateFilter" started, 155 Results (2008-06-23 04:34:43)
+Filter "DuplicateFilter" finished, 144 Results (2008-06-23 04:34:43)
+Filter "ScoreSorterFilter" started, 144 Results (2008-06-23 04:34:43)
+Filter "ScoreSorterFilter" finished, 144 Results (2008-06-23 04:34:43)
+
+Answer:
+[1]	Andrew Dougherty
+	Score: 0.27424994
+	Document: http://www.justanotherperlhacker.org/lightning/yapcna2006.shtml
+
+Question: Who wrote "Possibility Thinking"?
+
++++++ Analyzing question (2008-06-23 04:35:02) +++++
+Normalization: who write possibility thinking
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: AUTHOR
+Target: Possibility Thinking
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:35:03) +++++
+Query strings:
+wrote Possibility Thinking
+(wrote OR indited OR pened OR penned OR composed) Possibility (Thinking OR "thought process" OR thought OR cerebration OR mentation OR intellection)
+"Possibility Thinking" wrote Possibility Thinking
+"wrote Possibility Thinking"
+
++++++ Searching (2008-06-23 04:35:03) +++++
+
++++++ Selecting Answers (2008-06-23 04:35:05) +++++
+Filter "AnswerTypeFilter" started, 552 Results (2008-06-23 04:35:05)
+Filter "AnswerTypeFilter" finished, 684 Results (2008-06-23 04:35:07)
+Filter "AnswerPatternFilter" started, 684 Results (2008-06-23 04:35:08)
+Filter "AnswerPatternFilter" finished, 940 Results (2008-06-23 04:35:13)
+Filter "WebDocumentFetcherFilter" started, 940 Results (2008-06-23 04:35:13)
+Filter "WebDocumentFetcherFilter" finished, 940 Results (2008-06-23 04:35:13)
+Filter "PredicateExtractionFilter" started, 940 Results (2008-06-23 04:35:13)
+Filter "PredicateExtractionFilter" finished, 940 Results (2008-06-23 04:35:13)
+Filter "FactoidsFromPredicatesFilter" started, 940 Results (2008-06-23 04:35:13)
+Filter "FactoidsFromPredicatesFilter" finished, 940 Results (2008-06-23 04:35:13)
+Filter "TruncationFilter" started, 940 Results (2008-06-23 04:35:13)
+Filter "TruncationFilter" finished, 881 Results (2008-06-23 04:35:13)
+Filter "StopwordFilter" started, 881 Results (2008-06-23 04:35:13)
+Filter "StopwordFilter" finished, 852 Results (2008-06-23 04:35:13)
+Filter "QuestionKeywordsFilter" started, 852 Results (2008-06-23 04:35:13)
+Filter "QuestionKeywordsFilter" finished, 828 Results (2008-06-23 04:35:13)
+Filter "ScoreNormalizationFilter" started, 828 Results (2008-06-23 04:35:13)
+Filter "ScoreNormalizationFilter" finished, 828 Results (2008-06-23 04:35:13)
+Filter "ScoreCombinationFilter" started, 828 Results (2008-06-23 04:35:13)
+Filter "ScoreCombinationFilter" finished, 818 Results (2008-06-23 04:35:13)
+Filter "FactoidSubsetFilter" started, 818 Results (2008-06-23 04:35:13)
+Filter "FactoidSubsetFilter" finished, 815 Results (2008-06-23 04:35:13)
+Filter "DuplicateFilter" started, 815 Results (2008-06-23 04:35:13)
+Filter "DuplicateFilter" finished, 728 Results (2008-06-23 04:35:15)
+Filter "ScoreSorterFilter" started, 728 Results (2008-06-23 04:35:15)
+Filter "ScoreSorterFilter" finished, 728 Results (2008-06-23 04:35:15)
+
+Answer:
+[1]	Schuller
+	Score: 1.4899203
+	Document: http://letusreason.org/Poptea2.htm
+
+Question: Who developed "Patterns in Context"?
+
++++++ Analyzing question (2008-06-23 04:35:28) +++++
+Normalization: who develop pattern in context
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: INVENTOR
+Target: Patterns in Context
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:35:29) +++++
+Query strings:
+developed Patterns Context
+developed (Patterns OR form OR shape) (Context OR "context of use" OR "linguistic context")
+"Patterns in Context" developed Patterns Context
+"developed Patterns in Context"
+
++++++ Searching (2008-06-23 04:35:29) +++++
+
++++++ Selecting Answers (2008-06-23 04:35:31) +++++
+Filter "AnswerTypeFilter" started, 572 Results (2008-06-23 04:35:31)
+Filter "AnswerTypeFilter" finished, 608 Results (2008-06-23 04:35:33)
+Filter "AnswerPatternFilter" started, 608 Results (2008-06-23 04:35:33)
+Filter "AnswerPatternFilter" finished, 776 Results (2008-06-23 04:35:39)
+Filter "WebDocumentFetcherFilter" started, 776 Results (2008-06-23 04:35:39)
+Filter "WebDocumentFetcherFilter" finished, 776 Results (2008-06-23 04:35:39)
+Filter "PredicateExtractionFilter" started, 776 Results (2008-06-23 04:35:39)
+Filter "PredicateExtractionFilter" finished, 776 Results (2008-06-23 04:35:39)
+Filter "FactoidsFromPredicatesFilter" started, 776 Results (2008-06-23 04:35:39)
+Filter "FactoidsFromPredicatesFilter" finished, 776 Results (2008-06-23 04:35:39)
+Filter "TruncationFilter" started, 776 Results (2008-06-23 04:35:39)
+Filter "TruncationFilter" finished, 736 Results (2008-06-23 04:35:39)
+Filter "StopwordFilter" started, 736 Results (2008-06-23 04:35:39)
+Filter "StopwordFilter" finished, 726 Results (2008-06-23 04:35:39)
+Filter "QuestionKeywordsFilter" started, 726 Results (2008-06-23 04:35:39)
+Filter "QuestionKeywordsFilter" finished, 717 Results (2008-06-23 04:35:39)
+Filter "ScoreNormalizationFilter" started, 717 Results (2008-06-23 04:35:39)
+Filter "ScoreNormalizationFilter" finished, 717 Results (2008-06-23 04:35:39)
+Filter "ScoreCombinationFilter" started, 717 Results (2008-06-23 04:35:39)
+Filter "ScoreCombinationFilter" finished, 716 Results (2008-06-23 04:35:39)
+Filter "FactoidSubsetFilter" started, 716 Results (2008-06-23 04:35:39)
+Filter "FactoidSubsetFilter" finished, 714 Results (2008-06-23 04:35:39)
+Filter "DuplicateFilter" started, 714 Results (2008-06-23 04:35:39)
+Filter "DuplicateFilter" finished, 668 Results (2008-06-23 04:35:40)
+Filter "ScoreSorterFilter" started, 668 Results (2008-06-23 04:35:40)
+Filter "ScoreSorterFilter" finished, 668 Results (2008-06-23 04:35:40)
+
+Answer:
+[1]	Alexander
+	Score: 0.22469096
+	Document: http://www.cmcrossroads.com/bradapp/docs/patterns-intro.html
+
+Question: Who directed "The Orange Menace"?
+
++++++ Analyzing question (2008-06-23 04:36:30) +++++
+Normalization: who direct the orange menace
+
+Answer types:
+NEproperName->NEperson->NEdirector
+NEproperName->NEperson
+
+Interpretations:
+-
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:36:30) +++++
+Query strings:
+directed Orange Menace
+directed "The Orange Menace"
+"directed The Orange Menace"
+
++++++ Searching (2008-06-23 04:36:30) +++++
+
++++++ Selecting Answers (2008-06-23 04:36:32) +++++
+Filter "AnswerTypeFilter" started, 269 Results (2008-06-23 04:36:32)
+Filter "AnswerTypeFilter" finished, 373 Results (2008-06-23 04:36:33)
+Filter "AnswerPatternFilter" started, 373 Results (2008-06-23 04:36:33)
+Filter "AnswerPatternFilter" finished, 373 Results (2008-06-23 04:36:33)
+Filter "WebDocumentFetcherFilter" started, 373 Results (2008-06-23 04:36:33)
+Filter "WebDocumentFetcherFilter" finished, 373 Results (2008-06-23 04:36:33)
+Filter "PredicateExtractionFilter" started, 373 Results (2008-06-23 04:36:33)
+Filter "PredicateExtractionFilter" finished, 373 Results (2008-06-23 04:36:33)
+Filter "FactoidsFromPredicatesFilter" started, 373 Results (2008-06-23 04:36:33)
+Filter "FactoidsFromPredicatesFilter" finished, 373 Results (2008-06-23 04:36:33)
+Filter "TruncationFilter" started, 373 Results (2008-06-23 04:36:33)
+Filter "TruncationFilter" finished, 373 Results (2008-06-23 04:36:34)
+Filter "StopwordFilter" started, 373 Results (2008-06-23 04:36:34)
+Filter "StopwordFilter" finished, 373 Results (2008-06-23 04:36:34)
+Filter "QuestionKeywordsFilter" started, 373 Results (2008-06-23 04:36:34)
+Filter "QuestionKeywordsFilter" finished, 373 Results (2008-06-23 04:36:34)
+Filter "ScoreNormalizationFilter" started, 373 Results (2008-06-23 04:36:34)
+Filter "ScoreNormalizationFilter" finished, 373 Results (2008-06-23 04:36:34)
+Filter "ScoreCombinationFilter" started, 373 Results (2008-06-23 04:36:34)
+Filter "ScoreCombinationFilter" finished, 373 Results (2008-06-23 04:36:34)
+Filter "FactoidSubsetFilter" started, 373 Results (2008-06-23 04:36:34)
+Filter "FactoidSubsetFilter" finished, 372 Results (2008-06-23 04:36:34)
+Filter "DuplicateFilter" started, 372 Results (2008-06-23 04:36:34)
+Filter "DuplicateFilter" finished, 360 Results (2008-06-23 04:36:34)
+Filter "ScoreSorterFilter" started, 360 Results (2008-06-23 04:36:34)
+Filter "ScoreSorterFilter" finished, 360 Results (2008-06-23 04:36:34)
+
+Answer:
+[1]	Matt Mahurin
+	Score: 0.19660458
+	Document: http://www.beachtownsandiego.com/luxury-estates/index.php?search=Orange
+
+Question: Who wrote "The Orange Menace"?
+
++++++ Analyzing question (2008-06-23 04:36:40) +++++
+Normalization: who write the orange menace
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: AUTHOR
+Target: Orange Menace
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 04:36:41) +++++
+Query strings:
+wrote Orange Menace
+(wrote OR indited OR pened OR penned OR composed) "The Orange Menace"
+"Orange Menace" wrote Orange Menace
+"wrote The Orange Menace"
+
++++++ Searching (2008-06-23 04:36:41) +++++
+
++++++ Selecting Answers (2008-06-23 04:36:43) +++++
+Filter "AnswerTypeFilter" started, 467 Results (2008-06-23 04:36:43)
+Filter "AnswerTypeFilter" finished, 582 Results (2008-06-23 04:36:46)
+Filter "AnswerPatternFilter" started, 582 Results (2008-06-23 04:36:46)
+Filter "AnswerPatternFilter" finished, 777 Results (2008-06-23 04:36:49)
+Filter "WebDocumentFetcherFilter" started, 777 Results (2008-06-23 04:36:49)
+Filter "WebDocumentFetcherFilter" finished, 777 Results (2008-06-23 04:36:49)
+Filter "PredicateExtractionFilter" started, 777 Results (2008-06-23 04:36:49)
+Filter "PredicateExtractionFilter" finished, 777 Results (2008-06-23 04:36:49)
+Filter "FactoidsFromPredicatesFilter" started, 777 Results (2008-06-23 04:36:49)
+Filter "FactoidsFromPredicatesFilter" finished, 777 Results (2008-06-23 04:36:49)
+Filter "TruncationFilter" started, 777 Results (2008-06-23 04:36:49)
+Filter "TruncationFilter" finished, 748 Results (2008-06-23 04:36:50)
+Filter "StopwordFilter" started, 748 Results (2008-06-23 04:36:50)
+Filter "StopwordFilter" finished, 725 Results (2008-06-23 04:36:50)
+Filter "QuestionKeywordsFilter" started, 725 Results (2008-06-23 04:36:50)
+Filter "QuestionKeywordsFilter" finished, 711 Results (2008-06-23 04:36:50)
+Filter "ScoreNormalizationFilter" started, 711 Results (2008-06-23 04:36:50)
+Filter "ScoreNormalizationFilter" finished, 711 Results (2008-06-23 04:36:50)
+Filter "ScoreCombinationFilter" started, 711 Results (2008-06-23 04:36:50)
+Filter "ScoreCombinationFilter" finished, 702 Results (2008-06-23 04:36:50)
+Filter "FactoidSubsetFilter" started, 702 Results (2008-06-23 04:36:50)
+Filter "FactoidSubsetFilter" finished, 699 Results (2008-06-23 04:36:50)
+Filter "DuplicateFilter" started, 699 Results (2008-06-23 04:36:50)
+Filter "DuplicateFilter" finished, 646 Results (2008-06-23 04:36:52)
+Filter "ScoreSorterFilter" started, 646 Results (2008-06-23 04:36:52)
+Filter "ScoreSorterFilter" finished, 646 Results (2008-06-23 04:36:52)
+
+Answer:
+[1]	Phil Clarke Jr
+	Score: 0.4535002
+	Document: http://www.simplyscripts.net/cgi-bin/Blah/Blah.pl?m-1163504134/
+
+Question: What year did the Soviet Union collapse?
+
++++++ Analyzing question (2008-06-23 10:59:24) +++++
+Normalization: what year do the soviet union collapse
+
+Answer types:
+NEdate->NEyear
+
+Interpretations:
+-
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 10:59:28) +++++
+Query strings:
+year Soviet Union collapse
+(year OR twelvemonth OR yr) ("Soviet Union" OR Russia OR "Union of Soviet Socialist Republics" OR USSR) (collapse OR prostration)
+"year did the Soviet Union collapse"
+
++++++ Searching (2008-06-23 10:59:28) +++++
+
++++++ Selecting Answers (2008-06-23 10:59:32) +++++
+Filter "AnswerTypeFilter" started, 376 Results (2008-06-23 10:59:32)
+Filter "AnswerTypeFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "AnswerPatternFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "AnswerPatternFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "WebDocumentFetcherFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "WebDocumentFetcherFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "PredicateExtractionFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "PredicateExtractionFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "FactoidsFromPredicatesFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "FactoidsFromPredicatesFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "TruncationFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "TruncationFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "StopwordFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "StopwordFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "QuestionKeywordsFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "QuestionKeywordsFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "ScoreNormalizationFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "ScoreNormalizationFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "ScoreCombinationFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "ScoreCombinationFilter" finished, 409 Results (2008-06-23 10:59:33)
+Filter "FactoidSubsetFilter" started, 409 Results (2008-06-23 10:59:33)
+Filter "FactoidSubsetFilter" finished, 409 Results (2008-06-23 10:59:34)
+Filter "DuplicateFilter" started, 409 Results (2008-06-23 10:59:34)
+Filter "DuplicateFilter" finished, 409 Results (2008-06-23 10:59:34)
+Filter "ScoreSorterFilter" started, 409 Results (2008-06-23 10:59:34)
+Filter "ScoreSorterFilter" finished, 409 Results (2008-06-23 10:59:34)
+
+Answer:
+[1]	1991
+	Score: 0.22087504
+	Document: http://www.evangel.edu/ASC/Cbase/socialstudies/Cbase.pdf
+
+Question: What year did Cahir O'Dochartaigh die?
+
++++++ Analyzing question (2008-06-23 10:59:53) +++++
+Normalization: what year do cahir o'dochartaigh die
+
+Answer types:
+NEdate->NEyear
+
+Interpretations:
+Property: DATEOFDEATH
+Target: Cahir O'Dochartaigh
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 10:59:56) +++++
+Query strings:
+year Cahir Dochartaigh died
+(year OR twelvemonth OR yr) Cahir O'Dochartaigh (died OR "pass awayed" OR conked OR "kick the bucketted" OR deceased OR "cash in one's chipsed" OR "pop offed" OR perished OR choked OR exited OR "drop deaded")
+"Cahir O'Dochartaigh" year Cahir Dochartaigh died
+"year Cahir O'Dochartaigh died"
+
++++++ Searching (2008-06-23 10:59:56) +++++
+
++++++ Selecting Answers (2008-06-23 10:59:58) +++++
+Filter "AnswerTypeFilter" started, 131 Results (2008-06-23 10:59:58)
+Filter "AnswerTypeFilter" finished, 157 Results (2008-06-23 10:59:58)
+Filter "AnswerPatternFilter" started, 157 Results (2008-06-23 10:59:58)
+Filter "AnswerPatternFilter" finished, 166 Results (2008-06-23 11:00:01)
+Filter "WebDocumentFetcherFilter" started, 166 Results (2008-06-23 11:00:01)
+Filter "WebDocumentFetcherFilter" finished, 166 Results (2008-06-23 11:00:01)
+Filter "PredicateExtractionFilter" started, 166 Results (2008-06-23 11:00:01)
+Filter "PredicateExtractionFilter" finished, 166 Results (2008-06-23 11:00:01)
+Filter "FactoidsFromPredicatesFilter" started, 166 Results (2008-06-23 11:00:01)
+Filter "FactoidsFromPredicatesFilter" finished, 166 Results (2008-06-23 11:00:01)
+Filter "TruncationFilter" started, 166 Results (2008-06-23 11:00:01)
+Filter "TruncationFilter" finished, 162 Results (2008-06-23 11:00:01)
+Filter "StopwordFilter" started, 162 Results (2008-06-23 11:00:01)
+Filter "StopwordFilter" finished, 161 Results (2008-06-23 11:00:01)
+Filter "QuestionKeywordsFilter" started, 161 Results (2008-06-23 11:00:01)
+Filter "QuestionKeywordsFilter" finished, 161 Results (2008-06-23 11:00:01)
+Filter "ScoreNormalizationFilter" started, 161 Results (2008-06-23 11:00:01)
+Filter "ScoreNormalizationFilter" finished, 161 Results (2008-06-23 11:00:01)
+Filter "ScoreCombinationFilter" started, 161 Results (2008-06-23 11:00:01)
+Filter "ScoreCombinationFilter" finished, 160 Results (2008-06-23 11:00:01)
+Filter "FactoidSubsetFilter" started, 160 Results (2008-06-23 11:00:01)
+Filter "FactoidSubsetFilter" finished, 159 Results (2008-06-23 11:00:01)
+Filter "DuplicateFilter" started, 159 Results (2008-06-23 11:00:01)
+Filter "DuplicateFilter" finished, 158 Results (2008-06-23 11:00:01)
+Filter "ScoreSorterFilter" started, 158 Results (2008-06-23 11:00:01)
+Filter "ScoreSorterFilter" finished, 158 Results (2008-06-23 11:00:01)
+
+Answer:
+[1]	1607
+	Score: 0.26748183
+	Document: http://www.experienceproject.com/uw.php?e=146272
+
+Question: Who invaded Iraq?
+
++++++ Analyzing question (2008-06-23 11:03:41) +++++
+Normalization: who invade iraq
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+-
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 11:03:42) +++++
+Query strings:
+invaded Iraq
+(invaded OR occupied) (Iraq OR Irak OR "Republic of Iraq" OR Al-Iraq)
+"invaded Iraq"
+
++++++ Searching (2008-06-23 11:03:43) +++++
+
++++++ Selecting Answers (2008-06-23 11:03:44) +++++
+Filter "AnswerTypeFilter" started, 525 Results (2008-06-23 11:03:44)
+Filter "AnswerTypeFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "AnswerPatternFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "AnswerPatternFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "WebDocumentFetcherFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "WebDocumentFetcherFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "PredicateExtractionFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "PredicateExtractionFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "FactoidsFromPredicatesFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "FactoidsFromPredicatesFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "TruncationFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "TruncationFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "StopwordFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "StopwordFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "QuestionKeywordsFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "QuestionKeywordsFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "ScoreNormalizationFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "ScoreNormalizationFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "ScoreCombinationFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "ScoreCombinationFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "FactoidSubsetFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "FactoidSubsetFilter" finished, 659 Results (2008-06-23 11:04:03)
+Filter "DuplicateFilter" started, 659 Results (2008-06-23 11:04:03)
+Filter "DuplicateFilter" finished, 634 Results (2008-06-23 11:04:03)
+Filter "ScoreSorterFilter" started, 634 Results (2008-06-23 11:04:04)
+Filter "ScoreSorterFilter" finished, 634 Results (2008-06-23 11:04:04)
+
+Answer:
+[1]	Bush
+	Score: 0.32586294
+	Document: http://www.cbsnews.com/stories/2004/01/09/60minutes/main592330.shtml
+
+Question: Who started WW2?
+
++++++ Analyzing question (2008-06-23 11:04:24) +++++
+Normalization: who start ww2
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: FOUNDER
+Target: WW2
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 11:04:24) +++++
+Query strings:
+started WW2
+(started OR began OR "start outed" OR "set abouted" OR "set outed" OR commenced) WW2
+"WW2" started WW2
+"started WW2"
+
++++++ Searching (2008-06-23 11:04:25) +++++
+
++++++ Selecting Answers (2008-06-23 11:04:26) +++++
+Filter "AnswerTypeFilter" started, 584 Results (2008-06-23 11:04:26)
+Filter "AnswerTypeFilter" finished, 653 Results (2008-06-23 11:04:32)
+Filter "AnswerPatternFilter" started, 653 Results (2008-06-23 11:04:32)
+Filter "AnswerPatternFilter" finished, 688 Results (2008-06-23 11:04:35)
+Filter "WebDocumentFetcherFilter" started, 688 Results (2008-06-23 11:04:35)
+Filter "WebDocumentFetcherFilter" finished, 688 Results (2008-06-23 11:04:35)
+Filter "PredicateExtractionFilter" started, 688 Results (2008-06-23 11:04:35)
+Filter "PredicateExtractionFilter" finished, 688 Results (2008-06-23 11:04:35)
+Filter "FactoidsFromPredicatesFilter" started, 688 Results (2008-06-23 11:04:35)
+Filter "FactoidsFromPredicatesFilter" finished, 688 Results (2008-06-23 11:04:35)
+Filter "TruncationFilter" started, 688 Results (2008-06-23 11:04:35)
+Filter "TruncationFilter" finished, 687 Results (2008-06-23 11:04:35)
+Filter "StopwordFilter" started, 687 Results (2008-06-23 11:04:35)
+Filter "StopwordFilter" finished, 677 Results (2008-06-23 11:04:36)
+Filter "QuestionKeywordsFilter" started, 677 Results (2008-06-23 11:04:36)
+Filter "QuestionKeywordsFilter" finished, 674 Results (2008-06-23 11:04:36)
+Filter "ScoreNormalizationFilter" started, 674 Results (2008-06-23 11:04:36)
+Filter "ScoreNormalizationFilter" finished, 674 Results (2008-06-23 11:04:36)
+Filter "ScoreCombinationFilter" started, 674 Results (2008-06-23 11:04:36)
+Filter "ScoreCombinationFilter" finished, 671 Results (2008-06-23 11:04:36)
+Filter "FactoidSubsetFilter" started, 671 Results (2008-06-23 11:04:36)
+Filter "FactoidSubsetFilter" finished, 670 Results (2008-06-23 11:04:36)
+Filter "DuplicateFilter" started, 670 Results (2008-06-23 11:04:36)
+Filter "DuplicateFilter" finished, 659 Results (2008-06-23 11:04:36)
+Filter "ScoreSorterFilter" started, 659 Results (2008-06-23 11:04:36)
+Filter "ScoreSorterFilter" finished, 659 Results (2008-06-23 11:04:36)
+
+Answer:
+[1]	Hitler
+	Score: 0.26889136
+	Document: http://www.ww2aircraft.net/forum/ww2-general/who-started-ww2-4023.html
+
+Question: Who started WW3?
+
++++++ Analyzing question (2008-06-23 11:05:02) +++++
+Normalization: who start ww3
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: FOUNDER
+Target: WW3
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 11:05:02) +++++
+Query strings:
+started WW3
+(started OR began OR "start outed" OR "set abouted" OR "set outed" OR commenced) WW3
+"WW3" started WW3
+"started WW3"
+
++++++ Searching (2008-06-23 11:05:02) +++++
+
++++++ Selecting Answers (2008-06-23 11:05:04) +++++
+Filter "AnswerTypeFilter" started, 600 Results (2008-06-23 11:05:04)
+Filter "AnswerTypeFilter" finished, 697 Results (2008-06-23 11:05:08)
+Filter "AnswerPatternFilter" started, 697 Results (2008-06-23 11:05:08)
+Filter "AnswerPatternFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "WebDocumentFetcherFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "WebDocumentFetcherFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "PredicateExtractionFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "PredicateExtractionFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "FactoidsFromPredicatesFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "FactoidsFromPredicatesFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "TruncationFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "TruncationFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "StopwordFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "StopwordFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "QuestionKeywordsFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "QuestionKeywordsFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "ScoreNormalizationFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "ScoreNormalizationFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "ScoreCombinationFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "ScoreCombinationFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "FactoidSubsetFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "FactoidSubsetFilter" finished, 700 Results (2008-06-23 11:05:11)
+Filter "DuplicateFilter" started, 700 Results (2008-06-23 11:05:11)
+Filter "DuplicateFilter" finished, 688 Results (2008-06-23 11:05:11)
+Filter "ScoreSorterFilter" started, 688 Results (2008-06-23 11:05:11)
+Filter "ScoreSorterFilter" finished, 688 Results (2008-06-23 11:05:11)
+
+Answer:
+[1]	Bush
+	Score: 0.20901562
+	Document: http://www.rawstory.com/news/2006/Delta_Force_founder_Bush_started_WWIII_0324.html
+
+Question: Who killed Princes Diana?
+
++++++ Analyzing question (2008-06-23 11:05:40) +++++
+Normalization: who kill prince diana
+
+Answer types:
+NEproperName->NEperson
+
+Interpretations:
+Property: KILLER
+Target: Princes Diana
+
+Predicates:
+-
+
++++++ Generating queries (2008-06-23 11:05:42) +++++
+Query strings:
+killed Princes Diana
+killed Princes (Diana OR "Princess of Wales" OR "Princess Diana" OR "Lady Diana Frances Spencer")
+"Princes Diana" killed Princes Diana
+"killed Princes Diana"
+
++++++ Searching (2008-06-23 11:05:42) +++++
+
++++++ Selecting Answers (2008-06-23 11:05:44) +++++
+Filter "AnswerTypeFilter" started, 486 Results (2008-06-23 11:05:44)
+Filter "AnswerTypeFilter" finished, 552 Results (2008-06-23 11:05:47)
+Filter "AnswerPatternFilter" started, 552 Results (2008-06-23 11:05:47)
+Filter "AnswerPatternFilter" finished, 710 Results (2008-06-23 11:05:53)
+Filter "WebDocumentFetcherFilter" started, 710 Results (2008-06-23 11:05:54)
+Filter "WebDocumentFetcherFilter" finished, 710 Results (2008-06-23 11:05:54)
+Filter "PredicateExtractionFilter" started, 710 Results (2008-06-23 11:05:54)
+Filter "PredicateExtractionFilter" finished, 710 Results (2008-06-23 11:05:54)
+Filter "FactoidsFromPredicatesFilter" started, 710 Results (2008-06-23 11:05:54)
+Filter "FactoidsFromPredicatesFilter" finished, 710 Results (2008-06-23 11:05:54)
+Filter "TruncationFilter" started, 710 Results (2008-06-23 11:05:54)
+Filter "TruncationFilter" finished, 687 Results (2008-06-23 11:05:54)
+Filter "StopwordFilter" started, 687 Results (2008-06-23 11:05:54)
+Filter "StopwordFilter" finished, 678 Results (2008-06-23 11:05:55)
+Filter "QuestionKeywordsFilter" started, 678 Results (2008-06-23 11:05:55)
+Filter "QuestionKeywordsFilter" finished, 646 Results (2008-06-23 11:05:55)
+Filter "ScoreNormalizationFilter" started, 646 Results (2008-06-23 11:05:55)
+Filter "ScoreNormalizationFilter" finished, 646 Results (2008-06-23 11:05:56)
+Filter "ScoreCombinationFilter" started, 646 Results (2008-06-23 11:05:56)
+Filter "ScoreCombinationFilter" finished, 632 Results (2008-06-23 11:05:56)
+Filter "FactoidSubsetFilter" started, 632 Results (2008-06-23 11:05:56)
+Filter "FactoidSubsetFilter" finished, 631 Results (2008-06-23 11:05:56)
+Filter "DuplicateFilter" started, 631 Results (2008-06-23 11:05:56)
+Filter "DuplicateFilter" finished, 563 Results (2008-06-23 11:05:56)
+Filter "ScoreSorterFilter" started, 563 Results (2008-06-23 11:05:56)
+Filter "ScoreSorterFilter" finished, 563 Results (2008-06-23 11:05:56)
+
+Answer:
+[1]	Dodi Fayed
+	Score: 1.9502786
+	Document: http://www.monstersandcritics.com/people/royalwatch/news/article_1364780.php/Princess_Diana_death_images
+
+Question:   

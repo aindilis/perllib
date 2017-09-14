@@ -1,0 +1,8 @@
+The Chinese character xiao (pronounced "sheeow" in a falling, affirmative tone) was originally a highly stylized picture of a gray-haired old person and a young child , reflecting as it does generational deference and the reverence it engenders.
+0.926: (sheeow; was originally a highly stylized picture of; a gray-haired old person and a young child)
+0.81: (sheeow; was originally; a highly stylized picture of a gray-haired old person)
+0.531: (it; does; generational deference and the reverence it engenders)
+
+This was common in late medieval times, and so it worked better then.
+0.529: (it; was common in; late medieval times)
+0.46: (it; was; common)

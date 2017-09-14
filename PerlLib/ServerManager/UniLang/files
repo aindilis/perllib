@@ -1,0 +1,11 @@
+my $items =
+  [
+   "/var/lib/myfrdcsa/codebases/internal/perllib/PerlLib/ServerManager/UniLang/Client.pm",
+   "/var/lib/myfrdcsa/codebases/internal/perllib/Capability/WSD/UniLang/Client.pm",
+   "/var/lib/myfrdcsa/codebases/internal/perllib/Capability/CoreferenceResolution/UniLang/Client.pm",
+   "/var/lib/myfrdcsa/codebases/internal/perllib/System/Enju/UniLang/Client.pm",
+   "/var/lib/myfrdcsa/codebases/internal/perllib/PerlLib/ServerManager/UniLang/Agent.pm",
+   "/var/lib/myfrdcsa/codebases/internal/perllib/Capability/WSD/UniLang/Agent.pm",
+   "/var/lib/myfrdcsa/codebases/internal/perllib/Capability/CoreferenceResolution/UniLang/Agent.pm",
+   "/var/lib/myfrdcsa/codebases/internal/perllib/System/Enju/UniLang/Agent.pm",
+  ];

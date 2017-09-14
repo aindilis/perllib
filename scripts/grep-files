@@ -1,0 +1,26 @@
+#!/usr/bin/perl -w
+
+use BOSS::Config;
+use PerlLib::SwissArmyKnife;
+
+$specification = q(
+	<search>	Search to use
+	<files>...	Files to get files to search
+);
+
+my $config =
+  BOSS::Config->new
+  (Spec => $specification);
+my $conf = $config->CLIConfig;
+# $UNIVERSAL::systemdir = "/var/lib/myfrdcsa/codebases/minor/system";
+
+foreach my $file1 (@{$conf->{'<files>'}}) {
+  if (-f $file1) {
+    my $c = read_file($file1);
+    foreach my $file2 (split /\n/, $c) {
+      my $command = 'grep '.$conf->{'<search>'}.' '.shell_quote($file2);
+      print $command."\n";
+      system $command;
+    }
+  }
+}

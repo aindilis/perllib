@@ -1,0 +1,8 @@
+#!/usr/bin/perl -w
+
+use String::ShellQuote qw(shell_quote);
+
+foreach my $line (<STDIN>) {
+  chomp $line;
+  print shell_quote($line)."\n";
+}

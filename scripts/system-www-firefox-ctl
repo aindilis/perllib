@@ -1,0 +1,44 @@
+#!/usr/bin/perl -w
+
+use BOSS::Config;
+use PerlLib::SwissArmyKnife;
+
+use System::WWW::Firefox;
+
+$specification = q(
+	<system>	System to control (i.e. xvfb,firefox,tor,vnc etc)
+	<command>	Command to run
+);
+
+my $config =
+  BOSS::Config->new
+  (Spec => $specification);
+my $conf = $config->CLIConfig;
+# $UNIVERSAL::systemdir = "/var/lib/myfrdcsa/codebases/minor/system";
+
+my $system = $conf->{'<system>'};
+my $command = $conf->{'<command>'};
+
+if ($system eq 'xvfb') {
+  if ($command eq 'start') {
+    
+  } elif ($command eq 'stop') {
+
+  } elif ($command eq 'restart') {
+
+  }
+}
+
+if ($system eq 'xvfb') {
+  if ($command eq 'start') {
+
+  } elif ($command eq 'stop') {
+
+  } elif ($command eq 'restart') {
+
+  }
+}
+
+# firefox|tor {start,stop,restart}
+# view xvfb using xvncviewer
+

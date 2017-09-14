@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>kenlm . code . Kenneth Heafield</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="../../site.css" type="text/css"/>
+	<link rel="icon" href="../../favicon.png"/>
+</head>
+<body id="code_kenlm_index">
+<div id="menu"><div id="contact"><a href="../../"><span id="name">Kenneth Heafield</span></a><br/>
+&lt;me at kheafield.com&gt;<br/>
+<span id="office">Informatics Forum 4.21</span>
+</div><ul>
+<li><a href="../../code/">code</a>:<ul><li><a href="../../code/kenlm/" class="selected">kenlm</a></li><li><a href="../../code/memt/">memt</a></li><li><a href="../../code/quiz/">quiz</a></li><li><a href="../../code/search/">search</a></li></ul></li>
+<li><a href="../../papers/">papers</a></li>
+</ul></div>
+<hr/><div id="content">
+<h1>KenLM Language Model Toolkit</h1>
+<div id="secondMenu"><a href="benchmark/">benchmark</a><span class="divider"> | </span><a href="dependencies/">dependencies</a><span class="divider"> | </span><a href="developers/">developers</a><span class="divider"> | </span><a href="estimation/">estimation</a><span class="divider"> | </span><a href="filter/">filter</a><span class="divider"> | </span><a href="moses/">moses</a><span class="divider"> | </span><a href="structures/">structures</a></div>
+
+<div id="photo"><a href="barbie.jpg"><img src="barbie_small.jpg" width="282" height="267" alt="Ken Models with Computer Engineer Barbie"/></a></div>
+
+KenLM <a href="estimation/">estimates</a>, <a href="filter/">filters</a>, and <a href="structures/">queries</a> language models.  Estimation is fast and scalable due to streaming algorithms explained in the paper
+<blockquote>
+<a href="../../professional/edinburgh/estimate_paper.pdf">Scalable Modified Kneser-Ney Language Model Estimation</a><br/><span class="authorMe">Kenneth Heafield</span>, Ivan Pouzyrevsky, Jonathan H. Clark, and Philipp Koehn. <a href="http://acl2013.org/">ACL</a>, Sofia, Bulgaria, 4—9 August, 2013. <br/>[<a href="../../professional/edinburgh/estimate_paper.pdf">Paper</a>] [<a href="../../professional/edinburgh/estimate_talk.pdf">Slides</a>] [<a href="../../professional/bib/Heafield-estimate.bib">BibTeX</a>]
+</blockquote>
+Querying is <a href="benchmark/">fast and low-memory</a>, as shown in the paper
+<blockquote><a href="../../professional/avenue/kenlm.pdf">KenLM: Faster and Smaller Language Model Queries</a><br/><span class="authorMe">Kenneth Heafield</span>. <a href="http://statmt.org/wmt11/">WMT at EMNLP</a>, Edinburgh, Scotland, United Kingdom, 30—31 July, 2011. <br/>[<a href="../../professional/avenue/kenlm.pdf">Paper</a>] [<a href="../../professional/avenue/kenlm_talk.pdf">Slides</a>] [<a href="../../professional/bib/Heafield-kenlm.bib">BibTeX</a>]</blockquote>
+
+<h2>Usage</h2>
+Moses, cdec, Joshua, Jane, and Phrasal already distribute KenLM and build it along with the decoder.  See their documentation on where to find the programs.  Estimation and filtering require <a href="http://www.boost.org/">Boost</a> at least 1.36.0 and zlib.  I also recommend tcmalloc from <a href="https://code.google.com/p/gperftools/">gperftools</a>, bzlib (to read .bz2 files), and xz-utils (to read .xz files). If your distribution has "devel" packages, install those.  For more help, see <a href="dependencies/">dependencies</a>.  Compilation follows the standard <code>cmake</code> process, for which we recommend a separate build directory:
+<div class="listing"><code>wget -O - <a href="../kenlm.tar.gz">https://kheafield.com/code/kenlm.tar.gz</a> |tar xz<br/>mkdir kenlm/build<br/>cd kenlm/build<br/>cmake ..<br/>make -j2</code></div>
+If the dependencies are too difficult and you only need querying, use <code>./compile_query_only.sh</code> that depends only on g++ and bash.  Programs will be located in <code>bin/</code>.  
+
+<h3>Estimating</h3>
+Language models are estimated from text using modified Kneser-Ney smoothing without pruning.  It is done on disk, enabling one to build much larger models.
+<div class="listing"><code>
+bin/lmplz -o 5 &lt;text &gt;text.arpa
+</code></div>
+See the page on <a href="estimation/">estimation</a> for more.
+
+<h3>Querying</h3>
+The binary file format makes loading faster.  Run 
+<div class="listing"><code>
+bin/build_binary text.arpa text.binary
+</code></div>
+and pass <code>text.binary</code> instead of <code>text.arpa</code>.  See <a href="structures/">data structures</a> for more on selecting data structures.  Once your binary file is built, query it:
+<dl>
+<dt><a href="http://www.statmt.org/moses/">Moses</a></dt><dd>In newer versions use e.g. <code>KENLM factor=0 order=5 path=filename.arpa</code>.  In older versions or legacy scripts, <a href="moses/">use language model number 8</a>.</dd>
+<dt><a href="http://cdec-decoder.org/">cdec</a></dt><dd>KenLM is the only supported language model.</dd>
+<dt><a href="http://joshua-decoder.org/">Joshua</a></dt><dd>The lm line in joshua.config should begin with <code>lm = kenlm</code>.</dd>
+<dt><a href="http://www-nlp.stanford.edu/wiki/Software/Phrasal2">Phrasal</a></dt><dd>Put <code>kenlm:</code> before the file name.</dd>
+<dt><a href="https://github.com/sfu-natlang/Kriya">Kriya</a></dt><dd>Default.  Support for SRILM requires editing source code.</dd>
+<dt><a href="https://ucam-smt.github.io/">HiFST</a></dt><dd>Default.  Also includes an OpenFST wrapper for KenLM.</dd>
+<dt>Command line</dt><dd><code>bin/query text.binary &lt;data</code></dd>
+<dt>Python</dt><dd><code>cat python/example.py</code> and see the <a href="https://github.com/kpu/kenlm/blob/master/README.md">README</a>.</dd>
+<dt>Your code</dt><dd><a href="../kenlm.tar.gz">Download</a> the source code and read the <a href="developers/">developer documentation</a>.</dd>
+</dl>
+
+<h2>Features</h2>
+<blockquote>"The biggest improvement for the language industry has been the addition of the new language model KenLM which is fast, memory-efficient, and above all, allows the use of multi-core processors under the open source license."  --<a href="https://www.taus.net/articles/will-there-be-a-thousand-moses-mt-systems">Achim Ruopp, TAUS</a></blockquote>  
+
+<ul>
+<li><a href="benchmark/">Faster and lower memory</a> than SRILM and IRSTLM.</li>
+<li><a href="estimation/">On-disk estimation</a> with user-specified RAM.</li>
+<li>Two data structures for time-space tradeoff.</li>
+<li>Binary format with mmap. Or load ARPA files directly.</li>
+<li>If you have the appropriate libraries installed, it can also read text and ARPA files compressed with gzip, bzip2, or xz.</li>
+<li>Threadsafe.</li>
+<li>More opportunities for hypothesis recombination.  If the model backs off, State stores only the matched words.  The FullScore function also returns the length of n-gram matched by the model.</li>
+<li>Querying has few dependencies: a C++ compiler and POSIX system calls.  Filtering and estimation are multi-threaded, so they depend on Boost.</li>
+<li>Supports models of any order greater than one (recompilation required for orders &gt;= 7).</li>
+<li>Thorough error handling.  For example, ARPA parse errors include a message, the problematic string, the byte offset, and the file name.  Compare with IRSTLM.</li>
+<li>Loading progress bar.</li>
+<li>Tests.  These depend on Boost.</li>
+<li>Querying supports n-grams containing &lt;unk&gt; tokens; these appear in models built with restricted vocabulary.</li>
+<li>Permissive <a href="https://raw.github.com/kpu/kenlm/master/LICENSE">license</a> means you can distribute it unlike SRILM.  There isn't a form to fill out before you can <a href="../kenlm.tar.gz">download</a>.</li>
+</ul>
+
+<h2>Supported Platforms</h2>
+Best on Linux.  Also supports Mac OS X, Cygwin, and Windows.  Tested on x86, x86_64, ppc64, and ARM.  The ARM port was contributed by NICT.  
+
+<h3>Windows Users</h3>
+<p>I do not actively maintain the Visual Studio build files or test on Windows.  A version that works on Windows is tagged on <a href="https://github.com/kpu/kenlm/archive/windows.zip">github</a>.  See the windows directory for Visual Studio project files based on a contribution by Cong Duy Vu Hoang.  Compile the kenlm project before the build_binary and ngram_query projects, preferably in x64 release mode.</p> 
+
+<p>Cygwin works too.  However, please note that Cygwin is 32-bit even on 64-bit Windows, so you should not expect Cygwin to work with model sizes over 2 GB.</p>
+
+<h2>License</h2>
+My code is LGPL but there are files from other sources too.  See the <a href="https://raw.github.com/kpu/kenlm/master/LICENSE">LICENSE file</a> for details.
+
+<h2>Confusion</h2>
+<p>Not to be confused with <a href="http://www.klm.com">KLM</a> or <a href="http://www.speech.cs.cmu.edu/SLM/toolkit.html">The CMU-Cambridge Statistical Language Modeling toolkit</a>.  Hieu Hoang gave the name <a href="https://github.com/moses-smt/mosesdecoder/commit/49b41cb07efbbe736e672385b1acb1fe096ce9a0">kenlm</a>.  </p>
+
+<p>This implementation was <a href="../../professional/avenue/marathon2010.pdf">mentioned</a> in my January 2010 MT Marathon paper when early source code was publicly available.  Integration into Moses <a href="http://www.mail-archive.com/moses-support@mit.edu/msg03011.html">was publicly announced</a> on 18 October 2010.  These precede both the 17 December 2010 submission deadline for the BerkeleyLM paper and their 20 June 2011 public release.  Tests performed by Adam Pauls in May 2011 showed that KenLM is 4.49x faster.  He omitted KenLM from his paper and his 20 June 2011 talk, claiming SRILM is the fastest package.  After his talk, an error was discovered in the 4.49x number he reported, but corrected results still show KenLM is faster; see the <a href="benchmark/">benchmarks</a>.</p>
+</div>
+</body>
+</html>

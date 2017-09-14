@@ -1,0 +1,82 @@
+# sub MapResponseToSZS {
+#   my ($self,%args) = @_;
+#   my %additionalargs;
+#   my $response = XML::Smart->new($args{Response});
+#   if (exists $response->{queryResponse}{answer}{result}) {
+#     my $value = $response->{queryResponse}{answer}{result}->content;
+#     # if value is yes, this means what?
+#     if ($value eq "yes") {
+#       my $proof = $self->Clean
+# 	(XML => $response->{queryResponse}{answer}{proof}->data_pointer());
+#       $additionalargs{Result} = {
+# 				 Type => "Theorem",
+# 				 Attributes => $args{Attributes},
+# 				 Output => {
+# 					    "Assurance" => "None given at this time",
+# 					    "Proof of C from Ax" => $proof,
+# 					    "Refutation of Ax U {~C}" => "None given at this time",
+# 					    "Refutation of CNF(Ax U {~C})" => "None given at this time",
+# 					   },
+# 				};
+#       if ($args{Attributes}->{Models}) {
+# 	#     <bindingSet type="definite">
+# 	#       <binding>
+# 	#         <var name="?X" value="?X0"/>
+# 	#       </binding>
+# 	#     </bindingSet>
+
+# 	my $bindingSet = $response->{queryResponse}{answer}{bindingSet};
+# 	my @bindingset;
+# 	foreach my $binding (@{$bindingSet->{binding}}) {
+# 	  my @bindings;
+# 	  foreach my $var (@{$binding->{var}}) {
+# 	    push @bindings, {
+# 			     $var->{name}->content => $var->{value}->content,
+# 			    };
+# 	  }
+# 	  push @bindingset, \@bindings;
+# 	}
+# 	print Dumper({BindingSet => \@bindingset}) if $self->Debug;
+
+# 	$additionalargs{Result}->{Models} = {
+# 					     Type => $bindingSet->{type}->content,
+# 					     BindingSet => \@bindingset,
+# 					    };
+
+# 	if (1) {
+# 	  my @formulae;
+# 	  if ($additionalargs{Result}->{Models}->{Type} eq "definite") {
+# 	    foreach my $binding (@{$additionalargs{Result}->{Models}->{BindingSet}}) {
+# 	      # generate a formula for this
+# 	      push @formulae, $self->SubstituteBinding
+# 		(
+# 		 Item => $args{Formula},
+# 		 Binding => $binding,
+# 		);
+# 	    }
+# 	  }
+# 	  $additionalargs{Result}->{Models}->{Formulae} = \@formulae;
+# 	} else {
+# 	  print Dumper({Query => $query});
+# 	}
+#       }
+#     } elsif ($value eq "no") {
+#       # FIX ME by looking at vampire code....
+
+#       # what the hell is this supposed to mean?  It could mean that it
+#       # is independent, (possibly unknown), or contradictory?  shit.
+#       # If it is independent, it may be asserted, if it is possibly
+#       # unknown, depending on the assertion strategy, it can be
+#       # asserted, and if it is contradictory, it cannot be asserted.
+#       $additionalargs{Result} = {
+# 				 Type => "Unknown",
+# 				 Attributes => $args{Attributes},
+# 				 Output => {
+# 					   },
+# 				};
+#     } else {
+#       print "Unknown queryResponse answer result: <<<$value>>>\n";
+#     }
+#   }
+#   return %additionalargs;
+# }

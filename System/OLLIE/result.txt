@@ -1,0 +1,360 @@
+The AI I work on has nothing to do with human intelligence, or trying to make a sentient being.
+0.784: (I; work on; nothing to do with human intelligence)
+
+If you make that assumption about me, that\'s like hearing that someone is a religious person and then chastising them for believing in Buddha (when in fact they might be Christian).
+0.753: (they; might be; Christian)
+0.467: (someone; is then; a religious person chastising them for believing in Buddha ( when in fact they might be Christian ))
+0.342: (they; might be Christian in; fact)
+0.17: (you; make; that assumption)
+
+There are many aspects to the field of AI.
+No extractions found.
+
+Probably the best way for you to think of this is that I work on IA, or intelligent agents.
+0.64: (I; work on; IA , or intelligent agents)
+
+These are programs which are capable of solving problems that are considered useful by people.
+No extractions found.
+
+AI concerns itself with minimizing unnecessary psychological suffering due to avoidable accidents.
+No extractions found.
+
+We use techniques from logic, the same techniques that, for instance, make optimal chess playing programs, etc, and treat the world as a game and try to win the game, by mathematical optimizations and proofs that bad things don\'t happen.
+0.779: (the world; be treat as; a game)
+0.767: (We; use techniques; the same techniques that , for instance , make optimal chess playing programs , etc , treat the world as a game try to win the game , by mathematical optimizations and proofs)
+0.752: (We; use techniques from; logic)
+0.445: (We; use the same techniques that , for instance , make optimal chess playing programs , etc , and treat the world as a game and try to win the game , by mathematical optimizations and proofs that bad things do n\'t happen from; logic)
+0.443: (We; use the same techniques that , for instance , make optimal chess playing programs , etc , and treat the world as a game and try to win the game , by mathematical optimizations and proofs that bad things do n\'t happen; techniques)
+
+You can do this, you can make certain guarantees that certain failures don\'t happen for reasons that you are in control of - of course no one can yet control certain things, but at least you do the best you know how to do with what you have all the time.
+0.846: (you; can make; certain guarantees)
+0.729: (no one; can yet control; certain things)
+0.669: (you; have; all the time)
+0.654: (certain failures; do n\'t happen for; reasons)
+0.639: (no one; can yet control certain things of; course)
+0.523: (certain things; can be yet control of; course)
+
+For instance, you won\'t make bad moves at chess, you won\'t not know the definition of a certain word, etc.
+0.792: (you; wo n\'t make; bad moves)
+0.783: (you; wo n\'t not know; the definition of a certain word)[enabler=instance , you wo n\'t make bad moves at chess]
+0.593: (you; be bad moves at; chess)
+0.581: (you; wo n\'t make bad moves at chess for; instance)
+0.473: (bad moves; wo be n\'t make for; instance)
+0.202: (bad; moves at; chess)
+
+Anyone who thinks AI is about taking control away from people doesn\'t really realize that a person and an AI together are still going to face difficult problems, it will make us better able to avoid certain common, unnecessary mistakes, and to help us mount higher challenges by providing rigour in situations where it wasn\'t previously available.
+0.711: (us; mount; higher challenges)
+0.613: (rigour; be providing in; situations where it was n\'t previously available)
+0.597: (us; to avoid; certain common , unnecessary mistakes)
+0.583: (a person and an AI; to face; difficult problems)
+0.504: (it; was previously; n\'t previously available)
+0.458: (a person and an AI; together are still going to face; difficult problems)
+
+It will not make us lazier, it will in fact make us harder working because we won\'t be burned and worn out and feel helpless towards mistakes we know ought not happen.
+0.266: (it; will make in; fact)
+
+People are good at learning complex systems but sacrifice perfect memory in exchange for other skills suited to learning complex systems, but some problems require specialized solutions, and this solution is the computer.
+0.804: (perfect memory; be sacrifice in; exchange)
+0.802: (People; is; good at learning complex systems but sacrifice perfect memory in exchange for other skills suited to learning complex systems , but some problems require specialized solutions , and this solution is the computer)
+0.711: (some problems; require; specialized solutions)
+
+We can look at a world with AI in the same way we look at the current world, and we can introduce AI in a way such that no requirements any person may have are rendered invalid by the AI.
+0.784: (no requirements any person may have; are rendered by; the AI.)
+0.628: (we; look at; the current world)
+0.585: (We; can look can in; the same way)
+0.516: (AI; can can be introduce in; a way)
+0.51: (We; can look can at; a world)
+0.415: (We; can can introduce AI in; a way)
+0.401: (we; can can introduce AI in; a way)
+0.394: (we; can look can in; the same way)
+0.393: (We; can can introduce; AI)
+0.379: (we; can can introduce; AI)
+0.324: (we; can look can at; a world)
+
+That is the goal, actually, to satisfy everyone\'s requirements.
+No extractions found.
+
+We model requirements in the usual logical way.
+0.67: (We; be model requirements in; the usual logical way)
+
+A requirement is something that a person could express in English, and is represented by association to the intended semantics of the statement (as opposed to misreads of the requirement).
+0.694: (A requirement; is; something that a person could express in English)
+0.684: (A requirement; is represented by; association)
+0.614: (A requirement; is represented to; the intended semantics of the statement)
+0.536: (a person; that could express in; English)
+
+The goal then is for the system to make as many of these requirements simulataneously true based on its laws (the requirements of all people) and its algorithm.
+0.872: (The goal; then is for; the system)
+
+algorithm n : a precise rule (or set of rules) specifying how to solve some problem [syn: {algorithmic rule}, {algorithmic program}]
+No extractions found.
+
+When I say that AI solves problems, it is in the sense of problems of logic.
+0.827: (it; is in; the sense of problems of logic)[attrib=I say]
+
+However, many real world problems may be solved by reducing them to problems of logic and the interpretting the solution.
+0.587: (them; be reducing to; problems of logic)
+
+Dad\'s draconian measures
+No extractions found.
+
+Let me describe to you in perhaps the clearest way possible the goal of what I work on.
+0.779: (me; describe to; you)
+
+I realize that EVERY FAILED DEDUCTION LEADS TO FUTURE ACCIDENTS.
+0.763: (EVERY; FAILED DEDUCTION LEADS to; FUTURE)[attrib=I realize]
+0.703: (EVERY; FAILED; DEDUCTION LEADS)[attrib=I realize]
+0.552: (DEDUCTION LEADS; be FAILED to; FUTURE)[attrib=I realize]
+
+Let me describe an accident.
+0.727: (me; describe; an accident)
+
+This is by no means pleasant.
+No extractions found.
+
+So if the accident I am about to describe were avoidable, it would make the world more pleasant.
+No extractions found.
+
+This accident involves a young boy being hit by a train.
+0.863: (a young boy; being hit by; a train)
+
+I know that what I work on would be capable of preventing his death and the consequent psychological suffering of all that knew him.
+No extractions found.
+
+While we cannot protect one hundred percent of people against one hundred percent of the hazards and vissicitudes of life, we can make relative improvements.
+0.678: (we; can make; relative improvements)[enabler=While we cannot protect one hundred percent of people against one hundred percent of the hazards and vissicitudes of life]
+0.667: (one hundred percent of people; cannot be protect against; one hundred percent of the hazards)
+0.617: (we; cannot protect one hundred percent of people against; one hundred percent of the hazards)
+0.615: (we; cannot protect; one hundred percent of people)
+
+We can in a formal sense make 100% safety in restricted systems, and of course the goal is to grow that safety to larger and larger systems.
+0.814: (the goal; is to grow that; safety)
+0.592: (We; is to grow that; safety)
+0.569: (the goal; is to grow of; course)
+0.491: (We; make 100 % safety is to in; restricted systems)
+0.489: (We; make is to; % safety)
+0.479: (We; make 100 % safety is to in; a formal sense)
+0.473: (We; is to grow of; course)
+0.417: (the goal; make 100 % safety is to in; restricted systems)
+0.415: (the goal; make is to; % safety)
+0.405: (the goal; make 100 % safety is to in; a formal sense)
+
+It is exactly the consistency of computers, which don\'t make them rigid thinkers, but which make them conditional and highly reliable system, that allows computers to solve with 100% completeness subclasses of existing problems.
+0.911: (It; is exactly the consistency of; computers which do n\'t make them rigid thinkers , but which make them conditional and highly reliable system , that allows computers to solve with 100 % completeness subclasses of existing problems)
+0.89: (computers; to solve with; % completeness subclasses of existing problems)
+0.687: (It; is exactly; the consistency of computers)
+
+That is, prevent whole categories of accidents.
+No extractions found.
+
+The accident involving the boy follows a template that I have seen multiple times in videos of accidents, and even experienced myself.
+0.607: (I; have seen in; videos of accidents)
+0.531: (The accident involving the boy; follows even experienced myself; a template)
+
+In a different video, the exact same failure situation leads to the death of a gazelle.
+0.885: (the exact same failure situation; leads to; the death of a gazelle)
+0.613: (the exact same failure situation; leads in; a different video)
+
+This failure situation is one that I am aware now and which to some extent motivates unswerving commitment to the completion of my task.
+0.746: (This failure situation; is; one)
+
+Since it will be easier to describe the gazelle scenario, I will start with that.
+No extractions found.
+
+The typical feature is that it is two animals, two deer in this case, and a threat which is perceived by one of the animals, which steps clear without thinking to alert the other.
+0.564: (clear; be steps by; the animals)
+0.541: (it; is; two animals , two deer in this case , and a threat which is perceived by one of the animals ,)
+0.486: (it; be two deer in; this case)
+
+In this case, the deer are drinking from a water hole.
+0.732: (the deer; are drinking from; a water hole)
+0.44: (the deer; are drinking in; this case)
+
+The first deer is blocking the view of the second deer of the water hole.
+0.728: (The first deer; is blocking; the view of the second deer of the water hole)
+
+The first deer sees something approaching at it (an alligator), and quietly turns around and leaves the water.
+0.772: (an alligator; leaves; the water)
+0.741: (The first deer; sees; something approaching at it)
+0.601: (something; approaching at; it)
+
+From the point of view of the second dear, the movement of the first deer conceals the movement of the alligator, which proceeds to jump up and trap and kill the second deer.
+No extractions found.
+
+I am very offended by the existence of such scenarios in nature.
+0.919: (I; am very offended by; the existence of such scenarios)
+
+I think they should be stopped.
+No extractions found.
+
+I understand methods that would prevent this and a great many other classes of accidents.
+0.711: (I; understand; methods that would prevent this and a great many other classes of accidents)
+
+Now we will describe the death of the boy, which parallels closely the death of the deer.
+0.646: (we; Now will describe; the death of the boy)
+0.564: (the death of the deer; be parallels closely by; the boy)
+
+Two young boys are walking towards a train track.
+0.744: (Two young boys; are walking towards; a train track)
+
+There is a stationary train on the track which conceals an oncoming train.
+0.564: (an oncoming train; be conceals by; the track)
+
+A train horn is blowing, and the boys fatally presume it is the stationary train.
+0.596: (it; is; the stationary train)
+
+From the point of view of the camera, as the boys near the tracks we see that the second train moving at about 80 MPH is the real source of the horn sound.
+0.64: (the second train; moving at; about 80 MPH)
+0.574: (we; see; the real source of the horn sound)
+
+The boys are walking side by side, let us call the first boy the boy who is closer to the train.
+0.744: (The boys; are walking side by; side)
+0.739: (The boys; are walking; side)
+0.675: (side; are walking by; side)
+0.626: (us; call; the first boy)
+
+The first boy blocks the view of the second boy.
+0.8: (The first boy blocks; be the view of; the second boy)
+
+When the train is now within about 80 feet the first boy perceives it and stops on the very edge of track.
+0.851: (the train; is now within; about 80 feet the first boy perceives)
+0.795: (the train; stops on; the very edge of track)
+
+He turns around and steps back automatically (clearly is not thinking at all about the second boy), barely missing the train.
+0.683: (He; turns steps; around and steps)
+
+The second boy is now about 4 feet in front of the first boy, and his head may be seen to hesitate for about a 6th of second, an short moment of psychological confusion before his hopelessly lost position is impacted by the approaching train.
+0.914: (an short moment of psychological confusion; is impacted by; the approaching train)
+0.643: (an short moment of psychological confusion; is impacted in; a 6th of second)
+
+Needless to say the child\'s body is instantly accelerated and rockets about three hundred feet in a second actually hitting the cameraman at a velocity of roughly 75 MPH.
+0.792: (rockets about three hundred feet; actually hitting the cameraman at; a velocity of roughly 75)
+0.743: (the cameraman; be actually hitting at; a velocity of roughly 75)
+0.679: (rockets about three hundred feet; actually hitting; the cameraman)
+
+This death may have been prevented as a matter of logical completeness.
+0.94: (This death; may have been prevented as; a matter of logical completeness)
+
+All that is needing is a facility to alert the child to avoid that position.
+No extractions found.
+
+A deduction was necessary which would have triggered a communication that the child should stop, we in advance of the precipitious accident.
+0.69: (A deduction; was; necessary which would have triggered a communication)
+
+I understand how to implement this, and how to set up the correspondances between the mind and the system.
+0.723: (I; to set up; the correspondances)
+
+It is in this spirit that I pursue the development of AI, a system which I know can prevent large classes of accidents.
+0.76: (It; is in; this spirit)
+0.52: (I; pursue; the development of AI)[enabler=can prevent large classes of accidents]
+0.143: (AI; be the development of; a system which I know)
+0.122: (AI; be the development in; a system which I know)
+
+It is sufficient to prevent an accident to have a proof that it will not happen.
+0.709: (It; to prevent; an accident to have a proof that it will not happen)
+0.646: (It; is; sufficient)
+
+Here we take proof in the formal mathematical sense.
+0.691: (we; Here take proof in; the formal mathematical sense)
+0.637: (we; Here take; proof)
+
+By establishing correspondances between the physical world and the simulated computer world, simulation occuring with knowledge based systems, etc, (which is more akin to a very precise, somewhat accurate human mental model than to say a simple physics simulation), correspondences that take place through input output devices like mind to machine interfaces, cameras, etc., we will be able to eliminate large ammounts of psychological suffering as the result of accidents that are preventable by these systems.
+0.793: (we; to eliminate; large ammounts of psychological suffering)
+0.772: (large ammounts of psychological suffering; to be eliminate as; the result of accidents)
+0.734: (we; will be; able)
+0.675: (correspondances; be establishing between; the physical world)
+
+To give a simple account of a simple implementation, suppose that we have image understanding routines.
+0.603: (we; have; image understanding routines)
+
+<Show video of VSAM> The camera agent, an IA (intelligent agent) with image understanding intelligent software, would be creating and forwarding live information to an AI, perhaps in the camera, perhaps at a nearby station, across a wireless adhoc network, etc. The information would be complex, but in the spirit of the existing technology, would look about equal to a length novel worth of statements of the following form.
+0.705: (The information; would be; complex)
+0.516: (live information; would be forwarding to; an AI)
+0.213: (<Show video of VSAM> The camera agent; would be forwarding; live information)
+0.207: (<Show video of VSAM> The camera agent; would be forwarding live information to; an AI)
+0.12: (<Show video of VSAM> The camera agent; would be creating perhaps in the camera perhaps at a nearby station across; a wireless adhoc network)[enabler=etc . The information would be complex]
+
+(#$approaching #$OurPoorFriendForWhomWeGrieve #$railtrack-39423) (#$approaching #$OurUnfortunateSurvivor #$railtrack-39423) (#$emittingSound #$train-32488)
+No extractions found.
+
+Of course, there would be optimizations, etc, such as dialogs between the camera and the IA.
+No extractions found.
+
+Now, when the camera reports the approaching train (or even before, there might be a system which is devoted to general purpose collision avoidance, which has already contacted the IA with information of the approaching train), the IA makes the inference that there is
+0.668: (the camera; reports; the approaching train)
+0.429: (a system which is devoted to general purpose collision avoidance ,; even before makes; the inference)
+
+(#$likelyEvent (#$and (#$dies OurPoorFriendForWhomWeGrieve) (#$collisionWith #$train-32488)))
+No extractions found.
+
+I.E. It is able to prove this.
+0.632: (It; is; able)
+
+<Show cyc knowledge base>.
+No extractions found.
+
+In which case the IA contacts the agent present with the child.
+0.599: (the IA; contacts in; which case)
+0.583: (the agent; be present with; the child)
+
+The agent advises the child to stop, 100 feet in advance of the approaching train.
+0.88: (The agent; advises the child to stop in; advance of the approaching train)
+0.789: (The agent; advises; the child to stop)
+
+This child, if contacted in advance, would not have died.
+No extractions found.
+
+Here we have shown how this child\'s death may have been prevented using existing technology.
+No extractions found.
+
+Now, people might make the claim that this is a pathological singular point and that in reality we cannot prevent such things in all cases.
+0.756: (people; Now might make; the claim)
+0.7: (we; cannot prevent such things in; all cases)
+0.648: (we; cannot prevent; such things)
+0.645: (such things; cannot be prevent in; all cases)
+0.463: (we; cannot prevent such things in; reality)
+0.402: (such things; cannot be prevent in; reality)
+0.226: (we; is cannot; a pathological singular point)
+
+Their argument is overly general and, for what?!
+0.779: (Their argument; is overly; general)
+
+The fact is that it is both obviously highly important to protect people from accidents, and it is also not a singular point, it is the rigour and completeness of the search procedures of logic that make this possible, and it does not rely on serendipity.
+0.729: (The fact; does not rely on; serendipity)
+0.721: (it; be completeness of; the search procedures of logic that make this possible)
+0.658: (people; to be protect from; accidents)
+0.62: (it; is; the rigour and completeness of the search procedures of logic)
+0.611: (it; does not rely on; serendipity)
+0.422: (it; is obviously highly; important)
+0.392: (The fact; is also does; not a singular point)
+0.286: (it; is also does; not a singular point)
+
+It cannot prove everything, but it could have saved the lives of everyone I have personally known who has died, and it can do much more than that.
+0.617: (it; could have saved; the lives of everyone)
+0.264: (It; cannot prove can; everything)
+0.142: (it; cannot prove can; everything)
+
+I am motivated on account of the horrible experience of the similar way in which my beloved sister died and an intuitive understanding of the underlying technology to pursue without hesitation or disruption the development of this technology, and I sincerely hope that people will join me in this effort.
+0.919: (I; am motivated on; account of the horrible experience of the similar way)
+0.847: (my beloved sister; to pursue without; hesitation or disruption)
+0.799: (an intuitive understanding of the underlying technology; to pursue without; hesitation or disruption)
+0.758: (people; will join me in; this effort)[attrib=I sincerely hope]
+0.728: (my beloved sister; be an intuitive understanding of; the underlying technology)
+0.636: (people; will join; me)[attrib=I sincerely hope]
+0.601: (me; will be join in; this effort)[attrib=I sincerely hope]
+
+(Cruelly, she alone would have supported my work unconditionally.)
+0.389: (she; would have supported unconditionally; my work)
+
+I have obtained what I feel is the main necessary result, that we may consider for the purposes of our system the world as a large set of problems, which need to be decided, but for any program offered as a solution, there are always much larger fragments of the problems that are not solvable by that program.
+0.666: (larger fragments of the problems; are for; any program offered as a solution)
+0.655: (any program; be offered as; a solution)
+0.622: (we; may consider for; the purposes of our system)
+0.622: (I; have obtained; the main necessary result)
+0.481: (large; set of; problems which need to be decided)
+
+Therefore I believe it to be the case that by collecting and distributing complex and intelligent software via the Debian GNU/Linux system, we will be rapidly reducing the number of unsolvable problems of logic, which when they remain unsolved, are exactly the cause of every accident in the world and a majority of psychological suffering.
+0.734: (it; to be; the case)
+0.689: (logic; which when they remain unsolved , are exactly the cause of; every accident in the world and a majority of psychological suffering)
+0.611: (we; will be rapidly reducing; the number of unsolvable problems of logic)
+

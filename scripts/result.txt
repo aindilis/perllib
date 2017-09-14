@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?meta name="GENERATOR" content="XML::Smart/1.6.9 Perl/5.010000 [linux]" ?>
+<text>
+  <s>
+    <coref set-id="set_1">
+      <w pos="nnp">BART</w>
+    </coref>
+    <w pos="rb">internally</w>
+    <w pos="vbz">works</w>
+    <w pos="in">with</w>
+    <w pos="dt">a</w>
+    <w pos="jj">standoff-based</w>
+    <w pos="nn">representation</w>
+    <w pos="vbn">based</w>
+    <w pos="in">on</w>
+    <w pos="dt">the</w>
+    <w pos="nn">format</w>
+    <w pos="in">of</w>
+    <w pos="nn">MMAX2</w>
+    <w pos="-lrb-">(</w>
+    <w pos="dt">an</w>
+    <w pos="nn">annotation</w>
+    <w pos="nn">tool</w>
+    <w pos="in">for</w>
+    <coref set-id="set_0">
+      <w pos="nn">coreference</w>
+    </coref>
+    <w pos="cc">and</w>
+    <w pos="jj">other</w>
+    <w pos="nn">discourse</w>
+    <w pos="nn">annotation</w>
+    <w pos="-rrb-">)</w>
+    <w pos=".">.</w>
+  </s>
+  <s>
+    <w pos="dt">The</w>
+    <w pos="jjs">easiest</w>
+    <w pos="nn">way</w>
+    <w pos="in">of</w>
+    <w pos="vbg">getting</w>
+    <w pos="nn">text</w>
+    <w pos="in">into</w>
+    <coref set-id="set_1">
+      <w pos="nnp">BART</w>
+    </coref>
+    <w pos="cc">and</w>
+    <coref set-id="set_0">
+      <w pos="nn">coreference</w>
+    </coref>
+    <w pos="nns">chains</w>
+    <w pos="rp">out</w>
+    <w pos="vbz">is</w>
+    <w pos="dt">the</w>
+    <w pos="jj">REST-based</w>
+    <w pos="jj">web</w>
+    <w pos="nn">service</w>
+    <w pos="wdt">that</w>
+    <w pos="vbz">is</w>
+    <w pos="nn">part</w>
+    <w pos="in">of</w>
+    <coref set-id="set_1">
+      <w pos="nnp">BART</w>
+    </coref>
+    <w pos="cc">and</w>
+    <w pos="vbz">allows</w>
+    <w pos="prp">you</w>
+    <w pos="to">to</w>
+    <w pos="rb">easily</w>
+    <w pos="vb">import</w>
+    <w pos="jj">raw</w>
+    <w pos="nn">text</w>
+    <w pos=",">,</w>
+    <w pos="vb">process</w>
+    <w pos="prp">it</w>
+    <w pos=",">,</w>
+    <w pos="cc">and</w>
+    <w pos="vb">export</w>
+    <w pos="dt">the</w>
+    <w pos="nn">result</w>
+    <w pos="in">as</w>
+    <w pos="nn">inline</w>
+    <w pos="nn">XML.</w>
+  </s>
+</text>

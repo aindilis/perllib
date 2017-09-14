@@ -1,0 +1,75 @@
+#!/usr/bin/perl -w
+
+# (defun perllib-perl-or-prolog-file ()
+#  ""
+#  (interactive)
+#  (save-excursion
+#   (beginning-of-buffer)
+#   (mark)
+#   (end-of-line)
+#   (let ((first-line (buffer-substring-no-properties (mark) (point))))
+#    (if (or
+# 	(and
+# 	 (string-match-p "^\#\!" first-line)
+# 	 (string-match-p "[pP][eE][rR][lL]" first-line)
+# 	 ) 
+# 	(= (length first-line) 0)
+# 	)
+#     "perl"
+#     "prolog"))))
+
+use BOSS::Config;
+use PerlLib::SwissArmyKnife;
+
+$specification = q(
+	-s		Use stdin
+	<file>...	Files to test
+);
+
+my $config =
+  BOSS::Config->new
+  (Spec => $specification);
+my $conf = $config->CLIConfig;
+# $UNIVERSAL::systemdir = "/var/lib/myfrdcsa/codebases/minor/system";
+
+my @files;
+if ($conf->{'-s'}) {
+  while (<STDIN>) {
+    my $line = <STDIN>;
+    if ($line) {
+      chomp($line);
+      push @files, $line;
+    }
+  }
+} else {
+  die "Error: Need to specify some files.\n" unless exists $conf->{'<file>'};
+  @files = @{$conf->{'<file>'}};
+}
+
+foreach my $file (@files) {
+  if (-f $file) {
+    my $result =  PerlOrProlog(FirstLine($file));
+    print "$result\t<$file>\n";
+  } else {
+    print STDERR "ERROR: file not found: <$file>\n";
+  }
+}
+
+sub FirstLine {
+  my ($filename) = @_;
+    my $fh = IO::File->new;
+  $fh->open("<$filename") or die "Oops\n";
+  my $firstline = $fh->getline;
+  $fh->close;
+  return $firstline;
+}
+
+sub PerlOrProlog {
+  my ($firstline) = @_;
+  if ((($firstline =~ /^#!/) and ($firstline =~ /perl/i)) or
+      (!length($firstline))) {
+    "perl";
+  } else {
+    "prolog"
+  }
+}

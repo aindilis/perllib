@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link href="/screen.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/print.css" media="print" rel="stylesheet" type="text/css">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+<title>STAR Laboratory: SRI Language Modeling Toolkit</title>
+<style type="text/css">
+<!--
+td.lnm8 {color: #0A2972; background-color: #FFB300}
+a.ln8:link { color: #0A2972}
+a.ln8:visited { color: #0A2972}
+a.ln8:visited:hover { color: #0A2972}
+-->
+</style>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function obfuscate( domain, name ) { document.write('<a href="mai' +
+'lto:' + name + '@' + domain + '">' + name + '@' + domain + '<\/' + 'a>'); }
+// --></script>
+
+</head>
+<body onload="MM_preloadImages('/images/tnav_about_f2.gif','/images/tnav_rnd_f2.gif','/images/tnav_careers_f2.gif','/images/tnav_newsroom_f2.gif','/images/tnav_contact_f2.gif','/images/tnav_home_f2.gif')">
+<table border="0" cellspacing="0" cellpadding="0" summary="page holder">
+<tr valign="top">
+<td rowspan="2" class="dkbluebg" width="175">
+<span class="noprint"><a href="http://www.sri.com/"><img src="/images/logo_sri.gif" alt="Divider" width="175" height="94" border="0" /></a></span>
+<!-- Left Nav Start -->
+<table border="0" cellpadding="0" cellspacing="0" class="dkbluebg" summary="Secondary Navigation">
+<tr valign="top">
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td width="15" class="lnd1">&nbsp;</td>
+<td width="160" class="lnd1"><a href="/" class="ln1">Speech Technology and Research Laboratory</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm2">&nbsp;</td>
+<td class="lnm2"><a href="http://www.sri.com/about/people/all/information-computing-sciences/speech-technology-research-lab/" class="ln2">People</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm3">&nbsp;</td>
+<td class="lnm3"><a href="/projects/current.shtml" class="ln3">Current Research Activities</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm4">&nbsp;</td>
+<td class="lnm4"><a href="/projects/past.shtml" class="ln4">Past Research Activities</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm5">&nbsp;</td>
+<td class="lnm5"><a href="https://www.sri.com/work/publications/lab/1527" class="ln5">Publications</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm11">&nbsp;</td>
+<td class="lnm11"><a href="/projects/srilm/" class="ln11">SRILM</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm7">&nbsp;</td>
+<td class="lnm7"><a href="/seminars/" class="ln7">Seminars</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm8">&nbsp;</td>
+<td class="lnm8"><a href="http://www.speechatsri.com/" class="ln8">Technologies for License</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm9">&nbsp;</td>
+<td class="lnm9"><a href="/press/" class="ln9">In the News</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm6">&nbsp;</td>
+<td class="lnm6"><a href="https://www.sri.com/careers" class="ln6">Career Opportunities</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<tr>
+<td class="lnm10">&nbsp;</td>
+<td class="lnm10"><a href="https://www.sri.com/contact/form/contact-sri?sub_head=Speech%20Technology%20and%20Research%20Lab&routing=speech463&path=/about/organization/information-computing-sciences/star-laboratory&destination=node/1527&template=colorbox&iframe=true&width=800&height=600" class="ln10">Contact Us</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+<!--tr>
+<td class="lnm11">&nbsp;</td>
+<td class="lnm11"><a href="/search.html" class="ln11">STAR Search</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr-->
+<tr>
+<td class="lnd12">&nbsp;</td>
+<td class="lnd12"><a href="http://www.sri.com/icsd/" class="ln12">Information and Computing Sciences Division</a></td>
+</tr>
+<tr>
+<td colspan="2" class="h-dotline-blue"></td>
+</tr>
+</table>
+<!-- Left Nav End -->
+
+
+<!-- Top Nav Start -->	
+       <td valign="middle" width="100%"  class="dkbluebg"><span class="noprint"><img src="/images/spacer.gif" alt="Spacer" width="20" height="31" border="0"><a href="http://www.sri.com/about/" onMouseOver="MM_swapImage('about','','/images/tnav_about_f2.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="/images/tnav_about.gif" alt="About Us" name="about" width="48" height="31" border="0"></a><img src="/images/tnav_divider.gif" alt="Divider" width="15" height="31"><a href="http://www.sri.com/rd/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('R N D','','/images/tnav_rnd_f2.gif',1)"><img src="/images/tnav_rnd.gif" alt="R and D Divisions" name="R N D" width="71" height="31" border="0"></a><img src="/images/tnav_divider.gif" alt="Divider" width="15" height="31"><a href="http://www.sri.com/jobs/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('careers','','/images/tnav_careers_f2.gif',1)"><img src="/images/tnav_careers.gif" alt="Careers" name="careers" width="41" height="31" border="0"></a><img src="/images/tnav_divider.gif" alt="Divider" width="15" height="31"><a href="http://www.sri.com/news/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('newsroom','','/images/tnav_newsroom_f2.gif',1)"><img src="/images/tnav_newsroom.gif" alt="Newsroom" name="newsroom" width="57" height="31" border="0"></a><img src="/images/tnav_divider.gif" alt="Divider" width="15" height="31"><a href="http://www.sri.com/contact/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contact','','/images/tnav_contact_f2.gif',1)"><img src="/images/tnav_contact.gif" alt="Contact Us" name="contact" width="57" height="31" border="0"></a><img src="/images/tnav_divider.gif" alt="Divider" width="15" height="31"><a href="http://www.sri.com/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('home','','/images/tnav_home_f2.gif',1)"><img src="/images/tnav_home.gif" alt="SRI Home" name="home" width="29" height="31" border="0"></a><a onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('about','','/images/tnav_about_f2.gif',1)"></a><img src="/images/spacer.gif" alt="Spacer" width="20" height="31"></span></td>
+     <td height="31" class="dkbluebg" valign="middle" align="right"><table cellspacing="0" cellpadding="0" border="0" summary="searchbox holder" class="noprint"><tr valign="middle"><td valign="middle">
+
+<!-- Search My Google Search Appliance -->
+<form method="get" action="http://search-ext.sri.com/search">
+<table cellspacing="0" cellpadding="0" border="0" summary="searchbox" class="no
+print"><tr valign="middle"><td valign=middle><p style="margin-top: 1px; margin-b
+ottom: 1px;">
+<span style="font-family:verdana; font-size:12">
+<input id="searchin" maxLength="255" size="11" name="q" class="searchPhrase">
+</span>
+
+<!-- select id="site" name="site"  class="searchPhrase">
+<option selected value="speech_collection">speech website</option>
+<option value="newsri_collection">sri.com website</option>
+</select -->
+<input value="speech_collection" type="hidden" name="site">
+
+</p></td><td><img src="/images/spacer.gif" alt="Spacer" height="1" width="5"></td><td><label for="q">
+<input value="newsri_frontend" type="hidden" name="client">
+<input value="newsri_frontend" type="hidden" name="proxystylesheet">
+<input value="xml_no_dtd" type="hidden" name="output">
+<!-- input type="submit" class="form-submit" value="Go"  name="btnG" -->
+<input name="btnG" type="image" src="/images/btn_search.gif" alt="Search" align="middle" style="margin-bottom:1px,border:0px">
+</label></td>
+</tr></table>
+</form>
+<!-- Search My Google Search Appliance-->
+
+<!-- form name="seek" method="get" action="http://search-ext.sri.com/search" style="margin-bottom: 0">
+    <input value="date:D:L:d1" name="sort" type="hidden">
+    <input value="xml_no_dtd" name="output" type="hidden">
+    <input value="default_collection" name="site" type="hidden">
+    <input value="UTF-8" name="ie" type="hidden">
+    <input value="UTF-8" name="oe" type="hidden">
+    <input value="default_frontend" name="client" type="hidden">
+    <input value="default_frontend" name="proxystylesheet" type="hidden">
+ <table cellspacing="0" cellpadding="0" border="0" summary="searchbox" class="noprint"><tr valign="middle"><td valign=middle><p style="margin-top: 1px; margin-bottom: 1px;"><input type="text" name="q" size="12" maxlength="100" value="" id="q"/></p></td><td><img src="/images/spacer.gif" alt="Spacer" height="1" width="5"></td><td><label for="q">
+<input name="btnG" type="image" src="/images/btn_search.gif" alt="Search" align="middle" style="margin-bottom:1px,border:0px">
+</label></td>        
+</tr></table></form -->
+
+</td></tr></table></td>
+
+<!-- start content frame single -->
+</tr>
+<tr valign="top">
+<td colspan="2">
+<table class="regular" width="100%" border="0" cellspacing="0" cellpadding="0" summary="main text">
+<tr>
+<td width="20">&nbsp;</td>
+<td>&nbsp;</td>
+<td width="30">&nbsp;</td>
+<td>&nbsp;</td>
+<td width="20">&nbsp;</td>
+</tr>
+<tr valign="top">
+<td>&nbsp;</td>
+<td colspan="3">
+<span class="printonly"><img src="/images/sri_sm.gif" alt="SRI Logo" width="100" height="75" />
+<br /><br />
+</span>
+<!-- end content frame single -->
+
+<!-- Bodytext Start -->
+<h1>SRILM - The SRI Language Modeling Toolkit</h1>
+
+<p>
+SRILM is a toolkit for building and applying statistical language
+models (LMs), primarily for use in speech recognition, statistical
+tagging and segmentation, and machine translation.
+It has been under development in the
+<a href="/">SRI Speech Technology and Research Laboratory</a> since 1995.
+The toolkit has also greatly benefitted from its use and enhancements
+during the
+<a href="http://www.clsp.jhu.edu/workshops/index.shtml" target="_blank">Johns Hopkins University/CLSP summer workshops</a> in
+1995, 1996, 1997, and 2002 (see <a href="/projects/srilm/docs/CHANGES">history</a>).
+
+<p>
+These pages and the software itself assume that you know what statistical language modeling is. To learn about language modeling we recommend the textbooks </p>
+<ul>
+<li><a href="http://www.cs.colorado.edu/%7Emartin/slp.html" target="_blank"><i>Speech and Language Processing</i></a> by Dan Jurafsky and Jim Martin
+(chapter 6 in the 1st edition, chapter 4 in the 2nd edition)</li>
+
+<li><a href="http://nlp.stanford.edu/fsnlp/" target="_blank"><i>Foundations of Statistical Natural Language Processing</i></a> by Chris Manning and Hinrich Sch&uuml;tze (chapter 6).</li>
+</ul>
+
+<p>
+Either book gives an excellent introduction to N-gram
+language modeling, which is the main type of LM supported by SRILM.
+
+<p>
+SRILM consists of the following components:
+
+<ul>
+<li>A set of C++ class libraries implementing language models,
+supporting data stuctures and miscellaneous utility functions. </li>
+<li>A set of executable programs built on top of these libraries to
+perform standard tasks such as training LMs and testing them on data,
+tagging or segmenting text, etc. </li>
+<li>A collection of miscellaneous scripts facilitating minor related tasks.</li>
+</ul>
+
+<p>
+SRILM runs on UNIX and Windows platforms.
+
+<p>
+SRILM has been used in a great variety of statistical modeling
+<a href="applications.html">applications</a>.
+
+<p>
+Others have published <a href="extensions.html">extensions</a> to SRILM that add 
+new functionality.
+
+
+<h2>Documentation</h2>
+
+<p> SRILM is still under development. The documentation in particular
+is work in progress. Best documented are the executable programs,
+scripts, and file formats, in the form of UNIX-style <a
+href="manpages/">manual pages</a>. The libraries are
+documented mostly in the source code. An overview of what the software
+can do and its design philosophy can be found in the paper "SRILM - An
+Extensible Language Modeling Toolkit", in Proc. Intl. Conf. Spoken
+Language Processing, Denver, Colorado, September 2002
+(<a href="papers/icslp2002-srilm.ps">postscript</a>,
+<a href="papers/icslp2002-srilm.pdf">PDF</a>).
+Links to other papers and tutorials, as well as frequently asked questions,
+are also given 
+<a href="manpages/">here</a>.
+
+<p>
+<IMG SRC="/icons/new.gif" ALT="NEW!">
+A <a href="papers/asru2011-srilm.pdf">recent paper</a> summarizes updates
+to SRILM since the 2002 paper.
+
+<h2>Terms of Use</h2>
+
+Government agencies, and schools, universities, and non-profit organizations
+can <a href="/projects/srilm/download.html">download</a>
+SRILM free of charge under
+SRI's <a href="/projects/srilm/docs/License">"Research
+Community License"</a>, for use in projects that do not receive
+external funding other than government research grants and contracts.
+For other uses please inquire about <a href="http://www.speechatsri.com/utils/contact.php">
+commercial licensing</a>.
+
+<h2><a name="srilm-user" id="https://mailman.speech.sri.com/cgi-bin/mailman/listinfo/srilm-user">Mailing List</a></h2>
+
+<p>
+Exchange of information among SRILM users, as well as some level of
+technical support, is provided through the mailing list
+<b>srilm-user@speech.sri.com</b>.
+Check the 
+<!--a href="mail-archive/">mailing list archive</a--> 
+<a href="https://mailman.speech.sri.com/pipermail/srilm-user">user mailing list archive</a> 
+or 
+<a href="https://mailman.speech.sri.com/pipermail/srilm-announce/">announcement mailing list archive</a> 
+for past contributions.
+<p>
+To subscribe and obtain more
+information, follow 
+<!--a href="/mailman/listinfo/srilm-user/">this link</a-->
+<!--a href="/projects/srilm/signup.html">this link</a-->.
+<a href="https://mailman.speech.sri.com/cgi-bin/mailman/listinfo/srilm-announce">this link</a>.
+
+<!-- WebAnalytics Image Tracker-->
+<img src="http://webanalytics.speech.sri.com/piwik.php?idsite=1&rec=1" style="border:0" alt="" />
+<!-- End WebAnalytics -->
+
+</td>
+<td width="20"></td>
+</tr>
+</table>
+
+<!-- Footnote Start -->
+<p>&nbsp;</p>
+		  
+<p class="footnote">
+<a href="http://www.sri.com/about/">About Us</a>
+&nbsp;<img src="/images/v-dotline-bot.gif" alt="Vertical divider" />
+&nbsp;<a href="http://www.sri.com/rd/">R&amp;D Divisions</a>
+&nbsp;<img src="/images/v-dotline-bot.gif" alt="Divider" />
+&nbsp;<a href="http://www.sri.com/jobs/">Careers</a>
+&nbsp;<img src="/images/v-dotline-bot.gif" alt="Divider" />
+&nbsp;<a href="http://www.sri.com/news/">Newsroom</a>
+&nbsp;<img src="/images/v-dotline-bot.gif" alt="Divider" />
+&nbsp;<a href="http://www.sri.com/contact/">Contact Us</a><br />
+<span class="footnote">&copy;2011 SRI International, 333 Ravenswood Avenue, Menlo Park, CA 94025-3493<br />
+SRI International is an independent, nonprofit corporation. <span class="bnav"><a href="http://www.sri.com/privacy.html">Privacy policy</a></span></span><br />
+Last modified Jun 05, 2016
+</p>
+<!-- Footnote end -->	
+</td>
+</tr>
+</table>
+</body>
+</html>
+

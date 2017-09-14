@@ -1,0 +1,13 @@
+Here are some important notes about how to use Perl.
+
+Functions
+
+map this usage has difficulty
+
+map {lc($_)} @items;
+
+Instead use
+
+map lc($_), @items;
+
+I don't know what to do otherwise, for when you really need the {}

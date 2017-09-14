@@ -1,0 +1,15 @@
+#!/usr/bin/perl -w
+
+use PerlLib::ToText;
+
+my $totext = PerlLib::ToText->new;
+foreach my $file (@ARGV) {
+  my $res = $totext->ToText
+    (
+     File => $file,
+    );
+  if ($res->{Success}) {
+    print $res->{Text}."\n";
+  }
+}
+

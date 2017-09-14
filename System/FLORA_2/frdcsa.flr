@@ -1,0 +1,125 @@
+// invoke with 'ff'
+
+// --------------------------------------------
+
+// (If you don't take vitamins consider taking them)
+
+consider(?AGENT)(take(?AGENT)(vitamins)) :- naf take(?AGENT:agent)(vitamins).
+
+?- consider(?AGENT)(?X).
+
+
+// --------------------------------------------
+
+// (when Gondor's need was dire)
+
+acute(need):degree(of)(need).
+apparent(need):degree(of)(need).
+basic(need):degree(of)(need).
+clear(need):degree(of)(need).
+compelling(need):degree(of)(need).
+desperate(need):degree(of)(need).
+dire(need):degree(of)(need).
+fundamental(need):degree(of)(need).
+great(need):degree(of)(need).
+high(need):degree(of)(need).
+imperative(need):degree(of)(need).
+overwhelming(need):degree(of)(need).
+paramount(need):degree(of)(need).
+pressing(need):degree(of)(need).
+reduced(need):degree(of)(need).
+strong(need):degree(of)(need).
+urgent(need):degree(of)(need).
+vital(need):degree(of)(need).
+
+// ?- ?X(?Y):degree(of)(?Y).
+
+Gondor[?X:condition => degree(of)(?X:condition)].
+need:condition.
+Gondor[need -> dire(need)].
+
+?- Gondor[need -> ?X].
+
+
+// --------------------------------------------
+
+// ("I am not dying for six college credits" - Thor)
+
+/* FIXME: this has too much nested formula with not enough semantics,
+need to take advantage of advanced semantics, not sure how. */
+
+die(?AGENT):condition.
+
+// intend(?AGENT)(inExchangeFor(die(?AGENT),have(?AGENT,six(college(credits))))) :- ?AGENT = Darcy.
+// intend(?AGENT)(inExchangeFor(die(?AGENT),?AGENT[have -> six(college(credits))])) :- ?AGENT = Darcy.
+// intend(?AGENT)(hi) :- ?AGENT = Darcy.
+
+?- intend(?AGENT)(?X).
+?- ?X:condition.
+
+
+// --------------------------------------------
+
+toothache:medical-condition.
+medical-condition::condition.
+poverty:condition.
+?AGENT[has -> ?CONDITION] :- have(?AGENT,?CONDITION:condition):condition.
+
+agent1:agent.
+have(agent1,poverty).
+have(agent1,toothache).
+
+consider(?AGENT)(intend(?AGENT)(at(?AGENT,dentist))):- have(?AGENT,poverty) and have(?AGENT,toothache).
+
+?- consider(agent)(?X).
+?- consider(agent1)(?X).
+?- ?AGENT[has ->-> ?X].
+?- agent1[has ->-> ?X:medical-condition].
+?- have(agent1,poverty).
+?- have(agent1,wealth).
+
+
+// --------------------------------------------
+
+// earthly cares
+
+// ?
+
+
+// --------------------------------------------
+
+/* (should use the functionality for tracking viewpoints to do
+epistemic reasoning and determine which rules to use on the basis
+of viewpoints) */
+
+/* use the defeasible argumentation here and have certain default
+rules which can be overridden by the appropriate viewpoint */
+
+
+// --------------------------------------------
+
+// (some goals are habitual)
+
+habitual:goal-condition.
+goal-condition::condition.
+
+?GOAL[habitual -> t] :- habitual(?GOAL:goal).
+habitual(take(?AGENT)(vitamins)).
+
+// see(?X) :- p2h{?P,?X}, print(?P)@_prolog(format).
+// 
+// see(?X) :- print(?X)@_prolog(format).
+// 
+// intend(?AGENT)(?INTENTION) :- consider(?AGENT)(intend(?AGENT)(?INTENTION)).
+// 
+// ?- see(take(?AGENT)(vitamins)[habitual -> ?TRUTHHOOD]).
+// ?- see(intend(?AGENT)(take(?AGENT)(vitamins))).
+// 
+// ?- see(consider(?AGENT)(intend(?AGENT)(?INTENTION))).
+// ?- see(intend(?AGENT)(?INTENTION)).
+
+
+
+?- habitual(?CONDITION:condition).
+
+?- _halt.

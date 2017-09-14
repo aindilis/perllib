@@ -1,0 +1,24 @@
+#!/usr/bin/perl -w
+
+use PerlLib::ServerManager::UniLang::Agent;
+use System::FactualStatementExtractor;
+
+use UniLang::Agent::Agent;
+use UniLang::Util::Message;
+
+use Data::Dumper;
+
+$UNIVERSAL::agent = UniLang::Agent::Agent->new
+  (Name => "FactualStatementExtractor",
+   ReceiveHandler => \&Receive);
+$UNIVERSAL::agent->DoNotDaemonize(1);
+$UNIVERSAL::factualstatementextractor = System::FactualStatementExtractor->new();
+$UNIVERSAL::factualstatementextractor->StartServer;
+
+sub Receive {
+  my %args = @_;
+  $UNIVERSAL::factualstatementextractor->ProcessMessage
+    (Message => $args{Message});
+}
+
+$UNIVERSAL::factualstatementextractor->Execute();

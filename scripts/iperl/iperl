@@ -1,0 +1,27 @@
+#!/usr/bin/perl -w
+
+use PerlLib::SwissArmyKnife;
+
+use MyFRDCSA qw(ConcatDir);
+use Proc::ProcessTable;
+
+my $table = new Proc::ProcessTable( 'cache_ttys' => 1 );
+my $theentry;
+foreach my $entry (@{$table->table}) {
+  if ($entry->pid eq $$) {
+    $theentry = $entry;
+  }
+}
+if (defined $theentry) {
+  my $filename = ConcatDir($theentry->cwd, $theentry->fname);
+  my $command = "chase ".shell_quote($filename);
+  my $scriptfilename = `$command`;
+  chomp $scriptfilename;
+  # print "$scriptfilename\n";
+  # now that we have the file, try to load it with install-script-dependencies
+  my $command2 = "/usr/bin/install-script-dependencies ".shell_quote($scriptfilename);
+  print $command2."\n";
+  system $command2;
+  # if it has successed, then run it
+  # then run it
+}

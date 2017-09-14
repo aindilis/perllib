@@ -1,0 +1,6 @@
+
+"sem(1,
+    [word(1001, \'(\'), word(1002, \'Just\'), word(1003, checking), word(1004, that), word(1005, time), word(1006, management), word(1007, was), word(1008, fixed), word(1009, in), word(1010, this), word(1011, version), word(1012, of), word(1013, unilang), word(1014, \')\'), word(1015, \'.\')],
+    [pos(1001, \'LRB\'), pos(1002, \'RB\'), pos(1003, \'VBG\'), pos(1004, \'DT\'), pos(1005, \'NN\'), pos(1006, \'NN\'), pos(1007, \'VBD\'), pos(1008, \'VBN\'), pos(1009, \'IN\'), pos(1010, \'DT\'), pos(1011, \'NN\'), pos(1012, \'IN\'), pos(1013, \'NN\'), pos(1014, \'RRB\'), pos(1015, \'.\')],
+    [],
+    merge(drs([[]:_G20399], [[]:pred(_G20399, thing, n, 12)]), alfa(def, drs([[1005]:_G20456, [1004]:_G20477], [[1005]:pred(_G20456, time, n, 0), [1006]:pred(_G20477, management, n, 0), []:rel(_G20456, _G20477, nn, 0)]), merge(drs([[1003]:_G20582, [1008]:_G20603], [[1003]:pred(_G20582, check, v, 0), [1002]:pred(_G20582, just, a, 0), [1008]:pred(_G20603, fix, v, 0), [1003]:rel(_G20582, _G20399, agent, 0), [1003]:rel(_G20582, _G20477, patient, 0), [1008]:rel(_G20603, _G20582, patient, 0)]), alfa(def, drs([[1010]:_G20784, [1013]:_G20805], [[1011]:pred(_G20784, version, n, 0), [1013]:pred(_G20805, unilang, n, 0), [1012]:rel(_G20784, _G20805, of, 0)]), drs([], [[]:pred(_G20603, event, n, 1), [1009]:rel(_G20603, _G20784, in, 0)]))))) )"

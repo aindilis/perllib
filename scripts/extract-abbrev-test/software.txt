@@ -1,0 +1,46 @@
+Biotext Project Logo
+----------------------------------------------------------------------------------------------------------
+
+BioText Software for Download
+
+Abbreviation Definition Recognition Software
+
+The ExtractAbbrev class implements a simple algorithm for extraction of
+abbreviations and their definitions from biomedical text. Abbreviations (short
+forms) are extracted from the input file, and those abbreviations for which a
+definition (long form) is found are printed out, along with that definition,
+one per line. A file consisting of short-form/long-form pairs (tab separated)
+can be specified in tandem with the -testlist option for the purposes of
+evaluating the algorithm.
+
+Downloading is free, but please acknowledge us by citing this paper if you use
+the code in research:
+
+    A Simple Algorithm for Identifying Abbreviation Definitions in Biomedical
+    Text, Ariel Schwartz and Marti Hearst, in the proceedings of the Pacific
+    Symposium on Biocomputing (PSB 2003) Kauai, Jan 2003. pdf
+
+    Java sourcecode     ExtractAbbrev.java
+    Java Documentation  ExtractAbbrev.html
+    Sample input file   test.txt
+    Sample testing file pairs.txt
+
+Also available is a dataset for evaluating the algorithm that was used in the
+original paper.
+
+Software to parse and load MEDLINE into a RDBMS
+
+Downloading is free, but please acknowledge us by citing this paper if you use
+the code:
+
+    Tools for loading Medline into a local relational database Diane E. Oliver,
+    Gaurav Bhalotia, Ariel S. Schwartz, Russ B. Altman, Marti A. Hearst, BMC
+    Bioinformatics 2004, (7Oct2004) Available at BioMedCentral
+
+    MedlineParser java code. Applicable to MEDLINE 2004.   gzipped tar file  
+    zip file
+
+    MedlineParser perl code. Applicable to MEDLINE 2003.   parsemedline.pl  
+    medline-schema-perl-oracle.sql
+
+----------------------------------------------------------------------------------------------------------

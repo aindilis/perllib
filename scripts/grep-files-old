@@ -1,0 +1,20 @@
+#!/usr/bin/perl -w
+
+use BOSS::Config;
+use PerlLib::SwissArmyKnife;
+
+$specification = q(
+	-s <search>		Search
+	-f <file>		File containing list of files to search
+);
+
+my $config =
+  BOSS::Config->new
+  (Spec => $specification);
+my $conf = $config->CLIConfig;
+# $UNIVERSAL::systemdir = "/var/lib/myfrdcsa/codebases/minor/system";
+
+if ( $conf->{'-f'} and -f $conf->{'-f'}) {
+  my $c = read_file($conf->{'-f'});
+  my $files = [split /\n/, $c];
+}

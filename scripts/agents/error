@@ -1,0 +1,92 @@
+[Server /var/lib/myfrdcsa/codebases/internal/unilang/unilang accepting clients]
+Agent UniLang-Client registered
+Loading CronFile /etc/myfrdcsa/manager/crontab.
+Agent Manager registered
+Starting Schedule::Cron.
+RTE, test
+Agent RTE registered
+Agent Formalize2-Client-0.378721176404248 registered
+Use of uninitialized value $_[0] in join or string at /usr/share/perl5/XML/Twig.pm line 4326.
+RTE, test
+Loading the Cyc2Synset mapping.
+Loading the Synset2QueryData mapping.
+Accepting sentences from user.
+Agent Formalize2 registered
+Agent Enju-Client-0.482177104558538 registered
+Agent Enju registered
+Using faster mogura Enju system
+Waiting for parser to initialize...
+Mogura 2.3.1
+Copyright (c) 2005-2008, Tsujii Laboratory, The University of Tokyo.
+All rights reserved.
+Loading grammar module "mogura/grammar"... done.
+Loading disambiguation module "mogura/model"... done.
+Loading parser module "mayz/up"... done.
+Loading module "enju/outputdep"... done.
+Initializing parser...
+  Loading grammar database: /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./lib/enju/DATA/Enju.lexicon /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./lib/enju/DATA/Enju.templates
+  Initializing external tagger: /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./bin/stepp -t -m /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./share/stepp/models_wsj02-21
+  Initializing morphological analyzer: /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./bin/enju-morph /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./lib/enju/DATA
+  Loading Unigram FOM model: /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./lib/enju/DATA/Enju-lex.output.gz
+  Loading lexicon table file '/s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./lib/enju/DATA/Enju.lexicon.tbl'... done
+  Loading CFG grammar from /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./lib/enju/DATA/mogura.cfg .. done
+  Loading restricted CFG grammar from /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./lib/enju/DATA/mogura.restricted.cfg .. done
+  Loading model file from /s1/temp/myfrdcsa/sandbox/enju-2.3.1/enju-2.3.1/./lib/enju/DATA/mogura.model.gz .. done
+done.
+ReadyInitialized.
+Use of uninitialized value $_[0] in join or string at /usr/share/perl5/XML/Twig.pm line 4326.
+Agent KBS2-client-0.709373596804788 registered
+RTE, test
+Sending: The sale was made to pay Yukos' US$ 27.5 billion tax bill, Yuganskneftegaz was originally sold for US$ 9.4 billion to a little known company Baikalfinansgroup which was later bought by the Russian state-owned oil company Rosneft .
+Use of uninitialized value $_[0] in join or string at /usr/share/perl5/XML/Twig.pm line 4326.
+Agent CoreferenceResolution-Client-0.886597529734125 registered
+Agent CoreferenceResolution registered
+cd /var/lib/myfrdcsa/sandbox/bart-20091005/bart-20091005/BART-snapshot/BART && source setup.sh && java -Xmx1024m elkfed.webdemo.BARTServer
+7 [main] INFO org.mortbay.log - Logging to org.slf4j.impl.SimpleLogger(org.mortbay.log) via org.mortbay.log.Slf4jLog
+1652 [main] INFO org.mortbay.log - serving file:/s1/temp/myfrdcsa/sandbox/bart-20091005/bart-20091005/BART-snapshot/BART/webdemo_css/
+1661 [main] INFO org.mortbay.log - jetty-6.1.18
+3476 [main] INFO org.mortbay.log - Opened /s1/temp/myfrdcsa/sandbox/bart-20091005/bart-20091005/BART-snapshot/BART/bart_server.log
+3518 [main] INFO org.mortbay.log - Started SocketConnector@0.0.0.0:8125
+Loading classifier from /s1/temp/myfrdcsa/sandbox/bart-20091005/bart-20091005/BART-snapshot/BART/././models/ner/ner-eng-ie.crf-3-all2006-distsim.ser.gz ... done [18.0 sec].
+Initialized.
+
+
+Clearing
+$VAR1 = {
+          'ResolutionArgs' => {
+                                'Text' => undef
+                              }
+        };
+Use of uninitialized value $_[0] in print at /usr/lib/perl/5.10/IO/Handle.pm line 148.
+Nov 29, 2009 11:54:37 PM elkfed.mmax.minidisc.MarkableLevel deleteAllMarkables
+INFO: deleting markables on level chunk
+Nov 29, 2009 11:54:37 PM elkfed.mmax.minidisc.MarkableLevel deleteAllMarkables
+INFO: deleting markables on level markable
+Nov 29, 2009 11:54:37 PM elkfed.mmax.minidisc.MarkableLevel deleteAllMarkables
+INFO: deleting markables on level sentence
+Nov 29, 2009 11:54:37 PM elkfed.mmax.minidisc.MarkableLevel deleteAllMarkables
+INFO: deleting markables on level enamex
+Nov 29, 2009 11:54:37 PM elkfed.mmax.minidisc.MarkableLevel deleteAllMarkables
+INFO: deleting markables on level parse
+Nov 29, 2009 11:54:37 PM elkfed.mmax.minidisc.MarkableLevel deleteAllMarkables
+INFO: deleting markables on level morph
+Nov 29, 2009 11:54:37 PM elkfed.mmax.minidisc.MarkableLevel deleteAllMarkables
+INFO: deleting markables on level pos
+37643 [722090788@qtp-690820521-0] ERROR org.mortbay.log - /BARTDemo/ShowText/process/
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.AbstractStringBuilder.deleteCharAt(AbstractStringBuilder.java:766)
+	at java.lang.StringBuffer.deleteCharAt(StringBuffer.java:399)
+	at elkfed.mmax.DiscourseUtils.getText(DiscourseUtils.java:54)
+	at elkfed.mmax.pipeline.SentenceDetector.getOnsetOffset(SentenceDetector.java:171)
+	at elkfed.mmax.pipeline.SentenceDetector.annotateDocument(SentenceDetector.java:96)
+	at elkfed.mmax.pipeline.PipelineComponent.annotate(PipelineComponent.java:90)
+	at elkfed.mmax.pipeline.Pipeline.annotateData(Pipeline.java:45)
+	at elkfed.webdemo.ShowText.run_pipeline(ShowText.java:63)
+	at elkfed.webdemo.ShowText.processRequest(ShowText.java:255)
+	at elkfed.webdemo.ShowText.doPost(ShowText.java:331)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:502)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:389)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.javaClearing
+

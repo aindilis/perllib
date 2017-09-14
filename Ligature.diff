@@ -1,0 +1,20 @@
+--- Ligature.pm	2013-09-21 15:04:11.991121312 -0500
++++ /usr/local/share/perl/5.18.1/Text/Ligature.pm	2013-09-21 14:51:48.000000000 -0500
+@@ -39,7 +39,7 @@
+ 
+     # longest token matching
+     for my $chars (sort { length $b <=> length $a } @defaults) {
+-        $text =~ s/$chars/$lig_for{$chars}/sg;
++        $text =~ s/$chars/$lig_for{$chars}/g;
+     }
+ 
+     return $text;
+@@ -54,7 +54,7 @@
+     }
+ 
+     for my $lig (keys %chars_for) {
+-        $text =~ s/$lig/$chars_for{$lig}/sg;
++        $text =~ s/$lig/$chars_for{$lig}/g;
+     }
+ 
+     return $text;

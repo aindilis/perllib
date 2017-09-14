@@ -1,0 +1,75 @@
+<queryResponse>
+  <answer result='yes' number='1'>
+    <proof>
+      <proofStep>
+	<premises>
+	</premises>
+	<conclusion>
+	  <formula number='6'>
+	    (not (> 5 3))
+	  </formula>
+	</conclusion>
+      </proofStep>
+      <proofStep>
+	<premises>
+	  <formula number='6'>
+	    (not (> 5 3))
+	  </formula>
+	</premises>
+	<conclusion>
+	  <formula number='7'>
+	    (not (> 5 3))
+	  </formula>
+	</conclusion>
+      </proofStep>
+      <proofStep>
+	<premises>
+	  <formula number='7'>
+	    (not (> 5 3))
+	  </formula>
+	</premises>
+	<conclusion>
+	  <formula number='8'>
+	    (not (> 5 3))
+	  </formula>
+	</conclusion>
+      </proofStep>
+      <proofStep>
+	<premises>
+	  <formula number='8'>
+	    (not (> 5 3))
+	  </formula>
+	</premises>
+	<conclusion>
+	  <formula number='9'>
+	    (not (> 5 3))
+	  </formula>
+	</conclusion>
+      </proofStep>
+      <proofStep>
+	<premises>
+	  <formula number='9'>
+	    (not (> 5 3))
+	  </formula>
+	</premises>
+	<conclusion>
+	  <clause number='10'>
+	    (not (> 5 3))
+	  </clause>
+	</conclusion>
+      </proofStep>
+      <proofStep>
+	<premises>
+	  <clause number='10'>
+	    (not (> 5 3))
+	  </clause>
+	</premises>
+	<conclusion>
+	  <clause number='12'>
+	  </clause>
+	</conclusion>
+      </proofStep>
+    </proof>
+  </answer>
+  <summary proofs='1'/>
+</queryResponse>

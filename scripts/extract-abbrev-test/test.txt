@@ -1,0 +1,442 @@
+Location: http://users.numericable.lu/martincaminada/aastm.html                                                                           
+Advanced Argumentation Services for Trust Management
+
+Overview:
+The overall aim of AASTM is to enhance today's generation of argumentation formalisms and implementations in order to become suitable for
+a wider variety of real-life applications, such as reasoning about trust. This requires a unified theory that integrates the various
+forms of argumentation related functionality, as well as efficient proof procedures and sound and scalable software components. The
+specific application of the argumentation theory to the field of trust management is the task of a PhD student who is to be employed to
+work on the project.
+
+Objectives:
+AASTM is focused on knowledge-based services for the Information Society, based on semantically rich logic formalisms called
+Argumentation Systems [Dung 1995, Vreeswijk 1997]. The overall aim of AASTM is to enhance today's generation of argumentation formalisms
+and implementations in order to become suitable for a wider variety of real-life applications, such as trust management. The objectives
+of AASTM are:
+
+ 1. to provide formal foundations for an advanced argumentation model for trust management by bringing functionality like defeasible
+    priorities [Prakken & Sartor 1997], Socratic-style arguments [Caminada 2004] and hierarchical arguments [Modgil 2006] under a unified
+    formal umbrella.
+ 2. to investigate practical techniques to mechanise argumentation in the formal model.
+ 3. to evaluate the model and techniques through a small-scale experimental prototype in the domain of trust management.
+ 4. the design and implementation of a set of software components which can be used in trust management.
+
+Actions and means involved:
+Over the last ten years, interest in argumentation has expanded dramatically, driven in part by theoretical advances but also by
+successful demonstrations of a wide range of practical applications. AASTM builds on a common framework recently developed in the
+European Sixth Framework IST project ASPIC (2003-2006), which establishes on the one hand a formal foundation to support the creation,
+deployment and validation of practical argumentation systems, and on the other hand a suite of software components for integrating these
+components with knowledge (e.g. semantic web) resources and legacy systems.
+
+Though argumentation technology is currently being applied in fields as medical advising systems [Fox & Das 2000] and machine learning
+[Mozina et al 2005], present implementations have a limited functionality. AASTM therefore develops argumentation services using advanced
+approaches like defeasible priorities [Prakken & Sartor 1997], Socratic-style arguments [Caminada 2004] and hierarchical arguments
+[Modgil 2006], which have thus far not been formalized to such an extent that led to software components could be developed and
+implemented. A research assistant and an assistant are employed for the following three actions:
+
+ 1. Basic research. The research assistant develops a conceptual and formal framework and analysis that takes the three advanced
+    approaches into account.
+ 2. Innovative trust applications. The research assistant together with the assistant apply the new theory to the domain of trust
+    management, requiring reasoning performed using a set of rules of thumb, that is elicited from human experts, or other forms of
+    common sense reasoning. It considers in particular rules of thumb as used in legal practice.
+ 3. Sound and scalable software. The research assistant develops a software implementation of argumentation technology, based on the
+    previous two points. Prototypes are expected to be limited to systems which assume human supervision.
+
+AASTM contributes technology for projects on security and trust, such as TRIAS and SecanLab at the University of Luxembourg.
+
+Structuration of the project:
+Essentially, AASTM is organized around the interaction among the research assistant and the assistant, in which the research assistant is
+developing the formal model, and the assistant is developing the trust application and the implementation. Their interaction is arranged
+via the trust application, which:
+
+ 1. generates the requirements for the formal model
+ 2. is used to evaluate the formal model
+
+The project leader has several years of experience with managing projects in multi-agent systems and enterprise architecture with this
+organization, and will see to it that it remains as effective as in previous projects.
+
+Besides, the organization of the project is structured along three work packages following the three actions of the project. The level of
+accomplishment of the objectives will be measured and assessed during the project’s lifetime, by providing a direct correspondence with
+the Work packages structure.
+
+Action 1. Basic research.
+Task 1.1 Advanced semantics of argumentation frameworks, using semantics of abstract argumentation frameworks [Dung 1995, Baroni et al
+2005, Coste-Marquis et al 2005], using the connection between logic programming and argumentation [Dung 1995, Caminada 2006a]
+Task 1.2 Conceptual analysis of argumentation forms and methodology, extending abstract argumentation frameworks [Amgoud & Cayrol 2002,
+Bench-Capon 2003].
+
+Action 2. Application to trust management.
+Task 2.1. Building on results in the the TRIAS project, the argumentation theory is used to argue about the reliability of sources.
+Task 2.2. Trustworthiness based on the arguments used in dialogue, a new application domain thus far not studied in the literature.
+
+Action 3. Software development.
+Task 3.1. The suitability of particular forms of formal arguments (like trees [Vreeswijk 1997, ASPIC 2005], lists [Prakken & Sartor 1997]
+and sets [Besnard & Hunter 2001] for trust management is analyzed, and proof procedures and software implementations of the argumentation
+theory are developed.
+Task 3.2. Scientific documentation and dissemination material.
+
+Present + contextual situation:
+From an everyday point of view arguments are "reasons to believe and reasons to act". Until recently the idea of "argumentation", the
+process of creating arguments for and against competing claims, was a subject primarily of interest to philosophers and lawyers. In
+recent years, however, there has been an enormous growth of interest in the subject from formal and technical perspectives in Computer
+Science and Artificial Intelligence, and wide use of argumentation technologies in practical applications. The benefits of argumentation
+are a form of logic that is less "brittle" than classical logic while still being highly expressive and formally sound.
+
+In computer science and artificial intelligence, argumentation is viewed as a mechanical procedure for interpreting events, organising
+and presenting documents and making decisions about actions. From a theoretical perspective, argumentation offers a novel framework
+casting new light on classical forms of reasoning (including logical deduction, induction, abduction and plausible reasoning),
+communication explanations of advice, supporting discussion and negotiation in computer-supported cooperative work) and learning. From a
+human-computer interaction point of view argumentation is a versatile technique that facilitates natural system behaviour and is more
+easily understood by human users and operators. Generally speaking, argumentation capabilities have the potential to add value to any
+computer-assisted system that provides information and advice to human users or other agents.
+
+The European Sixth Framework IST project ASPIC (2003-2006) has developed a common framework recently developed. The services that have
+emerged as core functions of the argumentation paradigm include reasoning, decision-making, learning and communication. ASPIC establishes
+a formal foundation to support the creation, deployment and validation of practical argumentation systems ASPIC has developed a suite of
+software components based on this framework and a development platform for integrating these components with knowledge (e.g. semantic
+web) resources and legacy systems.
+
+In ASPIC, the notion of autonomy is used to denote the requirement that the software must have some ability to decide for itself which
+goals it should adopt and how these goals should be achieved. The methodology of the project uses argumentation in order to permit agents
+to treat the reasons that justify alternative goals and actions (arguments for and against) as first-class objects that can be explicitly
+analysed, questioned and rebutted.
+
+Argumentation provides a flexible way of dealing with competing hypotheses in such circumstances, accommodating a wide range of
+conventional uncertain reasoning methods as well as more advanced inference techniques like defeasible and non-monotonic reasoning and
+paralogical systems (systems that are tolerant of inconsistency and contradiction). In non-monotonic and uncertain reasoning,
+argumentation systems have been used to define inference systems for existing non-monotonic logics or to define a non-standard (most
+often non-monotonic) consequence relation for a particular logic based on a notion of argument. Although these works differ in technical
+detail and the underlying formal languages they use all of them combine arguments in some way, by aggregation of sets of arguments or
+undercutting and defeat among arguments, to arrive at cases for competing claims or propositions which can be directly compared. This is
+a flexible and natural way for agents to reason, make decisions, and select or modify plans in a complex and changing world.
+
+Complex technical systems and services increasingly require several autonomous agents that have to collaborate and communicate in order
+to achieve required objectives, because of the inherent interdependencies and constraints that exist between their goals and tasks.
+Increasingly they depend upon complex conversations concerned with negotiation or persuasion where agents have different capabilities and
+viewpoints. Such dialogues have at their heart an exchange of proposals, claims or offers. What distinguishes argumentation-based
+discussions from other approaches is that proposals can be supported by the reasons that justify (or oppose) them, roughly equating to
+explanations for why a proposal or counter-proposal was made. This permits greater flexibility than in other decision-making and
+communication schemes since, for instance, it makes it possible to persuade agents to change their view of a claim by identifying
+information or knowledge that is not being considered, or by introducing a new relevant factor in the middle of a negotiation or to
+resolve an impasse.
+
+Description of the project:
+AASTM aims to contribute to both the theoretical state of the art of formal argumentation, as well as to the available software
+implementations. The latter is definitely not a trivial task, as it involves issues of computability, complexity and efficiency in a
+broad sense.
+
+As for the theoretical part, AASTM aims to make contributions in "Dung-base" as well as in "Dung-instantiated" (see the General Technical
+Description). As for Dung-base, Caminada has recently introduced the concept of semi-stable semantics [Caminada 2006c], which is a
+particularly promising alternative for domains where traditionally stable semantics has been used. However, current proof procedures for
+semi-stable semantics are very limited and the issue of computational complexity has barely been touched. AAS aims to deal with these
+issues in order to come up with an efficient software implementation.
+
+As for "Dung-instantiated", we aim to study which kinds of instantiated arguments are best suited for particular domains. Prakken, for
+instance, has argued that arguments composed of strict and defeasible rules are best suited for the legal domain. Caminada, in his PhD
+thesis [Caminada 2004] has discussed the difference between epistemical and constitutive reasoning and its consequences for the validity
+of default contraposition. AAS aims to put these considerations in a broader perspective and deal with the often neglected issue of which
+formalisms should be applied under which particular circumstances and for which domains.
+
+In the TRIAS project at the University of Luxembourg, the problem of a knowledge seeking agent to evaluate the reliability of knowledge
+sources and knowledge items is studied, which is necessary to plan its search, to handle fusion, in particular conflicts, and to
+guarantee the quality of its informational output. The basic question is which degree of belief and/or which judgments the agent should
+attach to evidence it receives from a particular source. In a nutshell, this depends on two factors. First, on its prior belief about the
+subject matter, e.g. how plausible it considers certain assumptions. Secondly, on its assessment of the reliability of the knowledge
+provider in the given situation, i.e. on how much the agent trusts the source of specific information. To determine the appropriate
+degree of trust, the agent has to explore its partial know-ledge about the web of science and its constituents, do some reasoning, and
+possibly even initiate some additional probing or background checks. In the AASTM project, we use this problem to define the first set of
+requirements and evaluation of the developed argumentation techniques.
+
+Thereafter, we study a new question in trust management. Assuming sources are able to argue themselves, and we observe this
+argumentation, what can we deduce from the trustworthiness of the source? For example, when a source would provide conflicting
+information, then we would quickly deduce that the source is unreliable. Other reasons to distrust a source if there is a bias towards
+particular outcomes. For example, if we consider information sources, the provided information may be colored by political or ideological
+ideas. In general such biases are not easily detected, but when advanced systems can be asked or forced to give an argumentation for
+their delivered services, such evaluation becomes within reach. As far as we know, such studies in trust management have not been
+described in the literature yet.
+
+Finally, we develop software which can be used in the platform developed in the ASPIC project, using state of the art service technology.
+
+Cost/benefit ratio:
+Argumentation is a relatively new paradigm for semantically rich logic systems. It builds on important European strengths, notably in
+mathematical logic and computational logic, and promises to resolve a number of important limitations on logic-based technologies.
+Argumentation makes use of the concepts of computational logic (e.g. logic programming, logic databases, constraint logics, description
+logics) but provides a natural way of introducing knowledge of the world, where "knowledge" is frequently inconsistent, subjective and
+relativistic. Classical logics are intolerant of these realities and argumentation theory provides a powerful but essentially
+conservative way of extending classical logics to make them more flexible and robust, through greater tolerance of uncertainty (e.g. by
+assessing collections arguments for propositions rather than "proofs") and ambiguity (by allowing internally consistent arguments to be
+constructed from mutually inconsistent knowledge resources and resolving the inconsistency through negotiation). Argumentation
+technologies therefore have the potential to significantly extend the range of application of logic-based technologies for both research
+and practical use.
+
+By embodying these research results in a set of standard software components, and providing a development platform for integrating the
+components with other software and resources such as web resources, we believe that AAS has the capability to catalyse commercial and
+industrial exploitation of argumentation techniques. By making these components available in open source form this will facilitate
+development of argumentation based technologies and products. Implementation of argumentation services or argumentation based agent
+technology in software applications could significantly strengthen the software industry and provide a valuable technological advantage.
+
+Argumentation research is also likely to have significant theoretical impact. For example, some argumentation systems have been developed
+as "rational" reasoning and decision-making systems and promise to resolve long-standing problems of pure quantitative approaches
+(notably probability and statistical decision-theory) and pure logic-based approaches (e.g. predicate logic, non-monotonic logics).
+
+A particularly prominent beneficiary will be the software agents' community. An increasing number of software applications is being
+conceived, designed, and implemented using the concept of autonomous agents, ranging from email filtering, through electronic commerce,
+to large medical, regulatory and industrial applications. Argumentation technology provides important new capabilities for agent systems
+through new ways of exploiting knowledge in practical reasoning, more flexible decision-making from better management of uncertainty,
+more sophisticated negotiation capabilities between agents which need to share responsibility for complex tasks, and integration of
+machine-learning techniques into autonomous systems, which currently have very limited abilities in this respect.
+
+The cost-benefit ration of this project is very good, since the costs are limited to costs for attracting personnel, and the expected
+scientific output in number of scientific papers is very high. Costs are restricted to costs for personnel. We do no expect there to be a
+need for expensive software development environments (much argumentation software has been written in freely available platforms such as
+Ruby and Perl) and having most of the programming done by the proposed PhD student. Moreover, the project will develop a substantial
+expertise in formal and computational argumentation. The proposed research assistant has been one of the most active participants within
+the ASPIC project. The ASPIC project has led to many new insights in the field of formal argumentation. Some of these insights have not
+yet been completely elaborated on. We expect there to be an opportunity for AAS to fill in these gaps. In this way, AAS could with
+relatively little resources obtain quite interesting results. Based on previous experiences, it is expected that AAS will result in a
+significant number of high-level publications. The proposed research assistant as well as the project leader have much relevant
+experience in the field of formal argumentation, as well as an excellent international network in the field of research.
+
+General technical description:
+The approach of formal argumentation emerged in the 1990s [Vreeswijk 1993, Dung 1995, Pollock 1992+1995, Simari & Loui 1992] as a
+response on developments regarding defeasible logic in the 1980s (like [Reiter 1980, McCarthy 1986]) The unique approach of argumentation
+for defeasible reasoning is that instead of a monlithic approach for defeasible entailment as is observed in the field of traditional
+nonmonotonic logics (such as default logic or autoepistemic logic), entailment under the argumentation approach is defined in a modular
+and quite intuitive way. Based on the information in a knowledge base, arguments are constructed. It is then examined how these arguments
+interact and attach each other. Based on the total picture of the set of arguments and the defeat relation between these arguments it is
+then determined, using a particular argument-based semantics [Dung 1995, Baroni & Giacomin 2006, Coste-Marquis et al 2005, Caminada
+2006c] what the different extensions of arguments are. Based on these extensions, one then obtains the conclusions that can be seen as
+justified, using a sceptical or credulous approach [Baroni & Giacomin 2006].
+
+Although some approaches to formal argumentation already existed in the early 1990s [Simari & Loui 1992, Vreeswijk 1993] argumentation
+was given a great impuls by the work of Dung [Dung 1995] on the semantics of abstract argumentation frameworks. The approach of Dung
+received a lot of following, both by those who applied the abstract semantics as one of the components in their argumentation formalism
+(like [Prakken & Sartor 1997, Caminada & Amgoud 2005]), as well as by those who proposed alternative argument-based semantics given a
+Dung-style argumentation framework (like [Baroni et al 2005, Caminada 2006, Coste-Marquis et al 2005]) and by those who have proposed to
+extend Dung's notion of an argumentation framework with new functionality (like [Bench-Capon 2003, Amgoud et al 2004]. Using terminology
+borrowed from the EU funded ASPIC project one can thus distinguish the following levels of research regarding the functionality of formal
+argumentation:
+
+ 1. "Dung-base". Abstract argument semantics, using argumentation frameworks as defined in [Dung 1995]. The central research question
+    here is which extensions of arguments one can distinguish given an argumentation framework. Apart from the well-known approaches of
+    stable, preferred and grounded semantics, various scholars have stated alternatives such CF2 semantics [Baroni et al 2005], prudent
+    semantics [Coste-Marquis et al 2005] and semi-stable semantics [Caminada 2006c]
+ 2. "Dung-instantiated". The issue of argument-based semantics leaves the internal structure of the arguments, as well as the nature of
+    the defeat relation completely abstract. Various approaches have been proposed with respect to the structure of arguments, inclusing
+    lists [Prakken & Sartor 1997], trees [ASPIC 2005] or sets of assumptions [Besnard & Hunter 2001]. As for the defeat relation, one can
+    distinguish between assumption attacks (as for instance implemented in [Besnard & Hunter 2001]), Pollock-style undercutting of rules
+    [Pollock 1992+1995], conclusion rebutting [Pollock 1992+1995] and Vreeswijk’s notion of rule rebutting. Also advanced forms of
+    arguments, like Caminada's Socratic-style arguments [Caminada 2004] and Prakken's notion of accrued arguments [Prakken 2005] have
+    been shown to fit in Dung's standard notion of an argumentation framework. As for the defeat relation, this can be made to take into
+    account various forms of dealing with priorities, inclusing weakest link, last link or the notion of defeasible priorities [Prakken &
+    Sartor 1997]. In must be mentioned, however, that a proper instantiation of Dung's theory is not a trivial task; various
+    argumentation formalisms have been criticized [Caminada & Amgoud 2005] for yielding unexpected and undesired outcomes as result of
+    unsuitable instantiations.
+ 3. "Dung-extended". Some scholars have argued that particular forms of natural argument and informal argumentation concepts require a
+    formalization that goes beyond Dung's standard notion of an argumentation framework. An example of this would be Bench-Capon's
+    approach of value based argumentation [Bench-Capon 2003]. Another example is the approach of bipolar argumentation frameworks [Amgoud
+    et al 2004]. Some approaches to deal with argument-strenth (like [Amgoud & Cayrol 2002]) also take place at the level of
+    Dung-extended.
+
+Organisation description:
+AAS is proposed as a project involving three persons:
+
+  • 1 postdoc (Martin Caminada) whose focus is the formal argumentation theory, and will also provide daily support to the PhD student
+  • 1 PhD student (to be assigned) who will be responsible for the development of argumentation software tools and procedures
+  • 1 staff member (Leon van der Torre) who will be supervising the project
+
+Essentially, the project is organized around the interaction among the research assistant and the assistant, in which the research
+assistant is developing the formal model, and the research assistant is developing the trust application and the implementation. Their
+interaction is arranged via the trust application, which:
+
+ 1. generates the requirements for the formal model
+ 2. is used to evaluate the formal model
+
+The project leader has several years of experience with managing projects in multi-agent systems and enterprise architecture with this
+organization, and will see to it that it remains as effective as in previous projects.
+
+Task T1.1: Advanced semantics of argumentation frameworks
+This task has as main purpose some of the currently unsolved argumentation issues in the field of ``Dung-base’’ (see General Technical
+Description). The key research question is, given a set of arguments and a defeat relation between these arguments, which extensions of
+arguments can be constructed. Current approaches include well-known semantics such as stable, grounded, preferred and complete semantics
+[Dung 1995], as well as the more recently developed CF2 semantics [Baroni et al 2005] and prudent semantics [Coste-Marquis et al 2005]. A
+recent and promising approach is semi-stable semantics as propoese in [Caminada 2006]. The unique property of semi-stable extensions is
+that they are equal to the stable extensions in situations where there is at least one stable extension, while at the same time the
+existance of semi-stable extensions is guarenteed, even in situations where no stable extensions exist. Other desireble properties also
+apply [Caminada 2006]. Semi-stable extensions thus provides an interesting and fault tolerant alternative for domains where traditionally
+stable semantics has been applied.
+
+One important issue that needs to be resolved, however, is the development of eficient proof procedures for semi-stable semantics,
+especially for query-based applications. The approach as has been developed until now often requires the generation of all preferred
+extensions [Caminada 2006] which is hardly feasible for practical purposes. The first objective of task T1.1 is therefore the development
+of more efficient and practical proof procedures for semi-stable semantics.
+
+One field where stable semantics is still widely in use is logic programming and answer set programming. An interesting research issue is
+therefore how the concept of semi-stable semantics can be applied to obtain a level of fault-tolerance for logic programming and answer
+set programming. The application of semi-stable semantics to logic programming and answer set programming is therefore the second
+objective of task T1.1 and will be persued both in a declarative was, as well as in the form of executable proof procedures.
+
+This task will provide part of the theoretical underpinning for AAS. However, as well as being sound, the theory must be computationally
+tractable for the purpose of software development.
+
+Task T1.1 will be mainly the responsibility of the research assistant (Martin Caminada), who already has experience both on semi-stable
+semantics as well as on logic programming and answer set programming. Task T1.1 will start with the development of proof procedures for
+semi-stable semantics as applied in abstract argumentation. This will result in a scientific publication, which is scheduled to be
+submitted before month 9.
+
+The results of this publication will then be used as a starting point for the application of semi-stable semantics in the field of logic
+programming and answer set programming. This will again result in a scientific publication (for which Caminada will take responsibility)
+which is scheduled to be submitted before month 18.
+
+Task T1.2: Conceptual analysis of argument forms and methodology
+Many forms of formal argument have been stated in the literature, including lists [Prakken & Sartor 1997], sets [Besnard & Hunter 2001]
+and trees [Vreeswijk 1997, ASPIC 2005]. One particular point that has often been overlooked is which of these specific argument forms is
+most applicable to which particular argumentation domain. As an illustration, some argument forms allow the principle of default
+contraposition, which is particularly problematic in the field of legal reasoning. The first objective of task T2.1 is therefore to come
+up with a comprehensive theory on which kinds of formal arguments are applicable to which domains (legal reasoning, trust management,
+...). This will result in at least one scientific publication.
+
+Another related point is that of general methodology for the construction of argumentation formalisms. In his thesis, Caminada treated
+the issue of the construction of an argumentation formalism basically as a modeling problem; the idea is that formal argumentation models
+a particular field of informal argumentation (legal, medical, epistemical, ...). The issue of methodology then becomes how one can be
+sure one has adequalely modeled the argumentation and reasoning that goes on in a particular domain. In his PhD thesis, Caminada has
+identified several ways of justifying particular design decisions in argumentation formalisms, of which the notion of mirror examples is
+the most striking one [Caminada 2004]. The second objective of task T1.2 is therefore to work out a comprehensive theory on argumentation
+design decisions. This will result in another scientific publication.
+
+Task T1.2 will be the main responsibility of Caminada. Van der Torre will also cooperate on the topic of formal argumentation as a
+modeling issue. As much work has already been done in Caminada’s PhD thesis, we do not expect there to be major problems that need to be
+overcome. The existing work, however, does need to be elaborated on and be related to other work, which requires a reasonable amount of
+work to be spent on it.
+
+Task T2.1: Arguments about Trust This work will aim to validate proposals for formal argumentation models and implementation techniques
+and algorithms on trust management. Using appropriate tools we will develop and test algorithms for these argumentation techniques (e.g.
+theorem provers, dialogues managers, induction systems) with a particular focus on flexibility, scalability and interoperability. The
+work package will also investigate optimization options and techniques for core algorithms.
+
+Objectives:
+
+ 1. Requirements for the argumentation model
+ 2. Evaluation of the Argumentation model
+
+For the use of the trust model and scenarios in trust management, we use results obtained in the TRIAS project. The task will be done by
+the assistant, together with researchers involved in the TRIAS project (including the project leader).
+
+Task T2.2: Trust Application
+Objectives:
+
+ 1. Scenarios for trusting a source based on its argumentation
+ 2. Criteria to trust in a source based on its argumentation
+ 3. Prototype of reasoning about trust based on argumentation
+
+This will be partly exploratory, given the lack of related research on how the used arguments may indicate the reliability of a source.
+The task will therefore include the assistant, the research assistant, and active involvement of the project leader.
+
+We start by discussing some scenarios in which the argumentation of a source may indicate the trustworthiness of a source, by rereading
+some of the existing literature on trust research and explore how explicit argumentation may be used as an additional parameter.
+
+From the scenarios we define criteria, like consistency or biases. Finally we test the trustworthiness using the formal model and a
+prototype. The material obtained in this task will be the main result of the PhD thesis of the assistant (which he or she will write
+during the third year of the project).
+
+Task T3.1: Software development
+The main objective of task T3.1 is the development of a software component that is capable of argumentation using at least grounded,
+credulous preferred and semi-stable semantics.. Apart from that, the software should also implement various advanced argumentation
+features that have yet been left unimplemented by existing argumentation software, such as defeasible priorities, Socratic-style
+arguments and hierarchical argumentation.
+
+The development of argumentation software is mainly the task of the still to be assigned research assistant. Standard software
+engineering methodology will apply.
+
+Task T3.2: Exploitation and dissemination
+The main objective of task T3.2 is to manage project results exploitation and dissemination. We will seek to disseminate its research
+results to the academic community (to be performed by participating in conferences, summer schools like the ESSLLI and giving lectures)
+and to demonstrate the practical viability of argumentation technology as illustrated by the developed software of task T3.1.
+
+Task T3.2 is the responsibility of everyone involved in the AAS project (van der Torre, Caminada and the yet to be assigned assistant).
+We aim to perform at least one tutorial on formal argumentation and write at least one article on argumentation technology for an
+industrial (non-scientific) audience.
+
+Software dissemination. The AAS components will be documented and made available for research purposes in source code form.
+
+References
+
+[Amgoud & Cayrol 2002] L. Amgoud and C. Cayrol, "A reasoning model based on the production of acceptable arguments". Annals of
+Mathematics and Artificial 34 (1-3):197-215 (2002)
+
+[Amgoud et al 2004 ] L. Amgoud, C. Cayrol and M.-Ch. Lagasquie-Schiex, "On the bipolarity in argumentation frameworks". NMR 2004 1-9
+(2004)
+
+[ASPIC 2005] ASPIC consortium, "Deliverable D2.6 - Final review and report on formal argumentation system" (2005)
+
+[Baroni et al 2005] P. Baroni, M. Giacomin and G. Guida. "Scc-recursiveness: a general schema for argumentation semantics". AIJ 168
+(1-2):165-210 (2005)
+
+[Baroni & Giacomin 2006] P. Baroni and M. Giacomin, "Evaluation and comparison criteria for extension-based argumentation semantics".
+COMMA 2006
+
+[Bench-Capon 2003] T.J.M. Bench-Capon, "Persuasion in Practical Argument Using Value Based Argumentation Frameworks". Journal of Logic
+and Computation 13(3):429-448 (2003)
+
+[Besnard & Hunter 2001] Ph. Besnard and A. Hunter, "A logic-based theory of deductive arguments". AIJ 128(1-2):203-235 (2001)
+
+[Boella et al, 2005a] G. Boella, J. Hulstijn, and L. van der Torre, Argument games for interactive access control. Proceedings of WI05.
+IEEE, 2005.
+
+[Boella et al, 2005b] G. Boella, J. Hulstijn, and L. van der Torre, Argumentation for access control. Proceedings of AI*IA05. Springer,
+2005.
+
+[Boella et al, 2006] G. Boella, J. Hulstijn and L. van der Torre, A logic of abstract argumentation. Postproceedings of ArgMAS05,
+Springer, LNCS, 2006.
+
+[Caminada & Amgoud 2005] M.W.A. Caminada and L. Amgoud, "An Axiomatic Account of Formal Argumentation". AAAI 2005 608-613 (2005)
+
+[Caminada 2004] M.W.A. Caminada, "For the Sake of the Argument; explorations into argument-based reasoning". PhD dissertation Vrije
+Universiteit Amsterdam (2004)
+
+[Caminada 2006a] M.W.A. Caminada, "Well-Founded semantics for Semi-Normal Extended Logic Programs". NMR 2006
+
+[Caminada 2006c] M.W.A. Caminada, "Semi-stable semantics". COMMA 2006
+
+[Coste-Marquis et al 2005] S. Coste-Marquis, C. Devred and P. Marquis, "Prudent semantics for argumentation frameworks". Proc. of the
+17th IEEE International Conference on Tools with Artificial Intelligence (ICTAI 2005) 568-572 (2005)
+
+[Dung 1995] P.M. Dung, "On the acceptability of arguments and its fundamental role in nonmonotonic reasoning, logic programming and
+n-person games". AIJ 77:321-357 (1995)
+
+[Fox & Das 2000] J. Fox and S. Das, "Safe and Sound. Artificial Intelligence in Hazardous Applications". AAAI Press/MIT Press, 2000.
+
+[Kaci and van der Torre 2006a] S. Kaci, L. van der Torre and E. Weydert, Acyclic Argumentation: Attack = Conflict + Preference.
+Proceedings of ECAI 2006.
+
+[Kaci and van der Torre 2006b] S. Kaci and L. van der Torre, Preference reasoning for argumentation: non-monotonicity and algorithms.
+Proceedings of the NMR'06, 2006.
+
+[McCarthy 1986] J. McCarthy, "Applications of circumscription to formalizing common sense knowledge". AIJ 26(3):89-116 (1986)
+
+[Modgil 2006] S. Modgil, "Value Based Argumentation in Hierarchical Argumentation Frameworks". COMMA 2006
+
+[Mozina et al 2005] M. Mozina, J. Zabkar, T.J.M. Bench-Capon and I. Bratko, "Application of Argument Based Machine Learning to Law".
+ICAIL 2005 248-249 (2005)
+
+[Pollock 1992] J.L. Pollock, "How to reason defeasibly". AIJ 57:1-42 (1992)
+
+[Pollock 1995] J.L. Pollock, "Cognitive Carpentry. A Blueprint for How to Build a Person". MIT Press, Cambridge, MA (1995)
+
+[Prakken & Sartor 1997] H. Prakken and G. Sartor, "Argument-based extended logic programming with defeasible priorities". Journal of
+Applied Non-Classical Logics 7:25-75 (1997)
+
+[Prakken 2005a] H. Prakken, "A study of accrual of arguments, with applications to evidential reasoning". ICAIL 2005 85-94 (2005)
+
+[Prakken 2005b] H. Prakken, "Coherence and flexibility in dialogue games for argumentation". Journal of Logic and Computation 15
+1009-1040 (2005)
+
+[Reiter 1980] R. Reiter, "A logic for default reasoning". AIJ 13:81-131 (1980)
+
+[Simari & Loui 1992] G.R. Simari and R.P. Loui, "A mathematical treatment of defeasible reasoning and its implementation". AIJ 53:125-157
+(1992)
+
+[Vreeswijk 1993] G.A.W. Vreeswijk, "Studies in Defeasible Argumentation". PhD dissertation Vrije Universiteit Amsterdam (1993)
+
+[Vreeswijk 1997] G.A.W. Vreeswijk, "Abstract argumentation systems". AIJ 90:225-279 (1997)
+

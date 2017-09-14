@@ -1,0 +1,27 @@
+use Inline Python => <<'END_OF_PYTHON_CODE';
+import sys
+sys.path.append("/var/lib/myfrdcsa/sandbox/reasonablepython-0.1.2/reasonablepython-0.1.2")
+sys.path.append("/var/lib/myfrdcsa/sandbox/reasonablepython-0.1.2/reasonablepython-0.1.2/build/lib.linux-x86_64-2.7/rp/xsb_swig/")
+from rp import *
+def temp():
+	class temp:
+		def __init__(self):
+			self.f = interface.Flora2()
+		def Variable(self, var):
+			return self.f.Variable( var )
+		def query(self, query, list):
+			self.f.query( query, list)
+		def close_query(self):
+			self.f.close_query()
+		def Construct(self):
+			self.f.Construct()
+		def _and(self, a, b):
+			a & b
+		def _or(self, a, b):
+			a | b
+		def _rule(self, head, body):
+			head << body
+		def consult(self, file):
+			self.f.consult(file)
+	return temp();
+END_OF_PYTHON_CODE

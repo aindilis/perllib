@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Automatic segmentation and annotation tools</title><link rel="stylesheet" type="text/css" href="../userguide.css"/><meta name="generator" content="DocBook XSL Stylesheets V1.77.1"/><link rel="home" href="index.xhtml" title="CLARIN-D User Guide"/><link rel="up" href="tools.xhtml" title="Chapter 7. Linguistic tools"/><link rel="prev" href="tools_management.xhtml" title="Technical issues in linguistic tool management"/><link rel="next" href="tools_manual.xhtml" title="Manual annotation and analysis tools"/></head><body><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Automatic segmentation and annotation tools</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="tools_management.xhtml"><img src="../images/nav/prev.svg" alt="Prev"/></a> </td><th width="60%" align="center">Chapter 7. Linguistic tools</th><td width="20%" align="right"> <a accesskey="n" href="tools_manual.xhtml"><img src="../images/nav/next.svg" alt="Next"/></a></td></tr></table><hr/></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="d5e1854"/>Automatic segmentation and annotation tools</h2></div></div></div><p>The tools described in this section operate without very much direct user interaction,
+			producing an annotated or segmented resource as its output. Many of them require
+			training and may be available already trained for some tasks, or be available for users
+			to train to suit their needs. </p><p>Those tools which are presently available through WebLicht – CLARIN-D's web
+			service-based linguistic workflow and tool execution enviroment – are marked
+			with a small icon:  <span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></p><p>The tools listed here are not an exhaustive list of WebLicht-accessible tools, and as
+			the service grows, more tools will be integrated. For a current and comprehensive list
+			of tools available through WebLicht, please log in to the <a class="link" href="https://weblicht.sfs.uni-tuebingen.de/" target="_top">WebLicht website</a>.</p><p>Sentence splitting and tokeniztation are usually understood as a way of segmenting
+			texts rather than transforming them or adding feature information. Each segment, be it a
+			sentence or a token, corresponds to a particular sequence of lower level elements
+			(tokens or characters) that forms, for the purposes of further research or processing, a
+			single unit. Segementing digital texts can be complicated, depending on the language of
+			the text and the linguistic considerations that go into processing it.</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="sentence_splitters"/>Sentence splitters</h3></div></div></div><p>Sentence splitters, sometimes called <span class="emphasis"><em>sentence segmenters</em></span>,
+				split text up into individual sentences with unambiguous delimiters.</p><p>Recognizing sentence boundaries in texts sounds very easy, but it can be a complex
+				problem in practice. Sentences are not clearly defined in general linguistics, and
+				sentence-splitting programs are driven by the punctuation of texts and the practical
+				concerns of computational linguistics, not by linguistic theory.</p><p>Punctuation dates back a very long time, at least to the 9th century BCE.
+				The Meša Stele – an inscribed stone found in modern Jordan
+						describing the military campaigns of the Moabite king Meša – is
+						the oldest attestation of different punctuation marks to indicate word
+						separation and grammatical phrases
+				[<span class="citation"><a href="bibliography.xhtml#Compston1919" class="biblioref" title="[Compston1919]"><abbr class="abbrev">Compston1919</abbr></a></span>],
+				[<span class="citation"><a href="bibliography.xhtml#Martens2011" class="biblioref" title="[Martens 2011]"><abbr class="abbrev">Martens 2011</abbr></a></span>].
+				Until modern times though, not all written languages used punctuation.
+				The idea of dividing written texts into individual sentences using some form of
+				punctuation is an invention of 16th century Italian printers and did not reach some
+				parts of the world until the mid-20th century. This makes it very difficult to
+				develop historical language corpora compatible with tools based on modern
+				punctuation. Adding punctuation to old texts is time-consuming and researchers of
+				different schools will not always agree on where the punctuation belongs.</p><p>In many languages – including most European languages – sentence
+				delimiting punctuation has multiple functions other than just marking sentences. The
+				period often marks abbreviations as well as being used to write ordinal numbers or
+				to split large numerical expressions in groups of three digits. Sentences can also
+				end with a wide variety of punctuation other than the period. Question marks,
+				exclamation marks, ellipses (<span class="emphasis"><em>dropped words</em></span>), colons,
+				semi-colons and a variety of other markers must have their purpose in specific
+				contexts correctly identified before they can be confidently considered sentence
+				delimiters. Additional problems arise with quotes, URLs and proper nouns that
+				incorporate non-standard punctuation. Furthermore, most texts contain errors and
+				inconsistencies of punctuation that simple algorithms cannot easily identify or
+				correct.</p><p>Sentence splitters are often integrated into tokenizers, but some separate tools are
+				available including:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="ftp://ftp.cis.upenn.edu/pub/adwait/jmx/" target="_top">MX
+							Terminator</a></span></dt><dd><p>A splitter for English that can be trained for other languages.</p></dd><dt><span class="term"><a class="link" href="http://nlp.stanford.edu/software/corenlp.shtml" target="_top">Stanford
+							ssplit</a></span></dt><dd><p>A splitter for English, but quite effective in other languages that
+							use similar punctuation.</p></dd><dt><span class="term"><a class="link" href="http://opennlp.apache.org/" target="_top">OpenNLP Sentence
+							Detection</a>
+						<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p> A splitter for English that can be trained for other languages.
+						</p></dd></dl></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="tokenizer"/>Tokenizers</h3></div></div></div><p>A token is a unit of language similar to a word but not quite the same. In
+				computational linguistics it is often more practical to discuss tokens instead of
+				words, since a token encompasses many linguistically irrelevant and / or defective
+				elements found in actual texts (numbers, abbreviations, punctuation, etc.) and
+				avoids many of the complex theoretical considerations involved in talking about
+				words.</p><p>In modern times, most languages have writing systems derived from ancient
+				languages used in the Middle East and by traders on the Mediterranean Sea starting
+				about 3000 years ago. The Latin, Greek, Cyrillic, Hebrew and Arabic alphabets are
+				all derived from a common ancient source – a variety of Phoenician widely
+				used in trade and diplomacy – and most historians think that the writing
+				systems of India and Central Asia come from the same origin.
+				See [<span class="citation"><a href="bibliography.xhtml#Fischer2005" class="biblioref" title="[Fischer 2005]"><abbr class="abbrev">Fischer 2005</abbr></a></span>] and
+				[<span class="citation"><a href="bibliography.xhtml#Schmandt-Besserat1992" class="biblioref" title="[Schmandt-Besserat 1992]"><abbr class="abbrev">Schmandt-Besserat 1992</abbr></a></span>]
+				for fuller histories of writing.
+			</p><p>
+				All of the writing
+				systems derived from ancient Phoenician use letters that correspond to specific sounds.				
+			When words are written with letters that represent sounds, words can only be
+				distinguished from each other if set apart in some way, or if readers slowly sound
+				the letters out to figure out where the pauses and breaks are. The first languages
+				to systematically use letters to represent sounds usually separated text into
+				word-like units with a mark of some kind – generally a bar
+					(<span class="quote">“<span class="quote">|</span>”</span>) or a double-dot mark much like a colon (<span class="quote">“<span class="quote">:</span>”</span>).
+				However, these marks were used inconsistently and many languages with alphabets
+				stopped using explicit markers over time. Latin, Greek, Hebrew and the languages of
+				India were not written with any consistent word marker for many centuries.
+				Whitespaces between words were introduced in western Europe in the 12th century,
+				probably invented by monks in Britain or Ireland, and spread slowly to other
+				countries and languages [<span class="citation"><a href="bibliography.xhtml#Saenger1997" class="biblioref" title="[Saenger 1997]"><abbr class="abbrev">Saenger 1997</abbr></a></span>].
+				Since the late 19th
+				century, most languages – all but a few in Pacific Asia – have
+				been written with regular spaces between words.</p><p>For those languages, much but far from all of the work of tokenizing digital texts
+				is performed by whitespace characters and punctuation. The simplest tokenizers just
+				split the text up by looking for whitespace, and then separate punctuation from the
+				ends and beginnings of words. But the way those spaces are used is not the same in
+				all languages, and relying exclusively on spaces to identify tokens does not, in
+				practice, work very well. Tokenization can be very complicated because
+					<span class="emphasis"><em>tokens do not always match the locations of spaces.</em></span></p><p>Compound words exist in many languages and often require more complex processing.
+				The German word <em class="wordasword">Telekommunikationsvorratsdatenspeicherung</em>
+					(<span class="quote">“<span class="quote">telecommunications data retention</span>”</span>) is one case, but
+				English has linguistically similar compounds like <em class="wordasword">low-budget</em>
+				and <em class="wordasword">first-class</em>. Tokenizers – or sometimes similar
+				tools that may be called <span class="emphasis"><em>decompounders</em></span> or <span class="emphasis"><em>compound
+					splitters</em></span> – are often expected to split such compounds up,
+				or are expected to only split some of them up. Whether or not compounds should be
+				split may depend on further stages of processing. For syntactic parsing of German,
+				for example, it is often undesirable because compounds are treated syntactically and
+				morphologically like a single word, i.e., plurals and declinations only change the
+				end of the whole compound and parsers can recognize parts-of-speech from the final
+				part of the compound. In French, the opposite is often true and compounds like
+					<em class="wordasword">arc-en-ciel</em> (<span class="quote">“<span class="quote">rainbow</span>”</span>) and cannot be
+				treated as single words because pluralization modifies the middle of the compound
+					(<em class="wordasword">arcs-en-ciel</em>). For information retrieval, in contrast,
+				German words are almost always decompounded, because a search for
+					<em class="wordasword">Vorratsdatenspeicherung</em> (<span class="quote">“<span class="quote">data
+					retention</span>”</span>) should match documents containing
+					<em class="wordasword">Telekommunikationsvorratsdatenspeicherung</em>. In French,
+				however, no one would want <em class="wordasword">arc</em> (<span class="quote">“<span class="quote">arch</span>”</span>,
+					<span class="quote">“<span class="quote">arc</span>”</span>, or <span class="quote">“<span class="quote">bow</span>”</span>) or
+					<em class="wordasword">ciel</em> (<span class="quote">“<span class="quote">sky</span>”</span> or
+					<span class="quote">“<span class="quote">heaven</span>”</span>) to match <em class="wordasword">arc-en-ciel</em>. English
+				has examples of both kinds of compounds, with words like
+					<em class="wordasword">houseboats</em> that behave like German compounds, but also
+					<em class="wordasword">parts-of-speech</em>, which behave like French ones.</p><p>In other cases, something best treated as a single token may appear in text as
+				multiple words with spaces, like <em class="wordasword">New York</em>. There are also
+				ambiguous compounds, where they may sometimes appear as separate words and sometimes
+				not. <em class="wordasword">Egg beater</em>, <em class="wordasword">egg-beater</em> and
+					<em class="wordasword">eggbeater</em> are all possible in English and mean the same
+				thing.</p><p>Short phrases that are composed of multiple words separated by spaces may also
+				sometimes be best analyzed as a single word, like the phrase <em class="wordasword">by and
+					large</em> or <em class="wordasword">pain in the neck</em> in English. These are
+				called <span class="emphasis"><em>multi-word terms</em></span> and may overlap with what people
+				usually call <span class="emphasis"><em>idioms</em></span>.</p><p>Contractions like <em class="wordasword">I'm</em> and <em class="wordasword">don't</em> also
+				pose problems, since many higher level analytical tools like part-of-speech taggers
+				and parsers may require them to be broken up, and many linguistic theories treat
+				them as more than one word for grammatical purposes. </p><p>Phrasal verbs in English and separable verbs in German are another category of
+				problem for tokenizers, since these are often best treated as single words, but are
+				separated into parts that may not appear next to each other in texts. For
+				example:</p><p>
+				</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>When we love others, we naturally want to talk about them, we want to
+								<span class="emphasis"><em>show</em></span> them <span class="emphasis"><em>off</em></span>, like
+							emotional trophies. (Alexander McCall Smith, <span class="emphasis"><em>Friends, Lovers,
+								Chocolate</em></span>)</p></li><li class="listitem"><p>Die Liebe im Menschen <span class="emphasis"><em>spricht</em></span> das rechte Wort
+								<span class="emphasis"><em>aus</em></span>. (<span class="quote">“<span class="quote">People's love utters the right
+								word.</span>”</span>, Ferdinand Ebner, <span class="emphasis"><em>Schriften</em></span>, vol. 2.)</p></li></ol></div><p>
+			</p><p>Verbs like <em class="wordasword">to show off</em> in English and
+					<em class="wordasword">aussprechen</em> in German often require treatment as single
+				words, but in the examples above, appear not only as separate words, but with other
+				words between their parts. Simple programs that just look for certain kinds of
+				characters cannot identify these structures as tokens.</p><p>Which compounds, if any, should be split, and which multi-part entities should be
+				processed as a single token, depends on the language of the text and the purpose of
+				processing. Consistent tokenization is generally related to identifying lexical
+				entities that can be looked up in some lexical resource and this can require very
+				complex processing for ordinary texts. Its purpose is to simplify and remove
+				irregularities from the data for the benefit of further processing. Since the
+				identification of basic units in text must precede almost all kinds of further
+				processing, tokenization is the first or nearly the first thing done for any
+				linguistic processing task.</p><p>Additional problems can arise in some languages. Of major modern languages, only
+				Chinese, Japanese and Korean currently use writing systems not thought to be derived
+				from a common Middle Eastern ancestor, and they do not systematically mark words in
+				ordinary texts with spaces or any other visible marker. Several southeast Asian
+				languages – Thai, Lao, Khmer and some other less widely spoken
+				languages – still use no spaces today or use them rarely and
+				inconsistently despite having writing systems derived from those used in India.
+				Vietnamese – which is written with a version of the Latin alphabet today,
+				but used to be written like Chinese – places spaces between every
+				syllable, so that even though it uses spaces, they are of little value in
+				tokenization. Tokenization in these languages is a very complex process that can
+				involve large dictionaries and sophisticated machine learning procedures.</p><p>As mentioned in the previous section, tokenization is often combined with
+				sentence-splitting in a single tool.
+				Some examples for implementations of tokenizers are:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://opennlp.apache.org/" target="_top">OpenNLP tokenizer</a><span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span>
+					</span></dt><dd><p>A tokenizer for English and German that includes an optional sentence
+							splitter (see <a class="xref" href="tools_segmentation.xhtml#sentence_splitters" title="Sentence splitters">the section called “Sentence splitters”</a>).</p></dd><dt><span class="term"><a class="link" href="http://www.ims.uni-stuttgart.de/" target="_top">Stuttgart
+							tokenizer</a>
+						<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>A tokenizer for German, English, French, Italian, Czech, Slovenian,
+							and Hungarian that includes a sentence splitter (see <a class="xref" href="tools_segmentation.xhtml#sentence_splitters" title="Sentence splitters">the section called “Sentence splitters”</a>).</p></dd><dt><span class="term"><a class="link" href="http://nlp.stanford.edu/software/corenlp.shtml" target="_top">Stanford
+							tokenizer</a><span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>A tokenizer for English text (part of the Stanford CoreNLP
+							tool).</p></dd></dl></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="d5e1994"/>Part-of-speech taggers</h3></div></div></div><p>Part-of-speech taggers (PoS taggers) are programs
+				that take tokenized text as input and associate a <span class="emphasis"><em>part-of-speech
+					tag</em></span> (PoS tag) with each token. A PoS tagger uses a specific, closed set
+				of parts-of-speech – usually called a <span class="emphasis"><em>tagset</em></span> in
+				computational linguistics. Different taggers for different languages will routinely
+				have different, sometimes radically different, tagsets or part-of-speech systems.
+				For some languages, however, de-facto standards exist in the sense that most
+				part-of-speech taggers use the same tagset. In German, for example, the STTS tagset
+				is very widespread, but in English several different tagsets are in regular use,
+				like the Penn Treebank tagset and several versions of the CLAWS tagset.</p><p>A part-of-speech is a category that abstracts some of the properties of words or
+				tokens. For example, in the sentence <em class="wordasword">The dog ate dinner</em> there are
+				other words we can substitute for <em class="wordasword">dog</em> and still have a correct
+				sentence, words like <em class="wordasword">cat</em> or <em class="wordasword">man</em>. Those
+				words have some common properties and belong to a common category of words. PoS
+				schemes are designed to capture those kinds of similarities. Words with the same PoS
+				are in some sense similar in their use, meaning, or function.</p><p>Parts-of-speech have been independently invented at least three times in the
+				distant past. They are documented to the 5th century BC in Greece,
+						approximately for the same period in India, and from the 2nd century AD in
+						China. There is no evidence to suggest any of these three inventions was
+						copied from other cultures.
+						The origins of parts-of-speech are described in greater detail in
+							[<span class="citation"><a href="bibliography.xhtml#Martens2011" class="biblioref" title="[Martens 2011]"><abbr class="abbrev">Martens 2011</abbr></a></span>].
+					
+					
+				 The 2nd century BCE Greek grammar text <span class="emphasis"><em>The Art of
+					Grammar</em></span> outlined a system of nine PoS categories that became very
+				influential in European languages: nouns, verbs, participles, articles, pronouns,
+				prepositions, adverbs, and conjunctions, with proper nouns as a subcategory of
+				nouns. Most PoS systems in use today have been influenced by that scheme.</p><p>Modern linguists no longer think of parts-of-speech as a fixed, short list of
+				categories that is the same for all languages. They do not agree about whether or
+				not any of those categories are universal, or about which categories apply to which
+				specific words, contexts and languages. Different linguistic theories, different
+				languages, and different approaches to annotation use different PoS schemes.</p><p>Tagsets also differ in the level of detail they provide. A modern corpus PoS
+				scheme, like the CLAWS tagset used for the British National Corpus, can go far
+				beyond the classical nine parts-of-speech and make dozens of fine distinctions.
+				<a class="link" href="http://www.natcorp.ox.ac.uk/docs/c7spec.html" target="_top">CLAWS version 7</a>
+				has 22 different parts-of-speech for nouns alone.
+				Complex tagsets are usually organized hierarchically, to reflect
+				commonalities between different classes of words.</p><p>Examples of widely used tagsets include STTS for German
+				[<span class="citation"><a href="bibliography.xhtml#SchillerEtAl1999" class="biblioref" title="[Schiller et al. 1999]"><abbr class="abbrev">Schiller et al. 1999</abbr></a></span>],
+				the Penn Treebank Tagset for English
+				[<span class="citation"><a href="bibliography.xhtml#Santorini1990" class="biblioref" title="[Santorini 1990]"><abbr class="abbrev">Santorini 1990</abbr></a></span>],
+				and the CLAWS tagset for English
+				[<span class="citation"><a href="bibliography.xhtml#GarsideEtAl1997" class="biblioref" title="[Garside et al. 1997]"><abbr class="abbrev">Garside et al. 1997</abbr></a></span>].
+				Most PoS tagsets were devised for specific
+				corpora, and are often inspired by older corpora and PoS schemes. PoS taggers today
+				are almost all tools that use machine learning and have been specifically trained
+				for the language and tagset they use. They can usually be retrained for new tagsets
+				and languages.</p><p>PoS taggers almost always expect tokenized texts as input, and it is important
+				that the tokens in texts match the ones the PoS tagger was trained to recognize. As
+				a result, it is important to make sure that the tokenizer used to preprocess texts
+				matches the one used to create the training data for the PoS tagger.</p><p>Another important factor in the development of PoS taggers is their handling of
+					<span class="emphasis"><em>out-of-vocabulary words</em></span>. A significant number of tokens in
+				any large text will not be recognized by the tagger, no matter how large a
+				dictionary they have or how much training data was used. PoS taggers may simply
+				output a special <span class="quote">“<span class="quote">unknown</span>”</span> tag, or may guess what the right PoS should
+				be given the remaining context. For some languages, especially those with complex
+				systems of prefixes and suffixes for words, PoS taggers may use morphological
+				analyses to try to find the right tag.</p><p>Implementations of PoS taggers include:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://www.ims.uni-stuttgart.de/projekte/corplex/TreeTagger/" target="_top">TreeTagger</a>
+						<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p> </p><p>A PoS tagger for German, English, French, Italian, Dutch, Spanish,
+							Bulgarian, Russian, Greek, Portuguese, Chinese, Swahili, Latin, Estonian
+							and old French, and trainable for many others. </p></dd><dt><span class="term"><a class="link" href="http://opennlp.apache.org/" target="_top">OpenNLP tagger</a><span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>A PoS tagger for English and German distributed as part of the Apache
+							OpenNLP toolkit.</p></dd><dt><span class="term"><a class="link" href="http://nlp.stanford.edu/software/corenlp.shtml" target="_top">Stanford
+							PoS tagger</a><span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>A PoS tagger for English distributed as part of the Stanford Core NLP
+							toolkit.</p></dd><dt><span class="term"><a class="link" href="http://cst.dk/download/uk/index.html" target="_top">Brill
+						tagger</a></span></dt><dd><p>A PoS tagger for English, Danish, Dutch and Norwegian
+							(Nynorsk).</p></dd></dl></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="d5e2054"/>Morphological analyzers and lemmatizers</h3></div></div></div><p>Morphology is the study of how words and phrases change in form depending on their
+				meaning, function and context. Morphological tools sometimes overlap in their
+				functions with PoS taggers and tokenizers.</p><p>Because linguists do not always agree on what is and is not a word, different
+				linguists may disagree on what phenomena are part of morphology, and which ones are
+				part of syntax, phonetics, or other parts of linguistics. Generally, morphological
+				phenomena are considered either inflectional or derivational depending on their role
+				in a language.</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="d5e2058"/>Inflectional morphology</h4></div></div></div><p>Inflectional morphology is the way words are required to change by the rules
+					of a language depending on their syntactic role or meaning. In most European
+					languages, many words have to change form depending on the way they are
+					used.</p><p>How verbs change in form is traditionally called
+						<span class="emphasis"><em>conjugation</em></span>. In English, present tense verbs have to be
+					conjugated depending on their subjects. So we say <em class="wordasword">I
+							play</em>, <em class="wordasword">you play</em>,
+							<em class="wordasword">we play</em> and <em class="wordasword">they
+							play</em> but <em class="wordasword">he plays</em>
+								 and
+							<em class="wordasword">she plays</em>.
+					This is called agreement, and we say
+					that in English, present tense verbs must agree with their subjects, because the
+					properties of whatever the subject of the verb is determine the form the verb
+					takes. But in the past tense, English verbs have to take a special form to
+					indicate that they refer to the past, but do not have to agree. We say
+							<em class="wordasword">I played</em> and
+					<em class="wordasword">he played</em>.</p><p>Languages can have very complex schemes that determine the forms of verbs,
+					reflecting very fine distinctions of meaning and requiring agreement with many
+					different features of their subjects, objects, modifiers or any other part of
+					the context in which they appear. These distinctions are sometimes expressed by
+					using additional words (usually called <span class="emphasis"><em>auxiliaries</em></span> or
+					sometimes <span class="emphasis"><em>helper words</em></span>), and sometimes by prefixes,
+					suffixes, or other changes to words. Many languages also combine schemes to
+					produce potentially unlimited variations in the forms of verbs.</p><p>Nouns in English change form to reflect their number: <em class="wordasword">one
+							dog</em> but <em class="wordasword">several dogs</em>. A few words in
+					English also change form based on the gender of the people they refer to, like
+						<em class="wordasword">actor</em> and <em class="wordasword">actress</em>. These are rare
+					in English but common in most other European languages. In most European
+					languages, all nouns have an inherent grammatical gender and any other word
+					referring to them may be required to change form to reflect that gender.</p><p>In many languages, nouns also undergo much more complex changes to reflect
+					their grammatical function. This is traditionally called
+						<span class="emphasis"><em>declension</em></span> or a <span class="emphasis"><em>case</em></span>. In the German sentence
+					 <em class="wordasword">Das Auto des Lehrers ist grün</em>
+					(<span class="quote">“<span class="quote">The teacher's car is green</span>”</span>), the word <em class="wordasword">Lehrer</em>
+					(<span class="quote">“<span class="quote">teacher</span>”</span>) is changed to <em class="wordasword">Lehrers</em> because it is being used to say
+					whose car is meant.</p><p>Agreement is often present between nouns and words that are connected to them
+					grammatically. In German, nouns undergo few changes in form when declined, but
+					articles and adjectives used with them do. Articles and adjectives in languages
+					with grammatical gender categories usually must also change form to reflect the
+					gender of the nouns they refer to. Pronouns, in most European languages, also
+					must agree with the linguistic properties of the things they refer to as well as
+					being declined or transformed by their context in other ways.</p><p>The comparative and superlative forms of adjectives –
+						<em class="wordasword">safe</em>, <em class="wordasword">safer</em>,
+						<em class="wordasword">safest</em> is one example – are also usually
+					thought of as inflectional morphology.</p><p>Some languages have very complex inflectional morphologies. Among European
+					languages, Finnish and Hungarian are known to be particularly complex, with many
+					forms for each verb and noun, and French is known for its complex rules of
+					agreement. Others are very simple. English nouns only vary between
+					singular and plural, and even pronouns and irregular verbs like <em class="wordasword">to
+						be</em> and <em class="wordasword">to have</em> usually have no more than a handful of
+					specific forms. Some languages (mostly not spoken in
+					Europe) are not thought of as having any inflectional morphological
+					variation at all.</p><p>Just because a word has been inflected does not mean it is a different word.
+					In English, <em class="wordasword">dog</em> and <em class="wordasword">dogs</em> are not different words
+					just because of the <span class="emphasis"><em>-s</em></span> added to indicate the plural. For
+					each surface form, there is a base word that it refers to, independently of its
+					morphology. This underlying abstraction is called its
+					<span class="emphasis"><em>lemma</em></span>, from a word the ancient Greeks used to indicate the
+						<span class="quote">“<span class="quote">substance</span>”</span> of a word. Sometimes, it is called the
+						<span class="emphasis"><em>canonical form</em></span> of a word, and indicates the spelling
+					you would find in a dictionary (see <a class="xref" href="lexical.xhtml" title="Lexical resources">the section called “Lexical resources”</a>).</p><p>One source of ambiguity that lemmatizers and morphological analyzers may be expected to
+					resolve is that a particular token may be an inflected form of more than one
+					lemma. In English, for example, the word <em class="wordasword">tear</em> can refer
+					to the noun meaning <span class="quote">“<span class="quote">a secretion of water from someone's eyes</span>”</span>, or
+					to the verb that means <span class="quote">“<span class="quote">to pull something apart</span>”</span>, among other
+					possible meanings. Seen in isolation, <em class="wordasword">tear</em> and
+						<em class="wordasword">tears</em> could refer to either, but
+						<em class="wordasword">tearing</em> usually can only refer to a verb.
+					Most – pratically all – languages have similar cases, i.e.
+					German <span class="emphasis"><em>die Schale</em></span> meaning either <span class="emphasis"><em>the
+						bowl</em></span> (singular) or
+						<span class="emphasis"><em>the
+						scarves</em></span> (plural). Disambiguation can involve
+					many sorts of information other than just the forms of the words, and may use
+					complex statistical information and machine learning. Many annotated corpora
+					systematically disambiguate lemmas as part of their mark-up.</p><p>Inflectional morphology in European languages most often means changing the
+					endings of words, either by adding to them or by modifying them in some way, but
+					it can involve changing any part of a word. In English,
+					some verbs are inflected by changing one or more of their vowels, like
+						<em class="wordasword">break</em>, <em class="wordasword">broke</em>, and
+						<em class="wordasword">broken</em>. In German many common verbs – called
+					the <span class="emphasis"><em>strong verbs</em></span> – are inflected by changing the
+					middle of the word. In Arabic and Hebrew, all nouns and verbs and many other
+					words are inflected by inserting, deleting, and changing the vowels in the
+					middle of the word. In the Bantu languages of Africa, words are inflected by
+					adding prefixes and changing the beginnings of words. Other languages indicate
+					inflection by inserting whole syllables in the middle of words, repeating parts
+					of words, or almost any other imaginable variation. Many languages use more than
+					one way of doing inflection.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="d5e2118"/>Derivational morphology</h4></div></div></div><p>Derivational morphology is the process of making a word from another word,
+					usually changing its form while also changing its meaning or grammatical
+					function in some way. This can mean adding prefixes or suffixes to words, like
+					the way English constructs the noun <em class="wordasword">happiness</em> and the
+					adverb <em class="wordasword">unhappily</em> from the adjective
+						<em class="wordasword">happy</em>. These kinds of processes are often used to
+					change the part-of-speech or syntactic functions of words – making a
+					verb out of a noun, or an adjective out of an adverb, etc. But sometimes they
+					are used only to change the meaning of a word, like adding the prefix
+						<em class="wordasword">un-</em> in both English and German, which may negate or
+					invert the meaning of a word in some way but does not change its grammatical
+					properties or part-of-speech.</p><p>As with inflectional morphology, languages may use almost any kind of
+					variation to derive new words from old ones, not just prefixes and suffixes.
+					There is no simple, fixed line to separate derivational morphology from
+					inflectional morphology, and individual linguists will sometimes disagree about
+					how to categorize individual word formation processes. A few will disagree about
+					whether there is any meaningful distinction between inflection and derivation at
+					all. </p><p>One common derivational process found in many different languages is to make
+					compound words. German famously creates very long words this way, and English
+					has many compound constructs that are sometimes written as one word, or with a
+					hyphen, or as separate words that people understand to have a single common
+					meaning. The opposite process – splitting a single word into multiple
+					parts – also exists in some languages. Phrasal verbs in English and
+					separable verbs in German are two examples (see <a class="xref" href="tools_segmentation.xhtml#tokenizer" title="Tokenizers">the section called “Tokenizers”</a>),
+					and a morphological analyzer may have to identify those constructions and handle
+					them appropriately.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="d5e2128"/>Stemmers</h4></div></div></div><p>One of the oldest and simplest tools for computational morphological analysis
+					is the <span class="emphasis"><em>stemmer</em></span>.
+					The term <span class="emphasis"><em>stem</em></span> refers to the part of a word that is left
+					over when inflectional and derivational prefixes and suffixes have been stripped
+					from a word, and the parts of words left when a compound word has been split
+					into its parts. Many words share a common <span class="quote">“<span class="quote">stem</span>”</span> like the German words
+					<em class="wordasword">sehen</em>,
+					<em class="wordasword">absehen</em>,
+					<em class="wordasword">absehbar</em> and
+					<em class="wordasword">Sehhilfe</em>,
+					which all share the stem <em class="wordasword">seh</em>. This stem
+					usually reflects a common meaning. </p><p>The ability to reduce groups of similar words to a common form corresponding
+					to a common meaning made stemmers attractive for information retrieval
+					applications. Stemmers are algorithmitically very simple and typically use a
+					catalog of regular expressions – simple patterns of
+					letters – for identifying and stripping inflectional and derivative
+					elements. They are not very linguistically sophisticated, and miss many kinds of
+					morphological variation. Whenever possible, more sophisticated tools should be
+					used.</p><p>However, stemmers are relatively easy to make for new languages and are often
+					used when better tools are unavailable. The Porter stemmer
+					is the classical easy-to-implement algorithm for stemming
+					[<span class="citation"><a href="bibliography.xhtml#Porter1980" class="biblioref" title="[Porter 1980]"><abbr class="abbrev">Porter 1980</abbr></a></span>].</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="d5e2143"/>Lemmatizers</h4></div></div></div><p>Lemmatizers are programs that take tokenized texts as input and return a set
+					of lemmas or canonical forms. They usually use a combination of rules for
+					decomposing words and a dictionary, sometimes along with statistical rules and
+					machine learning to disambiguate homonyms. Some lemmatizers also preserve some word class
+					information, like noting that a word ends in an <em class="wordasword">-s</em> that was
+					removed, or an <em class="wordasword">-ing</em> – usually just enough to
+					reconstruct the original token, but not as much as a full morphological
+					analysis.</p><p>Implementations of lemmatizers:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://wiki.ims.uni-stuttgart.de/extern/StatNLPResources" target="_top">SMOR</a>
+							<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>SMOR is a stand-alone lemmatizer for German that also includes an
+								optional morphological analysis module (see <a class="xref" href="tools_segmentation.xhtml#morphological_analyzers" title="Morphological analyzers">the section called “Morphological analyzers”</a>).</p></dd><dt><span class="term"><a class="link" href="http://www.racai.ro/" target="_top">RACAI lemmatizer</a></span></dt><dd><p>The RACAI lemmatizer works for Romanian, English and French
+								texts.</p></dd><dt><span class="term"><a class="link" href="http://morphadorner.northwestern.edu/" target="_top">MorphAdorner</a></span></dt><dd><p>MorphAdorner is a lemmatizer for English written in the Java
+								programming language.</p></dd></dl></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="morphological_analyzers"/>Morphological analyzers</h4></div></div></div><p>Full morphological analyzers take tokenized text as input and return complete
+					information about the inflectional categories each token belongs to, as well as
+					their lemma. They are often combined with PoS taggers and sometimes with
+					syntactic parsers, because a full analysis of the morphological category of a
+					word usually touches on syntax and almost always involves categorizing the word
+					by its part-of-speech.</p><p>Some analyzers may also provide information about derivational morphology and
+					break up compounds into constituent parts.</p><p>High-quality morphological analyzers almost always use large databases of
+					words and rules of composition and decomposition. Many also employ machine
+					learning techniques and have been trained on manually analyzed data.
+					Developing comprehensive morphological analyzers is very challenging, especially
+					if derivational phenomena are to be analyzed.</p><p>Implementations of morphological analyzers:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://www.ims.uni-stuttgart.de/projekte/corplex/RFTagger/" target="_top">RFTagger</a>
+								<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>RFTagger assigns fine-grained part-of-speech tags based on a
+									morphological analysis. It works for German, Czech, Slovene, and
+									Hungarian data, and can be trained for other languages.</p></dd><dt><span class="term"><a class="link" href="http://wiki.ims.uni-stuttgart.de/extern/StatNLPResources" target="_top">SMOR</a>
+								<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>Contains a morphological analyzer for German.</p></dd></dl></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://www.informatics.sussex.ac.uk/research/groups/nlp/carroll/morph.html" target="_top">Morpha</a></span></dt><dd><p>A morphological analyzer for English.</p></dd></dl></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="d5e2198"/>Syntax</h3></div></div></div><p>Syntax is the study of the connections between parts of sentences. It is intended
+				to account for the meaningful aspects of the ordering of words and phrases in
+				language. The principles that determine which words and phrases are connected, how
+				they are connected, and what effect that has on the ordering of the parts of
+				sentences are called a <span class="emphasis"><em>grammar</em></span>.</p><p>There are many different theories of syntax and ideas about how syntax works.
+				Individual linguists are usually attached to particular schools of thought depending
+				on where they were educated, what languages and problems they work with, and to a
+				large degree their personal preferences.</p><p>Most theories of syntax fall into two broad categories that reflect different
+				histories, priorities and theories about how language works: <span class="emphasis"><em>dependency
+					grammars</em></span> and <span class="emphasis"><em>constituency grammars</em></span>. The divide
+				between these two approaches dates back to their respective origins in the late
+				1950s, and the debate between them is still active. Both schools of thought
+				represent the connections within sentences as trees or directed graphs, and both
+				schools agree that representing those connections requires that implicit structural
+				information is made explicit. Relationships between words cannot be trivially
+				represented as a sequence of tokens, and designing software that recognizes those
+				relationships in texts is a challenging problem.</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="d5e2206"/>Dependency grammar</h4></div></div></div><p>In dependency grammars, connections are usually between words or tokens, and
+					the edges that join them have labels from a small set of connection types
+					determined by some theory of grammar. <a class="xref" href="tools_segmentation.xhtml#img.dependency_tree" title="Figure 7.2. A dependency analysis">Figure 7.2, “A dependency analysis”</a> is a
+					dependency analysis from a particular dependency grammar theory.</p><p>Dependency grammars tend to be popular among people working with languages in
+					which word order is very flexible and words are subject to complex morphological
+					agreement rules. It has a very strong tradition in Eastern Europe, but is also
+					present elsewhere to varying degrees in different countries.</p><div class="figure"><a id="img.dependency_tree"/><div class="figure-title">Figure 7.2. A dependency analysis</div><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="100%"><tr><td><img src="../images/DepTree.png" width="540" alt="A dependency analysis"/></td></tr></table><div class="caption"><p>A dependency analysis of the sentence <em class="wordasword">Syntactic
+									dependencies make phrase structure redundant</em>. This
+								analysis uses the <span class="emphasis"><em>Word Grammar</em></span> framework and is
+								taken from the <a class="link" href="http://www.phon.ucl.ac.uk/home/dick/WG/WG4PG/intro.htm" target="_top">Word Grammar website</a>.</p></div></div></div></div><br class="figure-break"/></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="d5e2221"/>Constituency grammar</h4></div></div></div><p>Constituency grammars view the connections between words as a hierarchal
+					relationship between phrases. They break sentences up into parts, usually but
+					not always continuous ones, and then break each part up into smaller parts,
+					until they reach the level of individual tokens. The trees drawn to demonstrate
+					constituency grammars reflect this structure. Edges in constituency grammars are
+					not usually labeled.</p><p>Constituency grammar draws heavily on the theory of formal languages in
+					computer science, but tends to use formal grammar in conjunction with other
+					notions to better account for phenomena in human language. For example, there
+					are prominent theories of syntax that include formalized procedures for tree
+					rewriting, type hierarchies and higher-order logics, among other features. Few
+					linguists currently believe the theory of formal languages alone can account for
+					syntax.</p><p>As a school of thought, constituency grammar is historically associated with
+					the work of Noam Chomsky and the American linguistic tradition. It tends to be
+					popular among linguists working in languages like English, in which
+					morphological agreement is not very important and word orders are relatively
+					strictly fixed. It is very strong in English-speaking countries, but is also
+					present in much of western Europe and to varying degrees in other parts of the
+					world. See <a class="xref" href="tools_segmentation.xhtml#fig.constituency_analysis" title="Figure 7.3. A constituency analysis">Figure 7.3, “A constituency analysis”</a> for an example of a constituency
+					analysis of an English sentence.</p><div class="figure"><a id="fig.constituency_analysis"/><div class="figure-title">Figure 7.3. A constituency analysis</div><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="100%"><tr><td><img src="../images/ChomskyTofS.png" width="540" alt="A constituency analysis"/></td></tr></table><div class="caption"><p>A constituency analysis of the sentence <em class="wordasword">Sincerity may
+									frighten the boy</em>. This analysis is taken from
+								[<span class="citation"><a href="bibliography.xhtml#Chomsky1965" class="biblioref" title="[Chomsky1965]"><abbr class="abbrev">Chomsky1965</abbr></a></span>].</p></div></div></div></div><br class="figure-break"/><p>The labels on edges in <a class="xref" href="tools_segmentation.xhtml#img.dependency_tree" title="Figure 7.2. A dependency analysis">Figure 7.2, “A dependency analysis”</a> and on tree nodes
+					in <a class="xref" href="tools_segmentation.xhtml#fig.constituency_analysis" title="Figure 7.3. A constituency analysis">Figure 7.3, “A constituency analysis”</a> form a part of the specific
+					syntactic theories from which these examples are drawn. Fuller explanations for
+					them and their meanings are to be found in the referenced texts. Specific
+					syntactic parsers and linguistic tools may use entirely different labels based
+					on different ideas about language, even when the general form of the syntactic
+					representations they generate resemble the examples here.</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="d5e2240"/>Hybrid grammars</h4></div></div></div><p>Among computational linguists and people working in natural language
+					processing, there is a growing tendency to use hybrid grammars that combine
+					elements of both the constituency and dependency traditions. These grammars take
+					advantage of a property of constituency grammars called
+						<span class="emphasis"><em>headedness</em></span>. In many constituency frameworks, the
+					phrases identified by the grammar have a single constituent that is designated
+					as its <span class="emphasis"><em>head</em></span>. A constituency analysis where all phrases have
+					heads, and where all edges have labels, is broadly equivalent to a dependency
+					analysis.</p><p><a class="xref" href="tools_segmentation.xhtml#fig.hybrid_analysis" title="Figure 7.4. A hybrid syntactic analysis">Figure 7.4, “A hybrid syntactic analysis”</a> is a tree from the 
+					<a class="link" href="http://www.sfs.uni-tuebingen.de/en/ascl/resources/corpora/tuebadz.html" target="_top">TüBa-D/Z treebank of
+						German</a>, and its labels are explained in [<span class="citation"><a href="bibliography.xhtml#Hinrichs2004" class="biblioref" title="[Hinrichs 2004]"><abbr class="abbrev">Hinrichs 2004</abbr></a></span>]. This
+					treebank uses a hybrid analysis of sentences, containing constituents that often
+					have heads and edges with dependency labels. As with many hybrid analyses, not
+					all constituents have heads, and some edges have empty labels, so it is not
+					completely compatible with a strict dependency framework. However, the added
+					information in the edges also makes it incompatible with a strict constituency
+					framework. This kind of syncretic approach tends to find more acceptance in
+					corpus and computational linguistics than in theoretical linguistics.</p><div class="figure"><a id="fig.hybrid_analysis"/><div class="figure-title">Figure 7.4. A hybrid syntactic analysis</div><div class="figure-contents"><div class="mediaobject"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="100%"><tr><td><img src="../images/TIGERSmall.png" width="540" alt="A hybrid syntactic analysis"/></td></tr></table><div class="caption"><p>A hybrid syntactic analysis of the German sentence
+									<em class="wordasword">Veruntreute die AWO Spendengeld?</em> Display provided
+								by the <a class="link" href="http://www.ims.uni-stuttgart.de/projekte/TIGER/TIGERSearch/" target="_top">TIGERSearch</a> application
+								[<span class="citation"><a href="bibliography.xhtml#Lezius2002" class="biblioref" title="[Lezius 2002]"><abbr class="abbrev">Lezius 2002</abbr></a></span>].</p></div></div></div></div><br class="figure-break"/></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="d5e2261"/>Syntactic parsers</h4></div></div></div><p>Syntactic parsing is the process (either automated or manual) of performing
+					syntactic analysis. A computer program that parses natural language is called a
+						<span class="emphasis"><em>parser</em></span>. Superficially, the process of parsing natural
+					language resembles parsing in computer science – the way a computer
+					makes sense of the commands users type at command lines, or enter as source code
+					for programs – and computing has borrowed much of its vocabulary for
+					parsing from linguistics. But in practice, natural language parsing is a very
+					different undertaking.</p><p>The oldest natural language parsers were constructed using the same kinds of
+					finite-state grammars and recognition rules as parsing computer commands, but
+					the diversity, complexity and ambiguity of human language makes those kinds of
+					parsers difficult to construct and prone to failure. The most accurate and
+					robust parsers today incorporate statistical principles to some degree, and have
+					often been trained from manually parsed texts using machine learning
+					techniques.</p><p>Parsers usually require some preprocessing of the input text, although some
+					are integrated applications that perform preprocessing internally. Generally,
+					the input to a parser must have sentences clearly delimited and must usually be
+					tokenized. Many common parsers work with a PoS-tagger as a preprocessor, and the
+					output of the PoS-tagger must use the tags expected by the parser. When parsers
+					are trained using machine learning, the preprocessing must match the
+					preprocessing used for the training data.</p><p>The output of a parser is never simply plain text – the data must
+					be structured in a way that encodes the connections between words that are not
+					next to each other.</p><p>Implementations of parsers:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://nlp.cs.berkeley.edu/" target="_top">Berkeley parser</a>
+								<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>A constituency parser for English, German and many other
+									languages. This parser optionally creates hybrid dependency
+									output.</p></dd></dl></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://opennlp.apache.org/" target="_top">OpenNLP parser</a>
+								<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>A constituency parser for English.</p></dd><dt><span class="term"><a class="link" href="http://www.ims.uni-stuttgart.de/projekte/gramotron/SOFTWARE/BitPar.html" target="_top">BitPar</a></span></dt><dd><p>A constituency parser for German and English.</p></dd></dl></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://code.google.com/p/mate-tools/" target="_top">Bohnet
+									parser</a></span></dt><dd><p>A dependency parser for English, German, Spanish and Chinese
+									that is part of the Mate tools.</p></dd></dl></div><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://www.let.rug.nl/vannoord/alp/Alpino/" target="_top">Alpino
+									parser</a></span></dt><dd><p>A hybrid parser for Dutch.</p></dd></dl></div><p>
+				</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a id="d5e2304"/>Chunkers</h4></div></div></div><p>High-quality parsers are very complex programs that are very difficult to
+					construct and may require very powerful computers to run or may process texts
+					very slowly. For many languages there are no good automatic parsers at
+					all.</p><p>Chunkers, also known as <span class="emphasis"><em>shallow parsers</em></span>, are a more
+					lightweight solution [<span class="citation"><a href="bibliography.xhtml#Abney1991" class="biblioref" title="[Abney1991]"><abbr class="abbrev">Abney1991</abbr></a></span>]. They provide a partial and
+					simplified constituency parse, often simply breaking sentences up into clauses
+					by looking for certain kinds of words that typically indicate the beginning of a
+					phrase. They are much simpler to write, more robust, and much less
+					resource-intensive to run than full parsers, and are available in many
+					languages.</p><p>Implementations of chunkers:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://www.racai.ro/" target="_top">RACAI chunker</a><span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>A chunker for Romanian and English.</p></dd><dt><span class="term"><a class="link" href="http://cogcomp.cs.illinois.edu/page/software_view/13" target="_top">Illinois chunker</a></span></dt><dd><p>A chunker for English written in the Java programming
+									language.</p></dd></dl></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="d5e2326"/>Word sense disambiguation (WSD)</h3></div></div></div><p>Words can have more than one meaning. For example, the word
+					<em class="wordasword">glass</em> can refer to a <span class="quote">“<span class="quote">drinking glass</span>”</span>
+				and to the <span class="quote">“<span class="quote">material substance glass</span>”</span>. People can usually figure
+				out, given the context of a word, which of a word's many meanings are intended, but
+				this is not so easy for a computer. The automatic identification of the correct
+				meaning of a word in context (sometimes called its <span class="emphasis"><em>sense</em></span>) is
+				called <span class="emphasis"><em>word-sense disambiguation</em></span> (WSD).</p><p>Automatic WSD usually uses a combination of a digitized dictionary – a
+				database of words and possible meanings – and information about the
+				contexts in which words are likely to take particular meanings. Programs that do
+				this often employ machine learning techniques and training corpora. Inputs to WSD
+				programs are usually tokenized texts, but sometimes PoS tagging and even parsing may
+				be required before disambiguation.</p><p>An implementation of a WSD tool: </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://ixa2.si.ehu.es/ukb/" target="_top">UKB</a></span></dt><dd><p>A graph based WSD and word sense similarity toolkit for
+								English.</p></dd></dl></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="d5e2342"/>Coreference resolution and anaphora</h3></div></div></div><p>Coreferences
+				occur when two or more expressions refer to the same thing.
+				
+				Usually, linguists talk about coreferences only in those cases where the syntactic
+				and morphological rules of the language do not make it clear that those expressions
+				necessarily refer to the same thing. Instead, speakers have to
+				use their memory of what has already been said, and their knowledge of the real
+				world context of communication, to determine which words refer to the same thing and
+				which ones do not. </p><p>An <span class="emphasis"><em>anaphoric expression</em></span> is a particular case of coreference that can
+				be resolved by identifying a previous expression that refers to the same thing. For
+				example, in the sentence <em class="wordasword">The car stalled and it never started again</em>
+					the word <em class="wordasword">it</em> refers to the car.
+				But in the sentence
+				<em class="wordasword">The car hit a truck and it never started again</em>
+			it is not clear whether <em class="wordasword">it</em> refers to the car or the
+				truck.
+			In the sentences
+				<em class="wordasword">John was out with Dave when he saw Mary. He thought Mary saw him, but she
+					ignored him completely.</em>
+			it is not clear whether any instance of <em class="wordasword">he</em> and <em class="wordasword">him</em>
+				refers to John or Dave.</p><p>These kinds of ambiguities are what coreference resolution addresses. They can be
+				very important in many NLP applications, like information retrieval and machine
+				translation. Few automatic tools exist to resolve these kinds of problems and most
+				use some form of machine learning.</p><p>Implementations for coreference resolution are:</p><div class="variablelist"><dl class="variablelist"><dt><span class="term">
+						<a class="link" href="http://www.bart-coref.org/" target="_top">BART (Beautiful Anaphora
+							Resolution Toolkit)</a></span></dt><dd><p>A machine learning tool for coreference resolution. Currently supports
+							English, Italian and German but may be trainable for other
+							languages.</p></dd><dt><span class="term">
+						<a class="link" href="http://www.bart-coref.org/" target="_top">Stuttgart Coreference
+							Resolver</a></span></dt><dd><p>A coreference resolver designed for the 
+							<a class="link" href="http://conll.cemantix.org/2012/call-for-participation.html" target="_top">CoNLL 2012 coreference shared
+								task</a>.</p></dd></dl></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="d5e2368"/>Named entity recognition (NER)</h3></div></div></div><p>Named entities are a generalization of the idea of a proper noun. They refer to
+				names of people, places, brand names, non-generic things, and sometimes to highly
+				subject-specific terms, among many other possibilities. There is no fixed limit to
+				what constitutes a named entity, but these kinds of highly specific usages form a
+				large share of the words in texts that are not in dictionaries and not correctly
+				recognized by linguistic tools. They can be very important for information
+				retrieval, machine translation, topic identification and many other tasks in
+				computational linguistics.</p><p>NER tools can be based on rules, on statistical methods and machine learning
+				algorithms, or on combinations of those methods. The rules they apply are sometimes
+				very <span class="emphasis"><em>ad hoc</em></span> – like looking for sequences of two or
+				more capitalized words – and do not generally follow from any organized
+				linguistic theory. Large databases of names of people, places and things often form
+				a part of an NER tool.</p><p>NER tools sometimes also try to classify the elements they find. Determining
+				whether a particular phrase refers to a person, a place, a company name or other
+				things can be important for research or further processing.</p><p>A special application of NER is <span class="emphasis"><em>geovisualization</em></span> –
+				the identification of place names and their locations. Knowing that a named entity
+				refers to a particular place can make it much easier for computers to disambiguate
+				other references. A reference to <em class="wordasword">Bismarck</em> near a reference to a
+				place in Germany likely refers to the 19th century German politician Otto
+					von Bismarck, but near a reference to North
+						Dakota, it likely refers to the small American city of
+				Bismarck.</p><p>Implementations of NER tools: </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://www.nlpado.de/~sebastian/software/ner_german.shtml" target="_top">German NER</a>
+							<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>A NER tool for German based on the Stanford Named Entity
+								Recognizer.</p></dd><dt><span class="term"><a class="link" href="http://nlp.stanford.edu/software/corenlp.shtml" target="_top">Stanford NER</a>
+							<span class="inlinemediaobject"><img src="../images/weblicht/weblichtCheck.png"/></span></span></dt><dd><p>A NER tool for English distributed as part of the Stanford Core
+								NLP toolkit.</p></dd><dt><span class="term"><a class="link" href="http://www.lsv.uni-saarland.de/personalPages/gchrupala/seminer.html" target="_top">SemiNER</a></span></dt><dd><p>A NER tool for German trained from large corpora and Wikipedia
+								data.</p></dd></dl></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a id="d5e2400"/>Sentence and word aligners</h3></div></div></div><p>Aligners are tools mostly used with bilingual corpora – two corpora in
+				different languages where one is a translation of the other, or both are
+				translations from a single source. Statistical machine translation programs use
+				aligned corpora to learn how to translate one language into another.</p><p>Alignments can be at different levels. Sentence aligners match the sentences in
+				the two corpora, while word aligners try to align individual words. These programs
+				are usually statistical in nature, and are typically language independent.</p><p>Implementations of aligners: </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="http://code.google.com/p/giza-pp/" target="_top">GIZA++</a></span></dt><dd><p>A word-level aligner designed to work for all language
+								pairs.</p></dd><dt><span class="term"><a class="link" href="http://gargantua.sourceforge.net/" target="_top">Gargantua</a></span></dt><dd><p>A sentence-level aligner designed to work for all language pairs,
+								that works well when the two texts are not sentence-for-sentence
+								translations.</p></dd></dl></div></div></div><div class="navfooter"><hr/><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="tools_management.xhtml"><img src="../images/nav/prev.svg" alt="Prev"/></a> </td><td width="20%" align="center"><a accesskey="u" href="tools.xhtml"><img src="../images/nav/up.svg" alt="Up"/></a></td><td width="40%" align="right"> <a accesskey="n" href="tools_manual.xhtml"><img src="../images/nav/next.svg" alt="Next"/></a></td></tr><tr><td width="40%" align="left" valign="top">Technical issues in linguistic tool management </td><td width="20%" align="center"><a accesskey="h" href="index.xhtml"><img src="../images/nav/home.svg" alt="Home"/></a> | <a accesskey="t" href="bk01-toc.xhtml">ToC</a></td><td width="40%" align="right" valign="top"> Manual annotation and analysis tools</td></tr></table></div></body></html>

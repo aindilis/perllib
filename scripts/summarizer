@@ -1,0 +1,7 @@
+#!/usr/bin/perl -w
+
+use Lingua::EN::Summarize qw(summarize);
+
+my $c = `cat $ARGV[0]`;
+my $summary = summarize( $c, maxlength => 1000, wrap => 75 );
+print $summary;

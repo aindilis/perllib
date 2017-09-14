@@ -1,0 +1,96 @@
+$VAR1 = {
+          'WSD' => [
+                     {
+                       'NotCertain' => 1,
+                       'WQD' => 'This#ND',
+                       'Lin' => ' ',
+                       'Word' => 'This'
+                     },
+                     {
+                       'NotCertain' => 1,
+                       'WQD' => 'is#NR',
+                       'Lin' => ' ',
+                       'Word' => 'is'
+                     },
+                     {
+                       'NotCertain' => 1,
+                       'WQD' => 'the#ND',
+                       'Lin' => ' ',
+                       'Word' => 'the'
+                     },
+                     {
+                       'Glos' => 'preceding all others in time or space or degree; "the first house on the right"; "the first day of spring"; "his first political race"; "her first baby"; "the first time"; "the first meetings of the new party"; "the first phase of his training"  ',
+                       'WQD' => 'first#a#1',
+                       'Sense' => '1',
+                       'Lin' => ' ',
+                       'Word' => 'first',
+                       'POS' => 'a'
+                     },
+                     {
+                       'Glos' => 'a string of words satisfying the grammatical rules of a language; "he always spoke in grammatical sentences"  ',
+                       'WQD' => 'sentence#n#1',
+                       'Sense' => '1',
+                       'Lin' => '. ',
+                       'Word' => 'sentence',
+                       'POS' => 'n'
+                     },
+                     {
+                       'NotCertain' => 1,
+                       'WQD' => 'that#ND',
+                       'Lin' => ' ',
+                       'Word' => 'that'
+                     },
+                     {
+                       'Glos' => 'have or possess, either in a concrete or an abstract sense; "She has $1,000 in the bank"; "He has got two beautiful daughters"; "She holds a Master\'s degree from Harvard"  ',
+                       'WQD' => 'have#v#1',
+                       'Sense' => '1',
+                       'Lin' => ' ',
+                       'Word' => 'has',
+                       'POS' => 'v'
+                     },
+                     undef,
+                     {
+                       'Glos' => 'a unit of language that native speakers can identify; "words are the blocks from which sentences are made"; "he hardly said ten words all morning"  ',
+                       'WQD' => 'word#n#1',
+                       'Sense' => '1',
+                       'Lin' => ' ',
+                       'Word' => 'word',
+                       'POS' => 'n'
+                     },
+                     undef,
+                     {
+                       'Glos' => 'to double the degree; "she was doubly rewarded"; "his eyes were double bright"  ',
+                       'WQD' => 'twice#r#2',
+                       'Sense' => '2',
+                       'Lin' => '. ',
+                       'Word' => 'twice',
+                       'POS' => 'r'
+                     }
+                   ],
+          'Formalism' => '
+ROOT	ROOT	ROOT	ROOT	-1	ROOT		ROOT	is		be		VBZ	VB	1
+is	be	VBZ	VB	1	verb_arg12	ARG1	This		this		DT	DT	0
+is	be	VBZ	VB	1	verb_arg12	ARG2	sentence	sentence	NN	NN	4
+the	the	DT	DT	2	det_arg1	ARG1	sentence	sentence	NN	NN	4
+first	first	JJ	JJ	3	adj_arg1	ARG1	sentence	sentence	NN	NN	4
+that	that	WDT	WDT	5	relative_arg1	ARG1	sentence	sentence	NN	NN	4
+the	the	DT	DT	7	det_arg1	ARG1	word		word		NN	NN	8
+has	have	VBZ	VB	6	verb_arg12	ARG1	sentence	sentence	NN	NN	4
+has	have	VBZ	VB	6	verb_arg12	ARG2	word		word		NN	NN	8
+first	first	RB	RB	9	adj_arg1	ARG1	has		have		VBZ	VB	6
+twice	twice	RB	RB	10	adj_arg1	ARG1	has		have		VBZ	VB	6
+',
+          'Sentence' => 'This is the first sentence that has the word first twice.'
+        };
+$VAR1 = [
+          [
+            'this (x1)',
+            'be (e4, x1, x2)',
+            'first (x2)',
+            'sentence (x2)',
+            'have (e5, x2, x3)',
+            'word (x3)',
+            'first (e5)',
+            'twice (e5)'
+          ]
+        ];

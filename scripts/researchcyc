@@ -1,0 +1,64 @@
+#!/bin/sh
+
+cd /var/lib/myfrdcsa/sandbox/researchcyc-1.0/researchcyc-1.0/scripts
+
+START_DIR=`pwd`
+ECHO="echo"
+
+# Verify that the OS is supported.
+if [ `./detect-platform.sh` == "" ]; then 
+  $ECHO
+  $ECHO "This platform is not recognized as one supported by this release.  Check the" 
+  $ECHO "release installation documentation for a description of supported platforms."
+  $ECHO
+  exit 1
+fi
+
+# Verify that SELinux exec-sield-randomize is disabled.  This feature's
+# memory managment is not compatible with Cyc's memory management and
+# therefore, Cyc images will not be allowed to start on a server which 
+# has this feature enabled.
+./detect-exec-shield.sh
+if [ "$?" = "1" ]; then 
+  $ECHO
+  $ECHO "The SELinux exec-shield-randomize feature is currently enabled.  This may cause"
+  $ECHO "problems loading worlds.  Please consult the ResearchCyc release"
+  $ECHO "documentation or your Systems Administrator for how to disable this feature."
+  $ECHO
+fi
+
+which screen
+if [ "$?" = "1" ]; then
+  $ECHO "Screen not found.  Please use run-cyc.sh instead."
+  exit 1
+fi
+SCREEN="screen -d -m -S"
+
+$ECHO
+$ECHO "Stopping previous Cyc server processes"
+./stop-researchcyc.sh
+
+$ECHO "Launching Cyc server"
+cd $START_DIR
+$SCREEN cyc-3600 /var/lib/myfrdcsa/codebases/internal/perllib/scripts/agents/system-cyc $@
+
+if [ $? -gt 0 ] ; then 
+   $ECHO "$0 stopped with an error.  Cyc not launched."
+   exit 1
+else 
+
+  ./start-link-parser.sh
+  ./start-stanford-parser.sh
+
+  $ECHO
+  $ECHO "The ResearchCyc server should be accessible via this URL within 3 to 5 minutes."
+  $ECHO
+  $ECHO "http://localhost:3602/cgi-bin/cyccgi/cg?cb-start"
+  $ECHO
+  $ECHO "If you get a popup, while trying to access Cyc, stating that "
+  $ECHO "'The connection was refused when attempting to contact {machine-name}:3602', "
+  $ECHO "that means cyc has not completed startup.  In that case, try again "
+  $ECHO "in another minute or so."
+  $ECHO
+
+fi

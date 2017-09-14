@@ -1,0 +1,48 @@
+0: [ARG1 I] am [TARGET tired ] [ARG0 of those who claim that good is subjective]
+0: I am tired of [ARG0 those] [R-ARG0 who] [TARGET claim ] [ARG1 that good is subjective]
+1: [ARG1 I] am [ARGM-DIS also] [TARGET ntired ] [ARG2 of those who debate the practical importance of AI questioning whether there exists a recursive function that is AI complete]
+1: I am also ntired of [ARG0 those] [R-ARG0 who] [TARGET debate ] [ARG1 the practical importance of AI questioning whether there exists a recursive function that is AI complete]
+1: I am also ntired of those who debate the practical importance of [TARGET AI ] questioning whether there exists a recursive function that is AI complete
+1: I am also ntired of those who debate the practical importance of [ARG0 AI] [TARGET questioning ] [ARG1 whether there exists a recursive function that is AI complete]
+1: I am also ntired of those who debate the practical importance of AI questioning whether there [TARGET exists ] [ARG1 a recursive function that is AI complete]
+1: I am also ntired of those who debate the practical importance of AI questioning whether there exists a recursive function that is [TARGET AI ] complete
+2: [ARG0 People] [TARGET claim ] [ARG1 that AI can not be created because the human mind is infinite]
+2: People claim that [TARGET AI ] [ARG1 can not be created because the human mind is infinite]
+2: People claim that AI [ARGM-MOD can] [ARGM-NEG not] be [TARGET created ] [ARGM-CAU because the human mind is infinite]
+3: [ARG1 What] do [ARG0 they] [TARGET mean ] [ARG1 infinite]
+5: Then obviously there is no reason [ARG0 they] [ARG0 couldn ' t] [TARGET create ] [ARG1 AI]
+5: Then obviously there is no reason they couldn ' t create [TARGET AI ]
+6: [ARG0 People] [TARGET say ] [ARG1 that they are not sure whether human behaviour can be represented in terms of recursive functions]
+6: People say that they are not sure whether [ARG1 human behaviour] [ARGM-MOD can] be [TARGET represented ] [ARGM-LOC in terms of recursive functions]
+7: [ARG0 They] [TARGET wonder ] [ARG1 whether recursive functions are sufficient] and AI complete and yet every piece of human reasoning yet invented has been
+7: [ARG0 They] wonder whether recursive functions are sufficient and [TARGET AI ] complete and yet every piece of human reasoning yet invented has been
+7: They wonder whether recursive functions are sufficient and AI [TARGET complete ] and yet every piece of human reasoning yet invented has been
+7: They wonder whether recursive functions are sufficient and AI complete and yet [ARG1 every piece] of human reasoning [ARGM-TMP yet] [TARGET invented ] has been
+8: But [ARG0 I] [TARGET won ] t test my arguments against them I will propose solutions
+8: But I won [ARG0 t] [TARGET test ] [ARG1 my arguments against them] I will propose solutions
+8: But I won t test my arguments against them [ARG0 I] [ARGM-MOD will] [TARGET propose ] [ARG1 solutions]
+11: But [ARG0 they] are equally unable to [TARGET make ] [ARG1 adequate use of their resources]
+12: [ARG0 To do so] [TARGET requires ] [ARG1 systematic intelligence]
+13: [ARGM-DIS Fortunately] [ARG0 the computer] [TARGET provides ] [ARG2 us] [ARG1 with systematic intelligence]
+14: Because [ARG1 expertise] [ARGM-MOD may] [ARGM-TMP now] be [TARGET copied ] [ARGM-TMP instantly] there is no reason why anyone should go without the benefit of expert knowledge at all times
+15: For instance everyone ' s [ARG1 basic intelligence needs] ought to be [TARGET met ] [ARG0 by having a uniform Social Security System]
+17: The idea of the Debian Social Security System is that [ARG1 expertise] [ARGM-MOD may] [ARGM-TMP now] be [TARGET copied ] [ARGM-TMP instantly] and there is no reason that someone should be bereft of basic knowledge that could be taught to them by a computer
+17: The idea of the Debian Social Security System is that expertise may now be copied instantly and there is no reason that someone should be bereft of [ARG1 basic knowledge] [R-ARG1 that] [ARGM-MOD could] be [TARGET taught ] [ARG2 to them] [ARG0 by a computer]
+18: As such [ARG1 a general purpose system] [R-ARG1 which] [TARGET starts ] [ARG2 from ground up] including meal planning
+18: As such a general purpose system which starts from ground up [TARGET including ] [ARG1 meal planning]
+19: Currently there is [ARG0 no software] available in Debian [R-ARG0 which] [TARGET provides ] [ARG1 for meal planning or even realtime life planning in general]
+20: [ARG0 I] [TARGET argue ] [ARG1 that having these abilities given to them will not make the person less intelligent]
+20: I argue that having [ARG1 these abilities] [TARGET given ] [ARG2 to them] will not make the person less intelligent
+20: I argue that [ARG0 having these abilities given to them] [ARGM-MOD will] [ARGM-NEG not] [TARGET make ] [ARG1 the person] [ARG2 less intelligent]
+21: [ARGM-DIS Rather] [ARG0 I] [TARGET think ] [ARG1 that intelligence and motivation can be instructed]
+21: Rather I think that [ARG1 intelligence and motivation] [ARGM-MOD can] be [TARGET instructed ]
+22: The reason [ARG0 I] [TARGET believe ] [ARG1 this] is that people can be taught with both negative reinforcement such as life often treats us with but also positive reinforcement
+22: The reason I believe this is that [ARG2 people] [ARGM-MOD can] be [TARGET taught ] [ARG2 with both negative reinforcement] such as life often treats us with but also positive reinforcement
+22: The reason I believe this is that people can be taught with both negative reinforcement such as [ARG0 life] [ARGM-TMP often] [TARGET treats ] [ARG1 us] [ARGM-MNR with but also positive reinforcement]
+23: There is no reason for [TARGET making ] [ARG1 mistakes] if they don t have to be made
+23: There is no reason for making mistakes if [ARG0 they] [TARGET don ] t have to be made
+23: There is no reason for making mistakes if they don [ARG1 t] have to be [TARGET made ]
+25: My religous view is that the afterlife is [ARG1 something] [R-ARG1 which] is [ARGM-ADV in actually] [TARGET accomplished ] [ARG0 by our race] [ARGM-ADV as transform existing reality into an increasingly heavenlike world until we have replaced the earth with heaven]
+25: My religous view is that the afterlife is something which is in actually accomplished by our race as [TARGET transform ] [ARG1 existing reality] [ARG2 into an increasingly heavenlike world] [ARGM-TMP until we have replaced the earth with heaven]
+25: My religous view is that the afterlife is something which is in actually accomplished by our race as transform [TARGET existing ] [ARG1 reality] into an increasingly heavenlike world until we have replaced the earth with heaven
+25: My religous view is that the afterlife is something which is in actually accomplished by our race as transform existing reality into an increasingly heavenlike world until [ARG0 we] have [TARGET replaced ] [ARG1 the earth] [ARG2 with heaven]

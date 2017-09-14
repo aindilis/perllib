@@ -1,0 +1,9 @@
+<doc>
+<s><lex pos=cd>10/23/2008</lex> <lex pos=pp>.</lex></s>
+
+<s><lex pos=nnp>Call</lex> <lex pos=nnp>Eva</lex> <lex pos=nn>tonight</lex> <lex pos=pp>.</lex></s>
+
+<s><lex pos=nnp>Go</lex> <lex pos=to>to</lex> <lex pos=nn>class</lex> <lex pos=nn>tomorrow</lex> <lex pos=pp>.</lex></s>
+
+</doc>
+

@@ -1,0 +1,53 @@
+Topic Classification
+Categorization of news articles by genre using character language models.
+
+Named Entity Recognition
+How to run named-entity recognizers in first-best, n-best and per-entity confidence modes. How to train and evaluate named-entity recognizers. Examples with newswire in Spanish and genomics in English.
+
+Clustering
+An illustration of the single-link and complete-link hierarchical clusterers, including a variety of cluster evaluation techniques. There is an example of using clustering for cross-document coreference, with an example application resolving different John Smiths in the news. There is also an extensive tutorial on latent Dirichlet allocation (LDA).
+
+Part-of-Speech Tagging
+How to train part-of-speech (POS) taggers from corpora using tag parsers and handlers, how to compile models to disk and read them in, and how to run and evaluate first-best, n-best and confidence-scored taggers. Examples include the Brown, Genia, and GenTag part-of-speech corpora.
+
+Sentence Detection
+How to run sentence detection using the chunking interface, how to evaluate the performance of a sentence model against a corpu s using sentence chunk parsers and handlers, and how to tune a model for a particular corpus. Examples from the Genia corpus.
+
+Spelling Correction
+"Did you mean"-style search engine spell checking. How to train and tune a model.
+
+String Comparison
+How to use distance and proximity measures over strings, including weighted edit disance, TF/IDF distance, Jaccard distance, Jaro-Winkler distance, etc.
+
+Interesting Phrase Detection
+Extraction of statistically significant multi-word phrases in one corpus and of relatively significant ("hot") terms in one corpus relative to another.
+
+Character Language Modeling
+Training and tuning character language models, extending com.aliasi.util.AbstractCommand and using the com.aliasi.corpus.TextHandler and com.aliasi.corpus.Parser interfaces.
+
+MEDLINE Parsing
+Use of the MEDLINE parser interface to extract MEDLINE citations as structured Java objects. Also contains a pointer to our sandbox project to keep an up-to-date Lucene index of MEDLINE.
+
+Database Text Mining
+Part one populates a MySQL database with MEDLINE citations using JDBC. Part two runs over a database of documents to create tables of sentences and entities. Part three shows how to do text data mining through database queries. 
+[Requires GNU-licensed MySQL.]
+
+Chinese Word Segmentation
+Shows how to segment a stream of Chinese characters into distinct words. The demo uses the standard LingPipe spelling corrector with an edit distance tuned for word segmentation. Shows how to train and evaluate using publicly available training corpora from the First and Second International Chinese Word Segmentation Bakeoffs. 
+[Requires SigHan data download.]
+
+Hyphenation and Syllabification
+Shows how to train a hyphenator or syllabifier from dictionary training data. Examples in Dutch, English and German.
+Sentiment Analysis
+Uses language model classifiers to do sentiment analysis over movie reviews. Whole movie reviews are classified by polarity (thumbs up or thumbs down), and single sentences are classified with respect to subjectivity (subjective/opinion or objective/fact). Walks through compiling models and reading the extensive output produced by the classifier evaluators. Also explains hierarchical classification which stacks the polarity classifier on top of the subjectivity classifier for improved performance. Discusses binomial confidence intervals and the danger of a posteriori parameter setting. 
+[Requires sentiment data download.]
+
+Language Identification
+Language identification as a classification problem. How to train and evaluate language identifiers, with examples from the Leipzig corpus of 15 languages.
+
+Singular Value Decomposition
+Use singular value decomposition to factor matrices. Explains how to deal with unknown value imputation, regularization and setting tuning parameters.
+
+Logistic Regression
+How to estimate regularized multinomial logistic regression models for discriminitive classification.
+Expectation Maximizatio

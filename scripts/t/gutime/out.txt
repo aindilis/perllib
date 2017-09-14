@@ -1,0 +1,10 @@
+<doc>
+<s><TIMEX3 tid="t1" TYPE="DATE" VAL="20081023"><lex pos=cd>10/23/2008</lex></TIMEX3> <lex pos=pp>.</lex></s>
+
+<s><lex pos=nnp>Call</lex> <lex pos=nnp>Eva</lex> <TIMEX3 tid="t2" TYPE="DATE" VAL="20081030TNI"><lex pos=nn>tonight</lex></TIMEX3> <lex pos=pp>.</lex></s>
+
+<s><lex pos=nnp>Go</lex> <lex pos=to>to</lex> <lex pos=nn>class</lex> <TIMEX3 tid="t3" TYPE="DATE" VAL="20081031"><lex pos=nn>tomorrow</lex></TIMEX3> <lex pos=pp>.</lex></s>
+
+
+
+</doc>

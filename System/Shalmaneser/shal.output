@@ -1,0 +1,3326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus corpusname="corpus" target="">
+  <head>
+    <meta>
+      <format>
+	NeGra format, version 3</format>
+    </meta>
+    <frames xmlns="http://www.clt-st.de/framenet/frame-database">
+    </frames>
+    <wordtags xmlns="http://www.clt-st.de/salsa/wordtags">
+    </wordtags>
+    <flags>
+    </flags>
+    <annotation>
+      <edgelabel>
+      </edgelabel>
+      <secedgelabel>
+      </secedgelabel>
+    </annotation>
+  </head>
+  <body>
+    <s id='shal.input_0'>
+      <graph root='shal.input_0_509'>
+	<terminals>
+	  <t word='I' id='shal.input_0_0' lemma='I' pos='PRP'>
+	  </t>
+	  <t word='am' id='shal.input_0_1' lemma='be' pos='VBP'>
+	  </t>
+	  <t word='tired' id='shal.input_0_2' lemma='tired' pos='VBN'>
+	  </t>
+	  <t word='of' id='shal.input_0_3' lemma='of' pos='IN'>
+	  </t>
+	  <t word='those' id='shal.input_0_4' lemma='those' pos='DT'>
+	  </t>
+	  <t word='who' id='shal.input_0_5' lemma='who' pos='WP'>
+	  </t>
+	  <t word='claim' id='shal.input_0_6' lemma='claim' pos='VBP'>
+	  </t>
+	  <t word='good' id='shal.input_0_7' lemma='good' pos='JJ'>
+	  </t>
+	  <t word='is' id='shal.input_0_8' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='subjective' id='shal.input_0_9' lemma='subjective' pos='JJ'>
+	  </t>
+	  <t word='.' id='shal.input_0_10' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='am' cat='VP' id='shal.input_0_508'>
+	    <edge label='-' idref='shal.input_0_1'/>
+	    <edge label='-' idref='shal.input_0_507'/>
+	  </nt>
+	  <nt head='am' cat='S' id='shal.input_0_509'>
+	    <edge label='-' idref='shal.input_0_0'/>
+	    <edge label='-' idref='shal.input_0_508'/>
+	  </nt>
+	  <nt head='subjective' cat='ADJP' id='shal.input_0_500'>
+	    <edge label='-' idref='shal.input_0_9'/>
+	    <edge label='-' idref='shal.input_0_10'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_0_501'>
+	    <edge label='-' idref='shal.input_0_8'/>
+	    <edge label='-' idref='shal.input_0_500'/>
+	  </nt>
+	  <nt head='is' cat='S-A' id='shal.input_0_502'>
+	    <edge label='-' idref='shal.input_0_7'/>
+	    <edge label='-' idref='shal.input_0_501'/>
+	  </nt>
+	  <nt head='claim' cat='VP' id='shal.input_0_503'>
+	    <edge label='-' idref='shal.input_0_6'/>
+	    <edge label='-' idref='shal.input_0_502'/>
+	  </nt>
+	  <nt head='who' cat='SBAR-g' id='shal.input_0_504'>
+	    <edge label='-' idref='shal.input_0_5'/>
+	    <edge label='-' idref='shal.input_0_503'/>
+	  </nt>
+	  <nt head='those' cat='NP-A' id='shal.input_0_505'>
+	    <edge label='-' idref='shal.input_0_4'/>
+	    <edge label='-' idref='shal.input_0_504'/>
+	  </nt>
+	  <nt head='of' cat='PP' id='shal.input_0_506'>
+	    <edge label='-' idref='shal.input_0_3'/>
+	    <edge label='-' idref='shal.input_0_505'/>
+	  </nt>
+	  <nt head='tired' cat='ADJP' id='shal.input_0_507'>
+	    <edge label='-' idref='shal.input_0_2'/>
+	    <edge label='-' idref='shal.input_0_506'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Claim_ownership' id='shal.input_0_f1265327219.27897'>
+	    <target id='shal.input_0_f1265327219.27897_fe1265327219.27918' lemma='claim' pos='verb'>
+	      <fenode idref='shal.input_0_6'/>
+	    </target>
+	    <fe name='Claimant' id='shal.input_0_f1265327219.27897_fe1265327393.71572'>
+	      <fenode idref='shal.input_0_0'/>
+	    </fe>
+	  </frame>
+	  <frame name='Social_interaction_evaluation' id='shal.input_0_f1265327219.28046'>
+	    <target id='shal.input_0_f1265327219.28046_fe1265327219.28068' lemma='good' pos='adj'>
+	      <fenode idref='shal.input_0_7'/>
+	    </target>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_1'>
+      <graph root='shal.input_1_518'>
+	<terminals>
+	  <t word='I' id='shal.input_1_0' lemma='I' pos='PRP'>
+	  </t>
+	  <t word='am' id='shal.input_1_1' lemma='be' pos='VBP'>
+	  </t>
+	  <t word='also' id='shal.input_1_2' lemma='also' pos='RB'>
+	  </t>
+	  <t word='ntired' id='shal.input_1_3' lemma='&lt;unknown&gt;' pos='JJ'>
+	  </t>
+	  <t word='of' id='shal.input_1_4' lemma='of' pos='IN'>
+	  </t>
+	  <t word='those' id='shal.input_1_5' lemma='those' pos='DT'>
+	  </t>
+	  <t word='who' id='shal.input_1_6' lemma='who' pos='WP'>
+	  </t>
+	  <t word='debate' id='shal.input_1_7' lemma='debate' pos='VB'>
+	  </t>
+	  <t word='the' id='shal.input_1_8' lemma='the' pos='DT'>
+	  </t>
+	  <t word='practical' id='shal.input_1_9' lemma='practical' pos='JJ'>
+	  </t>
+	  <t word='importance' id='shal.input_1_10' lemma='importance' pos='NN'>
+	  </t>
+	  <t word='of' id='shal.input_1_11' lemma='of' pos='IN'>
+	  </t>
+	  <t word='A' id='shal.input_1_12' lemma='a' pos='DT'>
+	  </t>
+	  <t word='I' id='shal.input_1_13' lemma='I' pos='NN'>
+	  </t>
+	  <t word=',' id='shal.input_1_14' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='questioning' id='shal.input_1_15' lemma='question' pos='VBG'>
+	  </t>
+	  <t word='whether' id='shal.input_1_16' lemma='whether' pos='IN'>
+	  </t>
+	  <t word='there' id='shal.input_1_17' lemma='there' pos='EX'>
+	  </t>
+	  <t word='exists' id='shal.input_1_18' lemma='exist' pos='VBZ'>
+	  </t>
+	  <t word='a' id='shal.input_1_19' lemma='a' pos='DT'>
+	  </t>
+	  <t word='recursive' id='shal.input_1_20' lemma='recursive' pos='JJ'>
+	  </t>
+	  <t word='function' id='shal.input_1_21' lemma='function' pos='NN'>
+	  </t>
+	  <t word='is' id='shal.input_1_22' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='AI-complete' id='shal.input_1_23' lemma='&lt;unknown&gt;' pos='JJ'>
+	  </t>
+	  <t word='.' id='shal.input_1_24' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='AI-complete' cat='ADJP' id='shal.input_1_516'>
+	    <edge label='-' idref='shal.input_1_23'/>
+	    <edge label='-' idref='shal.input_1_24'/>
+	  </nt>
+	  <nt head='who' cat='SBAR-g' id='shal.input_1_505'>
+	    <edge label='-' idref='shal.input_1_6'/>
+	    <edge label='-' idref='shal.input_1_504'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_1_517'>
+	    <edge label='-' idref='shal.input_1_22'/>
+	    <edge label='-' idref='shal.input_1_516'/>
+	  </nt>
+	  <nt head='those' cat='NP-A' id='shal.input_1_506'>
+	    <edge label='-' idref='shal.input_1_5'/>
+	    <edge label='-' idref='shal.input_1_505'/>
+	  </nt>
+	  <nt head='questioning' cat='SINV' id='shal.input_1_518'>
+	    <edge label='-' idref='shal.input_1_510'/>
+	    <edge label='-' idref='shal.input_1_515'/>
+	    <edge label='-' idref='shal.input_1_517'/>
+	  </nt>
+	  <nt head='of' cat='PP' id='shal.input_1_507'>
+	    <edge label='-' idref='shal.input_1_4'/>
+	    <edge label='-' idref='shal.input_1_506'/>
+	  </nt>
+	  <nt head='ntired' cat='ADJP' id='shal.input_1_508'>
+	    <edge label='-' idref='shal.input_1_2'/>
+	    <edge label='-' idref='shal.input_1_3'/>
+	    <edge label='-' idref='shal.input_1_507'/>
+	  </nt>
+	  <nt head='am' cat='VP' id='shal.input_1_509'>
+	    <edge label='-' idref='shal.input_1_1'/>
+	    <edge label='-' idref='shal.input_1_508'/>
+	  </nt>
+	  <nt head='am' cat='S' id='shal.input_1_510'>
+	    <edge label='-' idref='shal.input_1_0'/>
+	    <edge label='-' idref='shal.input_1_509'/>
+	  </nt>
+	  <nt head='function' cat='NPB' id='shal.input_1_511'>
+	    <edge label='-' idref='shal.input_1_19'/>
+	    <edge label='-' idref='shal.input_1_20'/>
+	    <edge label='-' idref='shal.input_1_21'/>
+	  </nt>
+	  <nt head='importance' cat='NPB' id='shal.input_1_500'>
+	    <edge label='-' idref='shal.input_1_8'/>
+	    <edge label='-' idref='shal.input_1_9'/>
+	    <edge label='-' idref='shal.input_1_10'/>
+	  </nt>
+	  <nt head='exists' cat='VP' id='shal.input_1_512'>
+	    <edge label='-' idref='shal.input_1_18'/>
+	    <edge label='-' idref='shal.input_1_511'/>
+	  </nt>
+	  <nt head='I' cat='NPB' id='shal.input_1_501'>
+	    <edge label='-' idref='shal.input_1_12'/>
+	    <edge label='-' idref='shal.input_1_13'/>
+	    <edge label='-' idref='shal.input_1_14'/>
+	  </nt>
+	  <nt head='exists' cat='S-A' id='shal.input_1_513'>
+	    <edge label='-' idref='shal.input_1_17'/>
+	    <edge label='-' idref='shal.input_1_512'/>
+	  </nt>
+	  <nt head='of' cat='PP' id='shal.input_1_502'>
+	    <edge label='-' idref='shal.input_1_11'/>
+	    <edge label='-' idref='shal.input_1_501'/>
+	  </nt>
+	  <nt head='whether' cat='SBAR-A' id='shal.input_1_514'>
+	    <edge label='-' idref='shal.input_1_16'/>
+	    <edge label='-' idref='shal.input_1_513'/>
+	  </nt>
+	  <nt head='importance' cat='NP-A' id='shal.input_1_503'>
+	    <edge label='-' idref='shal.input_1_500'/>
+	    <edge label='-' idref='shal.input_1_502'/>
+	  </nt>
+	  <nt head='questioning' cat='VP' id='shal.input_1_515'>
+	    <edge label='-' idref='shal.input_1_15'/>
+	    <edge label='-' idref='shal.input_1_514'/>
+	  </nt>
+	  <nt head='debate' cat='VP' id='shal.input_1_504'>
+	    <edge label='-' idref='shal.input_1_7'/>
+	    <edge label='-' idref='shal.input_1_503'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Discussion' id='shal.input_1_f1265327219.34743'>
+	    <target id='shal.input_1_f1265327219.34743_fe1265327219.34759' lemma='debate' pos='verb'>
+	      <fenode idref='shal.input_1_7'/>
+	    </target>
+	    <fe name='Interlocutor_1' id='shal.input_1_f1265327219.34743_fe1265327393.80123'>
+	      <fenode idref='shal.input_1_0'/>
+	    </fe>
+	    <fe name='Topic' id='shal.input_1_f1265327219.34743_fe1265327393.80956'>
+	      <fenode idref='shal.input_1_503'/>
+	    </fe>
+	  </frame>
+	  <frame name='Existence' id='shal.input_1_f1265327219.34776'>
+	    <target id='shal.input_1_f1265327219.34776_fe1265327219.34791' lemma='exist' pos='verb'>
+	      <fenode idref='shal.input_1_18'/>
+	    </target>
+	    <fe name='Entity' id='shal.input_1_f1265327219.34776_fe1265327393.81605'>
+	      <fenode idref='shal.input_1_511'/>
+	    </fe>
+	  </frame>
+	  <frame name='Contingency' id='shal.input_1_f1265327219.34806'>
+	    <target id='shal.input_1_f1265327219.34806_fe1265327219.34819' lemma='function' pos='noun'>
+	      <fenode idref='shal.input_1_21'/>
+	    </target>
+	  </frame>
+	  <frame name='Questioning' id='shal.input_1_f1265327219.34834'>
+	    <target id='shal.input_1_f1265327219.34834_fe1265327219.34847' lemma='question' pos='verb'>
+	      <fenode idref='shal.input_1_15'/>
+	    </target>
+	    <fe name='Message' id='shal.input_1_f1265327219.34834_fe1265327393.82202'>
+	      <fenode idref='shal.input_1_510'/>
+	      <fenode idref='shal.input_1_517'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_2'>
+      <graph root='shal.input_2_511'>
+	<terminals>
+	  <t word='People' id='shal.input_2_0' lemma='people' pos='NNS'>
+	  </t>
+	  <t word='claim' id='shal.input_2_1' lemma='claim' pos='VBP'>
+	  </t>
+	  <t word='A' id='shal.input_2_2' lemma='a' pos='DT'>
+	  </t>
+	  <t word='I' id='shal.input_2_3' lemma='I' pos='PRP'>
+	  </t>
+	  <t word='cannot' id='shal.input_2_4' lemma='can' pos='MD'>
+	  </t>
+	  <t word='be' id='shal.input_2_5' lemma='be' pos='VB'>
+	  </t>
+	  <t word='created' id='shal.input_2_6' lemma='create' pos='VBN'>
+	  </t>
+	  <t word=',' id='shal.input_2_7' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='because' id='shal.input_2_8' lemma='because' pos='IN'>
+	  </t>
+	  <t word='the' id='shal.input_2_9' lemma='the' pos='DT'>
+	  </t>
+	  <t word='human' id='shal.input_2_10' lemma='human' pos='JJ'>
+	  </t>
+	  <t word='mind' id='shal.input_2_11' lemma='mind' pos='NN'>
+	  </t>
+	  <t word='is' id='shal.input_2_12' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='infinite' id='shal.input_2_13' lemma='infinite' pos='JJ'>
+	  </t>
+	  <t word='.' id='shal.input_2_14' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='is' cat='S-A' id='shal.input_2_504'>
+	    <edge label='-' idref='shal.input_2_501'/>
+	    <edge label='-' idref='shal.input_2_503'/>
+	  </nt>
+	  <nt head='because' cat='SBAR' id='shal.input_2_505'>
+	    <edge label='-' idref='shal.input_2_8'/>
+	    <edge label='-' idref='shal.input_2_504'/>
+	  </nt>
+	  <nt head='be' cat='VP-A' id='shal.input_2_506'>
+	    <edge label='-' idref='shal.input_2_5'/>
+	    <edge label='-' idref='shal.input_2_500'/>
+	    <edge label='-' idref='shal.input_2_505'/>
+	  </nt>
+	  <nt head='cannot' cat='VP' id='shal.input_2_507'>
+	    <edge label='-' idref='shal.input_2_4'/>
+	    <edge label='-' idref='shal.input_2_506'/>
+	  </nt>
+	  <nt head='cannot' cat='S-A' id='shal.input_2_508'>
+	    <edge label='-' idref='shal.input_2_3'/>
+	    <edge label='-' idref='shal.input_2_507'/>
+	  </nt>
+	  <nt head='A' cat='SBAR-A' id='shal.input_2_509'>
+	    <edge label='-' idref='shal.input_2_2'/>
+	    <edge label='-' idref='shal.input_2_508'/>
+	  </nt>
+	  <nt head='claim' cat='VP' id='shal.input_2_510'>
+	    <edge label='-' idref='shal.input_2_1'/>
+	    <edge label='-' idref='shal.input_2_509'/>
+	  </nt>
+	  <nt head='claim' cat='S' id='shal.input_2_511'>
+	    <edge label='-' idref='shal.input_2_0'/>
+	    <edge label='-' idref='shal.input_2_510'/>
+	  </nt>
+	  <nt head='created' cat='VP-A' id='shal.input_2_500'>
+	    <edge label='-' idref='shal.input_2_6'/>
+	    <edge label='-' idref='shal.input_2_7'/>
+	  </nt>
+	  <nt head='mind' cat='NPB' id='shal.input_2_501'>
+	    <edge label='-' idref='shal.input_2_9'/>
+	    <edge label='-' idref='shal.input_2_10'/>
+	    <edge label='-' idref='shal.input_2_11'/>
+	  </nt>
+	  <nt head='infinite' cat='ADJP' id='shal.input_2_502'>
+	    <edge label='-' idref='shal.input_2_13'/>
+	    <edge label='-' idref='shal.input_2_14'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_2_503'>
+	    <edge label='-' idref='shal.input_2_12'/>
+	    <edge label='-' idref='shal.input_2_502'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Claim_ownership' id='shal.input_2_f1265327219.39049'>
+	    <target id='shal.input_2_f1265327219.39049_fe1265327219.39064' lemma='claim' pos='verb'>
+	      <fenode idref='shal.input_2_1'/>
+	    </target>
+	    <fe name='Claimant' id='shal.input_2_f1265327219.39049_fe1265327393.86592'>
+	      <fenode idref='shal.input_2_0'/>
+	    </fe>
+	  </frame>
+	  <frame name='Creating' id='shal.input_2_f1265327219.39081'>
+	    <target id='shal.input_2_f1265327219.39081_fe1265327219.39094' lemma='create' pos='verb'>
+	      <fenode idref='shal.input_2_6'/>
+	    </target>
+	    <fe name='Creator' id='shal.input_2_f1265327219.39081_fe1265327393.86733'>
+	      <fenode idref='shal.input_2_0'/>
+	    </fe>
+	    <fe name='Created_entity' id='shal.input_2_f1265327219.39081_fe1265327393.87261'>
+	      <fenode idref='shal.input_2_3'/>
+	    </fe>
+	  </frame>
+	  <frame name='People' id='shal.input_2_f1265327219.39109'>
+	    <target id='shal.input_2_f1265327219.39109_fe1265327219.39121' lemma='people' pos='noun'>
+	      <fenode idref='shal.input_2_0'/>
+	    </target>
+	    <fe name='Person' id='shal.input_2_f1265327219.39109_fe1265327393.87589'>
+	      <fenode idref='shal.input_2_0'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_3'>
+      <graph root='shal.input_3_503'>
+	<terminals>
+	  <t word='What' id='shal.input_3_0' lemma='What' pos='WP'>
+	  </t>
+	  <t word='do' id='shal.input_3_1' lemma='do' pos='VBP'>
+	  </t>
+	  <t word='they' id='shal.input_3_2' lemma='they' pos='PRP'>
+	  </t>
+	  <t word='mean' id='shal.input_3_3' lemma='mean' pos='VB'>
+	  </t>
+	  <t word='infinite' id='shal.input_3_4' lemma='infinite' pos='NN'>
+	  </t>
+	  <t word='?' id='shal.input_3_5' lemma='?' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='mean' cat='VP' id='shal.input_3_501'>
+	    <edge label='-' idref='shal.input_3_3'/>
+	    <edge label='-' idref='shal.input_3_500'/>
+	  </nt>
+	  <nt head='do' cat='SQ' id='shal.input_3_502'>
+	    <edge label='-' idref='shal.input_3_1'/>
+	    <edge label='-' idref='shal.input_3_2'/>
+	    <edge label='-' idref='shal.input_3_501'/>
+	  </nt>
+	  <nt head='do' cat='SBARQ' id='shal.input_3_503'>
+	    <edge label='-' idref='shal.input_3_0'/>
+	    <edge label='-' idref='shal.input_3_502'/>
+	  </nt>
+	  <nt head='infinite' cat='NPB' id='shal.input_3_500'>
+	    <edge label='-' idref='shal.input_3_4'/>
+	    <edge label='-' idref='shal.input_3_5'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_4'>
+      <graph root='shal.input_4_500'>
+	<terminals>
+	  <t word='Limitless' id='shal.input_4_0' lemma='limitless' pos='JJ'>
+	  </t>
+	  <t word='?' id='shal.input_4_1' lemma='?' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='Limitless' cat='ADJP' id='shal.input_4_500'>
+	    <edge label='-' idref='shal.input_4_0'/>
+	    <edge label='-' idref='shal.input_4_1'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_5'>
+      <graph root='shal.input_5_507'>
+	<terminals>
+	  <t word='Then' id='shal.input_5_0' lemma='then' pos='RB'>
+	  </t>
+	  <t word=',' id='shal.input_5_1' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='obviously' id='shal.input_5_2' lemma='obviously' pos='RB'>
+	  </t>
+	  <t word='there' id='shal.input_5_3' lemma='there' pos='EX'>
+	  </t>
+	  <t word='is' id='shal.input_5_4' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='no' id='shal.input_5_5' lemma='no' pos='DT'>
+	  </t>
+	  <t word='reason' id='shal.input_5_6' lemma='reason' pos='NN'>
+	  </t>
+	  <t word='they' id='shal.input_5_7' lemma='they' pos='PRP'>
+	  </t>
+	  <t word='couldn&apos;t' id='shal.input_5_8' lemma='&lt;unknown&gt;' pos='NN'>
+	  </t>
+	  <t word='create' id='shal.input_5_9' lemma='create' pos='VBP'>
+	  </t>
+	  <t word='A' id='shal.input_5_10' lemma='a' pos='DT'>
+	  </t>
+	  <t word='I' id='shal.input_5_11' lemma='I' pos='NN'>
+	  </t>
+	  <t word='.' id='shal.input_5_12' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='reason' cat='NPB' id='shal.input_5_501'>
+	    <edge label='-' idref='shal.input_5_5'/>
+	    <edge label='-' idref='shal.input_5_6'/>
+	  </nt>
+	  <nt head='I' cat='NPB' id='shal.input_5_502'>
+	    <edge label='-' idref='shal.input_5_10'/>
+	    <edge label='-' idref='shal.input_5_11'/>
+	    <edge label='-' idref='shal.input_5_12'/>
+	  </nt>
+	  <nt head='create' cat='VP' id='shal.input_5_503'>
+	    <edge label='-' idref='shal.input_5_9'/>
+	    <edge label='-' idref='shal.input_5_502'/>
+	  </nt>
+	  <nt head='create' cat='S-A' id='shal.input_5_504'>
+	    <edge label='-' idref='shal.input_5_7'/>
+	    <edge label='-' idref='shal.input_5_8'/>
+	    <edge label='-' idref='shal.input_5_503'/>
+	  </nt>
+	  <nt head='reason' cat='NP-A' id='shal.input_5_505'>
+	    <edge label='-' idref='shal.input_5_501'/>
+	    <edge label='-' idref='shal.input_5_504'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_5_506'>
+	    <edge label='-' idref='shal.input_5_4'/>
+	    <edge label='-' idref='shal.input_5_505'/>
+	  </nt>
+	  <nt head='is' cat='S' id='shal.input_5_507'>
+	    <edge label='-' idref='shal.input_5_500'/>
+	    <edge label='-' idref='shal.input_5_2'/>
+	    <edge label='-' idref='shal.input_5_3'/>
+	    <edge label='-' idref='shal.input_5_506'/>
+	  </nt>
+	  <nt head='Then' cat='ADVP' id='shal.input_5_500'>
+	    <edge label='-' idref='shal.input_5_0'/>
+	    <edge label='-' idref='shal.input_5_1'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Cause_to_start' id='shal.input_5_f1265327219.43591'>
+	    <target id='shal.input_5_f1265327219.43591_fe1265327219.43607' lemma='create' pos='verb'>
+	      <fenode idref='shal.input_5_9'/>
+	    </target>
+	    <fe name='Cause' id='shal.input_5_f1265327219.43591_fe1265327393.92973'>
+	      <fenode idref='shal.input_5_501'/>
+	      <fenode idref='shal.input_5_7'/>
+	      <fenode idref='shal.input_5_8'/>
+	    </fe>
+	    <fe name='Effect' id='shal.input_5_f1265327219.43591_fe1265327393.93338'>
+	      <fenode idref='shal.input_5_502'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_6'>
+      <graph root='shal.input_6_514'>
+	<terminals>
+	  <t word='People' id='shal.input_6_0' lemma='people' pos='NNS'>
+	  </t>
+	  <t word='say' id='shal.input_6_1' lemma='say' pos='VBP'>
+	  </t>
+	  <t word='they' id='shal.input_6_2' lemma='they' pos='PRP'>
+	  </t>
+	  <t word='are' id='shal.input_6_3' lemma='be' pos='VBP'>
+	  </t>
+	  <t word='not' id='shal.input_6_4' lemma='not' pos='RB'>
+	  </t>
+	  <t word='sure' id='shal.input_6_5' lemma='sure' pos='JJ'>
+	  </t>
+	  <t word='whether' id='shal.input_6_6' lemma='whether' pos='IN'>
+	  </t>
+	  <t word='human' id='shal.input_6_7' lemma='human' pos='JJ'>
+	  </t>
+	  <t word='behaviour' id='shal.input_6_8' lemma='behaviour' pos='NN'>
+	  </t>
+	  <t word='can' id='shal.input_6_9' lemma='can' pos='MD'>
+	  </t>
+	  <t word='be' id='shal.input_6_10' lemma='be' pos='VB'>
+	  </t>
+	  <t word='represented' id='shal.input_6_11' lemma='represent' pos='VBN'>
+	  </t>
+	  <t word='in' id='shal.input_6_12' lemma='in' pos='IN'>
+	  </t>
+	  <t word='terms' id='shal.input_6_13' lemma='term' pos='NNS'>
+	  </t>
+	  <t word='of' id='shal.input_6_14' lemma='of' pos='IN'>
+	  </t>
+	  <t word='recursive' id='shal.input_6_15' lemma='recursive' pos='JJ'>
+	  </t>
+	  <t word='functions' id='shal.input_6_16' lemma='function' pos='NNS'>
+	  </t>
+	  <t word='.' id='shal.input_6_17' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='are' cat='VP' id='shal.input_6_511'>
+	    <edge label='-' idref='shal.input_6_3'/>
+	    <edge label='-' idref='shal.input_6_4'/>
+	    <edge label='-' idref='shal.input_6_510'/>
+	  </nt>
+	  <nt head='behaviour' cat='NPB' id='shal.input_6_500'>
+	    <edge label='-' idref='shal.input_6_7'/>
+	    <edge label='-' idref='shal.input_6_8'/>
+	  </nt>
+	  <nt head='are' cat='S-A' id='shal.input_6_512'>
+	    <edge label='-' idref='shal.input_6_2'/>
+	    <edge label='-' idref='shal.input_6_511'/>
+	  </nt>
+	  <nt head='functions' cat='NPB' id='shal.input_6_501'>
+	    <edge label='-' idref='shal.input_6_15'/>
+	    <edge label='-' idref='shal.input_6_16'/>
+	    <edge label='-' idref='shal.input_6_17'/>
+	  </nt>
+	  <nt head='say' cat='VP' id='shal.input_6_513'>
+	    <edge label='-' idref='shal.input_6_1'/>
+	    <edge label='-' idref='shal.input_6_512'/>
+	  </nt>
+	  <nt head='of' cat='PP' id='shal.input_6_502'>
+	    <edge label='-' idref='shal.input_6_14'/>
+	    <edge label='-' idref='shal.input_6_501'/>
+	  </nt>
+	  <nt head='say' cat='S' id='shal.input_6_514'>
+	    <edge label='-' idref='shal.input_6_0'/>
+	    <edge label='-' idref='shal.input_6_513'/>
+	  </nt>
+	  <nt head='terms' cat='NP-A' id='shal.input_6_503'>
+	    <edge label='-' idref='shal.input_6_13'/>
+	    <edge label='-' idref='shal.input_6_502'/>
+	  </nt>
+	  <nt head='in' cat='PP' id='shal.input_6_504'>
+	    <edge label='-' idref='shal.input_6_12'/>
+	    <edge label='-' idref='shal.input_6_503'/>
+	  </nt>
+	  <nt head='represented' cat='VP-A' id='shal.input_6_505'>
+	    <edge label='-' idref='shal.input_6_11'/>
+	    <edge label='-' idref='shal.input_6_504'/>
+	  </nt>
+	  <nt head='be' cat='VP-A' id='shal.input_6_506'>
+	    <edge label='-' idref='shal.input_6_10'/>
+	    <edge label='-' idref='shal.input_6_505'/>
+	  </nt>
+	  <nt head='can' cat='VP' id='shal.input_6_507'>
+	    <edge label='-' idref='shal.input_6_9'/>
+	    <edge label='-' idref='shal.input_6_506'/>
+	  </nt>
+	  <nt head='can' cat='S-A' id='shal.input_6_508'>
+	    <edge label='-' idref='shal.input_6_500'/>
+	    <edge label='-' idref='shal.input_6_507'/>
+	  </nt>
+	  <nt head='whether' cat='SBAR' id='shal.input_6_509'>
+	    <edge label='-' idref='shal.input_6_6'/>
+	    <edge label='-' idref='shal.input_6_508'/>
+	  </nt>
+	  <nt head='sure' cat='ADJP' id='shal.input_6_510'>
+	    <edge label='-' idref='shal.input_6_5'/>
+	    <edge label='-' idref='shal.input_6_509'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Contingency' id='shal.input_6_f1265327219.47685'>
+	    <target id='shal.input_6_f1265327219.47685_fe1265327219.47702' lemma='function' pos='noun'>
+	      <fenode idref='shal.input_6_16'/>
+	    </target>
+	  </frame>
+	  <frame name='People' id='shal.input_6_f1265327219.47719'>
+	    <target id='shal.input_6_f1265327219.47719_fe1265327219.47733' lemma='people' pos='noun'>
+	      <fenode idref='shal.input_6_0'/>
+	    </target>
+	    <fe name='Person' id='shal.input_6_f1265327219.47719_fe1265327394.02646'>
+	      <fenode idref='shal.input_6_0'/>
+	    </fe>
+	  </frame>
+	  <frame name='Communicate_categorization' id='shal.input_6_f1265327219.47749'>
+	    <target id='shal.input_6_f1265327219.47749_fe1265327219.47763' lemma='represent' pos='verb'>
+	      <fenode idref='shal.input_6_11'/>
+	    </target>
+	    <fe name='Item' id='shal.input_6_f1265327219.47749_fe1265327394.0369'>
+	      <fenode idref='shal.input_6_500'/>
+	    </fe>
+	  </frame>
+	  <frame name='Statement' id='shal.input_6_f1265327219.47779'>
+	    <target id='shal.input_6_f1265327219.47779_fe1265327219.47793' lemma='say' pos='verb'>
+	      <fenode idref='shal.input_6_1'/>
+	    </target>
+	    <fe name='Message' id='shal.input_6_f1265327219.47779_fe1265327394.04217'>
+	      <fenode idref='shal.input_6_512'/>
+	    </fe>
+	    <fe name='Speaker' id='shal.input_6_f1265327219.47779_fe1265327394.04374'>
+	      <fenode idref='shal.input_6_0'/>
+	    </fe>
+	  </frame>
+	  <frame name='Certainty' id='shal.input_6_f1265327219.4781'>
+	    <target id='shal.input_6_f1265327219.4781_fe1265327219.47823' lemma='sure' pos='adj'>
+	      <fenode idref='shal.input_6_5'/>
+	    </target>
+	    <fe name='Cognizer' id='shal.input_6_f1265327219.4781_fe1265327394.04749'>
+	      <fenode idref='shal.input_6_2'/>
+	    </fe>
+	    <fe name='Content' id='shal.input_6_f1265327219.4781_fe1265327394.05746'>
+	      <fenode idref='shal.input_6_509'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_7'>
+      <graph root='shal.input_7_515'>
+	<terminals>
+	  <t word='They' id='shal.input_7_0' lemma='they' pos='PRP'>
+	  </t>
+	  <t word='wonder' id='shal.input_7_1' lemma='wonder' pos='VBP'>
+	  </t>
+	  <t word='whether' id='shal.input_7_2' lemma='whether' pos='IN'>
+	  </t>
+	  <t word='recursive' id='shal.input_7_3' lemma='recursive' pos='JJ'>
+	  </t>
+	  <t word='functions' id='shal.input_7_4' lemma='function' pos='NNS'>
+	  </t>
+	  <t word='are' id='shal.input_7_5' lemma='be' pos='VBP'>
+	  </t>
+	  <t word='sufficient' id='shal.input_7_6' lemma='sufficient' pos='JJ'>
+	  </t>
+	  <t word='and' id='shal.input_7_7' lemma='and' pos='CC'>
+	  </t>
+	  <t word='AI-complete' id='shal.input_7_8' lemma='&lt;unknown&gt;' pos='NNP'>
+	  </t>
+	  <t word=',' id='shal.input_7_9' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='and' id='shal.input_7_10' lemma='and' pos='CC'>
+	  </t>
+	  <t word='yet' id='shal.input_7_11' lemma='yet' pos='RB'>
+	  </t>
+	  <t word='every' id='shal.input_7_12' lemma='every' pos='DT'>
+	  </t>
+	  <t word='piece' id='shal.input_7_13' lemma='piece' pos='NN'>
+	  </t>
+	  <t word='of' id='shal.input_7_14' lemma='of' pos='IN'>
+	  </t>
+	  <t word='human' id='shal.input_7_15' lemma='human' pos='JJ'>
+	  </t>
+	  <t word='reasoning' id='shal.input_7_16' lemma='reasoning' pos='NN'>
+	  </t>
+	  <t word='yet' id='shal.input_7_17' lemma='yet' pos='RB'>
+	  </t>
+	  <t word='invented' id='shal.input_7_18' lemma='invent' pos='VBN'>
+	  </t>
+	  <t word='has' id='shal.input_7_19' lemma='have' pos='VBZ'>
+	  </t>
+	  <t word='been' id='shal.input_7_20' lemma='be' pos='VBN'>
+	  </t>
+	  <t word='.' id='shal.input_7_21' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='reasoning' cat='NPB' id='shal.input_7_508'>
+	    <edge label='-' idref='shal.input_7_15'/>
+	    <edge label='-' idref='shal.input_7_16'/>
+	  </nt>
+	  <nt head='of' cat='PP' id='shal.input_7_509'>
+	    <edge label='-' idref='shal.input_7_14'/>
+	    <edge label='-' idref='shal.input_7_508'/>
+	  </nt>
+	  <nt head='invented' cat='VP' id='shal.input_7_510'>
+	    <edge label='-' idref='shal.input_7_17'/>
+	    <edge label='-' idref='shal.input_7_18'/>
+	  </nt>
+	  <nt head='piece' cat='NP-A' id='shal.input_7_511'>
+	    <edge label='-' idref='shal.input_7_507'/>
+	    <edge label='-' idref='shal.input_7_509'/>
+	    <edge label='-' idref='shal.input_7_510'/>
+	  </nt>
+	  <nt head='functions' cat='NPB' id='shal.input_7_500'>
+	    <edge label='-' idref='shal.input_7_3'/>
+	    <edge label='-' idref='shal.input_7_4'/>
+	  </nt>
+	  <nt head='been' cat='VP-A' id='shal.input_7_512'>
+	    <edge label='-' idref='shal.input_7_20'/>
+	    <edge label='-' idref='shal.input_7_21'/>
+	  </nt>
+	  <nt head='sufficient' cat='UCP' id='shal.input_7_501'>
+	    <edge label='-' idref='shal.input_7_6'/>
+	    <edge label='-' idref='shal.input_7_7'/>
+	    <edge label='-' idref='shal.input_7_8'/>
+	    <edge label='-' idref='shal.input_7_9'/>
+	  </nt>
+	  <nt head='has' cat='VP' id='shal.input_7_513'>
+	    <edge label='-' idref='shal.input_7_19'/>
+	    <edge label='-' idref='shal.input_7_512'/>
+	  </nt>
+	  <nt head='are' cat='VP' id='shal.input_7_502'>
+	    <edge label='-' idref='shal.input_7_5'/>
+	    <edge label='-' idref='shal.input_7_501'/>
+	  </nt>
+	  <nt head='has' cat='S' id='shal.input_7_514'>
+	    <edge label='-' idref='shal.input_7_511'/>
+	    <edge label='-' idref='shal.input_7_513'/>
+	  </nt>
+	  <nt head='are' cat='S-A' id='shal.input_7_503'>
+	    <edge label='-' idref='shal.input_7_500'/>
+	    <edge label='-' idref='shal.input_7_502'/>
+	  </nt>
+	  <nt head='wonder' cat='S' id='shal.input_7_515'>
+	    <edge label='-' idref='shal.input_7_506'/>
+	    <edge label='-' idref='shal.input_7_10'/>
+	    <edge label='-' idref='shal.input_7_514'/>
+	  </nt>
+	  <nt head='whether' cat='SBAR-A' id='shal.input_7_504'>
+	    <edge label='-' idref='shal.input_7_2'/>
+	    <edge label='-' idref='shal.input_7_503'/>
+	  </nt>
+	  <nt head='wonder' cat='VP' id='shal.input_7_505'>
+	    <edge label='-' idref='shal.input_7_1'/>
+	    <edge label='-' idref='shal.input_7_504'/>
+	  </nt>
+	  <nt head='wonder' cat='S' id='shal.input_7_506'>
+	    <edge label='-' idref='shal.input_7_0'/>
+	    <edge label='-' idref='shal.input_7_505'/>
+	  </nt>
+	  <nt head='piece' cat='NPB' id='shal.input_7_507'>
+	    <edge label='-' idref='shal.input_7_11'/>
+	    <edge label='-' idref='shal.input_7_12'/>
+	    <edge label='-' idref='shal.input_7_13'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Contingency' id='shal.input_7_f1265327219.56386'>
+	    <target id='shal.input_7_f1265327219.56386_fe1265327219.56402' lemma='function' pos='noun'>
+	      <fenode idref='shal.input_7_4'/>
+	    </target>
+	  </frame>
+	  <frame name='Invention' id='shal.input_7_f1265327219.56419'>
+	    <target id='shal.input_7_f1265327219.56419_fe1265327219.56432' lemma='invent' pos='verb'>
+	      <fenode idref='shal.input_7_18'/>
+	    </target>
+	    <fe name='Cognizer' id='shal.input_7_f1265327219.56419_fe1265327394.13778'>
+	      <fenode idref='shal.input_7_509'/>
+	    </fe>
+	  </frame>
+	  <frame name='Part_piece' id='shal.input_7_f1265327219.56447'>
+	    <target id='shal.input_7_f1265327219.56447_fe1265327219.5646' lemma='piece' pos='noun'>
+	      <fenode idref='shal.input_7_13'/>
+	    </target>
+	    <fe name='Substance' id='shal.input_7_f1265327219.56447_fe1265327394.14191'>
+	      <fenode idref='shal.input_7_509'/>
+	    </fe>
+	    <fe name='Piece' id='shal.input_7_f1265327219.56447_fe1265327394.14586'>
+	      <fenode idref='shal.input_7_13'/>
+	    </fe>
+	  </frame>
+	  <frame name='Sufficiency' id='shal.input_7_f1265327219.56475'>
+	    <target id='shal.input_7_f1265327219.56475_fe1265327219.56488' lemma='sufficient' pos='adj'>
+	      <fenode idref='shal.input_7_6'/>
+	    </target>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_8'>
+      <graph root='shal.input_8_510'>
+	<terminals>
+	  <t word='But' id='shal.input_8_0' lemma='but' pos='CC'>
+	  </t>
+	  <t word='I' id='shal.input_8_1' lemma='I' pos='PRP'>
+	  </t>
+	  <t word='won&apos;t' id='shal.input_8_2' lemma='&lt;unknown&gt;' pos='VBD'>
+	  </t>
+	  <t word='test' id='shal.input_8_3' lemma='test' pos='VB'>
+	  </t>
+	  <t word='my' id='shal.input_8_4' lemma='my' pos='PRP$'>
+	  </t>
+	  <t word='arguments' id='shal.input_8_5' lemma='argument' pos='NNS'>
+	  </t>
+	  <t word='against' id='shal.input_8_6' lemma='against' pos='IN'>
+	  </t>
+	  <t word='them' id='shal.input_8_7' lemma='them' pos='PRP'>
+	  </t>
+	  <t word=',' id='shal.input_8_8' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='I' id='shal.input_8_9' lemma='I' pos='PRP'>
+	  </t>
+	  <t word='will' id='shal.input_8_10' lemma='will' pos='MD'>
+	  </t>
+	  <t word='propose' id='shal.input_8_11' lemma='propose' pos='VB'>
+	  </t>
+	  <t word='solutions' id='shal.input_8_12' lemma='solution' pos='NNS'>
+	  </t>
+	  <t word='.' id='shal.input_8_13' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='arguments' cat='NPB' id='shal.input_8_500'>
+	    <edge label='-' idref='shal.input_8_4'/>
+	    <edge label='-' idref='shal.input_8_5'/>
+	  </nt>
+	  <nt head='them' cat='NPB' id='shal.input_8_501'>
+	    <edge label='-' idref='shal.input_8_7'/>
+	    <edge label='-' idref='shal.input_8_8'/>
+	  </nt>
+	  <nt head='against' cat='PP' id='shal.input_8_502'>
+	    <edge label='-' idref='shal.input_8_6'/>
+	    <edge label='-' idref='shal.input_8_501'/>
+	  </nt>
+	  <nt head='arguments' cat='NP-A' id='shal.input_8_503'>
+	    <edge label='-' idref='shal.input_8_500'/>
+	    <edge label='-' idref='shal.input_8_502'/>
+	  </nt>
+	  <nt head='test' cat='VP-A' id='shal.input_8_504'>
+	    <edge label='-' idref='shal.input_8_3'/>
+	    <edge label='-' idref='shal.input_8_503'/>
+	  </nt>
+	  <nt head='won&apos;t' cat='VP' id='shal.input_8_505'>
+	    <edge label='-' idref='shal.input_8_2'/>
+	    <edge label='-' idref='shal.input_8_504'/>
+	  </nt>
+	  <nt head='won&apos;t' cat='S' id='shal.input_8_506'>
+	    <edge label='-' idref='shal.input_8_1'/>
+	    <edge label='-' idref='shal.input_8_505'/>
+	  </nt>
+	  <nt head='solutions' cat='NPB' id='shal.input_8_507'>
+	    <edge label='-' idref='shal.input_8_12'/>
+	    <edge label='-' idref='shal.input_8_13'/>
+	  </nt>
+	  <nt head='propose' cat='VP-A' id='shal.input_8_508'>
+	    <edge label='-' idref='shal.input_8_11'/>
+	    <edge label='-' idref='shal.input_8_507'/>
+	  </nt>
+	  <nt head='will' cat='VP' id='shal.input_8_509'>
+	    <edge label='-' idref='shal.input_8_10'/>
+	    <edge label='-' idref='shal.input_8_508'/>
+	  </nt>
+	  <nt head='will' cat='S' id='shal.input_8_510'>
+	    <edge label='-' idref='shal.input_8_0'/>
+	    <edge label='-' idref='shal.input_8_506'/>
+	    <edge label='-' idref='shal.input_8_9'/>
+	    <edge label='-' idref='shal.input_8_509'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Reasoning' id='shal.input_8_f1265327219.60314'>
+	    <target id='shal.input_8_f1265327219.60314_fe1265327219.6033' lemma='argument' pos='noun'>
+	      <fenode idref='shal.input_8_5'/>
+	    </target>
+	    <fe name='Arguer' id='shal.input_8_f1265327219.60314_fe1265327394.19636'>
+	      <fenode idref='shal.input_8_4'/>
+	    </fe>
+	    <fe name='Content' id='shal.input_8_f1265327219.60314_fe1265327394.20149'>
+	      <fenode idref='shal.input_8_502'/>
+	    </fe>
+	  </frame>
+	  <frame name='Statement' id='shal.input_8_f1265327219.60347'>
+	    <target id='shal.input_8_f1265327219.60347_fe1265327219.60359' lemma='propose' pos='verb'>
+	      <fenode idref='shal.input_8_11'/>
+	    </target>
+	    <fe name='Speaker' id='shal.input_8_f1265327219.60347_fe1265327394.20344'>
+	      <fenode idref='shal.input_8_9'/>
+	    </fe>
+	    <fe name='Message' id='shal.input_8_f1265327219.60347_fe1265327394.2057'>
+	      <fenode idref='shal.input_8_507'/>
+	    </fe>
+	  </frame>
+	  <frame name='Examination' id='shal.input_8_f1265327219.60374'>
+	    <target id='shal.input_8_f1265327219.60374_fe1265327219.60389' lemma='test' pos='verb'>
+	      <fenode idref='shal.input_8_3'/>
+	    </target>
+	    <fe name='Examinee' id='shal.input_8_f1265327219.60374_fe1265327394.20916'>
+	      <fenode idref='shal.input_8_503'/>
+	    </fe>
+	    <fe name='Examiner' id='shal.input_8_f1265327219.60374_fe1265327394.21158'>
+	      <fenode idref='shal.input_8_0'/>
+	      <fenode idref='shal.input_8_9'/>
+	      <fenode idref='shal.input_8_509'/>
+	      <fenode idref='shal.input_8_1'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_9'>
+      <graph root='shal.input_9_502'>
+	<terminals>
+	  <t word='There' id='shal.input_9_0' lemma='There' pos='EX'>
+	  </t>
+	  <t word='are' id='shal.input_9_1' lemma='be' pos='VBP'>
+	  </t>
+	  <t word='no' id='shal.input_9_2' lemma='no' pos='DT'>
+	  </t>
+	  <t word='smart' id='shal.input_9_3' lemma='smart' pos='JJ'>
+	  </t>
+	  <t word='people' id='shal.input_9_4' lemma='people' pos='NNS'>
+	  </t>
+	  <t word='.' id='shal.input_9_5' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='people' cat='NPB' id='shal.input_9_500'>
+	    <edge label='-' idref='shal.input_9_2'/>
+	    <edge label='-' idref='shal.input_9_3'/>
+	    <edge label='-' idref='shal.input_9_4'/>
+	    <edge label='-' idref='shal.input_9_5'/>
+	  </nt>
+	  <nt head='are' cat='VP' id='shal.input_9_501'>
+	    <edge label='-' idref='shal.input_9_1'/>
+	    <edge label='-' idref='shal.input_9_500'/>
+	  </nt>
+	  <nt head='are' cat='S' id='shal.input_9_502'>
+	    <edge label='-' idref='shal.input_9_0'/>
+	    <edge label='-' idref='shal.input_9_501'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='People' id='shal.input_9_f1265327219.61807'>
+	    <target id='shal.input_9_f1265327219.61807_fe1265327219.61823' lemma='people' pos='noun'>
+	      <fenode idref='shal.input_9_4'/>
+	    </target>
+	    <fe name='Descriptor' id='shal.input_9_f1265327219.61807_fe1265327394.23217'>
+	      <fenode idref='shal.input_9_3'/>
+	    </fe>
+	  </frame>
+	  <frame name='Mental_property' id='shal.input_9_f1265327219.6184'>
+	    <target id='shal.input_9_f1265327219.6184_fe1265327219.61853' lemma='smart' pos='adj'>
+	      <fenode idref='shal.input_9_3'/>
+	    </target>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_10'>
+      <graph root='shal.input_10_513'>
+	<terminals>
+	  <t word='There' id='shal.input_10_0' lemma='There' pos='EX'>
+	  </t>
+	  <t word='are' id='shal.input_10_1' lemma='be' pos='VBP'>
+	  </t>
+	  <t word='people' id='shal.input_10_2' lemma='people' pos='NNS'>
+	  </t>
+	  <t word='who' id='shal.input_10_3' lemma='who' pos='WP'>
+	  </t>
+	  <t word='have' id='shal.input_10_4' lemma='have' pos='VBP'>
+	  </t>
+	  <t word='more' id='shal.input_10_5' lemma='more' pos='JJR'>
+	  </t>
+	  <t word='than' id='shal.input_10_6' lemma='than' pos='IN'>
+	  </t>
+	  <t word='others' id='shal.input_10_7' lemma='other' pos='NNS'>
+	  </t>
+	  <t word=',' id='shal.input_10_8' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='there' id='shal.input_10_9' lemma='there' pos='EX'>
+	  </t>
+	  <t word='are' id='shal.input_10_10' lemma='be' pos='VBP'>
+	  </t>
+	  <t word='the' id='shal.input_10_11' lemma='the' pos='DT'>
+	  </t>
+	  <t word='rich' id='shal.input_10_12' lemma='rich' pos='JJ'>
+	  </t>
+	  <t word='and' id='shal.input_10_13' lemma='and' pos='CC'>
+	  </t>
+	  <t word='the' id='shal.input_10_14' lemma='the' pos='DT'>
+	  </t>
+	  <t word='poor' id='shal.input_10_15' lemma='poor' pos='JJ'>
+	  </t>
+	  <t word='.' id='shal.input_10_16' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='rich' cat='NPB' id='shal.input_10_508'>
+	    <edge label='-' idref='shal.input_10_11'/>
+	    <edge label='-' idref='shal.input_10_12'/>
+	  </nt>
+	  <nt head='rich' cat='NP-A' id='shal.input_10_510'>
+	    <edge label='-' idref='shal.input_10_508'/>
+	    <edge label='-' idref='shal.input_10_13'/>
+	    <edge label='-' idref='shal.input_10_509'/>
+	  </nt>
+	  <nt head='poor' cat='NPB' id='shal.input_10_509'>
+	    <edge label='-' idref='shal.input_10_14'/>
+	    <edge label='-' idref='shal.input_10_15'/>
+	    <edge label='-' idref='shal.input_10_16'/>
+	  </nt>
+	  <nt head='are' cat='VP' id='shal.input_10_511'>
+	    <edge label='-' idref='shal.input_10_10'/>
+	    <edge label='-' idref='shal.input_10_510'/>
+	  </nt>
+	  <nt head='others' cat='NPB' id='shal.input_10_500'>
+	    <edge label='-' idref='shal.input_10_7'/>
+	    <edge label='-' idref='shal.input_10_8'/>
+	  </nt>
+	  <nt head='are' cat='S' id='shal.input_10_512'>
+	    <edge label='-' idref='shal.input_10_9'/>
+	    <edge label='-' idref='shal.input_10_511'/>
+	  </nt>
+	  <nt head='than' cat='PP' id='shal.input_10_501'>
+	    <edge label='-' idref='shal.input_10_6'/>
+	    <edge label='-' idref='shal.input_10_500'/>
+	  </nt>
+	  <nt head='are' cat='S' id='shal.input_10_513'>
+	    <edge label='-' idref='shal.input_10_507'/>
+	    <edge label='-' idref='shal.input_10_512'/>
+	  </nt>
+	  <nt head='more' cat='NP-A' id='shal.input_10_502'>
+	    <edge label='-' idref='shal.input_10_5'/>
+	    <edge label='-' idref='shal.input_10_501'/>
+	  </nt>
+	  <nt head='have' cat='VP' id='shal.input_10_503'>
+	    <edge label='-' idref='shal.input_10_4'/>
+	    <edge label='-' idref='shal.input_10_502'/>
+	  </nt>
+	  <nt head='who' cat='SBAR-g' id='shal.input_10_504'>
+	    <edge label='-' idref='shal.input_10_3'/>
+	    <edge label='-' idref='shal.input_10_503'/>
+	  </nt>
+	  <nt head='people' cat='NP-A' id='shal.input_10_505'>
+	    <edge label='-' idref='shal.input_10_2'/>
+	    <edge label='-' idref='shal.input_10_504'/>
+	  </nt>
+	  <nt head='are' cat='VP' id='shal.input_10_506'>
+	    <edge label='-' idref='shal.input_10_1'/>
+	    <edge label='-' idref='shal.input_10_505'/>
+	  </nt>
+	  <nt head='are' cat='S' id='shal.input_10_507'>
+	    <edge label='-' idref='shal.input_10_0'/>
+	    <edge label='-' idref='shal.input_10_506'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Personal_relationship' id='shal.input_10_f1265327219.66167'>
+	    <target id='shal.input_10_f1265327219.66167_fe1265327219.66184' lemma='other' pos='noun'>
+	      <fenode idref='shal.input_10_7'/>
+	    </target>
+	    <fe name='Partner_1' id='shal.input_10_f1265327219.66167_fe1265327394.31368'>
+	      <fenode idref='shal.input_10_500'/>
+	    </fe>
+	  </frame>
+	  <frame name='People' id='shal.input_10_f1265327219.662'>
+	    <target id='shal.input_10_f1265327219.662_fe1265327219.66213' lemma='people' pos='noun'>
+	      <fenode idref='shal.input_10_2'/>
+	    </target>
+	    <fe name='Descriptor' id='shal.input_10_f1265327219.662_fe1265327394.31813'>
+	      <fenode idref='shal.input_10_504'/>
+	    </fe>
+	  </frame>
+	  <frame name='Wealthiness' id='shal.input_10_f1265327219.66228'>
+	    <target id='shal.input_10_f1265327219.66228_fe1265327219.6624' lemma='poor' pos='adj'>
+	      <fenode idref='shal.input_10_15'/>
+	    </target>
+	  </frame>
+	  <frame name='Wealthiness' id='shal.input_10_f1265327219.66255'>
+	    <target id='shal.input_10_f1265327219.66255_fe1265327219.66268' lemma='rich' pos='adj'>
+	      <fenode idref='shal.input_10_12'/>
+	    </target>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_11'>
+      <graph root='shal.input_11_508'>
+	<terminals>
+	  <t word='But' id='shal.input_11_0' lemma='but' pos='CC'>
+	  </t>
+	  <t word='they' id='shal.input_11_1' lemma='they' pos='PRP'>
+	  </t>
+	  <t word='are' id='shal.input_11_2' lemma='be' pos='VBP'>
+	  </t>
+	  <t word='equally' id='shal.input_11_3' lemma='equally' pos='RB'>
+	  </t>
+	  <t word='unable' id='shal.input_11_4' lemma='unable' pos='JJ'>
+	  </t>
+	  <t word='to' id='shal.input_11_5' lemma='to' pos='TO'>
+	  </t>
+	  <t word='make' id='shal.input_11_6' lemma='make' pos='VB'>
+	  </t>
+	  <t word='adequate' id='shal.input_11_7' lemma='adequate' pos='JJ'>
+	  </t>
+	  <t word='use' id='shal.input_11_8' lemma='use' pos='NN'>
+	  </t>
+	  <t word='of' id='shal.input_11_9' lemma='of' pos='IN'>
+	  </t>
+	  <t word='their' id='shal.input_11_10' lemma='their' pos='PRP$'>
+	  </t>
+	  <t word='resources' id='shal.input_11_11' lemma='resource' pos='NNS'>
+	  </t>
+	  <t word='.' id='shal.input_11_12' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='unable' cat='ADJP' id='shal.input_11_506'>
+	    <edge label='-' idref='shal.input_11_3'/>
+	    <edge label='-' idref='shal.input_11_4'/>
+	    <edge label='-' idref='shal.input_11_505'/>
+	  </nt>
+	  <nt head='are' cat='VP' id='shal.input_11_507'>
+	    <edge label='-' idref='shal.input_11_2'/>
+	    <edge label='-' idref='shal.input_11_506'/>
+	  </nt>
+	  <nt head='are' cat='S' id='shal.input_11_508'>
+	    <edge label='-' idref='shal.input_11_0'/>
+	    <edge label='-' idref='shal.input_11_1'/>
+	    <edge label='-' idref='shal.input_11_507'/>
+	  </nt>
+	  <nt head='use' cat='NPB' id='shal.input_11_500'>
+	    <edge label='-' idref='shal.input_11_7'/>
+	    <edge label='-' idref='shal.input_11_8'/>
+	  </nt>
+	  <nt head='resources' cat='NPB' id='shal.input_11_501'>
+	    <edge label='-' idref='shal.input_11_10'/>
+	    <edge label='-' idref='shal.input_11_11'/>
+	    <edge label='-' idref='shal.input_11_12'/>
+	  </nt>
+	  <nt head='of' cat='PP' id='shal.input_11_502'>
+	    <edge label='-' idref='shal.input_11_9'/>
+	    <edge label='-' idref='shal.input_11_501'/>
+	  </nt>
+	  <nt head='use' cat='NP-A' id='shal.input_11_503'>
+	    <edge label='-' idref='shal.input_11_500'/>
+	    <edge label='-' idref='shal.input_11_502'/>
+	  </nt>
+	  <nt head='make' cat='VP-A' id='shal.input_11_504'>
+	    <edge label='-' idref='shal.input_11_6'/>
+	    <edge label='-' idref='shal.input_11_503'/>
+	  </nt>
+	  <nt head='to' cat='VP' id='shal.input_11_505'>
+	    <edge label='-' idref='shal.input_11_5'/>
+	    <edge label='-' idref='shal.input_11_504'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Sufficiency' id='shal.input_11_f1265327219.69536'>
+	    <target id='shal.input_11_f1265327219.69536_fe1265327219.69552' lemma='adequate' pos='adj'>
+	      <fenode idref='shal.input_11_7'/>
+	    </target>
+	    <fe name='Item' id='shal.input_11_f1265327219.69536_fe1265327394.36415'>
+	      <fenode idref='shal.input_11_8'/>
+	    </fe>
+	    <fe name='Scale' id='shal.input_11_f1265327219.69536_fe1265327394.37127'>
+	      <fenode idref='shal.input_11_502'/>
+	    </fe>
+	  </frame>
+	  <frame name='Cooking_creation' id='shal.input_11_f1265327219.69569'>
+	    <target id='shal.input_11_f1265327219.69569_fe1265327219.69583' lemma='make' pos='verb'>
+	      <fenode idref='shal.input_11_6'/>
+	    </target>
+	    <fe name='Cook' id='shal.input_11_f1265327219.69569_fe1265327394.37562'>
+	      <fenode idref='shal.input_11_1'/>
+	      <fenode idref='shal.input_11_4'/>
+	    </fe>
+	    <fe name='Produced_food' id='shal.input_11_f1265327219.69569_fe1265327394.3797'>
+	      <fenode idref='shal.input_11_503'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_12'>
+      <graph root='shal.input_12_504'>
+	<terminals>
+	  <t word='To' id='shal.input_12_0' lemma='To' pos='TO'>
+	  </t>
+	  <t word='do' id='shal.input_12_1' lemma='do' pos='VB'>
+	  </t>
+	  <t word='so' id='shal.input_12_2' lemma='so' pos='RB'>
+	  </t>
+	  <t word='requires' id='shal.input_12_3' lemma='require' pos='VBZ'>
+	  </t>
+	  <t word='systematic' id='shal.input_12_4' lemma='systematic' pos='JJ'>
+	  </t>
+	  <t word='intelligence' id='shal.input_12_5' lemma='intelligence' pos='NN'>
+	  </t>
+	  <t word='.' id='shal.input_12_6' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='do' cat='VP-A' id='shal.input_12_500'>
+	    <edge label='-' idref='shal.input_12_1'/>
+	    <edge label='-' idref='shal.input_12_2'/>
+	  </nt>
+	  <nt head='To' cat='VP' id='shal.input_12_501'>
+	    <edge label='-' idref='shal.input_12_0'/>
+	    <edge label='-' idref='shal.input_12_500'/>
+	  </nt>
+	  <nt head='intelligence' cat='NPB' id='shal.input_12_502'>
+	    <edge label='-' idref='shal.input_12_4'/>
+	    <edge label='-' idref='shal.input_12_5'/>
+	    <edge label='-' idref='shal.input_12_6'/>
+	  </nt>
+	  <nt head='requires' cat='VP' id='shal.input_12_503'>
+	    <edge label='-' idref='shal.input_12_3'/>
+	    <edge label='-' idref='shal.input_12_502'/>
+	  </nt>
+	  <nt head='requires' cat='S' id='shal.input_12_504'>
+	    <edge label='-' idref='shal.input_12_501'/>
+	    <edge label='-' idref='shal.input_12_503'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_13'>
+      <graph root='shal.input_13_505'>
+	<terminals>
+	  <t word='Fortunately' id='shal.input_13_0' lemma='fortunately' pos='RB'>
+	  </t>
+	  <t word=',' id='shal.input_13_1' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='the' id='shal.input_13_2' lemma='the' pos='DT'>
+	  </t>
+	  <t word='computer' id='shal.input_13_3' lemma='computer' pos='NN'>
+	  </t>
+	  <t word='provides' id='shal.input_13_4' lemma='provide' pos='VBZ'>
+	  </t>
+	  <t word='us' id='shal.input_13_5' lemma='us' pos='PRP'>
+	  </t>
+	  <t word='with' id='shal.input_13_6' lemma='with' pos='IN'>
+	  </t>
+	  <t word='systematic' id='shal.input_13_7' lemma='systematic' pos='JJ'>
+	  </t>
+	  <t word='intelligence' id='shal.input_13_8' lemma='intelligence' pos='NN'>
+	  </t>
+	  <t word='.' id='shal.input_13_9' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='intelligence' cat='NPB' id='shal.input_13_502'>
+	    <edge label='-' idref='shal.input_13_7'/>
+	    <edge label='-' idref='shal.input_13_8'/>
+	    <edge label='-' idref='shal.input_13_9'/>
+	  </nt>
+	  <nt head='with' cat='PP' id='shal.input_13_503'>
+	    <edge label='-' idref='shal.input_13_6'/>
+	    <edge label='-' idref='shal.input_13_502'/>
+	  </nt>
+	  <nt head='provides' cat='VP' id='shal.input_13_504'>
+	    <edge label='-' idref='shal.input_13_4'/>
+	    <edge label='-' idref='shal.input_13_5'/>
+	    <edge label='-' idref='shal.input_13_503'/>
+	  </nt>
+	  <nt head='provides' cat='S' id='shal.input_13_505'>
+	    <edge label='-' idref='shal.input_13_500'/>
+	    <edge label='-' idref='shal.input_13_501'/>
+	    <edge label='-' idref='shal.input_13_504'/>
+	  </nt>
+	  <nt head='Fortunately' cat='ADVP' id='shal.input_13_500'>
+	    <edge label='-' idref='shal.input_13_0'/>
+	    <edge label='-' idref='shal.input_13_1'/>
+	  </nt>
+	  <nt head='computer' cat='NPB' id='shal.input_13_501'>
+	    <edge label='-' idref='shal.input_13_2'/>
+	    <edge label='-' idref='shal.input_13_3'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Supply' id='shal.input_13_f1265327219.73602'>
+	    <target id='shal.input_13_f1265327219.73602_fe1265327219.73617' lemma='provide' pos='verb'>
+	      <fenode idref='shal.input_13_4'/>
+	    </target>
+	    <fe name='Theme' id='shal.input_13_f1265327219.73602_fe1265327394.42687'>
+	      <fenode idref='shal.input_13_503'/>
+	    </fe>
+	    <fe name='Recipient' id='shal.input_13_f1265327219.73602_fe1265327394.42822'>
+	      <fenode idref='shal.input_13_5'/>
+	    </fe>
+	    <fe name='Supplier' id='shal.input_13_f1265327219.73602_fe1265327394.42948'>
+	      <fenode idref='shal.input_13_501'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_14'>
+      <graph root='shal.input_14_520'>
+	<terminals>
+	  <t word='Because' id='shal.input_14_0' lemma='because' pos='IN'>
+	  </t>
+	  <t word='expertise' id='shal.input_14_1' lemma='expertise' pos='NN'>
+	  </t>
+	  <t word='may' id='shal.input_14_2' lemma='may' pos='MD'>
+	  </t>
+	  <t word='now' id='shal.input_14_3' lemma='now' pos='RB'>
+	  </t>
+	  <t word='be' id='shal.input_14_4' lemma='be' pos='VB'>
+	  </t>
+	  <t word='copied' id='shal.input_14_5' lemma='copy' pos='VBN'>
+	  </t>
+	  <t word='instantly' id='shal.input_14_6' lemma='instantly' pos='RB'>
+	  </t>
+	  <t word=',' id='shal.input_14_7' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='there' id='shal.input_14_8' lemma='there' pos='EX'>
+	  </t>
+	  <t word='is' id='shal.input_14_9' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='no' id='shal.input_14_10' lemma='no' pos='DT'>
+	  </t>
+	  <t word='reason' id='shal.input_14_11' lemma='reason' pos='NN'>
+	  </t>
+	  <t word='why' id='shal.input_14_12' lemma='why' pos='WRB'>
+	  </t>
+	  <t word='anyone' id='shal.input_14_13' lemma='anyone' pos='NN'>
+	  </t>
+	  <t word='should' id='shal.input_14_14' lemma='should' pos='MD'>
+	  </t>
+	  <t word='go' id='shal.input_14_15' lemma='go' pos='VB'>
+	  </t>
+	  <t word='without' id='shal.input_14_16' lemma='without' pos='IN'>
+	  </t>
+	  <t word='the' id='shal.input_14_17' lemma='the' pos='DT'>
+	  </t>
+	  <t word='benefit' id='shal.input_14_18' lemma='benefit' pos='NN'>
+	  </t>
+	  <t word='of' id='shal.input_14_19' lemma='of' pos='IN'>
+	  </t>
+	  <t word='expert' id='shal.input_14_20' lemma='expert' pos='JJ'>
+	  </t>
+	  <t word='knowledge' id='shal.input_14_21' lemma='knowledge' pos='NN'>
+	  </t>
+	  <t word='at' id='shal.input_14_22' lemma='at' pos='IN'>
+	  </t>
+	  <t word='all' id='shal.input_14_23' lemma='all' pos='DT'>
+	  </t>
+	  <t word='times' id='shal.input_14_24' lemma='time' pos='NNS'>
+	  </t>
+	  <t word='.' id='shal.input_14_25' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='should' cat='VP' id='shal.input_14_515'>
+	    <edge label='-' idref='shal.input_14_14'/>
+	    <edge label='-' idref='shal.input_14_514'/>
+	  </nt>
+	  <nt head='may' cat='S-A' id='shal.input_14_504'>
+	    <edge label='-' idref='shal.input_14_1'/>
+	    <edge label='-' idref='shal.input_14_503'/>
+	  </nt>
+	  <nt head='should' cat='S-A' id='shal.input_14_516'>
+	    <edge label='-' idref='shal.input_14_13'/>
+	    <edge label='-' idref='shal.input_14_515'/>
+	  </nt>
+	  <nt head='Because' cat='SBAR' id='shal.input_14_505'>
+	    <edge label='-' idref='shal.input_14_0'/>
+	    <edge label='-' idref='shal.input_14_504'/>
+	  </nt>
+	  <nt head='why' cat='SBAR' id='shal.input_14_517'>
+	    <edge label='-' idref='shal.input_14_12'/>
+	    <edge label='-' idref='shal.input_14_516'/>
+	  </nt>
+	  <nt head='reason' cat='NPB' id='shal.input_14_506'>
+	    <edge label='-' idref='shal.input_14_10'/>
+	    <edge label='-' idref='shal.input_14_11'/>
+	  </nt>
+	  <nt head='reason' cat='NP-A' id='shal.input_14_518'>
+	    <edge label='-' idref='shal.input_14_506'/>
+	    <edge label='-' idref='shal.input_14_517'/>
+	  </nt>
+	  <nt head='benefit' cat='NPB' id='shal.input_14_507'>
+	    <edge label='-' idref='shal.input_14_17'/>
+	    <edge label='-' idref='shal.input_14_18'/>
+	  </nt>
+	  <nt head='is' cat='S' id='shal.input_14_520'>
+	    <edge label='-' idref='shal.input_14_505'/>
+	    <edge label='-' idref='shal.input_14_8'/>
+	    <edge label='-' idref='shal.input_14_519'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_14_519'>
+	    <edge label='-' idref='shal.input_14_9'/>
+	    <edge label='-' idref='shal.input_14_518'/>
+	  </nt>
+	  <nt head='knowledge' cat='NPB' id='shal.input_14_508'>
+	    <edge label='-' idref='shal.input_14_20'/>
+	    <edge label='-' idref='shal.input_14_21'/>
+	  </nt>
+	  <nt head='times' cat='NPB' id='shal.input_14_510'>
+	    <edge label='-' idref='shal.input_14_23'/>
+	    <edge label='-' idref='shal.input_14_24'/>
+	    <edge label='-' idref='shal.input_14_25'/>
+	  </nt>
+	  <nt head='of' cat='PP' id='shal.input_14_509'>
+	    <edge label='-' idref='shal.input_14_19'/>
+	    <edge label='-' idref='shal.input_14_508'/>
+	  </nt>
+	  <nt head='at' cat='PP' id='shal.input_14_511'>
+	    <edge label='-' idref='shal.input_14_22'/>
+	    <edge label='-' idref='shal.input_14_510'/>
+	  </nt>
+	  <nt head='instantly' cat='ADVP' id='shal.input_14_500'>
+	    <edge label='-' idref='shal.input_14_6'/>
+	    <edge label='-' idref='shal.input_14_7'/>
+	  </nt>
+	  <nt head='benefit' cat='NP-A' id='shal.input_14_512'>
+	    <edge label='-' idref='shal.input_14_507'/>
+	    <edge label='-' idref='shal.input_14_509'/>
+	    <edge label='-' idref='shal.input_14_511'/>
+	  </nt>
+	  <nt head='copied' cat='VP-A' id='shal.input_14_501'>
+	    <edge label='-' idref='shal.input_14_5'/>
+	    <edge label='-' idref='shal.input_14_500'/>
+	  </nt>
+	  <nt head='without' cat='PP' id='shal.input_14_513'>
+	    <edge label='-' idref='shal.input_14_16'/>
+	    <edge label='-' idref='shal.input_14_512'/>
+	  </nt>
+	  <nt head='be' cat='VP-A' id='shal.input_14_502'>
+	    <edge label='-' idref='shal.input_14_4'/>
+	    <edge label='-' idref='shal.input_14_501'/>
+	  </nt>
+	  <nt head='go' cat='VP-A' id='shal.input_14_514'>
+	    <edge label='-' idref='shal.input_14_15'/>
+	    <edge label='-' idref='shal.input_14_513'/>
+	  </nt>
+	  <nt head='may' cat='VP' id='shal.input_14_503'>
+	    <edge label='-' idref='shal.input_14_2'/>
+	    <edge label='-' idref='shal.input_14_3'/>
+	    <edge label='-' idref='shal.input_14_502'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Duplication' id='shal.input_14_f1265327219.7981'>
+	    <target id='shal.input_14_f1265327219.7981_fe1265327219.79825' lemma='copy' pos='verb'>
+	      <fenode idref='shal.input_14_5'/>
+	    </target>
+	    <fe name='Copy' id='shal.input_14_f1265327219.7981_fe1265327394.5161'>
+	      <fenode idref='shal.input_14_500'/>
+	    </fe>
+	  </frame>
+	  <frame name='Expertise' id='shal.input_14_f1265327219.79842'>
+	    <target id='shal.input_14_f1265327219.79842_fe1265327219.79854' lemma='expert' pos='adj'>
+	      <fenode idref='shal.input_14_20'/>
+	    </target>
+	    <fe name='Protagonist' id='shal.input_14_f1265327219.79842_fe1265327394.52826'>
+	      <fenode idref='shal.input_14_21'/>
+	    </fe>
+	  </frame>
+	  <frame name='Expertise' id='shal.input_14_f1265327219.79869'>
+	    <target id='shal.input_14_f1265327219.79869_fe1265327219.79882' lemma='expertise' pos='noun'>
+	      <fenode idref='shal.input_14_1'/>
+	    </target>
+	  </frame>
+	  <frame name='Motion' id='shal.input_14_f1265327219.79896'>
+	    <target id='shal.input_14_f1265327219.79896_fe1265327219.79908' lemma='go' pos='verb'>
+	      <fenode idref='shal.input_14_15'/>
+	    </target>
+	    <fe name='Theme' id='shal.input_14_f1265327219.79896_fe1265327394.53457'>
+	      <fenode idref='shal.input_14_13'/>
+	    </fe>
+	    <fe name='Depictive' id='shal.input_14_f1265327219.79896_fe1265327394.54609'>
+	      <fenode idref='shal.input_14_513'/>
+	    </fe>
+	  </frame>
+	  <frame name='Awareness' id='shal.input_14_f1265327219.79927'>
+	    <target id='shal.input_14_f1265327219.79927_fe1265327219.79939' lemma='knowledge' pos='noun'>
+	      <fenode idref='shal.input_14_21'/>
+	    </target>
+	    <fe name='Topic' id='shal.input_14_f1265327219.79927_fe1265327394.55247'>
+	      <fenode idref='shal.input_14_13'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_15'>
+      <graph root='shal.input_15_510'>
+	<terminals>
+	  <t word='For' id='shal.input_15_0' lemma='for' pos='IN'>
+	  </t>
+	  <t word='instance' id='shal.input_15_1' lemma='instance' pos='NN'>
+	  </t>
+	  <t word=',' id='shal.input_15_2' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='everyone&apos;s' id='shal.input_15_3' lemma='&lt;unknown&gt;' pos='JJ'>
+	  </t>
+	  <t word='basic' id='shal.input_15_4' lemma='basic' pos='JJ'>
+	  </t>
+	  <t word='intelligence' id='shal.input_15_5' lemma='intelligence' pos='NN'>
+	  </t>
+	  <t word='needs' id='shal.input_15_6' lemma='need' pos='NNS'>
+	  </t>
+	  <t word='ought' id='shal.input_15_7' lemma='ought' pos='MD'>
+	  </t>
+	  <t word='to' id='shal.input_15_8' lemma='to' pos='TO'>
+	  </t>
+	  <t word='be' id='shal.input_15_9' lemma='be' pos='VB'>
+	  </t>
+	  <t word='met' id='shal.input_15_10' lemma='meet' pos='VBN'>
+	  </t>
+	  <t word=',' id='shal.input_15_11' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='by' id='shal.input_15_12' lemma='by' pos='IN'>
+	  </t>
+	  <t word='having' id='shal.input_15_13' lemma='have' pos='VBG'>
+	  </t>
+	  <t word='a' id='shal.input_15_14' lemma='a' pos='DT'>
+	  </t>
+	  <t word='uniform' id='shal.input_15_15' lemma='uniform' pos='JJ'>
+	  </t>
+	  <t word='Social' id='shal.input_15_16' lemma='Social' pos='NNP'>
+	  </t>
+	  <t word='Security' id='shal.input_15_17' lemma='Security' pos='NNP'>
+	  </t>
+	  <t word='System' id='shal.input_15_18' lemma='System' pos='NNP'>
+	  </t>
+	  <t word='.' id='shal.input_15_19' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='needs' cat='NPB' id='shal.input_15_502'>
+	    <edge label='-' idref='shal.input_15_3'/>
+	    <edge label='-' idref='shal.input_15_4'/>
+	    <edge label='-' idref='shal.input_15_5'/>
+	    <edge label='-' idref='shal.input_15_6'/>
+	  </nt>
+	  <nt head='System' cat='NPB' id='shal.input_15_503'>
+	    <edge label='-' idref='shal.input_15_14'/>
+	    <edge label='-' idref='shal.input_15_15'/>
+	    <edge label='-' idref='shal.input_15_16'/>
+	    <edge label='-' idref='shal.input_15_17'/>
+	    <edge label='-' idref='shal.input_15_18'/>
+	    <edge label='-' idref='shal.input_15_19'/>
+	  </nt>
+	  <nt head='having' cat='VP' id='shal.input_15_504'>
+	    <edge label='-' idref='shal.input_15_13'/>
+	    <edge label='-' idref='shal.input_15_503'/>
+	  </nt>
+	  <nt head='by' cat='SBAR' id='shal.input_15_505'>
+	    <edge label='-' idref='shal.input_15_12'/>
+	    <edge label='-' idref='shal.input_15_504'/>
+	  </nt>
+	  <nt head='met' cat='VP-A' id='shal.input_15_506'>
+	    <edge label='-' idref='shal.input_15_10'/>
+	    <edge label='-' idref='shal.input_15_11'/>
+	    <edge label='-' idref='shal.input_15_505'/>
+	  </nt>
+	  <nt head='be' cat='VP-A' id='shal.input_15_507'>
+	    <edge label='-' idref='shal.input_15_9'/>
+	    <edge label='-' idref='shal.input_15_506'/>
+	  </nt>
+	  <nt head='to' cat='VP' id='shal.input_15_508'>
+	    <edge label='-' idref='shal.input_15_8'/>
+	    <edge label='-' idref='shal.input_15_507'/>
+	  </nt>
+	  <nt head='ought' cat='S' id='shal.input_15_510'>
+	    <edge label='-' idref='shal.input_15_501'/>
+	    <edge label='-' idref='shal.input_15_502'/>
+	    <edge label='-' idref='shal.input_15_509'/>
+	  </nt>
+	  <nt head='ought' cat='VP' id='shal.input_15_509'>
+	    <edge label='-' idref='shal.input_15_7'/>
+	    <edge label='-' idref='shal.input_15_508'/>
+	  </nt>
+	  <nt head='instance' cat='NPB' id='shal.input_15_500'>
+	    <edge label='-' idref='shal.input_15_1'/>
+	    <edge label='-' idref='shal.input_15_2'/>
+	  </nt>
+	  <nt head='For' cat='PP' id='shal.input_15_501'>
+	    <edge label='-' idref='shal.input_15_0'/>
+	    <edge label='-' idref='shal.input_15_500'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Instance' id='shal.input_15_f1265327219.87855'>
+	    <target id='shal.input_15_f1265327219.87855_fe1265327219.87871' lemma='instance' pos='noun'>
+	      <fenode idref='shal.input_15_1'/>
+	    </target>
+	    <fe name='Instance' id='shal.input_15_f1265327219.87855_fe1265327394.63722'>
+	      <fenode idref='shal.input_15_500'/>
+	    </fe>
+	  </frame>
+	  <frame name='Congregating' id='shal.input_15_f1265327219.87888'>
+	    <target id='shal.input_15_f1265327219.87888_fe1265327219.87902' lemma='meet' pos='verb'>
+	      <fenode idref='shal.input_15_10'/>
+	    </target>
+	    <fe name='Individuals' id='shal.input_15_f1265327219.87888_fe1265327394.63938'>
+	      <fenode idref='shal.input_15_502'/>
+	    </fe>
+	    <fe name='Place' id='shal.input_15_f1265327219.87888_fe1265327394.64453'>
+	      <fenode idref='shal.input_15_505'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_16'>
+      <graph root='shal.input_16_500'>
+	<terminals>
+	  <t word='Debian' id='shal.input_16_0' lemma='&lt;unknown&gt;' pos='NNP'>
+	  </t>
+	  <t word='Social' id='shal.input_16_1' lemma='Social' pos='NNP'>
+	  </t>
+	  <t word='Security' id='shal.input_16_2' lemma='Security' pos='NNP'>
+	  </t>
+	  <t word='System' id='shal.input_16_3' lemma='System' pos='NNP'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='System' cat='NPB' id='shal.input_16_500'>
+	    <edge label='-' idref='shal.input_16_0'/>
+	    <edge label='-' idref='shal.input_16_1'/>
+	    <edge label='-' idref='shal.input_16_2'/>
+	    <edge label='-' idref='shal.input_16_3'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_17'>
+      <graph root='shal.input_17_528'>
+	<terminals>
+	  <t word='The' id='shal.input_17_0' lemma='the' pos='DT'>
+	  </t>
+	  <t word='idea' id='shal.input_17_1' lemma='idea' pos='NN'>
+	  </t>
+	  <t word='of' id='shal.input_17_2' lemma='of' pos='IN'>
+	  </t>
+	  <t word='the' id='shal.input_17_3' lemma='the' pos='DT'>
+	  </t>
+	  <t word='Debian' id='shal.input_17_4' lemma='&lt;unknown&gt;' pos='NNP'>
+	  </t>
+	  <t word='Social' id='shal.input_17_5' lemma='Social' pos='NNP'>
+	  </t>
+	  <t word='Security' id='shal.input_17_6' lemma='Security' pos='NNP'>
+	  </t>
+	  <t word='System' id='shal.input_17_7' lemma='System' pos='NNP'>
+	  </t>
+	  <t word='is' id='shal.input_17_8' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='expertise' id='shal.input_17_9' lemma='expertise' pos='NN'>
+	  </t>
+	  <t word='may' id='shal.input_17_10' lemma='may' pos='MD'>
+	  </t>
+	  <t word='now' id='shal.input_17_11' lemma='now' pos='RB'>
+	  </t>
+	  <t word='be' id='shal.input_17_12' lemma='be' pos='VB'>
+	  </t>
+	  <t word='copied' id='shal.input_17_13' lemma='copy' pos='VBN'>
+	  </t>
+	  <t word='instantly' id='shal.input_17_14' lemma='instantly' pos='RB'>
+	  </t>
+	  <t word=',' id='shal.input_17_15' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='and' id='shal.input_17_16' lemma='and' pos='CC'>
+	  </t>
+	  <t word='there' id='shal.input_17_17' lemma='there' pos='EX'>
+	  </t>
+	  <t word='is' id='shal.input_17_18' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='no' id='shal.input_17_19' lemma='no' pos='DT'>
+	  </t>
+	  <t word='reason' id='shal.input_17_20' lemma='reason' pos='NN'>
+	  </t>
+	  <t word='someone' id='shal.input_17_21' lemma='someone' pos='NN'>
+	  </t>
+	  <t word='should' id='shal.input_17_22' lemma='should' pos='MD'>
+	  </t>
+	  <t word='be' id='shal.input_17_23' lemma='be' pos='VB'>
+	  </t>
+	  <t word='bereft' id='shal.input_17_24' lemma='bereft' pos='JJ'>
+	  </t>
+	  <t word='of' id='shal.input_17_25' lemma='of' pos='IN'>
+	  </t>
+	  <t word='basic' id='shal.input_17_26' lemma='basic' pos='JJ'>
+	  </t>
+	  <t word='knowledge' id='shal.input_17_27' lemma='knowledge' pos='NN'>
+	  </t>
+	  <t word='could' id='shal.input_17_28' lemma='could' pos='MD'>
+	  </t>
+	  <t word='be' id='shal.input_17_29' lemma='be' pos='VB'>
+	  </t>
+	  <t word='taught' id='shal.input_17_30' lemma='teach' pos='VBN'>
+	  </t>
+	  <t word='to' id='shal.input_17_31' lemma='to' pos='TO'>
+	  </t>
+	  <t word='them' id='shal.input_17_32' lemma='them' pos='PRP'>
+	  </t>
+	  <t word='by' id='shal.input_17_33' lemma='by' pos='IN'>
+	  </t>
+	  <t word='a' id='shal.input_17_34' lemma='a' pos='DT'>
+	  </t>
+	  <t word='computer' id='shal.input_17_35' lemma='computer' pos='NN'>
+	  </t>
+	  <t word='.' id='shal.input_17_36' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='computer' cat='NPB' id='shal.input_17_520'>
+	    <edge label='-' idref='shal.input_17_34'/>
+	    <edge label='-' idref='shal.input_17_35'/>
+	    <edge label='-' idref='shal.input_17_36'/>
+	  </nt>
+	  <nt head='to' cat='PP' id='shal.input_17_519'>
+	    <edge label='-' idref='shal.input_17_31'/>
+	    <edge label='-' idref='shal.input_17_32'/>
+	  </nt>
+	  <nt head='may' cat='S-A' id='shal.input_17_508'>
+	    <edge label='-' idref='shal.input_17_9'/>
+	    <edge label='-' idref='shal.input_17_507'/>
+	  </nt>
+	  <nt head='by' cat='PP' id='shal.input_17_521'>
+	    <edge label='-' idref='shal.input_17_33'/>
+	    <edge label='-' idref='shal.input_17_520'/>
+	  </nt>
+	  <nt head='is' cat='S' id='shal.input_17_510'>
+	    <edge label='-' idref='shal.input_17_503'/>
+	    <edge label='-' idref='shal.input_17_509'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_17_509'>
+	    <edge label='-' idref='shal.input_17_8'/>
+	    <edge label='-' idref='shal.input_17_508'/>
+	  </nt>
+	  <nt head='taught' cat='VP-A' id='shal.input_17_522'>
+	    <edge label='-' idref='shal.input_17_30'/>
+	    <edge label='-' idref='shal.input_17_519'/>
+	    <edge label='-' idref='shal.input_17_521'/>
+	  </nt>
+	  <nt head='reason' cat='NPB' id='shal.input_17_511'>
+	    <edge label='-' idref='shal.input_17_19'/>
+	    <edge label='-' idref='shal.input_17_20'/>
+	  </nt>
+	  <nt head='idea' cat='NPB' id='shal.input_17_500'>
+	    <edge label='-' idref='shal.input_17_0'/>
+	    <edge label='-' idref='shal.input_17_1'/>
+	  </nt>
+	  <nt head='be' cat='VP-A' id='shal.input_17_523'>
+	    <edge label='-' idref='shal.input_17_29'/>
+	    <edge label='-' idref='shal.input_17_522'/>
+	  </nt>
+	  <nt head='knowledge' cat='NPB' id='shal.input_17_512'>
+	    <edge label='-' idref='shal.input_17_26'/>
+	    <edge label='-' idref='shal.input_17_27'/>
+	  </nt>
+	  <nt head='System' cat='NPB' id='shal.input_17_501'>
+	    <edge label='-' idref='shal.input_17_3'/>
+	    <edge label='-' idref='shal.input_17_4'/>
+	    <edge label='-' idref='shal.input_17_5'/>
+	    <edge label='-' idref='shal.input_17_6'/>
+	    <edge label='-' idref='shal.input_17_7'/>
+	  </nt>
+	  <nt head='could' cat='VP' id='shal.input_17_524'>
+	    <edge label='-' idref='shal.input_17_28'/>
+	    <edge label='-' idref='shal.input_17_523'/>
+	  </nt>
+	  <nt head='of' cat='PP' id='shal.input_17_513'>
+	    <edge label='-' idref='shal.input_17_25'/>
+	    <edge label='-' idref='shal.input_17_512'/>
+	  </nt>
+	  <nt head='of' cat='PP' id='shal.input_17_502'>
+	    <edge label='-' idref='shal.input_17_2'/>
+	    <edge label='-' idref='shal.input_17_501'/>
+	  </nt>
+	  <nt head='could' cat='S-A' id='shal.input_17_525'>
+	    <edge label='-' idref='shal.input_17_518'/>
+	    <edge label='-' idref='shal.input_17_524'/>
+	  </nt>
+	  <nt head='bereft' cat='ADJP' id='shal.input_17_514'>
+	    <edge label='-' idref='shal.input_17_24'/>
+	    <edge label='-' idref='shal.input_17_513'/>
+	  </nt>
+	  <nt head='idea' cat='NP-A' id='shal.input_17_503'>
+	    <edge label='-' idref='shal.input_17_500'/>
+	    <edge label='-' idref='shal.input_17_502'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_17_526'>
+	    <edge label='-' idref='shal.input_17_18'/>
+	    <edge label='-' idref='shal.input_17_525'/>
+	  </nt>
+	  <nt head='be' cat='VP-A' id='shal.input_17_515'>
+	    <edge label='-' idref='shal.input_17_23'/>
+	    <edge label='-' idref='shal.input_17_514'/>
+	  </nt>
+	  <nt head='instantly' cat='ADVP' id='shal.input_17_504'>
+	    <edge label='-' idref='shal.input_17_14'/>
+	    <edge label='-' idref='shal.input_17_15'/>
+	  </nt>
+	  <nt head='is' cat='S' id='shal.input_17_527'>
+	    <edge label='-' idref='shal.input_17_17'/>
+	    <edge label='-' idref='shal.input_17_526'/>
+	  </nt>
+	  <nt head='should' cat='VP' id='shal.input_17_516'>
+	    <edge label='-' idref='shal.input_17_22'/>
+	    <edge label='-' idref='shal.input_17_515'/>
+	  </nt>
+	  <nt head='copied' cat='VP-A' id='shal.input_17_505'>
+	    <edge label='-' idref='shal.input_17_13'/>
+	    <edge label='-' idref='shal.input_17_504'/>
+	  </nt>
+	  <nt head='is' cat='S' id='shal.input_17_528'>
+	    <edge label='-' idref='shal.input_17_510'/>
+	    <edge label='-' idref='shal.input_17_16'/>
+	    <edge label='-' idref='shal.input_17_527'/>
+	  </nt>
+	  <nt head='should' cat='S-A' id='shal.input_17_517'>
+	    <edge label='-' idref='shal.input_17_21'/>
+	    <edge label='-' idref='shal.input_17_516'/>
+	  </nt>
+	  <nt head='be' cat='VP-A' id='shal.input_17_506'>
+	    <edge label='-' idref='shal.input_17_12'/>
+	    <edge label='-' idref='shal.input_17_505'/>
+	  </nt>
+	  <nt head='reason' cat='NP-A' id='shal.input_17_518'>
+	    <edge label='-' idref='shal.input_17_511'/>
+	    <edge label='-' idref='shal.input_17_517'/>
+	  </nt>
+	  <nt head='may' cat='VP' id='shal.input_17_507'>
+	    <edge label='-' idref='shal.input_17_10'/>
+	    <edge label='-' idref='shal.input_17_11'/>
+	    <edge label='-' idref='shal.input_17_506'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Duplication' id='shal.input_17_f1265327220.0103'>
+	    <target id='shal.input_17_f1265327220.0103_fe1265327220.01046' lemma='copy' pos='verb'>
+	      <fenode idref='shal.input_17_13'/>
+	    </target>
+	    <fe name='Copy' id='shal.input_17_f1265327220.0103_fe1265327394.77236'>
+	      <fenode idref='shal.input_17_503'/>
+	      <fenode idref='shal.input_17_504'/>
+	    </fe>
+	  </frame>
+	  <frame name='Expertise' id='shal.input_17_f1265327220.01062'>
+	    <target id='shal.input_17_f1265327220.01062_fe1265327220.01075' lemma='expertise' pos='noun'>
+	      <fenode idref='shal.input_17_9'/>
+	    </target>
+	  </frame>
+	  <frame name='Awareness' id='shal.input_17_f1265327220.0109'>
+	    <target id='shal.input_17_f1265327220.0109_fe1265327220.01103' lemma='knowledge' pos='noun'>
+	      <fenode idref='shal.input_17_27'/>
+	    </target>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_18'>
+      <graph root='shal.input_18_510'>
+	<terminals>
+	  <t word='As' id='shal.input_18_0' lemma='as' pos='IN'>
+	  </t>
+	  <t word='such' id='shal.input_18_1' lemma='such' pos='JJ'>
+	  </t>
+	  <t word=',' id='shal.input_18_2' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='a' id='shal.input_18_3' lemma='a' pos='DT'>
+	  </t>
+	  <t word='general' id='shal.input_18_4' lemma='general' pos='JJ'>
+	  </t>
+	  <t word='purpose' id='shal.input_18_5' lemma='purpose' pos='NN'>
+	  </t>
+	  <t word='system' id='shal.input_18_6' lemma='system' pos='NN'>
+	  </t>
+	  <t word='which' id='shal.input_18_7' lemma='which' pos='WDT'>
+	  </t>
+	  <t word='starts' id='shal.input_18_8' lemma='start' pos='VBZ'>
+	  </t>
+	  <t word='from' id='shal.input_18_9' lemma='from' pos='IN'>
+	  </t>
+	  <t word='ground' id='shal.input_18_10' lemma='ground' pos='VBD'>
+	  </t>
+	  <t word='up' id='shal.input_18_11' lemma='up' pos='RP'>
+	  </t>
+	  <t word=',' id='shal.input_18_12' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='including' id='shal.input_18_13' lemma='include' pos='VBG'>
+	  </t>
+	  <t word='meal' id='shal.input_18_14' lemma='meal' pos='NN'>
+	  </t>
+	  <t word='planning' id='shal.input_18_15' lemma='planning' pos='NN'>
+	  </t>
+	  <t word=',' id='shal.input_18_16' lemma=',' pos='PUNC,'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='such' cat='NPB' id='shal.input_18_500'>
+	    <edge label='-' idref='shal.input_18_1'/>
+	    <edge label='-' idref='shal.input_18_2'/>
+	  </nt>
+	  <nt head='As' cat='PP' id='shal.input_18_501'>
+	    <edge label='-' idref='shal.input_18_0'/>
+	    <edge label='-' idref='shal.input_18_500'/>
+	  </nt>
+	  <nt head='system' cat='NPB' id='shal.input_18_502'>
+	    <edge label='-' idref='shal.input_18_3'/>
+	    <edge label='-' idref='shal.input_18_4'/>
+	    <edge label='-' idref='shal.input_18_5'/>
+	    <edge label='-' idref='shal.input_18_6'/>
+	  </nt>
+	  <nt head='starts' cat='VP' id='shal.input_18_503'>
+	    <edge label='-' idref='shal.input_18_8'/>
+	    <edge label='-' idref='shal.input_18_9'/>
+	  </nt>
+	  <nt head='which' cat='SBAR-g' id='shal.input_18_504'>
+	    <edge label='-' idref='shal.input_18_7'/>
+	    <edge label='-' idref='shal.input_18_503'/>
+	  </nt>
+	  <nt head='system' cat='NP-A' id='shal.input_18_505'>
+	    <edge label='-' idref='shal.input_18_502'/>
+	    <edge label='-' idref='shal.input_18_504'/>
+	  </nt>
+	  <nt head='up' cat='PRT' id='shal.input_18_506'>
+	    <edge label='-' idref='shal.input_18_11'/>
+	    <edge label='-' idref='shal.input_18_12'/>
+	  </nt>
+	  <nt head='planning' cat='NPB' id='shal.input_18_507'>
+	    <edge label='-' idref='shal.input_18_14'/>
+	    <edge label='-' idref='shal.input_18_15'/>
+	    <edge label='-' idref='shal.input_18_16'/>
+	  </nt>
+	  <nt head='including' cat='PP' id='shal.input_18_508'>
+	    <edge label='-' idref='shal.input_18_13'/>
+	    <edge label='-' idref='shal.input_18_507'/>
+	  </nt>
+	  <nt head='ground' cat='S' id='shal.input_18_510'>
+	    <edge label='-' idref='shal.input_18_501'/>
+	    <edge label='-' idref='shal.input_18_505'/>
+	    <edge label='-' idref='shal.input_18_509'/>
+	  </nt>
+	  <nt head='ground' cat='VP' id='shal.input_18_509'>
+	    <edge label='-' idref='shal.input_18_10'/>
+	    <edge label='-' idref='shal.input_18_506'/>
+	    <edge label='-' idref='shal.input_18_508'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Grinding' id='shal.input_18_f1265327220.05807'>
+	    <target id='shal.input_18_f1265327220.05807_fe1265327220.05822' lemma='ground' pos='verb'>
+	      <fenode idref='shal.input_18_10'/>
+	    </target>
+	  </frame>
+	  <frame name='Inclusion' id='shal.input_18_f1265327220.05839'>
+	    <target id='shal.input_18_f1265327220.05839_fe1265327220.05852' lemma='include' pos='verb'>
+	      <fenode idref='shal.input_18_13'/>
+	    </target>
+	  </frame>
+	  <frame name='Purpose' id='shal.input_18_f1265327220.05867'>
+	    <target id='shal.input_18_f1265327220.05867_fe1265327220.05879' lemma='purpose' pos='noun'>
+	      <fenode idref='shal.input_18_5'/>
+	    </target>
+	    <fe name='Attribute' id='shal.input_18_f1265327220.05867_fe1265327394.82543'>
+	      <fenode idref='shal.input_18_6'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_19'>
+      <graph root='shal.input_19_515'>
+	<terminals>
+	  <t word='Currently' id='shal.input_19_0' lemma='currently' pos='RB'>
+	  </t>
+	  <t word=',' id='shal.input_19_1' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='there' id='shal.input_19_2' lemma='there' pos='EX'>
+	  </t>
+	  <t word='is' id='shal.input_19_3' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='no' id='shal.input_19_4' lemma='no' pos='DT'>
+	  </t>
+	  <t word='software' id='shal.input_19_5' lemma='software' pos='NN'>
+	  </t>
+	  <t word='available' id='shal.input_19_6' lemma='available' pos='JJ'>
+	  </t>
+	  <t word='in' id='shal.input_19_7' lemma='in' pos='IN'>
+	  </t>
+	  <t word='Debian' id='shal.input_19_8' lemma='&lt;unknown&gt;' pos='NNP'>
+	  </t>
+	  <t word='which' id='shal.input_19_9' lemma='which' pos='WDT'>
+	  </t>
+	  <t word='provides' id='shal.input_19_10' lemma='provide' pos='VBZ'>
+	  </t>
+	  <t word='for' id='shal.input_19_11' lemma='for' pos='IN'>
+	  </t>
+	  <t word='meal' id='shal.input_19_12' lemma='meal' pos='NN'>
+	  </t>
+	  <t word='planning' id='shal.input_19_13' lemma='planning' pos='NN'>
+	  </t>
+	  <t word=',' id='shal.input_19_14' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='or' id='shal.input_19_15' lemma='or' pos='CC'>
+	  </t>
+	  <t word='even' id='shal.input_19_16' lemma='even' pos='RB'>
+	  </t>
+	  <t word='realtime' id='shal.input_19_17' lemma='&lt;unknown&gt;' pos='NN'>
+	  </t>
+	  <t word='life' id='shal.input_19_18' lemma='life' pos='NN'>
+	  </t>
+	  <t word='planning' id='shal.input_19_19' lemma='planning' pos='NN'>
+	  </t>
+	  <t word='in' id='shal.input_19_20' lemma='in' pos='IN'>
+	  </t>
+	  <t word='general' id='shal.input_19_21' lemma='general' pos='JJ'>
+	  </t>
+	  <t word='.' id='shal.input_19_22' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='for' cat='PP' id='shal.input_19_508'>
+	    <edge label='-' idref='shal.input_19_11'/>
+	    <edge label='-' idref='shal.input_19_507'/>
+	  </nt>
+	  <nt head='provides' cat='VP' id='shal.input_19_509'>
+	    <edge label='-' idref='shal.input_19_10'/>
+	    <edge label='-' idref='shal.input_19_508'/>
+	  </nt>
+	  <nt head='which' cat='SBAR-g' id='shal.input_19_510'>
+	    <edge label='-' idref='shal.input_19_9'/>
+	    <edge label='-' idref='shal.input_19_509'/>
+	  </nt>
+	  <nt head='Debian' cat='NP-A' id='shal.input_19_511'>
+	    <edge label='-' idref='shal.input_19_8'/>
+	    <edge label='-' idref='shal.input_19_510'/>
+	  </nt>
+	  <nt head='Currently' cat='ADVP' id='shal.input_19_500'>
+	    <edge label='-' idref='shal.input_19_0'/>
+	    <edge label='-' idref='shal.input_19_1'/>
+	  </nt>
+	  <nt head='in' cat='PP' id='shal.input_19_512'>
+	    <edge label='-' idref='shal.input_19_7'/>
+	    <edge label='-' idref='shal.input_19_511'/>
+	  </nt>
+	  <nt head='software' cat='NPB' id='shal.input_19_501'>
+	    <edge label='-' idref='shal.input_19_4'/>
+	    <edge label='-' idref='shal.input_19_5'/>
+	  </nt>
+	  <nt head='available' cat='ADJP' id='shal.input_19_513'>
+	    <edge label='-' idref='shal.input_19_6'/>
+	    <edge label='-' idref='shal.input_19_512'/>
+	  </nt>
+	  <nt head='planning' cat='NPB' id='shal.input_19_502'>
+	    <edge label='-' idref='shal.input_19_12'/>
+	    <edge label='-' idref='shal.input_19_13'/>
+	    <edge label='-' idref='shal.input_19_14'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_19_514'>
+	    <edge label='-' idref='shal.input_19_3'/>
+	    <edge label='-' idref='shal.input_19_501'/>
+	    <edge label='-' idref='shal.input_19_513'/>
+	  </nt>
+	  <nt head='planning' cat='NPB' id='shal.input_19_503'>
+	    <edge label='-' idref='shal.input_19_16'/>
+	    <edge label='-' idref='shal.input_19_17'/>
+	    <edge label='-' idref='shal.input_19_18'/>
+	    <edge label='-' idref='shal.input_19_19'/>
+	  </nt>
+	  <nt head='is' cat='S' id='shal.input_19_515'>
+	    <edge label='-' idref='shal.input_19_500'/>
+	    <edge label='-' idref='shal.input_19_2'/>
+	    <edge label='-' idref='shal.input_19_514'/>
+	  </nt>
+	  <nt head='general' cat='ADJP-A' id='shal.input_19_504'>
+	    <edge label='-' idref='shal.input_19_21'/>
+	    <edge label='-' idref='shal.input_19_22'/>
+	  </nt>
+	  <nt head='in' cat='PP' id='shal.input_19_505'>
+	    <edge label='-' idref='shal.input_19_20'/>
+	    <edge label='-' idref='shal.input_19_504'/>
+	  </nt>
+	  <nt head='planning' cat='NP' id='shal.input_19_506'>
+	    <edge label='-' idref='shal.input_19_503'/>
+	    <edge label='-' idref='shal.input_19_505'/>
+	  </nt>
+	  <nt head='planning' cat='NP-A' id='shal.input_19_507'>
+	    <edge label='-' idref='shal.input_19_502'/>
+	    <edge label='-' idref='shal.input_19_15'/>
+	    <edge label='-' idref='shal.input_19_506'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Supply' id='shal.input_19_f1265327220.11553'>
+	    <target id='shal.input_19_f1265327220.11553_fe1265327220.11569' lemma='provide' pos='verb'>
+	      <fenode idref='shal.input_19_10'/>
+	    </target>
+	    <fe name='Theme' id='shal.input_19_f1265327220.11553_fe1265327394.88774'>
+	      <fenode idref='shal.input_19_9'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_20'>
+      <graph root='shal.input_20_512'>
+	<terminals>
+	  <t word='I' id='shal.input_20_0' lemma='I' pos='PRP'>
+	  </t>
+	  <t word='argue' id='shal.input_20_1' lemma='argue' pos='VBP'>
+	  </t>
+	  <t word='having' id='shal.input_20_2' lemma='have' pos='VBG'>
+	  </t>
+	  <t word='these' id='shal.input_20_3' lemma='these' pos='DT'>
+	  </t>
+	  <t word='abilities' id='shal.input_20_4' lemma='ability' pos='NNS'>
+	  </t>
+	  <t word='given' id='shal.input_20_5' lemma='give' pos='VBN'>
+	  </t>
+	  <t word='to' id='shal.input_20_6' lemma='to' pos='TO'>
+	  </t>
+	  <t word='them' id='shal.input_20_7' lemma='them' pos='PRP'>
+	  </t>
+	  <t word='will' id='shal.input_20_8' lemma='will' pos='MD'>
+	  </t>
+	  <t word='not' id='shal.input_20_9' lemma='not' pos='RB'>
+	  </t>
+	  <t word='make' id='shal.input_20_10' lemma='make' pos='VB'>
+	  </t>
+	  <t word='the' id='shal.input_20_11' lemma='the' pos='DT'>
+	  </t>
+	  <t word='person' id='shal.input_20_12' lemma='person' pos='NN'>
+	  </t>
+	  <t word='less' id='shal.input_20_13' lemma='less' pos='RBR'>
+	  </t>
+	  <t word='intelligent' id='shal.input_20_14' lemma='intelligent' pos='JJ'>
+	  </t>
+	  <t word='.' id='shal.input_20_15' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='will' cat='S-A' id='shal.input_20_510'>
+	    <edge label='-' idref='shal.input_20_504'/>
+	    <edge label='-' idref='shal.input_20_509'/>
+	  </nt>
+	  <nt head='will' cat='VP' id='shal.input_20_509'>
+	    <edge label='-' idref='shal.input_20_8'/>
+	    <edge label='-' idref='shal.input_20_9'/>
+	    <edge label='-' idref='shal.input_20_508'/>
+	  </nt>
+	  <nt head='argue' cat='VP' id='shal.input_20_511'>
+	    <edge label='-' idref='shal.input_20_1'/>
+	    <edge label='-' idref='shal.input_20_510'/>
+	  </nt>
+	  <nt head='abilities' cat='NPB' id='shal.input_20_500'>
+	    <edge label='-' idref='shal.input_20_3'/>
+	    <edge label='-' idref='shal.input_20_4'/>
+	  </nt>
+	  <nt head='argue' cat='S' id='shal.input_20_512'>
+	    <edge label='-' idref='shal.input_20_0'/>
+	    <edge label='-' idref='shal.input_20_511'/>
+	  </nt>
+	  <nt head='to' cat='PP' id='shal.input_20_501'>
+	    <edge label='-' idref='shal.input_20_6'/>
+	    <edge label='-' idref='shal.input_20_7'/>
+	  </nt>
+	  <nt head='given' cat='VP' id='shal.input_20_502'>
+	    <edge label='-' idref='shal.input_20_5'/>
+	    <edge label='-' idref='shal.input_20_501'/>
+	  </nt>
+	  <nt head='given' cat='S-A' id='shal.input_20_503'>
+	    <edge label='-' idref='shal.input_20_500'/>
+	    <edge label='-' idref='shal.input_20_502'/>
+	  </nt>
+	  <nt head='having' cat='VP' id='shal.input_20_504'>
+	    <edge label='-' idref='shal.input_20_2'/>
+	    <edge label='-' idref='shal.input_20_503'/>
+	  </nt>
+	  <nt head='person' cat='NPB' id='shal.input_20_505'>
+	    <edge label='-' idref='shal.input_20_11'/>
+	    <edge label='-' idref='shal.input_20_12'/>
+	  </nt>
+	  <nt head='intelligent' cat='ADJP' id='shal.input_20_506'>
+	    <edge label='-' idref='shal.input_20_13'/>
+	    <edge label='-' idref='shal.input_20_14'/>
+	    <edge label='-' idref='shal.input_20_15'/>
+	  </nt>
+	  <nt head='intelligent' cat='S-A' id='shal.input_20_507'>
+	    <edge label='-' idref='shal.input_20_505'/>
+	    <edge label='-' idref='shal.input_20_506'/>
+	  </nt>
+	  <nt head='make' cat='VP-A' id='shal.input_20_508'>
+	    <edge label='-' idref='shal.input_20_10'/>
+	    <edge label='-' idref='shal.input_20_507'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Reasoning' id='shal.input_20_f1265327220.15684'>
+	    <target id='shal.input_20_f1265327220.15684_fe1265327220.15699' lemma='argue' pos='verb'>
+	      <fenode idref='shal.input_20_1'/>
+	    </target>
+	    <fe name='Content' id='shal.input_20_f1265327220.15684_fe1265327394.98643'>
+	      <fenode idref='shal.input_20_510'/>
+	    </fe>
+	    <fe name='Arguer' id='shal.input_20_f1265327220.15684_fe1265327394.98977'>
+	      <fenode idref='shal.input_20_0'/>
+	    </fe>
+	  </frame>
+	  <frame name='Giving' id='shal.input_20_f1265327220.15716'>
+	    <target id='shal.input_20_f1265327220.15716_fe1265327220.15728' lemma='give' pos='verb'>
+	      <fenode idref='shal.input_20_5'/>
+	    </target>
+	    <fe name='Donor' id='shal.input_20_f1265327220.15716_fe1265327394.99445'>
+	      <fenode idref='shal.input_20_0'/>
+	      <fenode idref='shal.input_20_500'/>
+	    </fe>
+	    <fe name='Recipient' id='shal.input_20_f1265327220.15716_fe1265327394.99927'>
+	      <fenode idref='shal.input_20_501'/>
+	    </fe>
+	  </frame>
+	  <frame name='Mental_property' id='shal.input_20_f1265327220.15743'>
+	    <target id='shal.input_20_f1265327220.15743_fe1265327220.15756' lemma='intelligent' pos='adj'>
+	      <fenode idref='shal.input_20_14'/>
+	    </target>
+	  </frame>
+	  <frame name='Cooking_creation' id='shal.input_20_f1265327220.15771'>
+	    <target id='shal.input_20_f1265327220.15771_fe1265327220.15784' lemma='make' pos='verb'>
+	      <fenode idref='shal.input_20_10'/>
+	    </target>
+	    <fe name='Produced_food' id='shal.input_20_f1265327220.15771_fe1265327395.00451'>
+	      <fenode idref='shal.input_20_507'/>
+	    </fe>
+	    <fe name='Cook' id='shal.input_20_f1265327220.15771_fe1265327395.00606'>
+	      <fenode idref='shal.input_20_0'/>
+	    </fe>
+	  </frame>
+	  <frame name='People' id='shal.input_20_f1265327220.15799'>
+	    <target id='shal.input_20_f1265327220.15799_fe1265327220.15812' lemma='person' pos='noun'>
+	      <fenode idref='shal.input_20_12'/>
+	    </target>
+	    <fe name='Person' id='shal.input_20_f1265327220.15799_fe1265327395.013'>
+	      <fenode idref='shal.input_20_0'/>
+	      <fenode idref='shal.input_20_506'/>
+	      <fenode idref='shal.input_20_12'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_21'>
+      <graph root='shal.input_21_507'>
+	<terminals>
+	  <t word='Rather' id='shal.input_21_0' lemma='rather' pos='RB'>
+	  </t>
+	  <t word=',' id='shal.input_21_1' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='I' id='shal.input_21_2' lemma='I' pos='PRP'>
+	  </t>
+	  <t word='think' id='shal.input_21_3' lemma='think' pos='VBP'>
+	  </t>
+	  <t word='intelligence' id='shal.input_21_4' lemma='intelligence' pos='NN'>
+	  </t>
+	  <t word='and' id='shal.input_21_5' lemma='and' pos='CC'>
+	  </t>
+	  <t word='motivation' id='shal.input_21_6' lemma='motivation' pos='NN'>
+	  </t>
+	  <t word='can' id='shal.input_21_7' lemma='can' pos='MD'>
+	  </t>
+	  <t word='be' id='shal.input_21_8' lemma='be' pos='VB'>
+	  </t>
+	  <t word='instructed' id='shal.input_21_9' lemma='instruct' pos='VBN'>
+	  </t>
+	  <t word='.' id='shal.input_21_10' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='think' cat='S' id='shal.input_21_507'>
+	    <edge label='-' idref='shal.input_21_500'/>
+	    <edge label='-' idref='shal.input_21_2'/>
+	    <edge label='-' idref='shal.input_21_506'/>
+	  </nt>
+	  <nt head='Rather' cat='ADVP' id='shal.input_21_500'>
+	    <edge label='-' idref='shal.input_21_0'/>
+	    <edge label='-' idref='shal.input_21_1'/>
+	  </nt>
+	  <nt head='motivation' cat='NPB' id='shal.input_21_501'>
+	    <edge label='-' idref='shal.input_21_4'/>
+	    <edge label='-' idref='shal.input_21_5'/>
+	    <edge label='-' idref='shal.input_21_6'/>
+	  </nt>
+	  <nt head='instructed' cat='VP-A' id='shal.input_21_502'>
+	    <edge label='-' idref='shal.input_21_9'/>
+	    <edge label='-' idref='shal.input_21_10'/>
+	  </nt>
+	  <nt head='be' cat='VP-A' id='shal.input_21_503'>
+	    <edge label='-' idref='shal.input_21_8'/>
+	    <edge label='-' idref='shal.input_21_502'/>
+	  </nt>
+	  <nt head='can' cat='VP' id='shal.input_21_504'>
+	    <edge label='-' idref='shal.input_21_7'/>
+	    <edge label='-' idref='shal.input_21_503'/>
+	  </nt>
+	  <nt head='can' cat='S-A' id='shal.input_21_505'>
+	    <edge label='-' idref='shal.input_21_501'/>
+	    <edge label='-' idref='shal.input_21_504'/>
+	  </nt>
+	  <nt head='think' cat='VP' id='shal.input_21_506'>
+	    <edge label='-' idref='shal.input_21_3'/>
+	    <edge label='-' idref='shal.input_21_505'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Education_teaching' id='shal.input_21_f1265327220.18443'>
+	    <target id='shal.input_21_f1265327220.18443_fe1265327220.18459' lemma='instruct' pos='verb'>
+	      <fenode idref='shal.input_21_9'/>
+	    </target>
+	    <fe name='Student' id='shal.input_21_f1265327220.18443_fe1265327395.05255'>
+	      <fenode idref='shal.input_21_2'/>
+	    </fe>
+	    <fe name='Subject' id='shal.input_21_f1265327220.18443_fe1265327395.05506'>
+	      <fenode idref='shal.input_21_501'/>
+	    </fe>
+	  </frame>
+	  <frame name='Awareness' id='shal.input_21_f1265327220.18475'>
+	    <target id='shal.input_21_f1265327220.18475_fe1265327220.18488' lemma='think' pos='verb'>
+	      <fenode idref='shal.input_21_3'/>
+	    </target>
+	    <fe name='Cognizer' id='shal.input_21_f1265327220.18475_fe1265327395.05619'>
+	      <fenode idref='shal.input_21_2'/>
+	    </fe>
+	    <fe name='Content' id='shal.input_21_f1265327220.18475_fe1265327395.0584'>
+	      <fenode idref='shal.input_21_505'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_22'>
+      <graph root='shal.input_22_519'>
+	<terminals>
+	  <t word='The' id='shal.input_22_0' lemma='the' pos='DT'>
+	  </t>
+	  <t word='reason' id='shal.input_22_1' lemma='reason' pos='NN'>
+	  </t>
+	  <t word='I' id='shal.input_22_2' lemma='I' pos='PRP'>
+	  </t>
+	  <t word='believe' id='shal.input_22_3' lemma='believe' pos='VBP'>
+	  </t>
+	  <t word='this' id='shal.input_22_4' lemma='this' pos='DT'>
+	  </t>
+	  <t word='is' id='shal.input_22_5' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='people' id='shal.input_22_6' lemma='people' pos='NNS'>
+	  </t>
+	  <t word='can' id='shal.input_22_7' lemma='can' pos='MD'>
+	  </t>
+	  <t word='be' id='shal.input_22_8' lemma='be' pos='VB'>
+	  </t>
+	  <t word='taught' id='shal.input_22_9' lemma='teach' pos='VBN'>
+	  </t>
+	  <t word='with' id='shal.input_22_10' lemma='with' pos='IN'>
+	  </t>
+	  <t word='both' id='shal.input_22_11' lemma='both' pos='DT'>
+	  </t>
+	  <t word='negative' id='shal.input_22_12' lemma='negative' pos='JJ'>
+	  </t>
+	  <t word='reinforcement' id='shal.input_22_13' lemma='reinforcement' pos='NN'>
+	  </t>
+	  <t word=',' id='shal.input_22_14' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='such' id='shal.input_22_15' lemma='such' pos='JJ'>
+	  </t>
+	  <t word='as' id='shal.input_22_16' lemma='as' pos='IN'>
+	  </t>
+	  <t word='life' id='shal.input_22_17' lemma='life' pos='NN'>
+	  </t>
+	  <t word='often' id='shal.input_22_18' lemma='often' pos='RB'>
+	  </t>
+	  <t word='treats' id='shal.input_22_19' lemma='treat' pos='VBZ'>
+	  </t>
+	  <t word='us' id='shal.input_22_20' lemma='us' pos='PRP'>
+	  </t>
+	  <t word='with' id='shal.input_22_21' lemma='with' pos='IN'>
+	  </t>
+	  <t word=',' id='shal.input_22_22' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='but' id='shal.input_22_23' lemma='but' pos='CC'>
+	  </t>
+	  <t word='also' id='shal.input_22_24' lemma='also' pos='RB'>
+	  </t>
+	  <t word='positive' id='shal.input_22_25' lemma='positive' pos='JJ'>
+	  </t>
+	  <t word='reinforcement' id='shal.input_22_26' lemma='reinforcement' pos='NN'>
+	  </t>
+	  <t word='.' id='shal.input_22_27' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='be' cat='VP-A' id='shal.input_22_517'>
+	    <edge label='-' idref='shal.input_22_8'/>
+	    <edge label='-' idref='shal.input_22_516'/>
+	  </nt>
+	  <nt head='reinforcement' cat='NPB' id='shal.input_22_506'>
+	    <edge label='-' idref='shal.input_22_12'/>
+	    <edge label='-' idref='shal.input_22_13'/>
+	    <edge label='-' idref='shal.input_22_14'/>
+	  </nt>
+	  <nt head='can' cat='VP' id='shal.input_22_518'>
+	    <edge label='-' idref='shal.input_22_7'/>
+	    <edge label='-' idref='shal.input_22_517'/>
+	  </nt>
+	  <nt head='with' cat='PP' id='shal.input_22_507'>
+	    <edge label='-' idref='shal.input_22_21'/>
+	    <edge label='-' idref='shal.input_22_22'/>
+	  </nt>
+	  <nt head='can' cat='S' id='shal.input_22_519'>
+	    <edge label='-' idref='shal.input_22_505'/>
+	    <edge label='-' idref='shal.input_22_518'/>
+	  </nt>
+	  <nt head='treats' cat='VP' id='shal.input_22_508'>
+	    <edge label='-' idref='shal.input_22_19'/>
+	    <edge label='-' idref='shal.input_22_20'/>
+	    <edge label='-' idref='shal.input_22_507'/>
+	  </nt>
+	  <nt head='as' cat='SBAR' id='shal.input_22_510'>
+	    <edge label='-' idref='shal.input_22_16'/>
+	    <edge label='-' idref='shal.input_22_509'/>
+	  </nt>
+	  <nt head='treats' cat='S-A' id='shal.input_22_509'>
+	    <edge label='-' idref='shal.input_22_17'/>
+	    <edge label='-' idref='shal.input_22_18'/>
+	    <edge label='-' idref='shal.input_22_508'/>
+	  </nt>
+	  <nt head='such' cat='ADJP' id='shal.input_22_511'>
+	    <edge label='-' idref='shal.input_22_15'/>
+	    <edge label='-' idref='shal.input_22_510'/>
+	  </nt>
+	  <nt head='reason' cat='NPB' id='shal.input_22_500'>
+	    <edge label='-' idref='shal.input_22_0'/>
+	    <edge label='-' idref='shal.input_22_1'/>
+	  </nt>
+	  <nt head='reinforcement' cat='NP' id='shal.input_22_512'>
+	    <edge label='-' idref='shal.input_22_506'/>
+	    <edge label='-' idref='shal.input_22_511'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_22_501'>
+	    <edge label='-' idref='shal.input_22_5'/>
+	    <edge label='-' idref='shal.input_22_6'/>
+	  </nt>
+	  <nt head='reinforcement' cat='NPB' id='shal.input_22_513'>
+	    <edge label='-' idref='shal.input_22_24'/>
+	    <edge label='-' idref='shal.input_22_25'/>
+	    <edge label='-' idref='shal.input_22_26'/>
+	    <edge label='-' idref='shal.input_22_27'/>
+	  </nt>
+	  <nt head='is' cat='S-A' id='shal.input_22_502'>
+	    <edge label='-' idref='shal.input_22_4'/>
+	    <edge label='-' idref='shal.input_22_501'/>
+	  </nt>
+	  <nt head='reinforcement' cat='NP-A' id='shal.input_22_514'>
+	    <edge label='-' idref='shal.input_22_11'/>
+	    <edge label='-' idref='shal.input_22_512'/>
+	    <edge label='-' idref='shal.input_22_23'/>
+	    <edge label='-' idref='shal.input_22_513'/>
+	  </nt>
+	  <nt head='believe' cat='VP' id='shal.input_22_503'>
+	    <edge label='-' idref='shal.input_22_3'/>
+	    <edge label='-' idref='shal.input_22_502'/>
+	  </nt>
+	  <nt head='with' cat='PP' id='shal.input_22_515'>
+	    <edge label='-' idref='shal.input_22_10'/>
+	    <edge label='-' idref='shal.input_22_514'/>
+	  </nt>
+	  <nt head='believe' cat='S-A' id='shal.input_22_504'>
+	    <edge label='-' idref='shal.input_22_2'/>
+	    <edge label='-' idref='shal.input_22_503'/>
+	  </nt>
+	  <nt head='taught' cat='VP-A' id='shal.input_22_516'>
+	    <edge label='-' idref='shal.input_22_9'/>
+	    <edge label='-' idref='shal.input_22_515'/>
+	  </nt>
+	  <nt head='reason' cat='NP-A' id='shal.input_22_505'>
+	    <edge label='-' idref='shal.input_22_500'/>
+	    <edge label='-' idref='shal.input_22_504'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Awareness' id='shal.input_22_f1265327220.29037'>
+	    <target id='shal.input_22_f1265327220.29037_fe1265327220.29053' lemma='believe' pos='verb'>
+	      <fenode idref='shal.input_22_3'/>
+	    </target>
+	    <fe name='Cognizer' id='shal.input_22_f1265327220.29037_fe1265327395.15387'>
+	      <fenode idref='shal.input_22_2'/>
+	    </fe>
+	    <fe name='Content' id='shal.input_22_f1265327220.29037_fe1265327395.16006'>
+	      <fenode idref='shal.input_22_502'/>
+	    </fe>
+	  </frame>
+	  <frame name='People' id='shal.input_22_f1265327220.2907'>
+	    <target id='shal.input_22_f1265327220.2907_fe1265327220.29083' lemma='people' pos='noun'>
+	      <fenode idref='shal.input_22_6'/>
+	    </target>
+	    <fe name='Person' id='shal.input_22_f1265327220.2907_fe1265327395.16559'>
+	      <fenode idref='shal.input_22_2'/>
+	    </fe>
+	  </frame>
+	  <frame name='Certainty' id='shal.input_22_f1265327220.29098'>
+	    <target id='shal.input_22_f1265327220.29098_fe1265327220.29111' lemma='positive' pos='adj'>
+	      <fenode idref='shal.input_22_25'/>
+	    </target>
+	  </frame>
+	  <frame name='Communicate_categorization' id='shal.input_22_f1265327220.29126'>
+	    <target id='shal.input_22_f1265327220.29126_fe1265327220.2914' lemma='treat' pos='verb'>
+	      <fenode idref='shal.input_22_19'/>
+	    </target>
+	    <fe name='Category' id='shal.input_22_f1265327220.29126_fe1265327395.17751'>
+	      <fenode idref='shal.input_22_507'/>
+	    </fe>
+	    <fe name='Speaker' id='shal.input_22_f1265327220.29126_fe1265327395.18939'>
+	      <fenode idref='shal.input_22_17'/>
+	    </fe>
+	    <fe name='Item' id='shal.input_22_f1265327220.29126_fe1265327395.22783'>
+	      <fenode idref='shal.input_22_20'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_23'>
+      <graph root='shal.input_23_512'>
+	<terminals>
+	  <t word='There' id='shal.input_23_0' lemma='There' pos='EX'>
+	  </t>
+	  <t word='is' id='shal.input_23_1' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='no' id='shal.input_23_2' lemma='no' pos='DT'>
+	  </t>
+	  <t word='reason' id='shal.input_23_3' lemma='reason' pos='NN'>
+	  </t>
+	  <t word='for' id='shal.input_23_4' lemma='for' pos='IN'>
+	  </t>
+	  <t word='making' id='shal.input_23_5' lemma='make' pos='VBG'>
+	  </t>
+	  <t word='mistakes' id='shal.input_23_6' lemma='mistake' pos='NNS'>
+	  </t>
+	  <t word='if' id='shal.input_23_7' lemma='if' pos='IN'>
+	  </t>
+	  <t word='they' id='shal.input_23_8' lemma='they' pos='PRP'>
+	  </t>
+	  <t word='don&apos;t' id='shal.input_23_9' lemma='&lt;unknown&gt;' pos='VBD'>
+	  </t>
+	  <t word='have' id='shal.input_23_10' lemma='have' pos='VB'>
+	  </t>
+	  <t word='to' id='shal.input_23_11' lemma='to' pos='TO'>
+	  </t>
+	  <t word='be' id='shal.input_23_12' lemma='be' pos='VB'>
+	  </t>
+	  <t word='made' id='shal.input_23_13' lemma='make' pos='VBN'>
+	  </t>
+	  <t word='.' id='shal.input_23_14' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='to' cat='VP' id='shal.input_23_503'>
+	    <edge label='-' idref='shal.input_23_11'/>
+	    <edge label='-' idref='shal.input_23_502'/>
+	  </nt>
+	  <nt head='have' cat='VP-A' id='shal.input_23_504'>
+	    <edge label='-' idref='shal.input_23_10'/>
+	    <edge label='-' idref='shal.input_23_503'/>
+	  </nt>
+	  <nt head='don&apos;t' cat='VP' id='shal.input_23_505'>
+	    <edge label='-' idref='shal.input_23_9'/>
+	    <edge label='-' idref='shal.input_23_504'/>
+	  </nt>
+	  <nt head='don&apos;t' cat='S-A' id='shal.input_23_506'>
+	    <edge label='-' idref='shal.input_23_8'/>
+	    <edge label='-' idref='shal.input_23_505'/>
+	  </nt>
+	  <nt head='if' cat='SBAR' id='shal.input_23_507'>
+	    <edge label='-' idref='shal.input_23_7'/>
+	    <edge label='-' idref='shal.input_23_506'/>
+	  </nt>
+	  <nt head='making' cat='VP' id='shal.input_23_508'>
+	    <edge label='-' idref='shal.input_23_5'/>
+	    <edge label='-' idref='shal.input_23_6'/>
+	    <edge label='-' idref='shal.input_23_507'/>
+	  </nt>
+	  <nt head='reason' cat='NP-A' id='shal.input_23_510'>
+	    <edge label='-' idref='shal.input_23_500'/>
+	    <edge label='-' idref='shal.input_23_509'/>
+	  </nt>
+	  <nt head='for' cat='PP' id='shal.input_23_509'>
+	    <edge label='-' idref='shal.input_23_4'/>
+	    <edge label='-' idref='shal.input_23_508'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_23_511'>
+	    <edge label='-' idref='shal.input_23_1'/>
+	    <edge label='-' idref='shal.input_23_510'/>
+	  </nt>
+	  <nt head='reason' cat='NPB' id='shal.input_23_500'>
+	    <edge label='-' idref='shal.input_23_2'/>
+	    <edge label='-' idref='shal.input_23_3'/>
+	  </nt>
+	  <nt head='is' cat='S' id='shal.input_23_512'>
+	    <edge label='-' idref='shal.input_23_0'/>
+	    <edge label='-' idref='shal.input_23_511'/>
+	  </nt>
+	  <nt head='made' cat='VP-A' id='shal.input_23_501'>
+	    <edge label='-' idref='shal.input_23_13'/>
+	    <edge label='-' idref='shal.input_23_14'/>
+	  </nt>
+	  <nt head='be' cat='VP-A' id='shal.input_23_502'>
+	    <edge label='-' idref='shal.input_23_12'/>
+	    <edge label='-' idref='shal.input_23_501'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Cooking_creation' id='shal.input_23_f1265327220.33635'>
+	    <target id='shal.input_23_f1265327220.33635_fe1265327220.33651' lemma='make' pos='verb'>
+	      <fenode idref='shal.input_23_5'/>
+	    </target>
+	    <fe name='Produced_food' id='shal.input_23_f1265327220.33635_fe1265327395.28765'>
+	      <fenode idref='shal.input_23_6'/>
+	    </fe>
+	  </frame>
+	  <frame name='Cooking_creation' id='shal.input_23_f1265327220.33668'>
+	    <target id='shal.input_23_f1265327220.33668_fe1265327220.33681' lemma='make' pos='verb'>
+	      <fenode idref='shal.input_23_13'/>
+	    </target>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_24'>
+      <graph root='shal.input_24_517'>
+	<terminals>
+	  <t word='My' id='shal.input_24_0' lemma='my' pos='PRP$'>
+	  </t>
+	  <t word='worldview' id='shal.input_24_1' lemma='&lt;unknown&gt;' pos='NN'>
+	  </t>
+	  <t word='is' id='shal.input_24_2' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='basically' id='shal.input_24_3' lemma='basically' pos='RB'>
+	  </t>
+	  <t word='the' id='shal.input_24_4' lemma='the' pos='DT'>
+	  </t>
+	  <t word='universe' id='shal.input_24_5' lemma='universe' pos='NN'>
+	  </t>
+	  <t word='is' id='shal.input_24_6' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='a' id='shal.input_24_7' lemma='a' pos='DT'>
+	  </t>
+	  <t word='problem' id='shal.input_24_8' lemma='problem' pos='NN'>
+	  </t>
+	  <t word=',' id='shal.input_24_9' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='and' id='shal.input_24_10' lemma='and' pos='CC'>
+	  </t>
+	  <t word='is' id='shal.input_24_11' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='defective' id='shal.input_24_12' lemma='defective' pos='JJ'>
+	  </t>
+	  <t word=',' id='shal.input_24_13' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='for' id='shal.input_24_14' lemma='for' pos='IN'>
+	  </t>
+	  <t word='instance' id='shal.input_24_15' lemma='instance' pos='NN'>
+	  </t>
+	  <t word=',' id='shal.input_24_16' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='thermodynamics' id='shal.input_24_17' lemma='thermodynamics' pos='NNS'>
+	  </t>
+	  <t word=',' id='shal.input_24_18' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='etc' id='shal.input_24_19' lemma='etc' pos='FW'>
+	  </t>
+	  <t word=',' id='shal.input_24_20' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='are' id='shal.input_24_21' lemma='be' pos='VBP'>
+	  </t>
+	  <t word='all' id='shal.input_24_22' lemma='all' pos='RB'>
+	  </t>
+	  <t word='defective' id='shal.input_24_23' lemma='defective' pos='JJ'>
+	  </t>
+	  <t word='.' id='shal.input_24_24' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='are' cat='S' id='shal.input_24_516'>
+	    <edge label='-' idref='shal.input_24_512'/>
+	    <edge label='-' idref='shal.input_24_513'/>
+	    <edge label='-' idref='shal.input_24_515'/>
+	  </nt>
+	  <nt head='is' cat='SBAR-A' id='shal.input_24_505'>
+	    <edge label='-' idref='shal.input_24_3'/>
+	    <edge label='-' idref='shal.input_24_504'/>
+	  </nt>
+	  <nt head='is' cat='S' id='shal.input_24_517'>
+	    <edge label='-' idref='shal.input_24_510'/>
+	    <edge label='-' idref='shal.input_24_516'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_24_506'>
+	    <edge label='-' idref='shal.input_24_2'/>
+	    <edge label='-' idref='shal.input_24_505'/>
+	  </nt>
+	  <nt head='defective' cat='ADJP' id='shal.input_24_507'>
+	    <edge label='-' idref='shal.input_24_12'/>
+	    <edge label='-' idref='shal.input_24_13'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_24_508'>
+	    <edge label='-' idref='shal.input_24_11'/>
+	    <edge label='-' idref='shal.input_24_507'/>
+	  </nt>
+	  <nt head='is' cat='S' id='shal.input_24_510'>
+	    <edge label='-' idref='shal.input_24_500'/>
+	    <edge label='-' idref='shal.input_24_509'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_24_509'>
+	    <edge label='-' idref='shal.input_24_506'/>
+	    <edge label='-' idref='shal.input_24_10'/>
+	    <edge label='-' idref='shal.input_24_508'/>
+	  </nt>
+	  <nt head='instance' cat='NPB' id='shal.input_24_511'>
+	    <edge label='-' idref='shal.input_24_15'/>
+	    <edge label='-' idref='shal.input_24_16'/>
+	  </nt>
+	  <nt head='worldview' cat='NPB' id='shal.input_24_500'>
+	    <edge label='-' idref='shal.input_24_0'/>
+	    <edge label='-' idref='shal.input_24_1'/>
+	  </nt>
+	  <nt head='for' cat='PP' id='shal.input_24_512'>
+	    <edge label='-' idref='shal.input_24_14'/>
+	    <edge label='-' idref='shal.input_24_511'/>
+	  </nt>
+	  <nt head='universe' cat='NPB' id='shal.input_24_501'>
+	    <edge label='-' idref='shal.input_24_4'/>
+	    <edge label='-' idref='shal.input_24_5'/>
+	  </nt>
+	  <nt head='thermodynamics' cat='NPB' id='shal.input_24_513'>
+	    <edge label='-' idref='shal.input_24_17'/>
+	    <edge label='-' idref='shal.input_24_18'/>
+	    <edge label='-' idref='shal.input_24_19'/>
+	    <edge label='-' idref='shal.input_24_20'/>
+	  </nt>
+	  <nt head='problem' cat='NPB' id='shal.input_24_502'>
+	    <edge label='-' idref='shal.input_24_7'/>
+	    <edge label='-' idref='shal.input_24_8'/>
+	    <edge label='-' idref='shal.input_24_9'/>
+	  </nt>
+	  <nt head='defective' cat='ADJP' id='shal.input_24_514'>
+	    <edge label='-' idref='shal.input_24_22'/>
+	    <edge label='-' idref='shal.input_24_23'/>
+	    <edge label='-' idref='shal.input_24_24'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_24_503'>
+	    <edge label='-' idref='shal.input_24_6'/>
+	    <edge label='-' idref='shal.input_24_502'/>
+	  </nt>
+	  <nt head='are' cat='VP' id='shal.input_24_515'>
+	    <edge label='-' idref='shal.input_24_21'/>
+	    <edge label='-' idref='shal.input_24_514'/>
+	  </nt>
+	  <nt head='is' cat='S-A' id='shal.input_24_504'>
+	    <edge label='-' idref='shal.input_24_501'/>
+	    <edge label='-' idref='shal.input_24_503'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Instance' id='shal.input_24_f1265327220.40106'>
+	    <target id='shal.input_24_f1265327220.40106_fe1265327220.40122' lemma='instance' pos='noun'>
+	      <fenode idref='shal.input_24_15'/>
+	    </target>
+	    <fe name='Instance' id='shal.input_24_f1265327220.40106_fe1265327395.36472'>
+	      <fenode idref='shal.input_24_511'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+    <s id='shal.input_25'>
+      <graph root='shal.input_25_525'>
+	<terminals>
+	  <t word='My' id='shal.input_25_0' lemma='my' pos='PRP$'>
+	  </t>
+	  <t word='religous' id='shal.input_25_1' lemma='&lt;unknown&gt;' pos='JJ'>
+	  </t>
+	  <t word='view' id='shal.input_25_2' lemma='view' pos='NN'>
+	  </t>
+	  <t word='is' id='shal.input_25_3' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='the' id='shal.input_25_4' lemma='the' pos='DT'>
+	  </t>
+	  <t word='afterlife' id='shal.input_25_5' lemma='afterlife' pos='NN'>
+	  </t>
+	  <t word='is' id='shal.input_25_6' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='something' id='shal.input_25_7' lemma='something' pos='NN'>
+	  </t>
+	  <t word='which' id='shal.input_25_8' lemma='which' pos='WDT'>
+	  </t>
+	  <t word='is' id='shal.input_25_9' lemma='be' pos='VBZ'>
+	  </t>
+	  <t word='in' id='shal.input_25_10' lemma='in' pos='IN'>
+	  </t>
+	  <t word='actually' id='shal.input_25_11' lemma='actually' pos='RB'>
+	  </t>
+	  <t word='accomplished' id='shal.input_25_12' lemma='accomplish' pos='VBN'>
+	  </t>
+	  <t word='by' id='shal.input_25_13' lemma='by' pos='IN'>
+	  </t>
+	  <t word='our' id='shal.input_25_14' lemma='our' pos='PRP$'>
+	  </t>
+	  <t word='race' id='shal.input_25_15' lemma='race' pos='NN'>
+	  </t>
+	  <t word='as' id='shal.input_25_16' lemma='as' pos='IN'>
+	  </t>
+	  <t word='transform' id='shal.input_25_17' lemma='transform' pos='VB'>
+	  </t>
+	  <t word='existing' id='shal.input_25_18' lemma='exist' pos='VBG'>
+	  </t>
+	  <t word='reality' id='shal.input_25_19' lemma='reality' pos='NN'>
+	  </t>
+	  <t word='into' id='shal.input_25_20' lemma='into' pos='IN'>
+	  </t>
+	  <t word='an' id='shal.input_25_21' lemma='an' pos='DT'>
+	  </t>
+	  <t word='increasingly' id='shal.input_25_22' lemma='increasingly' pos='RB'>
+	  </t>
+	  <t word='heavenlike' id='shal.input_25_23' lemma='&lt;unknown&gt;' pos='JJ'>
+	  </t>
+	  <t word='world' id='shal.input_25_24' lemma='world' pos='NN'>
+	  </t>
+	  <t word=',' id='shal.input_25_25' lemma=',' pos='PUNC,'>
+	  </t>
+	  <t word='until' id='shal.input_25_26' lemma='until' pos='IN'>
+	  </t>
+	  <t word='we' id='shal.input_25_27' lemma='we' pos='PRP'>
+	  </t>
+	  <t word='have' id='shal.input_25_28' lemma='have' pos='VBP'>
+	  </t>
+	  <t word='replaced' id='shal.input_25_29' lemma='replace' pos='VBN'>
+	  </t>
+	  <t word='the' id='shal.input_25_30' lemma='the' pos='DT'>
+	  </t>
+	  <t word='earth' id='shal.input_25_31' lemma='earth' pos='NN'>
+	  </t>
+	  <t word='with' id='shal.input_25_32' lemma='with' pos='IN'>
+	  </t>
+	  <t word='heaven' id='shal.input_25_33' lemma='heaven' pos='NN'>
+	  </t>
+	  <t word='.' id='shal.input_25_34' lemma='.' pos='PUNC.'>
+	  </t>
+	</terminals>
+	<nonterminals>
+	  <nt head='is' cat='S' id='shal.input_25_525'>
+	    <edge label='-' idref='shal.input_25_500'/>
+	    <edge label='-' idref='shal.input_25_524'/>
+	  </nt>
+	  <nt head='have' cat='S-A' id='shal.input_25_514'>
+	    <edge label='-' idref='shal.input_25_27'/>
+	    <edge label='-' idref='shal.input_25_513'/>
+	  </nt>
+	  <nt head='race' cat='NPB' id='shal.input_25_503'>
+	    <edge label='-' idref='shal.input_25_14'/>
+	    <edge label='-' idref='shal.input_25_15'/>
+	  </nt>
+	  <nt head='until' cat='SBAR' id='shal.input_25_515'>
+	    <edge label='-' idref='shal.input_25_26'/>
+	    <edge label='-' idref='shal.input_25_514'/>
+	  </nt>
+	  <nt head='by' cat='PP' id='shal.input_25_504'>
+	    <edge label='-' idref='shal.input_25_13'/>
+	    <edge label='-' idref='shal.input_25_503'/>
+	  </nt>
+	  <nt head='transform' cat='VP-A' id='shal.input_25_516'>
+	    <edge label='-' idref='shal.input_25_17'/>
+	    <edge label='-' idref='shal.input_25_505'/>
+	    <edge label='-' idref='shal.input_25_508'/>
+	    <edge label='-' idref='shal.input_25_515'/>
+	  </nt>
+	  <nt head='reality' cat='NPB' id='shal.input_25_505'>
+	    <edge label='-' idref='shal.input_25_18'/>
+	    <edge label='-' idref='shal.input_25_19'/>
+	  </nt>
+	  <nt head='as' cat='PP' id='shal.input_25_517'>
+	    <edge label='-' idref='shal.input_25_16'/>
+	    <edge label='-' idref='shal.input_25_516'/>
+	  </nt>
+	  <nt head='heavenlike' cat='ADJP' id='shal.input_25_506'>
+	    <edge label='-' idref='shal.input_25_22'/>
+	    <edge label='-' idref='shal.input_25_23'/>
+	  </nt>
+	  <nt head='accomplished' cat='VP-A' id='shal.input_25_518'>
+	    <edge label='-' idref='shal.input_25_12'/>
+	    <edge label='-' idref='shal.input_25_504'/>
+	    <edge label='-' idref='shal.input_25_517'/>
+	  </nt>
+	  <nt head='world' cat='NPB' id='shal.input_25_507'>
+	    <edge label='-' idref='shal.input_25_21'/>
+	    <edge label='-' idref='shal.input_25_506'/>
+	    <edge label='-' idref='shal.input_25_24'/>
+	    <edge label='-' idref='shal.input_25_25'/>
+	  </nt>
+	  <nt head='which' cat='SBAR-g' id='shal.input_25_520'>
+	    <edge label='-' idref='shal.input_25_8'/>
+	    <edge label='-' idref='shal.input_25_519'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_25_519'>
+	    <edge label='-' idref='shal.input_25_9'/>
+	    <edge label='-' idref='shal.input_25_502'/>
+	    <edge label='-' idref='shal.input_25_518'/>
+	  </nt>
+	  <nt head='into' cat='PP' id='shal.input_25_508'>
+	    <edge label='-' idref='shal.input_25_20'/>
+	    <edge label='-' idref='shal.input_25_507'/>
+	  </nt>
+	  <nt head='something' cat='NP-A' id='shal.input_25_521'>
+	    <edge label='-' idref='shal.input_25_7'/>
+	    <edge label='-' idref='shal.input_25_520'/>
+	  </nt>
+	  <nt head='heaven' cat='NPB' id='shal.input_25_510'>
+	    <edge label='-' idref='shal.input_25_33'/>
+	    <edge label='-' idref='shal.input_25_34'/>
+	  </nt>
+	  <nt head='earth' cat='NPB' id='shal.input_25_509'>
+	    <edge label='-' idref='shal.input_25_30'/>
+	    <edge label='-' idref='shal.input_25_31'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_25_522'>
+	    <edge label='-' idref='shal.input_25_6'/>
+	    <edge label='-' idref='shal.input_25_521'/>
+	  </nt>
+	  <nt head='with' cat='PP' id='shal.input_25_511'>
+	    <edge label='-' idref='shal.input_25_32'/>
+	    <edge label='-' idref='shal.input_25_510'/>
+	  </nt>
+	  <nt head='view' cat='NPB' id='shal.input_25_500'>
+	    <edge label='-' idref='shal.input_25_0'/>
+	    <edge label='-' idref='shal.input_25_1'/>
+	    <edge label='-' idref='shal.input_25_2'/>
+	  </nt>
+	  <nt head='is' cat='S-A' id='shal.input_25_523'>
+	    <edge label='-' idref='shal.input_25_501'/>
+	    <edge label='-' idref='shal.input_25_522'/>
+	  </nt>
+	  <nt head='replaced' cat='VP-A' id='shal.input_25_512'>
+	    <edge label='-' idref='shal.input_25_29'/>
+	    <edge label='-' idref='shal.input_25_509'/>
+	    <edge label='-' idref='shal.input_25_511'/>
+	  </nt>
+	  <nt head='afterlife' cat='NPB' id='shal.input_25_501'>
+	    <edge label='-' idref='shal.input_25_4'/>
+	    <edge label='-' idref='shal.input_25_5'/>
+	  </nt>
+	  <nt head='is' cat='VP' id='shal.input_25_524'>
+	    <edge label='-' idref='shal.input_25_3'/>
+	    <edge label='-' idref='shal.input_25_523'/>
+	  </nt>
+	  <nt head='have' cat='VP' id='shal.input_25_513'>
+	    <edge label='-' idref='shal.input_25_28'/>
+	    <edge label='-' idref='shal.input_25_512'/>
+	  </nt>
+	  <nt head='actually' cat='ADVP' id='shal.input_25_502'>
+	    <edge label='-' idref='shal.input_25_10'/>
+	    <edge label='-' idref='shal.input_25_11'/>
+	  </nt>
+	</nonterminals>
+      </graph>
+      <sem>
+	<globals>
+	</globals>
+	<frames>
+	  <frame name='Accomplishment' id='shal.input_25_f1265327220.50243'>
+	    <target id='shal.input_25_f1265327220.50243_fe1265327220.50258' lemma='accomplish' pos='verb'>
+	      <fenode idref='shal.input_25_12'/>
+	    </target>
+	  </frame>
+	  <frame name='Existence' id='shal.input_25_f1265327220.50275'>
+	    <target id='shal.input_25_f1265327220.50275_fe1265327220.50288' lemma='exist' pos='verb'>
+	      <fenode idref='shal.input_25_18'/>
+	    </target>
+	    <fe name='Place' id='shal.input_25_f1265327220.50275_fe1265327395.50805'>
+	      <fenode idref='shal.input_25_508'/>
+	    </fe>
+	  </frame>
+	  <frame name='Type' id='shal.input_25_f1265327220.50303'>
+	    <target id='shal.input_25_f1265327220.50303_fe1265327220.50315' lemma='race' pos='noun'>
+	      <fenode idref='shal.input_25_15'/>
+	    </target>
+	    <fe name='Subtype' id='shal.input_25_f1265327220.50303_fe1265327395.52854'>
+	      <fenode idref='shal.input_25_15'/>
+	    </fe>
+	  </frame>
+	  <frame name='Replacing' id='shal.input_25_f1265327220.50329'>
+	    <target id='shal.input_25_f1265327220.50329_fe1265327220.50342' lemma='replace' pos='verb'>
+	      <fenode idref='shal.input_25_29'/>
+	    </target>
+	    <fe name='Agent' id='shal.input_25_f1265327220.50329_fe1265327395.57753'>
+	      <fenode idref='shal.input_25_27'/>
+	    </fe>
+	    <fe name='Old' id='shal.input_25_f1265327220.50329_fe1265327395.59918'>
+	      <fenode idref='shal.input_25_509'/>
+	    </fe>
+	    <fe name='New' id='shal.input_25_f1265327220.50329_fe1265327395.62242'>
+	      <fenode idref='shal.input_25_511'/>
+	    </fe>
+	  </frame>
+	</frames>
+	<usp>
+	  <uspframes>
+	  </uspframes>
+	  <uspfes>
+	  </uspfes>
+	</usp>
+      </sem>
+    </s>
+
+
+  </body>
+</corpus>

@@ -1,0 +1,59 @@
+#!/usr/bin/perl -w
+
+use BOSS::Config;
+
+use PerlLib::ServerManager::UniLang::Agent;
+use PerlLib::ServerManager::UniLang::Data;
+use UniLang::Agent::Agent;
+use UniLang::Util::Message;
+
+use Data::Dumper;
+
+my $specification = q{
+	-a <agentname>			The name of the Agent (e.g. Org-FRDCSA-System-Cyc)
+
+	-u [<host> <port>]		Run as a UniLang agent
+};
+
+my $config =
+  BOSS::Config->new
+  (Spec => $specification);
+my $conf = $config->CLIConfig;
+
+my $data = PerlLib::ServerManager::UniLang::Data->new;
+
+my $entry = $data->Entries->{$conf->{'-a'}};
+my $agentname = $entry->{AgentName};
+my $modulename = $entry->{ModuleName};
+my $modulefile = $entry->{ModuleFile};
+
+$UNIVERSAL::agent = UniLang::Agent::Agent->new
+  (
+   Name => $agentname,
+   ReceiveHandler => \&Receive,
+  );
+
+$UNIVERSAL::agent->DoNotDaemonize(1);
+$UNIVERSAL::genericagent = PerlLib::ServerManager::UniLang::Agent->new
+  (
+   AgentName => $agentname,
+   ModuleName => $modulename,
+   ModuleFile => $modulefile,
+   Config => $config,
+  );
+
+$UNIVERSAL::genericagent->LoadObject;
+$UNIVERSAL::genericagent->StartServer;
+
+sub Receive {
+  my %args = @_;
+  print Dumper
+    ({
+      ProcessMessageArgs => \%args,
+      GenericAgent => $UNIVERSAL::genericagent,
+     }) if $UNIVERSAL::debug;
+  $UNIVERSAL::genericagent->ProcessMessage
+    (Message => $args{Message});
+}
+
+$UNIVERSAL::genericagent->Execute();

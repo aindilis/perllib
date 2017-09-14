@@ -1,0 +1,76 @@
+next up previous contents
+Next: Implicit knowledge Up: Modal epistemic logic Previous: Epistemic logic
+and agent   Contents
+
+
+The problem of logical omniscience
+
+The treatment of epistemic logic as a branch of modal logic brings some
+advantages. However, there is a high price to pay. The most important objection
+to the modal approach is that it makes unrealistic assumptions about the
+reasoning power of the agents. The problem is known as the ``logical
+omniscience problem'' (LOP) and occurs in several forms. In its strongest form
+the problem can be stated as follows:
+
+
+\begin{lemma}\par Let $\Lambda$\ be any normal modal logic containing \textbf
+{K......ha$, where $K_i(\Gamma)=_{def}\{K_i\gamma: \gamma\in \Gamma\}$.\par\end
+{lemma}
+
+That is, whenever an agent knows all of the formulae in a set $\Gamma$ and $\
+alpha$ follows logically from $\Gamma$, then the agent also knows $\alpha$. In
+particular, the agent knows all theorems (taking $\Gamma$ in lemma 9 to be the
+empty set), and he knows all logical consequences of a sentence that he knows
+(taking $\Gamma$ to consist of a single sentence.)
+
+Besides this strong form there are other, generally weaker forms of logical
+omniscience. The following are listed in [FHMV95]:
+
+  * Knowledge of valid formulae: agent $i$ knows all logical truths (rule (NEC)
+    ).
+  * Closure under logical implication: if agent $i$ knows $\alpha$ and if $\
+    alpha$ logically implies $\beta$ (i.e., $\alpha \to \beta$ is valid), then
+    agent $i$ knows $\beta$ (rule (MON)).
+  * Closure under logical equivalence: if agent $i$ knows $\alpha$ and if $\
+    alpha$ and $\beta$ are logically equivalent (i.e., $\alpha \leftrightarrow
+    \beta$ is valid), then agent $i$ knows $\beta$ (rule (CGR)).
+  * Closure under material implication: if agent $i$ knows $\alpha$ and if
+    agent $i$ knows $\alpha \to \beta$ then agent $i$ knows $\beta$ (axiom (K)
+    ).
+  * Closure under conjunction: if agent $i$ knows $\alpha$ and if agent $i$
+    knows $\beta$ then agent $i$ knows $\alpha\land\beta$ (axiom (C)).
+
+The list of questionable properties could be extended to include any other
+instance of the rule (RK$_n$) (from $\avec{\alpha}{\land}{n}\to \beta$ to infer
+$\avec{K_i\alpha}{\land}{n}\to K_i\beta$.) Moreover, the axiom schemata (D),
+(4) and (5) can also be shown to be too strong for realistic agents. In
+particular, under certain circumstances axiom (5) suggests that agents can even
+decide undecidable problems ([BS92], [SW94])! In general, there seems to be no
+genuine epistemic principle that may claim universal validity^2.3.
+
+If epistemic logic is to be interpreted as describing actual knowledge of
+realistic (though idealized) agents, then the discussed closure properties
+require agents to be very powerful reasoners whose computational capacities
+cannot be achieved by real (human or artificial) agents, who are simply not
+logically omniscient. Logical omniscience poses a problem because it
+contradicts the fact that agents are limited in their reasoning powers. They
+are inherently resource-bounded and therefore cannot handle an unlimited amount
+of information. Agents may establish immediately certain logical truths or
+simple consequences of what they consciously assented to. However, there are
+highly remote dispositional states which could only be established by complex,
+time-consuming reasoning. The modal framework cannot distinguish between a
+sentence that an agent consciously assented to and a piece of potential
+knowledge which could never be made actual by the agent and is therefore not
+suited to model resource-bounded reasoning^2.4.
+
+
+-------------------------------------------------------------------------------
+Subsections
+
+  * Implicit knowledge
+
+-------------------------------------------------------------------------------
+next up previous contents
+Next: Implicit knowledge Up: Modal epistemic logic Previous: Epistemic logic
+and agent   Contents
+2001-04-05

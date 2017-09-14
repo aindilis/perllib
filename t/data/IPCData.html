@@ -1,0 +1,1249 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>IPCData &mdash; The Seventh International Planning Competition 1.3 documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="The Seventh International Planning Competition 1.3 documentation" href="index.html" />
+    <link rel="next" title="IPCReport" href="IPCReport.html" />
+    <link rel="prev" title="General overview" href="General overview.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="IPCReport.html" title="IPCReport"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="General overview.html" title="General overview"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">The Seventh International Planning Competition 1.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <p class="versionadded">
+<span class="versionmodified">New in version 1.2: </span>Command-line arguments parsed with <a class="reference external" href="http://docs.python.org/library/argparse.html?highlight=argparse#module-argparse">argparse</a></p>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.2: </span><tt class="xref py py-mod docutils literal"><span class="pre">seed.py</span></tt>: flags for specifying the smtp server and port have been added; the logging services have been added; the verbose flag has been added; most of the arguments became optional</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.2: </span><tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt>: logfile accepts the same placeholders than the build log file; <em class="xref std std-option">--ini</em> added; use of regular expressions instead of filename pattern expressions; the automated e-mail facility has been added</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.2: </span><tt class="xref py py-mod docutils literal"><span class="pre">builddomain.py</span></tt>: logfile accepts placeholders; <em class="xref std std-option">--ini</em> added; use of regular expressions instead of filename pattern expressions; the automated e-mail facility has been added</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.2: </span><tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt>: logfile accepts placeholders; <em class="xref std std-option">--ini</em> added; the verbose flag has been added</p>
+<p class="versionchanged">
+<span class="versionmodified">Changed in version 1.2: </span><tt class="xref py py-mod docutils literal"><span class="pre">invoke-planner.py</span></tt>: renamed as <cite>invokeplanner.py</cite></p>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.1: </span><tt class="xref py py-mod docutils literal"><span class="pre">validate.py</span></tt>: the step length is computed now in addition to the value returned by VAL</p>
+<div class="section" id="ipcdata">
+<span id="ipcdata-label"></span><h1>IPCData<a class="headerlink" href="#ipcdata" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">This is the first of the two important packages developed at the
+Seventh International Planning Competition. The second one is
+<tt class="xref py py-mod docutils literal"><span class="pre">IPCReport</span></tt> &#8212;see <a class="reference internal" href="IPCReport.html#ipcreport-label"><em>IPCReport</em></a>. A third one, with code
+which is particular to the IPC 2011 is distributed separately:
+<tt class="xref py py-mod docutils literal"><span class="pre">IPCPrivate</span></tt> described in <a class="reference internal" href="IPCPrivate.html#ipcprivate-label"><em>IPCPrivate</em></a>. Besides, the
+<tt class="xref py py-mod docutils literal"><span class="pre">IPCTools</span></tt> were developed after the IPC to ease the data analysis
+and it is described in <a class="reference internal" href="IPCTools.html#ipctools-label"><em>IPCTools</em></a></p>
+<p>The <tt class="xref py py-mod docutils literal"><span class="pre">IPCData</span></tt> module consists, mainly, of six different python
+modules: <tt class="xref py py-mod docutils literal"><span class="pre">check.py</span></tt>, <tt class="xref py py-mod docutils literal"><span class="pre">seed.py</span></tt>, <tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt>,
+<tt class="xref py py-mod docutils literal"><span class="pre">builddomain.py</span></tt>, <tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt> and
+<tt class="xref py py-mod docutils literal"><span class="pre">validate.py</span></tt>. All of these programs are discussed in the next
+sections.</p>
+<div class="section" id="dependencies">
+<span id="ipcdata-dependencies"></span><h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p id="index-1">All these modules have been developed with Python 2.x</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Version 1.2 of <tt class="xref py py-mod docutils literal"><span class="pre">IPCData</span></tt> uses <a class="reference external" href="http://docs.python.org/library/argparse.html?highlight=argparse#module-argparse">argparse</a>
+for parsing the command-line arguments. While they significantly
+improved the usability of the scripts, it requires either Python
+2.7 or Python 3.2</p>
+</div>
+<p>The modules described in this chapter have a number of dependencies
+with third-party software that have to be installed prior to the
+installation and usage of <tt class="xref py py-mod docutils literal"><span class="pre">IPCData</span></tt>:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Configobj:</th><td class="field-body"><p class="first">This package provides a wrapper to read and write INI
+configuration files</p>
+<p class="last">Instructions for downloading and installing this package
+are given <a class="reference external" href="http://www.voidspace.org.uk/python/configobj.html">here</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Subversion python:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><p class="first">This package provides a wrapper to access svn
+repositories in Python</p>
+<p class="last">Instructions for downloading and installing the package are
+given <a class="reference external" href="http://pysvn.tigris.org/project_downloads.html">here</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Finally, some modules in this package also use <a class="reference external" href="http://code.google.com/p/prettytable/">PrettyTable</a>. However, since it consists
+of a single module (i.e., no <tt class="file docutils literal"><span class="pre">__init__</span></tt> file is given), it is
+provided within the package <tt class="xref py py-mod docutils literal"><span class="pre">IPCData</span></tt> by default.</p>
+<p>A step-by-step procedure to install all these packages can be accessed
+in the first practical case discussed in this manual &#8212;see
+<a class="reference internal" href="Practical cases.html#firstpracticalcase-label"><em>First practical case</em></a>.</p>
+<p>In what follows, it is assumed that the reader has already checked out
+to her local computer the scripts located at:</p>
+<div class="highlight-python"><pre>svn://svn@pleiades.plg.inf.uc3m.es/ipc2011/data/scripts/pycentral/IPCData</pre>
+</div>
+</div>
+<div class="section" id="command-line-arguments">
+<span id="commandline-arguments-ipcdata"></span><h2>Command-line arguments<a class="headerlink" href="#command-line-arguments" title="Permalink to this headline">¶</a></h2>
+<p id="index-2">All the modules in this package adhere to a consistent naming of the
+flags they acknowledge. This section describes this convention.</p>
+<p>As a general rule all programs honour, at least, the following three flags:</p>
+<blockquote>
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
+<td>provide a brief description of the main purpose of the
+script and presents all the available flags</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-v</span>, <span class="option">--verbose</span></kbd></td>
+<td>shows additional information to track progress</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-V</span>, <span class="option">--version</span></kbd></td>
+<td>shows the current version of the script along with the
+head svn release that affects it and the building date</td></tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Besides, all modules acknowledge a number of directives for
+configuring the logging services:</p>
+<blockquote>
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-l</span>, <span class="option">--logfile</span></kbd></td>
+<td>if provided, all output is redirected to the given file.
+It is common practice for most scripts to recognize a
+number of <em>placeholders</em> which are just strings starting
+with <tt class="docutils literal"><span class="pre">$</span></tt> and can be different in each case <a class="footnote-reference" href="#id10" id="id3">[1]</a>.
+To allow the generation of logfiles with the same name,
+the current date and time is appended at the end. If a log
+filename is provided no output is shown in the standard
+output</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-L</span>, <span class="option">--level</span></kbd></td>
+<td>specifies the desired level of the log messages. Legal
+values are: <tt class="xref py py-const docutils literal"><span class="pre">INFO</span></tt>, <tt class="xref py py-const docutils literal"><span class="pre">WARNING</span></tt> and <tt class="xref py py-const docutils literal"><span class="pre">CRITICAL</span></tt>. Only
+messages of the same level or above are shown. In all cases,
+the default value is <tt class="xref py py-const docutils literal"><span class="pre">INFO</span></tt>, i.e., all messages are shown</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-e</span>, <span class="option">--email</span></kbd></td>
+<td>accepts an arbitrary number of e-mail recipients to notify
+upon completion of the current script. If a logfile was
+specified with <em class="xref std std-option">--level</em> then it is automatically attached
+to the body as well.</td></tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>To configure the automated e-mail facility see <a class="reference internal" href="#seed-label"><em>seed.py</em></a>. On
+the other hand, when applicable, tracks and subtracks are provided
+with the following directives:</p>
+<blockquote>
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-t</span>, <span class="option">--track</span></kbd></td>
+<td>track name, e.g., <tt class="xref py py-const docutils literal"><span class="pre">seq</span></tt> or <tt class="xref py py-const docutils literal"><span class="pre">tempo</span></tt></td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-s</span>, <span class="option">--subtrack</span></kbd></td>
+<td>subtrack name such as opt or sat</td></tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>In the same vain, planners and domains can be fully specified with the
+following arguments:</p>
+<blockquote>
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-D</span>, <span class="option">--domain</span></kbd></td>
+<td>all domains matching any of the regular expressions given
+after the directive are accepted by the script</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-P</span>, <span class="option">--planner</span></kbd></td>
+<td>likewise, all planners matching any of the regular expressions
+given here are accepted by the script</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-X</span>, <span class="option">--exclude-domain</span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td>all domains matching any of the regular expressions given after
+the directive are discarded by the script</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-x</span>, <span class="option">--exclude-planner</span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td>as with the previous directive, all planners matching any of the
+regular expressions given here are discarded by the script</td></tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>The next set of directives refers to other sources of information that
+are used by most modules in this package:</p>
+<blockquote>
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-b</span>, <span class="option">--bookmark</span></kbd></td>
+<td>this flag specifies the svn bookmark to be used by the
+script. If none is given, it tries to retrieve it from the INI
+configuration file specified with the next argument</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-i</span>, <span class="option">--ini</span></kbd></td>
+<td>specify the location of an INI configuration file. If none is provided
+<tt class="file docutils literal"><span class="pre">~/.ipc.ini</span></tt> is tried by default</td></tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>The svn bookmark specifies the location of the svn server with the
+data repository &#8212;see <a class="reference internal" href="General overview.html#svn-data-label"><em>Contents of the data repository</em></a>. The INI configuration
+file is created with <a class="reference internal" href="#seed-label"><em>seed.py</em></a>.</p>
+<p>Finally, while most scripts accept an specification of an output
+directory, <a class="reference internal" href="#validate-label"><em>validate.py</em></a> expects to get an input directory. In
+all cases, the directory is specified with the following directive:</p>
+<blockquote>
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-d</span>, <span class="option">--directory</span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td>specifies the location of a directory either for reading or
+writing data. In case the directory is used in write mode,
+specific subdirectories are created to store data and an exception
+is raised if they already exist</td></tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Most of these parameters accept a single value. However, a number of
+considerations follow:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">If two or more directives have no values, they can be abbreviated
+in a single argument. For example, <em class="xref std std-option">-vm</em> specifies both verbose
+output and test mode in the script <a class="reference internal" href="#invokeplanner-label"><em>invokeplanner.py</em></a></p>
+</li>
+<li><p class="first">Some directives can be specified an arbitrary number of times. For
+example, two e-mail recipees can be specified with <em class="xref std std-option">--email
+albert.einstein&#64;wurttemberg.edu --email
+kurt.godel&#64;vienna.edu</em>. However, the same command-line arguments
+can be abbreviated as follows <em class="xref std std-option">--email
+albert.einstein&#64;wurttemberg.edu kurt.godel&#64;vienna.edu</em>.</p>
+<p>Other directives that accept an arbitrary number of arguments are:
+<em class="xref std std-option">--domain</em>, <em class="xref std std-option">--planner</em>, <em class="xref std std-option">--exclude-domain</em> and
+<em class="xref std std-option">--exclude-planner</em></p>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="check-py">
+<span id="check-label"></span><h2>check.py<a class="headerlink" href="#check-py" title="Permalink to this headline">¶</a></h2>
+<p id="index-3">Although this script is mainly thought for the organizers of an
+International Planning Competition, it can be used also by
+practitioners in their own labs. While it can be easily extended to
+make additional checks, it fundamentally tries to make sure that the
+directory where a planner resides looks like a typical directory of
+the IPC. Bear in mind that this script does not examine the svn
+repository but a local directory where a particular check out has been
+performed.</p>
+<p>Planners are stored in a directory according to the following
+convention:
+planners/&lt;<em>track</em>&gt;-&lt;<em>subtrack</em>&gt;/&lt;<em>track</em>-<em>subtrack</em>&gt;-&lt;<em>name</em>&gt; where
+&lt;<em>track</em>&gt;, &lt;<em>subtrack</em>&gt; and &lt;<em>name</em>&gt; stand for the track and subtrack
+of a planner whose name is given in &lt;<em>name</em>&gt;. Besides, every directory
+of this type shall contain at least the <strong class="program">build</strong> and
+<strong class="program">plan</strong> scripts:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">build:</th><td class="field-body"><p class="first">it is a script (usually a bash script) that automatically
+starts the compilation of the planner when invoked. A typical
+content shall look like:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c">#!/bin/bash</span>
+<span class="n">make</span>
+</pre></div>
+</div>
+<p class="last">though they can be as complex as desired</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">plan:</th><td class="field-body"><p class="first">this script shall receive three parameters: <em>domain</em>, <em>problem</em>
+and <em>plan solution file</em> and should invoke the planner accordingly.</p>
+<p>From the webpage of the IPC 2008, the following example has been
+taken: the executable for the &#8220;Find Plans Quickly&#8221; planner is
+called <strong class="program">fpq</strong> and accepts the same command-line arguments as the
+FF planner. Then your plan script may look like:</p>
+<div class="highlight-python"><pre>#!/bin/bash
+./fpq -o $1 -f $2
+mv $2.soln $3</pre>
+</div>
+<p class="last">There is only one exception to this rule. If the planner is run in
+<tt class="xref py py-const docutils literal"><span class="pre">dck</span></tt> mode, then it will be invoked with up to four different
+arguments, the fourth being the location of the <cite>domain control
+knowledge</cite> used at the Learning Track of the Seventh International
+Planning Competition &#8212;see <a class="reference internal" href="General overview.html#svn-data-label"><em>Contents of the data repository</em></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>The script <tt class="xref py py-mod docutils literal"><span class="pre">check.py</span></tt> accepts the directive <em class="xref std std-option">--directory</em>
+to specify a particular directory to examine. A few examples follow.</p>
+<p>To check whether the directory where the <strong class="program">ArvandHerd</strong> planner of the
+<tt class="xref py py-const docutils literal"><span class="pre">seq-mco</span></tt> track has been stored follows the convention of the IPC:</p>
+<div class="highlight-python"><pre>% ./check.py --directory ~/lab/ipc2011/planners/seq-mco/seq-mco-arvandherd/
+----------------------------------------------------------------------
+ Name      : arvandherd
+ track     : sequential
+ subtrack  : multicore
+ signature : seq-mco-arvandherd
+ directory : /Users/clinares/lab/ipc2011/planners/seq-mco/seq-mco-arvandherd/
+
+
+ [1 planners found]</pre>
+</div>
+<p>where <tt class="file docutils literal"><span class="pre">~/lab/ipc2011/planners/seq-mco/seq-mco-arvandherd/</span></tt> is
+the location where this planner was checked out. The name, track and
+subtrack are automatically extracted from the signature which is read
+from the given path. Because this planner explicitly says that one
+planner has been found, it is also ensured that the scripts
+<strong class="program">build</strong> and <strong class="program">plan</strong> where stored at the right
+locations.</p>
+<p>Also, a whole track-subtrack can be examined using the <em class="xref std std-option">--recursive</em>
+flag. For example, from the directory structure of the <tt class="xref py py-const docutils literal"><span class="pre">seq-mco</span></tt>
+track, the following check can be issued:</p>
+<div class="highlight-python"><pre>% ./check.py --directory ~/lab/ipc2011/planners/seq-mco --recursive
+----------------------------------------------------------------------
+ name      : acoplan
+ track     : sequential
+ subtrack  : multicore
+ signature : seq-mco-acoplan
+ directory : /Users/clinares/lab/ipc2011/planners/seq-mco/seq-mco-acoplan/
+
+----------------------------------------------------------------------
+ name      : arvandherd
+ track     : sequential
+ subtrack  : multicore
+ signature : seq-mco-arvandherd
+ directory : /Users/clinares/lab/ipc2011/planners/seq-mco/seq-mco-arvandherd/
+
+----------------------------------------------------------------------
+ ...
+----------------------------------------------------------------------
+ name      : yahsp2-mt
+ track     : sequential
+ subtrack  : multicore
+ signature : seq-mco-yahsp2-mt
+ directory : /Users/clinares/lab/ipc2011/planners/seq-mco/seq-mco-yahsp2-mt/
+
+
+ [8 planners found]</pre>
+</div>
+<p>Finally, the <tt class="xref py py-mod docutils literal"><span class="pre">check.py</span></tt> accepts a third flag <em class="xref std std-option">--questionnaire</em> to
+show the pddl questionnaire of all the planners that are recognized by
+the script. If provided, it prints out the contents of that file.</p>
+</div>
+<div class="section" id="seed-py">
+<span id="seed-label"></span><h2>seed.py<a class="headerlink" href="#seed-py" title="Permalink to this headline">¶</a></h2>
+<p id="index-4">Originally, this script was conceived to write a lot of information to
+the local filesystem in the form of an INI configuration file to reuse
+it as much as possible, thus saving a lot of accesses to the SVN
+repository. In the end, however, it serves only to save a few key
+fields and also to make sure that access to the SVN repository is
+feasible.</p>
+<p>The following argument is mandatory:</p>
+<blockquote>
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-f</span>, <span class="option">--file</span></kbd></td>
+<td>specifies the name of the INI configuration file to
+create. While it is possible to provide arbitrary names
+to this directive, other scripts will look, by default,
+for the INI configuration file in <tt class="file docutils literal"><span class="pre">~/.ipc.ini</span></tt>. However,
+all scripts that handle INI configuration files acknowledge
+a dedicated directive to override this setting.</td></tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Besides, <em class="xref std std-option">-b</em> or <em class="xref std std-option">--bookmark</em> is mandatory as well &#8212; see
+<a class="reference internal" href="#commandline-arguments-ipcdata"><em>Command-line arguments</em></a>. The following parameters are
+optional and can be provided just to qualify the current IPC:</p>
+<blockquote>
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-n</span>, <span class="option">--name</span></kbd></td>
+<td>name of the competition currently under configuration</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-p</span>, <span class="option">--part</span></kbd></td>
+<td>every IPC is split in a number of parts. Typical parts
+are: deterministic, uncertainly, learning, etc. Users other
+than organizers of an IPC might find this useful to refer to
+particular sets of experiments by a label</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-w</span>, <span class="option">--wiki</span></kbd></td>
+<td>specifies the html address of the wiki used. This can be used
+in a future to automate uploads to the Wiki site.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-c</span>, <span class="option">--cluster</span></kbd></td>
+<td>specifies the name of the front-end node of the cluster to be
+used for running all the experiments</td></tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>The values of these parameters are considered to be free text and are
+directly copied to the preamble of the INI configuration file</p>
+<p>The next group of arguments are required if any of the scripts of the
+package <tt class="xref py py-mod docutils literal"><span class="pre">IPCData</span></tt> is ever expected to use the automated e-mail
+facility:</p>
+<blockquote>
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-m</span>, <span class="option">--mailuser</span></kbd></td>
+<td>e-mail account to use when sending automatic e-mail messages</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-M</span>, <span class="option">--mailpwd</span></kbd></td>
+<td>password of the e-mail account. This password is not
+encrypted in the INI configuration file. Besides, be aware
+that it will be sent over the network when opening the
+e-mail session</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-t</span>, <span class="option">--smtp</span></kbd></td>
+<td>address of the smtp server to use when issuing automatic
+e-mail messages</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-o</span>, <span class="option">--port</span></kbd></td>
+<td>port of the smtp server accepting requests to send
+e-mails</td></tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Because all of this parameters can be easily retrieved by other users,
+a solution would be to use a public account. Fortunately, Google
+provides unrestricted access to e-mails of this type. As a matter of
+fact, the following account was set up for the Seventh International
+Planning Competition:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">mailuser:</th><td class="field-body"><a class="reference external" href="mailto:ipc2011&#46;pleiades&#37;&#52;&#48;gmail&#46;com">ipc2011<span>&#46;</span>pleiades<span>&#64;</span>gmail<span>&#46;</span>com</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">mailpwd:</th><td class="field-body">ys98NfyMenRs</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">smtp:</th><td class="field-body">smtp.gmail.com</td>
+</tr>
+<tr class="field-even field"><th class="field-name">port:</th><td class="field-body">587</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All users of this script are very welcome to use this account or to
+create others of their own <a class="footnote-reference" href="#id11" id="id4">[2]</a>.</p>
+<p>Also, the script checks the contents of all directories in the SVN
+server and issues a warning if a track-subtrack is empty &#8212;maybe
+because there are no planner and/or because no domain and problems
+have been specified.</p>
+<p>The script writes the contents of the SVN server in the INI
+configuration file in different sections according to the following
+schema: the section <tt class="xref py py-const docutils literal"><span class="pre">[tracks]</span></tt> contains the number and name of the
+tracks found in the SVN repository. Then, for each one it creates a
+new section with its name specifying the subtracks and its names. Once
+again, for every subtrack it creates nested subsections with the
+number and name of the planners and domains (if any) within that
+track-subtrack.</p>
+</div>
+<div class="section" id="buildplanner-py">
+<span id="buildplanner-label"></span><h2>buildplanner.py<a class="headerlink" href="#buildplanner-py" title="Permalink to this headline">¶</a></h2>
+<p id="index-5">This section describes all the command-line arguments accepted by
+<tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt>. For a thorough discussion of the command-line
+arguments see <a class="reference internal" href="#commandline-arguments-ipcdata"><em>Command-line arguments</em></a>.</p>
+<p>While planners are stored in the SVN repository, they have to be
+compiled locally in order to be able to run any experiments. In other
+words, while the source code (and other important files such as
+<strong class="program">build</strong> and <strong class="program">plan</strong>) have to be stored in the SVN
+repository, object code such as libraries and executables should be
+generated locally.</p>
+<p>As mentioned in the preceding section (see <a class="reference internal" href="#seed-label"><em>seed.py</em></a>) it is
+possible for this script (and others) to override the SVN bookmark. If
+a particular INI configuration file is specified with <em class="xref std std-option">--ini</em>,
+the svn bookmark is retrieved from the variable <tt class="xref py py-const docutils literal"><span class="pre">svn</span></tt> of the
+<tt class="xref py py-const docutils literal"><span class="pre">general</span></tt> section. This behaviour can be overriden if a bookmark is
+explicitly given with <em class="xref std std-option">--bookmark</em>.  If none is provided, then
+the script takes the svn bookmark specified at the <tt class="file docutils literal"><span class="pre">~/.ipc.ini</span></tt> file
+by default. If no INI configuration file with that name is found and
+no bookmark has been specified, the script issues a fatal error and
+exits.</p>
+<p>Since the SVN repository can accept an arbitrary number of planners
+arranged in an arbitrarily large number of tracks-subtracks, this
+script accepts regular expressions to specify what planners are
+required to be compiled and which, among those, shall be excluded. The
+first expression is given in the mandatory flag <em class="xref std std-option">--planner</em>
+while the second is expliclity specified with the optional directive
+<em class="xref std std-option">--exclude-planner</em>. Besides, it is mandatory to provide the
+<em class="xref std std-option">--track</em> and <em class="xref std std-option">--subtrack</em> the planners belong
+to. This is useful to distinguish planners with the same name across
+different tracks-subtracks.</p>
+<p>If the user does not specify any <em class="xref std std-option">--directory</em> then the
+planner is checked out and compiled in a subdirectory of the current
+working directory which is named after the planner. If a directory is
+given, the planner is checked out and compiled in a directory with the
+name of the planner under the given directory. Besides, if a log
+filename is given with <em class="xref std std-option">--logfile</em>, it is generated in the
+target directory with the detail specified with <em class="xref std std-option">--level</em>
+which is <tt class="xref py py-const docutils literal"><span class="pre">INFO</span></tt> by default. This command-line argument acknowledges
+the same placeholders than the build log file described below:
+<em>$track</em>, <em>$subtrack</em> and <em>$planner</em>.</p>
+<p>Other than the log file described above, <tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt>
+creates also a build log file. If <em class="xref std std-option">--logbuild</em> is provided, a
+verbatim copy of the compilation process is stored in the given
+file. This is very important to make sure that the compilation went
+fine and that no errors were issued on the way. For example, some
+participants to the International Planning Competition can pose
+special requirements in the form of third-party software. Recording
+the building process and allowing those users to check the resulting
+files is mandatory to ensure that their code was properly compiled and
+linked. On the other hand, if anything ever went wrong a whole trace
+(with the detail provided by the compilation tools) is reported in
+these files. The specification of the logfile accepts placeholders
+which are symbolized with the dollar sign <tt class="docutils literal"><span class="pre">$</span></tt>. In particular, there
+are three recognized variables: <em>$track</em>, <em>$subtrack</em> and
+<em>$planner</em> which are substituted with the particular track, subtrack
+and name of the planner to be built. The default value of this
+variable is <em>build-$planner.log</em>. The build log file is left at the
+root where the planner was built.</p>
+<p>Finally, it is feasible to use the automated e-mail facility provided
+with most scripts of this package. If <em class="xref std std-option">--email</em> is provided,
+all the recipients specified are sent an automatic e-mail as soon as
+the script ends. If a log file (specified with <em class="xref std std-option">--logfile</em>)
+was given then it is attached to the e-mail as well.</p>
+<p>For example, the following command:</p>
+<div class="highlight-python"><pre>$ ./buildplanner.py --track seq --subtrack opt --planner cpt4
+  --directory ~/seq-opt-cpt4 --logfile 'build.$track-$subtrack-$planner'
+  --bookmark svn://svn@pleiades.plg.inf.uc3m.es/ipc2011/data</pre>
+</div>
+<p>checks out and compiles the planner cpt4 that entered the
+<tt class="xref py py-const docutils literal"><span class="pre">seq-opt</span></tt> competition <a class="footnote-reference" href="#id12" id="id5">[3]</a>. Upon completion the planner is
+located at <tt class="file docutils literal"><span class="pre">~/seq-opt-cpt4/cpt4</span></tt> along with a new file named
+<tt class="file docutils literal"><span class="pre">build.seq-opt-cpt4</span></tt> which contains all the messages issued by
+the compilation and linking tools chosen by the author. A log file
+with the whole building process is left at
+<tt class="file docutils literal"><span class="pre">~/seq-opt-cpt4</span></tt>. Besides, the following info message is shown
+on the terminal:</p>
+<div class="highlight-python"><pre>[Info: the following planners have been built]
+[      [u'cpt4']]</pre>
+</div>
+<p>Because all contents of this planner are checked out to the target
+directory, the scripts <strong class="program">build</strong> and <strong class="program">plan</strong> are
+automatically placed in the right location, the base directory of the
+planner. Of particular interest here is the script <strong class="program">build</strong>
+which is automatically invoked by <tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt> to compile
+the selected planner according to the rules given by the authoritative
+author. Of course, the local computer compiling the code shall be
+equipped with all the dependencies specified by the planner at
+hand. Besides, the <strong class="program">build</strong> script shall be respectful with
+the local computer by avoiding sudo lines, for example, or
+writing/modifying other parts of the local filesystem than its current
+tree structure.</p>
+</div>
+<div class="section" id="builddomain-py">
+<span id="builddomain-label"></span><h2>builddomain.py<a class="headerlink" href="#builddomain-py" title="Permalink to this headline">¶</a></h2>
+<p id="index-6">This section describes all the command-line arguments accepted by
+<tt class="xref py py-mod docutils literal"><span class="pre">builddomain.py</span></tt>. For a thorough discussion of the command-line
+arguments see <a class="reference internal" href="#commandline-arguments-ipcdata"><em>Command-line arguments</em></a>.</p>
+<p>This script has been conceived to check out the domain and problem
+files of a particular track-subtrack and to build the corresponding
+testsets. It accepts much the same directives than
+<tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt> (see section <a class="reference internal" href="#buildplanner-label"><em>buildplanner.py</em></a>) but
+<em class="xref std std-option">--logbuild</em>.</p>
+<p>First of all, it is possible for this script (and others) to override
+the SVN bookmark. If a particular svn bookmark is specified with
+<em class="xref std std-option">--bookmark</em> it is used for retrieving all domain and problem
+files as described below. If not, the INI configuration file specified
+with <em class="xref std std-option">--ini</em> is used instead.  If none is provided, then the
+script takes the svn bookmark specified at the <tt class="file docutils literal"><span class="pre">~/.ipc.ini</span></tt> file
+by default. If no INI configuration file with that name is found and
+no bookmark has been specified, the script issues a fatal error and
+exits.</p>
+<p>The domain and problems to be used shall be referenced by a
+combination of track and subtrack given with the flags
+<em class="xref std std-option">--track</em> and <em class="xref std std-option">--subtrack</em> respectively. This enables
+domains with the same name to be used across different tracks which is
+highly desirable, though sometimes it leads to some redundance when
+the same problems are used in different tracks <a class="footnote-reference" href="#id13" id="id6">[4]</a>.</p>
+<p>The domains checked out are those specified with the mandatory flag
+<em class="xref std std-option">--domain</em> after excluding those, among the ones specified
+with the previous flag, that meet the regular expression given with
+the optional flag <em class="xref std std-option">--exclude-domain</em>. Both flags accept
+regular expressions.</p>
+<p>Once the domains have been fully identified with their name (flags
+<em class="xref std std-option">--domain</em> and <em class="xref std std-option">--exclude-domain</em>) and the track and
+subtrack they belong to (with <em class="xref std std-option">--track</em> and
+<em class="xref std std-option">--subtrack</em>), the script automatically builds the testsets in
+a directory named after the domain beneath the target directory given
+in <em class="xref std std-option">--directory</em>. If none is given, <tt class="file docutils literal"><span class="pre">./</span></tt> is used by
+default. Each testset is shown in a separate directory named as
+<tt class="file docutils literal"><span class="pre">testsetxxx</span></tt> where xxx stands for a number in the interval 000
+&#8211; 999. The contents of each particular testset are computed as
+follows:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">single:</th><td class="field-body">If the domain directory in the SVN repository (see
+<a class="reference internal" href="General overview.html#svn-data-label"><em>Contents of the data repository</em></a>) contained only a single file, it
+is is replicated to all the testsets along with each
+particular file found in the problems directory.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<hr class="docutils" />
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">multi:</th><td class="field-body">If the domain directory contained an arbitrary number of
+files, then the script makes sure that there are as
+many files in the domain directory as in the problems
+directory and creates as many testsets as files have
+been found. In this case, each testset consists of a
+pair (domain, problem) which are taken after sorting
+the files in both directories in ascending
+lexicographical order.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>While the domain and problem files can be given any names in the svn
+repository, the files in each testset are named as <tt class="file docutils literal"><span class="pre">domain.pddl</span></tt> and
+<tt class="file docutils literal"><span class="pre">problem.pddl</span></tt> when built in the local computer.</p>
+<p>Finally, it is possible to specify a log filename to record the whole
+process with <em class="xref std std-option">--logfile</em> which is left at the target directory
+specified with <em class="xref std std-option">--directory</em>. To discrimante among different
+executions of this script, the log filename specification accepts the
+placeholders <em>$track</em>, <em>$subtrack</em> and <em>$domain</em> which are
+substituted by their corresponding values. Besides, all the e-mail
+recipees given with <em class="xref std std-option">--email</em> are sent an automatic e-mail
+upon completion. If a log file is specified it is attached to the
+e-mail as well.</p>
+<p>For example, the following command:</p>
+<div class="highlight-python"><pre>$ ./builddomain.py --track seq --subtrack opt --domain 'p'
+--directory ~/seq-opt-pdomains --ini ~/tmp/example.ini
+--logfile 'build-$domain.$track-$subtrack.log'
+--email albert.einstein@wurttemberg.edu kurt.godel@vienna.edu</pre>
+</div>
+<p>takes all the domains that appear in the <tt class="xref py py-const docutils literal"><span class="pre">seq-opt</span></tt> track in
+the SVN repository specified in the INI configuration file at
+<tt class="file docutils literal"><span class="pre">~/tmp/example.ini</span></tt> whose name matches the regular expression
+<tt class="regexp docutils literal"><span class="pre">p</span></tt> and creates the testsets in
+<tt class="file docutils literal"><span class="pre">~/seq-opt-pdomains</span></tt>. When the process has been completed a
+message like the following is issued:</p>
+<div class="highlight-python"><pre>[Info: the following domains have been built]
+[      [u'parcprinter', u'parking', u'pegsol']]</pre>
+</div>
+<p>Besides, Albert Einstein and Kurt Godel will be interrupted to know
+that these domains have been built and an e-mail with the generated
+logfile will be sent to him. The logfile is named
+<tt class="file docutils literal"><span class="pre">build-p.seq-opt.log.11-11-24.20:10:36</span></tt></p>
+</div>
+<div class="section" id="invokeplanner-py">
+<span id="invokeplanner-label"></span><h2>invokeplanner.py<a class="headerlink" href="#invokeplanner-py" title="Permalink to this headline">¶</a></h2>
+<p id="index-7">This section describes all the command-line arguments accepted by
+<tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt>. For a thorough discussion of the command-line
+arguments see <a class="reference internal" href="#commandline-arguments-ipcdata"><em>Command-line arguments</em></a>.</p>
+<p>This script lies at the core of <tt class="xref py py-mod docutils literal"><span class="pre">IPCData</span></tt>. It uses most of the
+different python scripts distributed with the package and also various
+services from the modules <tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt> and
+<tt class="xref py py-mod docutils literal"><span class="pre">builddomain.py</span></tt>. Its importance comes from the fact that it
+fully automates the process of running a particular experiment which
+involves an arbitrary selection of planners and domains in a
+computer. It is expected to be, by far, the most used module in this
+package.</p>
+<p>As with other scripts, <tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt> can override the SVN
+bookmark specified in the <tt class="file docutils literal"><span class="pre">~/.ipc.ini</span></tt> file (if it exists) by
+providing it at invocation time with <em class="xref std std-option">--bookmark</em>. If none is
+given, the SVN bookmark is taken from the IPC INI configuration file
+specified with <em class="xref std std-option">--ini</em>. If none exists and
+<em class="xref std std-option">--bookmark</em> has not been given, the script exits with an
+error.</p>
+<p><tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt> is restricted to a selection of planners and
+domains that meet the track and subtrack provided with the mandatory
+directives <em class="xref std std-option">--track</em> and <em class="xref std std-option">--subtrack</em>. This is, the
+track and subtrack are applied both to the selection of planners and
+domains. As a matter of fact, this motivated the use of the flag
+<em class="xref std std-option">--test</em> discussed below. Since <tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt> makes
+use of <tt class="xref py py-mod docutils literal"><span class="pre">build-planner.py</span></tt> it also acknowledges the flags
+<em class="xref std std-option">--planner</em> and <em class="xref std std-option">--excludeplanner</em> discussed in
+<a class="reference internal" href="#buildplanner-label"><em>buildplanner.py</em></a>. Similarly, since it silently invokes
+<tt class="xref py py-mod docutils literal"><span class="pre">builddomain.py</span></tt> it also acknowledges the flags
+<em class="xref std std-option">--domain</em> and <em class="xref std std-option">--exclude-domain</em> described in
+<a class="reference internal" href="#builddomain-label"><em>builddomain.py</em></a>. The last four arguments admit arbitrary
+regular expressions.</p>
+<p>If a target directory is given with <em class="xref std std-option">--directory</em> then both
+the planners and domains meeting the previous expressions are checked
+out and built under the specified directory. If not, <tt class="file docutils literal"><span class="pre">./</span></tt> is
+assumed by default. Besides, the target directory specification is
+used also to store all the results of the experiments.</p>
+<p>First, <tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt> is invoked and thus, all the selected
+planners are checked out and built as described in
+<a class="reference internal" href="#buildplanner-label"><em>buildplanner.py</em></a>. Internally, <tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt> is
+invoked with a logfile which is named after the substitutions in
+<em>build-$planner.log</em>. Besides, it can also generate a log file which
+records the results of the whole process. This can be specified with
+<em class="xref std std-option">--logfile</em> and it recognizes the following placeholders
+<em>track</em>, <em>subtrack</em>, <em>planner</em> and <em>domain</em>. This logfile can record a
+lot of information at various levels, such as the current version,
+release and built date of the script; parameters provided to the
+script (for the sake of completeness); the particular steps followed
+for building the planners and domains and the time instants when each
+planner was invoked with every testset. It finally ends with various
+pretty ASCII tables (created with <a class="reference external" href="http://code.google.com/p/prettytable/">PrettyTable.py</a>) that show the overall
+running time, the overall memory used, the number of problems solved
+and the number of plan solution files generated by each planner in
+each domain. Each line shown in this logfile is accompanied by a
+number of fields that include the current local date and time, the
+username and hostname where the execution was performed, the name of
+the script and Python function that issued the message and a string
+with the message level. The message level can be specified with
+<em class="xref std std-option">--level</em> and should be one among <tt class="xref py py-const docutils literal"><span class="pre">INFO</span></tt>,
+<tt class="xref py py-const docutils literal"><span class="pre">WARNING</span></tt> and <tt class="xref py py-const docutils literal"><span class="pre">CRITICAL</span></tt>. Only messages with a level
+higher or equal than the one specified are printed out.</p>
+<p>After <tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt> is over, the planners are located under the
+target directory specified with <em class="xref std std-option">--directory</em>.</p>
+<p>Next, the testsets for the domains that satisfy the regular
+expressions given in <em class="xref std std-option">--domain</em> and <em class="xref std std-option">--exclude-domain</em>
+are created. Because it might be easily the case that one might want
+to run some experiments with some preliminary problems instead of
+using the official ones, an additional flag <em class="xref std std-option">--test</em> is
+acknowledged. If <em class="xref std std-option">--test</em> (with no arguments) is provided,
+domains are selected from the directory &lt;<tt class="docutils literal"><span class="pre">t</span></tt> <em>track</em> <tt class="docutils literal"><span class="pre">-</span></tt>
+<em>subtrack</em>&gt; whereas the planners are checked out from the directory
+with the same name without the heading <tt class="docutils literal"><span class="pre">t</span></tt>. This avoids the
+additional burden to create ancilliary directories which simply
+replicate the planners with strange names when all that is needed is
+just to run planners with testing domains. This is very useful, for
+example, to get an overall idea of the difficulty of some domains
+(especially when they are new) prior to the selection of the
+definitive problems.</p>
+<p>As soon as <tt class="xref py py-mod docutils literal"><span class="pre">buildomain.py</span></tt> is over, the testsets are located under
+the target directory given with <em class="xref std std-option">--directory</em>.</p>
+<p>If <em class="xref std std-option">--email</em> is used, the specified recipees are sent an
+e-mail upon completion of the algorithm. Besides, if a log file was
+specified with <em class="xref std std-option">--logfile</em> then it is attached to the e-mail as well.</p>
+<p>At last, but not least, each planner is allotted a fixed amount of
+time and space for solving each task. If it does not, it (and all its
+children) are automatically killed by the script. These limits are set
+with the directives <em class="xref std std-option">--timeout</em> (in seconds) and
+<em class="xref std std-option">--memory</em> (in Gigabytes). For example, at the Seventh
+International Planning Competition the bounds used were
+<em class="xref std std-option">--timeout 1800 --memory 6</em>. A couple of notes about these
+limits follow:</p>
+<blockquote>
+<div><ul class="simple">
+<li>The time is measured as computation time for the planner and all
+its subprocess/threads. Therefore, the wall-clock time shall be
+usually expected to be slightly larger than the time specified with
+the directive <em class="xref std std-option">--timeout</em></li>
+<li>The memory allotted to the planner is, from the Python
+documentation pages: <em>The maximum area of address space which may
+be taken by the process</em>. In particular, planners creating other
+subprocesses or threads (take for example planners from the
+Sequential Satisficing Multi-core Competition or portfolios in any
+track) are restricted to do not reach this limit in total. This is,
+taking also into consideration the space taken by all the other
+suprocess and threads launched by the same planner. In the end, it
+is the author&#8217;s responsibility of each planner to guarantee that
+the limit is not reached. If so, the planner (and all its children)
+are automatically killed by <tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt>.</li>
+</ul>
+</div></blockquote>
+<p>Once all the parameters have been set, <tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt> invokes
+the corresponding script <strong class="program">plan</strong> of each selected planner. For a full
+discussion of the design and purpose of this script see
+<a class="reference internal" href="#check-label"><em>check.py</em></a>.</p>
+<p>During the execution, the script records the values of a number of
+parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li>The total time the planner is taking (taking also into account that
+of their children) at rather regular intervals of five seconds.</li>
+<li>The total memory the planner is taking (taking also into account
+that of their children) at rather regular intervals of five
+seconds.</li>
+<li>The number of processes currently running at rather regular
+intervals of five seconds.</li>
+<li>The number of threads currently running at rather regular intervals
+of five seconds.</li>
+<li>The number of solutions found at the end, if any.</li>
+<li>The time elapsed since the beginning when each solution was found.</li>
+<li>The overall running time (in clock-wall time) consumed by the
+planner.</li>
+<li>The maximum memory consumed by the planner during the whole
+execution.</li>
+<li>The memory the planner was taking just before voluntarily resuming
+execution or being killed. Note that this is not necessarily equal
+to the maximum memory &#8212;though this is usually the case. While
+most planners take memory incrementally, some take and release
+memory so that they show a memory profile which decays from time to
+time.</li>
+</ul>
+</div></blockquote>
+<p>All this information is stored at a separate tree structure rooted at
+the target directory specified with <em class="xref std std-option">--directory</em> with the
+name <tt class="file docutils literal"><span class="pre">results/</span></tt> &#8212;for a full discussion of the contents of this
+directory see <a class="reference internal" href="IPCReport.html#results-label"><em>The results directory</em></a>. Beneath this directory, a number
+of subdirectories with the names of all the planners just built are
+shown. Under each one, there are as many folders as domains have been
+built with <tt class="xref py py-mod docutils literal"><span class="pre">builddomain.py</span></tt>. Finally, each of these directories
+contain as many subdirectories as problems have been generated whose
+name meet the format xxx where xxx is an index in the range
+000&#8211;999. For example, the results of the execution of the Sequential
+Optimal planner <strong class="program">bjolp</strong> when faced with the first problem of
+the domain floortile are stored in
+<tt class="file docutils literal"><span class="pre">results/bjolp/floortile/000</span></tt>. The following paragraphs describe
+the contents of each of these directories.</p>
+<p>The previous fields are recorded at a logfile, whose name results from
+a combination of the track, subtrack, planner, domain and problem and
+looks like <tt class="file docutils literal"><span class="pre">_set-opt.bjolp-floortile.000-log</span></tt> &#8212;for the case of
+the first problem of the floortile domain when solved by the
+Sequential Optimal planner <strong class="program">bjolp</strong>. For illustration purposes, their
+contents are shown below:</p>
+<div class="highlight-python"><pre>[Fri, 05-20-11 02:57:55.045234]
+
+Current working directory: /home/plg/seq-opt-floortile/_bjolp.floortile.000
+Timeout: 1800 seconds
+Memory : 6442450944 bytes
+
+[real-time 5] total_time: 4.92
+[real-time 5] total_vsize: 150.93
+[real-time 5] num_processes: 4
+[real-time 5] num_threads: 4
+Number of solutions found: 1
+Time/solution            : [8]
+Overall runtime: 10 seconds
+Overall memory : 150.93 Mbytes
+Maximum memory : 150.93 Mbytes
+
+[Fri, 05-20-11 02:58:05.093734]</pre>
+</div>
+<p>Other information recorded in the form of files is the following (the
+names of the files actually created in our running example are given
+for the sake of clarity):</p>
+<blockquote>
+<div><p><tt class="file docutils literal"><span class="pre">_seq-opt.bjolp-floortile.000-cpu</span></tt></p>
+<blockquote>
+<div><p>It shows information on the CPUs used as provided by the <tt class="file docutils literal"><span class="pre">/proc</span></tt>
+Linux filesystem.</p>
+<p>An example follows <a class="footnote-reference" href="#id14" id="id7">[5]</a>:</p>
+<div class="highlight-python"><pre>[Fri, 05-20-11 02:57:55.045340]
+
+* CPUinfo:
+
+processor        : 0
+vendor_id        : GenuineIntel
+cpu family       : 6
+model            : 30
+model name       : Intel(R) Xeon(R) CPU           X3470  @ 2.93GHz
+stepping         : 5
+cpu MHz          : 1200.000
+cache size       : 8192 KB
+physical id      : 0
+siblings         : 8
+core id          : 0
+cpu cores        : 4
+apicid           : 0
+initial apicid   : 0
+fpu              : yes
+fpu_exception    : yes
+cpuid level      : 11
+wp               : yes
+flags            : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov
+                   pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe
+                   syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good
+                   xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx
+                   smx est tm2 ssse3 cx16 xtpr pdcm sse4_1 sse4_2 popcnt lahf_lm
+                   ida dts tpr_shadow vnmi flexpriority ept vpid
+bogomips         : 5866.76
+clflush size     : 64
+cache_alignment  : 64
+address sizes    : 36 bits physical, 48 bits virtual
+power management :
+
+ ...
+
+[Fri, 05-20-11 02:57:55.045701]</pre>
+</div>
+</div></blockquote>
+<p><tt class="file docutils literal"><span class="pre">_seq-opt.bjolp-floortile.000-mem</span></tt></p>
+<blockquote>
+<div><p>It shows various fields about the available memory and its usage as
+provided by the <tt class="file docutils literal"><span class="pre">/proc</span></tt> Linux filesystem.</p>
+<p>The contents of this file are shown below:</p>
+<div class="highlight-python"><pre>[Fri, 05-20-11 02:57:55.045372]
+
+* MEMinfo:
+
+MemTotal:        8187144 kB
+MemFree:         5520668 kB
+Buffers:           48256 kB
+Cached:          2287552 kB
+SwapCached:            0 kB
+Active:          2018184 kB
+Inactive:         339268 kB
+Active(anon):      22096 kB
+Inactive(anon):      120 kB
+Active(file):    1996088 kB
+Inactive(file):   339148 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:      43163644 kB
+SwapFree:       43163644 kB
+Dirty:            254940 kB
+Writeback:             0 kB
+AnonPages:         22012 kB
+Mapped:            10832 kB
+Shmem:               236 kB
+Slab:             108080 kB
+SReclaimable:      94576 kB
+SUnreclaim:        13504 kB
+KernelStack:        1928 kB
+PageTables:         1828 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    47257216 kB
+Committed_AS:      79012 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      299208 kB
+VmallocChunk:   34359435848 kB
+HardwareCorrupted:     0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:        7744 kB
+DirectMap2M:     8372224 kB
+
+[Fri, 05-20-11 02:57:55.045725]</pre>
+</div>
+</div></blockquote>
+<p><tt class="file docutils literal"><span class="pre">_set-opt.bjolp-floortile.000-ver</span></tt></p>
+<blockquote>
+<div><p>It shows the current version of Linux as provided by the <tt class="file docutils literal"><span class="pre">/proc</span></tt>
+Linux filesystem.</p>
+<p>An example (properly intended to fit the page width) follows:</p>
+<div class="highlight-python"><pre>[Fri, 05-20-11 02:57:55.045305]
+
+* Version: ['Linux version 2.6.35-23-generic (buildd@allspice)
+  (gcc version 4.4.5 (Ubuntu/Linaro 4.4.4-14ubuntu5) )
+  #41-Ubuntu SMP Wed Nov 24 11:55:36 UTC 2010\n']
+
+[Fri, 05-20-11 02:57:55.045672]</pre>
+</div>
+</div></blockquote>
+</div></blockquote>
+<p>Besides, <tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt> captures both the standard error and
+the standard output and stores everything in the files <tt class="file docutils literal"><span class="pre">planner.err</span></tt>
+and <tt class="file docutils literal"><span class="pre">planner.log</span></tt> respectively. These files are useful for diagnoses
+purposes and attention shall be given to them by the authors of
+planners to ensure that they write useful data.</p>
+<p>Finally, other files stored with all of these are the <tt class="file docutils literal"><span class="pre">domain.pddl</span></tt>,
+and <tt class="file docutils literal"><span class="pre">problem.pddl</span></tt> picked up and any collection of plan solution
+files generated by the planner with the syntax <tt class="file docutils literal"><span class="pre">plan.soln.n</span></tt> where
+<em>n</em> stands for a number that increases from 1 in steps of 1; also, the
+logfile generated by <tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt> is copied here for the sake
+of completeness so that each one of these directories contains
+information enough to be analyzed on their own, without further
+dependencies.</p>
+<p>To end, a couple of examples follow:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Case 1:</th><td class="field-body"><p class="first">In this example, the planners <strong class="program">lmtd</strong>,
+<strong class="program">yahsp2</strong> and <strong class="program">yahsp2-mt</strong> from the
+Temporal Satisficing track are going to be invoked over
+all problems of the domains crewplanning and sokoban. The
+results shall be automatically sent both to
+<a class="reference external" href="mailto:albert&#46;einstein&#37;&#52;&#48;wurttemberg&#46;edu">albert<span>&#46;</span>einstein<span>&#64;</span>wurttemberg<span>&#46;</span>edu</a> and
+<a class="reference external" href="mailto:kurt&#46;godel&#37;&#52;&#48;vienna&#46;edu">kurt<span>&#46;</span>godel<span>&#64;</span>vienna<span>&#46;</span>edu</a>. A human readable recording of all
+events shall be directed to a logfile named
+<tt class="file docutils literal"><span class="pre">example-1</span></tt>. In this case, each planner will be
+given only 15 minutes and 2 Gb of memory:</p>
+<div class="highlight-python"><pre>$ ./invokeplanner.py --track tempo --subtrack sat
+  --planner "lmtd|yahsp.*" --domain "crewplanning|sokoban"
+  --directory ~/case-1 --logfile case-1
+  --email albert.einstein@wurttemberg.edu kurt.godel@vienna.edu
+  --timeout 900 --memory 2</pre>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Case 2:</th><td class="field-body"><p class="first">The following example just runs the whole Seventh
+International Planning Competition of the Sequential
+Satisficing track when using the right SVN bookmark (which
+is provided as well):</p>
+<div class="last highlight-python"><pre>$ ./invokeplanner.py --track seq --subtrack sat --planner ".*"
+  --domain ".*" --directory ~/ipc-2011 --logfile my-ipc-2011
+  --bookmark svn://svn@pleiades.plg.inf.uc3m.es/ipc2011/data
+  --timeout 1800 --memory 6</pre>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Usually, the <tt class="file docutils literal"><span class="pre">results/</span></tt> directory takes a lot of space. Therefore, a
+good idea might be to copy most of its structure to a separate
+directory preserving only the <tt class="file docutils literal"><span class="pre">domain.pddl</span></tt>, <tt class="file docutils literal"><span class="pre">problem.pddl</span></tt>, the
+plan solution files generated and the log file generated by
+<tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt>. While the original contents of the <tt class="file docutils literal"><span class="pre">results/</span></tt>
+directory were named <tt class="file docutils literal"><span class="pre">raw/</span></tt> in the context of the Seventh
+International Planning Competition, this additional copy was known as
+<tt class="file docutils literal"><span class="pre">val/</span></tt> since it contains the essential information to be validated
+thanks to the next script.</p>
+</div>
+<div class="section" id="validate-py">
+<span id="validate-label"></span><h2>validate.py<a class="headerlink" href="#validate-py" title="Permalink to this headline">¶</a></h2>
+<p id="index-8">A mandatory step not only at the International Planning Competition
+but also at any experiments run at the home lab is to validate the
+solutions. To this end, <a class="reference external" href="http://planning.cis.strath.ac.uk/VAL/">VAL</a>
+has been used. The latest version at the time of the Seventh
+International Planning Competition was 4.2.08. However, version 1.1
+uses version 4.2.09. A copy of it can be retrieved from
+<a class="reference external" href="http://www.plg.inf.uc3m.es/ipc2011-deterministic/FrontPage/Software">http://www.plg.inf.uc3m.es/ipc2011-deterministic/FrontPage/Software</a></p>
+<p>Since the number of plan solution files might be huge, the validation
+process has been also automated. The script <tt class="xref py py-mod docutils literal"><span class="pre">validate.py</span></tt> takes care
+of it. It receives a single mandatory parameter <em class="xref std std-option">--directory</em>
+which specifies the current location of a particular case. If the
+given directory contains a <tt class="file docutils literal"><span class="pre">domain.pddl</span></tt>, <tt class="file docutils literal"><span class="pre">problem.pddl</span></tt> and
+various plan solution files, these are given to <a class="reference external" href="http://planning.cis.strath.ac.uk/VAL/">VAL</a> and its output is recorded
+in a separate log file which is named after the track, subtrack,
+planner, domain and problem at hand which looks like
+<tt class="file docutils literal"><span class="pre">_seq-opt.bjolp-floortile.000-val</span></tt>. If the given directory does not
+contain these files but there are other subdirectories, the entire
+tree structure is recursively traversed validating all the cases found
+along the path.</p>
+<p>Besides, if a log file is specified with <em class="xref std std-option">--logfile</em> then
+messages issued at the specified <em class="xref std std-option">--level</em> or above are
+recorded. In case that one or more e-mail recipees are given with
+<em class="xref std std-option">--email</em>, they are all notified upon completion of the
+script. Note that to enable the automated e-mail facility, it is
+mandatory to provide an INI configuration file with <em class="xref std std-option">--ini</em>
+unless <tt class="file docutils literal"><span class="pre">~/.ipc.ini</span></tt> shall be used.</p>
+<p>Henceforth, if all the results of a particular invocation of
+<tt class="xref py py-mod docutils literal"><span class="pre">invokeplanner.py</span></tt> are stored at the directory <tt class="file docutils literal"><span class="pre">~/my-ipc-2011</span></tt>,
+the following command validates all the solutions generated so far:</p>
+<div class="highlight-python"><pre>$ ./validate.py --directory ~/my-ipc-2011</pre>
+</div>
+<p>and leaves a validation log file at each location where it found the
+essential files to perform the validation. In our running example, the
+file <tt class="file docutils literal"><span class="pre">_seq-opt.bjolp-floortile.000-val</span></tt> contains the following data:</p>
+<div class="highlight-python"><pre>[Thu, 10-06-11 00:11:13.276711]
+
+Solution file: plan.soln
+Size         : 892
+Status       : 1
+Value        : 38
+Step length  : 25
+return code  : 0
+stderr       : []
+
+Number of solution files found: 1
+Number of correct solutions found: 1
+
+[Thu, 10-06-11 00:11:13.313025]</pre>
+</div>
+<p>The fields shown are self-explanatory. In case of error, the
+corresponding validation log file shows the appropriate data <a class="footnote-reference" href="#id15" id="id9">[6]</a>.</p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[1]</a></td><td>When using the dollar sign <tt class="docutils literal"><span class="pre">$</span></tt> in the command line, the shell will always try to expand it to the values of environment variables. This is known as <em>interpolation</em>. To avoid it, strings containing dollar signs shall be embraced between single quotes as in &#8216;$track-$subtrack.$planner-build&#8217;</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id11" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[2]</a></td><td>Be aware however that reusing the same google e-mail account might make others to access the results of your experiments. In case secrecy is desired, it is highly recommended to set up a different e-mail account and to provide the user and password in the INI configuration file as explained in the text.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id12" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[3]</a></td><td>Note that for <tt class="xref py py-mod docutils literal"><span class="pre">buildplanner.py</span></tt> to run properly there is no need to create the INI configuration file <tt class="file docutils literal"><span class="pre">~/.ipc.ini</span></tt> if <em class="xref std std-option">--bookmark</em> is provided.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id13" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[4]</a></td><td>For example, all problems used in the Seventh International Planning Competition in the Sequential Satisficing Multi-core track (<tt class="xref py py-const docutils literal"><span class="pre">seq-mco</span></tt>) were exactly the same ones than those used at the Sequential Satisficing track (<tt class="xref py py-const docutils literal"><span class="pre">seq-sat</span></tt>). Because the scripts developed at the IPC 2011 are always restricted to a particular combination of track and subtrack there is no other way to reuse domain and problem files other than copying them to a separate folder in the SVN repository according to the structure discussed in <a class="reference internal" href="General overview.html#svn-data-label"><em>Contents of the data repository</em></a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id14" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[5]</a></td><td>Incidentally, one of the flags of our processors is ida. I wonder whether Intel already implemented the Iterative-deepening A* in their computers :)</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id15" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id9">[6]</a></td><td>Note that from version 1.1 the validation log contains a new line with the step length of each plan</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">IPCData</a><ul>
+<li><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li><a class="reference internal" href="#command-line-arguments">Command-line arguments</a></li>
+<li><a class="reference internal" href="#check-py">check.py</a></li>
+<li><a class="reference internal" href="#seed-py">seed.py</a></li>
+<li><a class="reference internal" href="#buildplanner-py">buildplanner.py</a></li>
+<li><a class="reference internal" href="#builddomain-py">builddomain.py</a></li>
+<li><a class="reference internal" href="#invokeplanner-py">invokeplanner.py</a></li>
+<li><a class="reference internal" href="#validate-py">validate.py</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="General overview.html"
+                        title="previous chapter">General overview</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="IPCReport.html"
+                        title="next chapter">IPCReport</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/IPCData.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="IPCReport.html" title="IPCReport"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="General overview.html" title="General overview"
+             >previous</a> |</li>
+        <li><a href="index.html">The Seventh International Planning Competition 1.3 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Carlos Linares Lopez.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.2.
+    </div>
+  </body>
+</html>

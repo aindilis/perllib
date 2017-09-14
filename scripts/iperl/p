@@ -1,0 +1,9 @@
+#!/usr/bin/perl -w
+
+# run this as a perl one liner
+
+use PerlLib::SwissArmyKnife;
+
+my $command = "perl -e ".join(" ",map {shell_quote($_)} @ARGV);
+# print $command."\n";
+system $command;

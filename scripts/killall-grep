@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ps auxwww | grep "$1" | awk '{print $2}' | grep . | xargs sudo kill -9
+
+ps auxwww | grep "$1"

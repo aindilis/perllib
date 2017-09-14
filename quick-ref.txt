@@ -1,0 +1,6 @@
+
+
+
+# how to get the url string from a mechanize link object
+
+$link->URI->abs->as_string

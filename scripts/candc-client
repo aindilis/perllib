@@ -1,0 +1,64 @@
+#!/usr/bin/perl -w
+
+use BOSS::Config;
+use PerlLib::SwissArmyKnife;
+use System::CAndC;
+
+use Lingua::EN::Sentence qw(get_sentences);
+
+$specification = q(
+	-s <sentences>		Sentences to analyze
+	-f <file>		File to analyze
+
+	-w			Write output data dir and files
+);
+
+my $config =
+  BOSS::Config->new
+  (Spec => $specification);
+my $conf = $config->CLIConfig;
+$UNIVERSAL::systemdir = "/var/lib/myfrdcsa/codebases/minor/fe2c";
+
+die "need to specify -s or -f\n" unless $conf->{'-s'} or $conf->{'-f'};
+
+my $text = '';
+if ($conf->{'-s'}) {
+  $text .= $conf->{'-s'}."\n";
+}
+if ($conf->{'-f'}) {
+  my $contents = read_file($conf->{'-f'});
+  $text .= $contents;
+}
+
+my $candc = System::CAndC->new;
+
+my $sentences = get_sentences($text);
+
+foreach my $line (@$sentences) {
+  my $sentence = Clean($line);
+  my $outputtxt = $candc->LogicForm(Text => $sentence);
+  my $testccg = read_file('/tmp/test.ccg');
+
+  my $dirname = MakePotentialFilenameFromText(Text => $sentence);
+  my $dir = ConcatDir($UNIVERSAL::systemdir,'data-git','results',$dirname);
+  MkDirIfNotExists(Directory => $dir);
+  my $testccgfile = ConcatDir($dir,'test.ccg');
+  my $outputfile = ConcatDir($dir,'output.txt');
+  WriteFile(File => $testccgfile, Contents => $testccg);
+  WriteFile(File => $outputfile, Contents => $outputtxt);
+}
+
+sub Clean {
+  my ($text) = @_;
+  $text =~ s/^\*//sg;
+  $text =~ s/\*$//sg;
+  return $text;
+}
+
+sub MakePotentialFilenameFromText {
+  my (%args) = @_;
+  my $t = $args{Text};
+  $t =~ s/\W/_/sg;
+  $t =~ s/_+/_/sg;
+  return $t;
+}

@@ -1,0 +1,7 @@
+Nov 07, 2014 6:43:04 PM org.opencyc.api.CycConnection$TaskProcessorBinaryResponseHandler run
+SEVERE: TaskProcessor terminated because of exception.
+org.opencyc.api.CfaslInputStreamClosedException: Cfasl connection closed by peer because of bad opcode: -1
+	at org.opencyc.api.CfaslInputStream.reportUnhandledCfaslOpcode(CfaslInputStream.java:301)
+	at org.opencyc.api.CfaslInputStream.maybeReadOther(CfaslInputStream.java:1024)
+	at org.opencyc.api.CfaslInputStream.readObject(CfaslInputStream.java:271)
+	at org.opencyc.api.CycConnection$TaskProcessorBinaryResponseHandler.run(CycConnection.java:1105)

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/var/lib/myfrdcsa/codebases/internal/perllib/scripts/datestamp -t

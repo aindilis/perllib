@@ -1,0 +1,502 @@
+$VAR1 = [
+          {
+            'content' => 'The Stanford NLP Group makes some of our <b>Natural</b> <b>Language</b> Processing <b>software</b> ... supporting the task of <b>natural</b> <b>language</b> ... Click to <b>download</b> stanford ...',
+            'url' => 'http://nlp.stanford.edu/software/',
+            'title' => '<b>Software</b> - The Stanford <b>Natural</b> <b>Language</b> Processing Group'
+          },
+          {
+            'content' => 'The Wolfram <b>Natural</b> <b>Language</b> <b>Understanding</b> ... Wolfram Engine <b>Software</b> engine implementing the Wolfram <b>Language</b>. ... With <b>natural</b> <b>language</b> and the Wolfram PLI, ...',
+            'url' => 'http://www.wolfram.com/natural-language-understanding/',
+            'title' => 'Wolfram <b>Natural</b> <b>Language</b> <b>Understanding</b> System'
+          },
+          {
+            'title' => '<b>Natural</b> <b>Language</b> Processing - Microsoft Research',
+            'url' => 'http://www.microsoft.com/en-us/research/group/natural-language-processing/',
+            'content' => 'The Redmond-based <b>Natural</b> <b>Language</b> Processing ... group is to design and build <b>software</b> that will analyze, understand, ... Learning to Understand <b>Natural</b> <b>Language</b> in ...'
+          },
+          {
+            'content' => 'Learn how <b>Natural</b> <b>Language</b> <b>Understanding</b> (NLU) by Nuance provides customers with a better caller experience while increasing agent productivity.',
+            'url' => 'https://www.nuance.com/omni-channel-customer-engagement/technologies/natural-language-understanding.html',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> - Nuance'
+          },
+          {
+            'title' => 'Text Mining &amp; <b>Natural</b> <b>Language</b> <b>Understanding</b> at ... - amazon.com',
+            'url' => 'https://www.amazon.com/Mining-Natural-Language-Understanding-Online/dp/B01J6KFDGU',
+            'content' => 'Buy Text Mining &amp; <b>Natural</b> <b>Language</b> <b>Understanding</b> at ... Learn Text Mining &amp; <b>Natural</b> <b>Language</b> <b>Understanding</b> at Scale from a professional trainer ... <b>Software</b> <b>Download</b>;'
+          },
+          {
+            'title' => '<b>Natural</b> <b>Language</b> for .NET - Abodit NLP',
+            'url' => 'http://nlp.abodit.com/',
+            'content' => 'The Abodit <b>Natural</b> <b>Language</b> Engine for .NET lets you add <b>natural</b> <b>language</b> <b>understanding</b> features to your <b>software</b> ... <b>natural</b> <b>language</b> <b>understanding</b>: ... <b>download</b> and ...'
+          },
+          {
+            'title' => '<b>Download</b> <b>Natural</b> <b>Language</b> <b>Understanding</b> System - <b>Natural</b> ...',
+            'url' => 'http://www.bluechillies.com/software/natural-language-understanding-system.html',
+            'content' => '... <b>Natural</b> <b>Language</b> Generation <b>Software</b> <b>Natural</b> <b>Language</b> Interface Definition ... <b>Natural</b> <b>Language</b> <b>Understanding</b> System. ... <b>Download</b>, Free, Help, Install ...'
+          },
+          {
+            'url' => 'https://www.researchgate.net/publication/287490317_Natural_Language_Understanding',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> (PDF <b>Download</b> Available)',
+            'content' => '... <b>Natural</b> <b>Language</b> <b>Understanding</b> ... The <b>software</b> disc ... This article surveys the technology that has been developed for <b>natural</b> <b>language</b> processing and ...'
+          },
+          {
+            'content' => 'Google Research Blog ... learn world knowledge and enable equal <b>understanding</b> of <b>natural</b> <b>language</b> across all ... code and <b>download</b> the Parsey ...',
+            'url' => 'https://research.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html',
+            'title' => 'Research Blog: Announcing SyntaxNet: The World\'s Most ...'
+          },
+          {
+            'title' => '<b>Natural</b> <b>language</b> <b>understanding</b> - Wikipedia',
+            'url' => 'https://en.wikipedia.org/wiki/Natural_language_understanding',
+            'content' => '<b>Natural</b> <b>language</b> <b>understanding</b> (NLU) ... <b>Natural</b> <b>language</b> user interface. Siri (<b>software</b>) Wolfram Alpha; Mathematica; Information Extraction;'
+          },
+          {
+            'url' => 'https://sharpnlp.codeplex.com/',
+            'title' => 'CodePlex - open source <b>natural</b> <b>language</b> processing tools',
+            'content' => 'English <b>language</b> <b>natural</b> <b>language</b> processing ... Code Plex Project Hosting for Open Source <b>Software</b>. ... To use it you will need to <b>download</b> either the ...'
+          },
+          {
+            'url' => 'http://www.winsite.com/understanding/understanding+natural+languages/index3.html',
+            'title' => '<b>Understanding</b> <b>Natural</b> <b>Languages</b> <b>Software</b> - Free <b>Download</b> ...',
+            'content' => '<b>Understanding</b> <b>Natural</b> ... <b>Understanding</b> <b>Natural</b> <b>Languages</b> <b>Software</b>. ... is a middleware by LING-JOIN <b>Software</b> is for <b>natural</b> <b>language</b> <b>understanding</b> and web ...'
+          },
+          {
+            'url' => 'https://en.wikipedia.org/wiki/Natural_language_processing',
+            'title' => '<b>Natural</b> <b>language</b> processing - Wikipedia',
+            'content' => '<b>Natural</b> <b>language</b> processing (NLP) is a field of computer science, ... Challenges in <b>natural</b> <b>language</b> processing frequently involve <b>natural</b> <b>language</b> <b>understanding</b>, ...'
+          },
+          {
+            'url' => 'http://dl.acm.org/citation.cfm?doid=991813.991850',
+            'title' => 'A <b>software</b> environment for developing <b>natural</b> <b>language</b> ...',
+            'content' => 'Available for <b>download</b>: 4: ... a <b>software</b> environment for developing the <b>natural</b> <b>language</b> <b>understanding</b> ... system for <b>natural</b> <b>language</b> text <b>understanding</b>.'
+          },
+          {
+            'url' => 'https://www.amazon.com/Natural-Language-Understanding-James-Allen/dp/0805303340',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> (2nd Edition): James Allen ...',
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> ... this book delivers a synthesis of the major modern techniques and the most current research in <b>natural</b> <b>language</b> ... or <b>download</b> a ...'
+          },
+          {
+            'title' => '5 open source <b>natural</b> <b>language</b> processing tools',
+            'url' => 'https://opensource.com/business/15/7/five-open-source-nlp-tools',
+            'content' => '... your next application just might be at the forefront of truly making <b>language</b> processing as <b>natural</b> as ... Apache <b>Software</b> ... <b>natural</b> <b>language</b> ...'
+          },
+          {
+            'content' => '<b>Natural</b> <b>Language</b> Toolkit ...',
+            'title' => "<b>Natural</b> <b>Language</b> Toolkit \x{2014} NLTK 3.2.4 documentation",
+            'url' => 'https://www.nltk.org/'
+          },
+          {
+            'url' => 'http://www.nuance.com/',
+            'title' => 'Nuance - PDF, Customer Service, HIM, and Speech Recognition ...',
+            'content' => '... <b>natural</b> <b>language</b> <b>understanding</b>, ... Nuance voice, text input and <b>natural</b> <b>language</b> innovations power the intelligent systems that consumers ... <b>Software</b> development.'
+          },
+          {
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> and World Knowledge 2.1 What is <b>Natural</b> <b>Language</b> <b>Understanding</b>? ... Fig. 2.2 Computational <b>natural</b> <b>language</b> <b>understanding</b>.',
+            'title' => '<span class="result__type">PDF</span> <b>Natural</b> <b>Language</b> <b>Understanding</b> and World Knowledge',
+            'url' => 'http://www.springer.com/cda/content/document/cda_downloaddocument/9789491216527-c2.pdf?SGWID=0-0-45-1307156-p174288092'
+          },
+          {
+            'content' => '<b>Natural</b> <b>Language</b> Processing with Python ... 1.5 Automatic <b>Natural</b> <b>Language</b> <b>Understanding</b> 27 ... encourage you to <b>download</b> Python and NLTK, ...',
+            'title' => '<span class="result__type">PDF</span> <b>Natural</b> <b>Language</b> Processing with Python - victoria.lviv.ua',
+            'url' => 'http://www.victoria.lviv.ua/html/fl5/NaturalLanguageProcessingWithPython.pdf'
+          },
+          {
+            'content' => 'The International Conference on <b>Software</b> ... in Spoken <b>Language</b> <b>Understanding</b>. ... Methods in <b>Natural</b> <b>Language</b> Processing and ...',
+            'title' => '<b>Natural</b> <b>Language</b> Processing - Research at Google',
+            'url' => 'https://research.google.com/pubs/NaturalLanguageProcessing.html'
+          },
+          {
+            'url' => 'https://www.pearsonhighered.com/program/Allen-Natural-Language-Understanding-2nd-Edition/PGM28269.html',
+            'title' => 'Allen, <b>Natural</b> <b>Language</b> <b>Understanding</b>, 2nd Edition',
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b>, 2nd Edition. ... <b>Download</b> instructor ... He has taught <b>natural</b> <b>language</b> processing to undergraduate and graduate students for 14 ...'
+          },
+          {
+            'url' => 'http://natural-language-processing.winsite.com/',
+            'title' => 'Free <b>Natural</b> <b>Language</b> Processing <b>Downloads</b>',
+            'content' => 'Free <b>Natural</b> <b>Language</b> Processing ... <b>Download</b> <b>Natural</b> <b>Language</b> Processing <b>Software</b>. ... middleware by LING-JOIN <b>Software</b> is for <b>natural</b> <b>language</b> <b>understanding</b> and ...'
+          },
+          {
+            'title' => 'Introduction to <b>Natural</b> <b>Language</b> Processing - The Mind Project',
+            'url' => 'http://www.mind.ilstu.edu/curriculum/protothinker/natural_language_processing.php',
+            'content' => '... by searching the World Wide Web using keywords such as <b>natural</b> <b>language</b> processing, <b>natural</b> <b>language</b> ... <b>Natural</b> <b>Language</b> <b>Understanding</b>, second ...'
+          },
+          {
+            'content' => 'Apply now for <b>Software</b> Engineer - <b>Natural</b> <b>Language</b> ... You will be learning and using the most advanced technologies in the fields of <b>Natural</b> <b>Language</b> <b>Understanding</b>, ...',
+            'url' => 'https://betalist.com/jobs/49571-software-engineer-natural-language-understanding-french-at-SoundHound',
+            'title' => '<b>Software</b> Engineer - <b>Natural</b> <b>Language</b> <b>Understanding</b> (French)'
+          },
+          {
+            'content' => 'API.AI is the most mature <b>Natural</b> <b>Language</b> <b>Understanding</b> platform in the market. ... With API.AI, you can create conversational scenarios within minutes, ...',
+            'title' => 'Conversational UX Platform for products and services - API.AI',
+            'url' => 'https://api.ai/'
+          },
+          {
+            'content' => '... which understands <b>natural</b> <b>language</b> instructions and displays the results via <b>software</b> robots. ... <b>Software</b> robots <b>understanding</b> <b>natural</b> <b>language</b>} ...',
+            'url' => 'http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.101.399',
+            'title' => "CiteSeerX \x{2014} Kairai' - <b>Software</b> robots <b>understanding</b> <b>natural</b> ..."
+          },
+          {
+            'title' => 'Allen, <b>Natural</b> <b>Language</b> <b>Understanding</b>, 2nd Edition',
+            'url' => 'https://www.pearson.com/us/higher-education/program/Allen-Natural-Language-Understanding-2nd-Edition/PGM28269.html',
+            'content' => 'Introduction to <b>Natural</b> <b>Language</b> <b>Understanding</b>. ... He has taught <b>natural</b> <b>language</b> processing to undergraduate ... to sign back in should you need to <b>download</b> more ...'
+          },
+          {
+            'content' => 'Development of <b>Natural</b> <b>Language</b> Processing Library in ... <b>Natural</b> <b>Language</b> <b>Understanding</b> ... programming <b>language</b>. B. <b>Software</b> used',
+            'title' => '<span class="result__type">PDF</span> Development of <b>Natural</b> <b>Language</b> Processing Library in Nemerle ...',
+            'url' => 'http://www.ijsrp.org/research-paper-1112/ijsrp-p1185.pdf'
+          },
+          {
+            'content' => 'Check out this list of 25+ <b>Natural</b> <b>Language</b> Processing ... (<b>natural</b>) <b>languages</b>. Here are ... Add <b>language</b> technology to your <b>software</b> in a few minutes using their ...',
+            'url' => 'http://blog.mashape.com/list-of-25-natural-language-processing-apis/',
+            'title' => 'List of 25+ <b>Natural</b> <b>Language</b> Processing APIs - Mashape Blog'
+          },
+          {
+            'content' => 'Typical <b>natural</b> <b>language</b> <b>understanding</b> systems are built based on the assumption that ... Microsoft <b>Download</b> ... <b>Natural</b> <b>Language</b> <b>Understanding</b> for Partial Queries ...',
+            'url' => 'http://www.microsoft.com/en-us/research/publication/natural-language-understanding-for-partial-queries/',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> for Partial Queries ...'
+          },
+          {
+            'content' => 'View <b>Natural</b> <b>Language</b> <b>Understanding</b> Research ... The outcome of this method is a repository of <b>natural</b> <b>language</b> expressions annotated with image ... <b>download</b>, play it ...',
+            'url' => 'http://www.academia.edu/Documents/in/Natural_Language_Understanding',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> - Academia.edu'
+          },
+          {
+            'title' => "CiteSeerX \x{2014} <b>Understanding</b> <b>Natural</b> <b>Language</b> <b>Software</b> ...",
+            'url' => 'http://citeseerx.ist.psu.edu/viewdoc/bookmark?doi=10.1.1.48.9167&amp;site=connotea',
+            'content' => '<b>Understanding</b> <b>Natural</b> <b>Language</b> <b>Software</b> Specifications . Cached ... <b>Download</b> Links [ftp.cis.ufl.edu] Save to List; Add to Collection; Correct Errors;'
+          },
+          {
+            'content' => '... 5th CCF Conference on <b>Natural</b> <b>Language</b> Processing and Chinese Computing, ... Immediate eBook <b>download</b> after ... <b>Natural</b> <b>Language</b> <b>Understanding</b> and Intelligent ...',
+            'url' => 'http://www.springer.com/us/book/9783319504957',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> and Intelligent Applications ...'
+          },
+          {
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> In A Semantic Web Context',
+            'url' => 'https://onlybooks.org/natural-language-understanding-in-a-semantic-web-context',
+            'content' => '... students and researchers interested in discovering what <b>Natural</b> <b>Language</b> ... Read Online 2.4 MB <b>Download</b>. ... with a focus on <b>Natural</b> <b>Language</b> <b>Understanding</b> ...'
+          },
+          {
+            'url' => 'http://www.academia.edu/1384576/Natural_Language_Processing_-_An_Intelligent_Way_to_Understand_Context_Sensitive_Languages',
+            'title' => '<b>Natural</b> <b>Language</b> Processing - An Intelligent Way to ...',
+            'content' => 'To make the <b>software</b> able to ... 1.2 <b>Natural</b> <b>Language</b> <b>Understanding</b> Systerns-what it means for a ... <b>Natural</b> <b>Language</b> Processing-An Intelligent Way to Understand ...'
+          },
+          {
+            'title' => 'Automatic Speech Recognition and <b>Natural</b> <b>Language</b> ...',
+            'url' => 'http://slideplayer.com/slide/4932872/',
+            'content' => 'If you wish to <b>download</b> it, ... Automatic Speech Recognition and <b>Natural</b> <b>Language</b> <b>understanding</b>. ... "Automatic Speech Recognition and <b>Natural</b> <b>Language</b> <b>understanding</b> ...'
+          },
+          {
+            'title' => '<span class="result__type">PDF</span> <b>Natural</b> <b>Language</b> Processing',
+            'url' => 'http://www.cs.utexas.edu/~mooney/cs343/slide-handouts/nlp.pdf',
+            'content' => '<b>Natural</b> <b>Language</b> Processing ... aid the <b>understanding</b> of human <b>language</b> 2 3 Communication ... <b>natural</b> and computer <b>languages</b>.'
+          },
+          {
+            'content' => 'Research on intelligent <b>software</b> systems and machine learning made great strides in 2016, ... and <b>natural</b> <b>language</b> <b>understanding</b>. ... <b>Download</b> Current Issue ...',
+            'title' => '<b>natural</b> <b>language</b> <b>understanding</b> Archives - SD Times',
+            'url' => 'http://sdtimes.com/tag/natural-language-understanding/'
+          },
+          {
+            'content' => '... <b>natural</b> <b>language</b> <b>understanding</b> techniques are becoming ... Applications of <b>natural</b> <b>language</b> <b>understanding</b>: ... of the Apache <b>Software</b> Foundation in the ...',
+            'url' => 'https://conferences.oreilly.com/strata/strata-eu-2016/public/schedule/detail/50933',
+            'title' => 'Applications of <b>natural</b> <b>language</b> <b>understanding</b>: Tools and ...'
+          },
+          {
+            'url' => 'https://player.oreilly.com/videos/9781491964293',
+            'title' => 'Text Mining &amp; <b>Natural</b> <b>Language</b> <b>Understanding</b> at Scale - O ...',
+            'content' => 'This course is designed for data scientists and <b>software</b> engineers who need to ... <b>Natural</b> <b>Language</b> <b>Understanding</b> in ... Text Mining &amp; <b>Natural</b> <b>Language</b> <b>Understanding</b> ...'
+          },
+          {
+            'content' => 'This directory contains <b>natural</b> <b>language</b> processing <b>software</b> and related materials. ... Allen, James F., "<b>Natural</b> <b>Language</b> <b>Understanding</b>", ...',
+            'title' => 'CMU AI repository - NLP <b>software</b> - Carnegie Mellon School of ...',
+            'url' => 'http://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/areas/nlp/0.html'
+          },
+          {
+            'content' => 'Integration of World Knowledge for <b>Natural</b> <b>Language</b> <b>Understanding</b>. Authors: Ovchinnikova, Ekaterina',
+            'title' => 'Integration of World Knowledge for <b>Natural</b> <b>Language</b> ...',
+            'url' => 'http://www.springer.com/us/book/9789491216527'
+          },
+          {
+            'content' => 'Gemini is a <b>natural</b> <b>language</b> <b>understanding</b> system developed for spoken <b>language</b> applications. The paper describes the architecture of Gemini, paying particular ...',
+            'title' => 'GEMINI: A <b>Natural</b> <b>Language</b> System for ... - Internet Archive',
+            'url' => 'https://archive.org/details/arxiv-cmp-lg9407007'
+          },
+          {
+            'title' => 'The Stanford <b>Natural</b> <b>Language</b> Processing Group',
+            'url' => 'http://nlp.stanford.edu/software/corenlp.shtml',
+            'content' => '<b>Software</b> &gt; Stanford CoreNLP. ... Stanford CoreNLP provides a set of <b>natural</b> <b>language</b> analysis ... specific text <b>understanding</b> applications. Stanford CoreNLP ...'
+          },
+          {
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b>; ... Entity types and subtypes . ... You can <b>download</b> a spreadsheet with this information here: XLSX.',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> | Entity types and subtypes ...',
+            'url' => 'https://www.ibm.com/watson/developercloud/doc/natural-language-understanding/entity-types.html'
+          },
+          {
+            'content' => '... "Pragmatics and <b>Natural</b> <b>Language</b> <b>Understanding</b> ... Direct <b>Download</b> Free Movies Mp3\'s <b>Software</b> ... "Pragmatics and <b>Natural</b> <b>Language</b> <b>Understanding</b>" HI-SPEED <b>DOWNLOAD</b>',
+            'title' => "Pragmatics and <b>Natural</b> <b>Language</b> <b>Understanding</b> \x{bb} <b>Download</b> Free ...",
+            'url' => 'http://www.downduck.com/ebooks/2822215-pragmatics-and-natural-language-understanding.html'
+          },
+          {
+            'url' => 'http://www.pdfsdocuments2.com/n/3/natural-language-understanding-menlo-park-ca-benjamin.pdf',
+            'title' => '<span class="result__type">PDF</span> Free <b>Download</b> Here - pdfsdocuments2.com',
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> Menlo Park Ca Benjamin.pdf Free <b>Download</b> Here <b>Natural</b> <b>Language</b> <b>Understanding</b>. ... "Conscious" <b>Software</b> Agents ...'
+          },
+          {
+            'content' => 'Machine Learning Methods in <b>Natural</b> <b>Language</b> Processing Michael Collins MIT CSAIL. ... <b>natural</b> gas and electric utility businesses in Alberta , where the company',
+            'url' => 'http://www.cs.columbia.edu/~mcollins/papers/tutorial_colt.pdf',
+            'title' => '<span class="result__type">PDF</span> Machine Learning Methods in <b>Natural</b> <b>Language</b> Processing ...'
+          },
+          {
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> ... <b>Download</b> <b>Natural</b> <b>Language</b> <b>Understanding</b> (2nd ... everything you can do with the open source R <b>language</b> and <b>software</b> ...',
+            'url' => 'https://tighacevusha.jimdo.com/2016/07/16/natural-language-understanding-2nd-edition-ebook-download/',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> (2nd Edition) ebook <b>download</b>'
+          },
+          {
+            'content' => 'PC <b>Download</b>.in. PC <b>Software</b>; PC Games; Tutorials; Movies; ... Deep Learning Applications for <b>Natural</b> <b>Language</b> <b>Understanding</b> with Scala, ...',
+            'title' => 'O\'Reilly - Building Pipelines for <b>Natural</b> <b>Language</b> ...',
+            'url' => 'http://pcdownload.in/2017/01/06/oreilly-building-pipelines-for-natural-language-understanding-with-spark/'
+          },
+          {
+            'content' => 'Syllabus Course Home ... J. <b>Natural</b> <b>Language</b> <b>Understanding</b>. ... you are certainly free to <b>download</b> the <b>software</b> used and get it running on your own PC/laptop, ...',
+            'title' => 'Syllabus | <b>Natural</b> <b>Language</b> and the Computer Representation ...',
+            'url' => 'https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-863j-natural-language-and-the-computer-representation-of-knowledge-spring-2003/syllabus/'
+          },
+          {
+            'url' => 'http://www.nltk.org/book/ch01.html',
+            'title' => '1. <b>Language</b> Processing and Python - <b>Natural</b> <b>Language</b> Toolkit',
+            'content' => '<b>Language</b> Processing and Python. ... Follow the instructions there to <b>download</b> the version required for your platform. ... 5 Automatic <b>Natural</b> <b>Language</b> <b>Understanding</b>.'
+          },
+          {
+            'content' => '<b>Download</b>. Stanford CoreNLP can be ... but not its use in proprietary <b>software</b> which is ... The Stanford CoreNLP <b>Natural</b> <b>Language</b> Processing Toolkit In ...',
+            'title' => 'Stanford CoreNLP - Core <b>natural</b> <b>language</b> <b>software</b>',
+            'url' => 'https://stanfordnlp.github.io/CoreNLP/'
+          },
+          {
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> in a Semantic Web Context 1st ed ... students and researchers interested in discovering what <b>Natural</b> <b>Language</b> ... <b>Download</b> Ebook blog ...',
+            'url' => 'http://ebook-dl.com/book/4900',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> in a ... - Free <b>Download</b> Ebooks'
+          },
+          {
+            'content' => 'Microsoft <b>natural</b> <b>language</b> <b>understanding</b> system and grammar checker. ... Available for <b>download</b>: 5: <b>Downloads</b> ... <b>Software</b> for annotating argument structure:',
+            'url' => 'http://dl.acm.org/citation.cfm?doid=974281.974293',
+            'title' => 'Microsoft <b>natural</b> <b>language</b> <b>understanding</b> system and grammar ...'
+          },
+          {
+            'url' => 'https://www.amazon.com/Natural-Language-Understanding-Logic-Programming/dp/0444891498',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> and Logic Programming, III ...',
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> and Logic Programming, III: Proceedings of the Third International Workshop on <b>Natural</b> <b>Understanding</b> and Logic Progra ...'
+          },
+          {
+            'content' => '<b>Understanding</b> XML: A <b>Software</b> Development Approach. ... All you need to do is click "<b>download</b>". ... (<b>Natural</b> <b>Language</b> Processing)',
+            'url' => 'http://bookboon.com/en/understanding-xml-a-software-development-approach-ebook',
+            'title' => '<b>Understanding</b> XML: A <b>Software</b> Development Approach'
+          },
+          {
+            'title' => 'The OpenNLP Homepage',
+            'url' => 'http://opennlp.sourceforge.net/projects.html',
+            'content' => 'A collection of <b>natural</b> <b>language</b> ... If you are working on open source <b>natural</b> <b>language</b> <b>software</b> or wish to start a project and are interested in joining OpenNLP, ...'
+          },
+          {
+            'title' => 'Rasa NLU: Open-source bot tool for <b>natural</b> <b>language</b> ...',
+            'url' => 'https://news.ycombinator.com/item?id=13205039',
+            'content' => '... Open-source bot tool for <b>natural</b> <b>language</b> <b>understanding</b> ... Is it even <b>language</b> ... Perhaps http://sag.art.uniroma2.it/demo-<b>software</b>/huric/ might also provide ...'
+          },
+          {
+            'title' => 'InfiniteSkills - Text Mining &amp; <b>Natural</b> <b>Language</b> <b>Understanding</b> ...',
+            'url' => 'https://pcdownload.in/2016/08/01/infiniteskills-text-mining-natural-language-understanding-scale-training/',
+            'content' => '... Text Mining &amp; <b>Natural</b> <b>Language</b> <b>Understanding</b> at Scale ... This course teaches <b>software</b> engineers and data scientists how to build intelligent ... <b>Download</b> UPL ...'
+          },
+          {
+            'content' => '<b>Natural</b> <b>language</b> <b>understanding</b> is meant to attack a basic ... The core technology for <b>understanding</b> <b>natural</b> responses ... <b>Natural</b> <b>language</b> is not the end ...',
+            'url' => 'http://www.destinationcrm.com/Articles/Editorial/Magazine-Features/Natural-Language-Understanding-Grows-Up-81894.aspx',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> Grows Up - CRM Magazine'
+          },
+          {
+            'content' => '<b>Natural</b> <b>language</b> <b>understanding</b> in controlled virtual environments. ... Department of Computer Science and <b>Software</b> Engineering, ... Readers may only <b>download</b>, ...',
+            'url' => 'https://minerva-access.unimelb.edu.au/handle/11343/35152?show=full',
+            'title' => '<b>Natural</b> <b>language</b> <b>understanding</b> in controlled virtual environments'
+          },
+          {
+            'content' => "... <b>Natural</b> <b>Language</b> <b>Understanding</b> in Fa\x{e7}ade: Surface ... shallow support for <b>natural</b> <b>language</b> <b>understanding</b> and ... A Collaboration Manager for <b>Software</b> ...",
+            'title' => "<b>Natural</b> <b>Language</b> <b>Understanding</b> in Fa\x{e7}ade: Surface-Text ...",
+            'url' => 'https://link.springer.com/chapter/10.1007/978-3-540-27797-2_2'
+          },
+          {
+            'content' => '<b>Natural</b> <b>language</b> processing (NLP), simply put, is to make computers understand and generate human <b>language</b>. Therefore, it requires both ...',
+            'url' => 'http://nlpdotnet.com/',
+            'title' => '<b>Natural</b> <b>language</b> processing in C#'
+          },
+          {
+            'content' => '<b>Natural</b> <b>language</b> <b>understanding</b> in road accident data analysis. ... Available for <b>download</b>: 0: <b>Downloads</b> ... Advances in Engineering <b>Software</b> table of contents archive:',
+            'url' => 'http://dl.acm.org/citation.cfm?id=296709',
+            'title' => '<b>Natural</b> <b>language</b> <b>understanding</b> in road accident data analysis'
+          },
+          {
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> (2nd Edition) pdf <b>download</b> ... <b>Natural</b> <b>Language</b> <b>Understanding</b> ... the use of figurative <b>language</b> is ubiquitous in <b>natural</b> <b>language</b> ...',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> (2nd Edition) pdf <b>download</b> ...',
+            'url' => 'http://blogsdelagente.com/jysoselahehe/natural-language-understanding-2nd-edition-pdf-download/'
+          },
+          {
+            'content' => '<b>language</b> computer <b>language</b> <b>understanding</b> (NLU) generation (NLG) <b>Natural</b> <b>Language</b> Processing:Background and Overview 3/42 ... <b>Natural</b> <b>Language</b> Processing: ...',
+            'title' => '<span class="result__type">PDF</span> Processing: <b>Language</b> <b>Natural</b> - MIT OpenCourseWare | Free ...',
+            'url' => 'https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-864-advanced-natural-language-processing-fall-2005/lecture-notes/lec01.pdf'
+          },
+          {
+            'content' => '... by James Allen <b>Download</b> <b>Natural</b> <b>Language</b> <b>Understanding</b> ... zukytucoro\'s blog ... <b>Software</b> Architecture in Practice <b>download</b>.',
+            'title' => '<b>Natural</b> <b>Language</b> <b>Understanding</b> (2nd Edition) pdf <b>download</b> ...',
+            'url' => 'http://zukytucoro.hatenablog.com/entry/2015/06/16/174829'
+          },
+          {
+            'content' => '... &amp; Semantics Computers / <b>Natural</b> <b>Language</b> Processing Computers / <b>Software</b> Development ... you\'ll need to <b>download</b> a file ... <b>natural</b> <b>language</b> <b>understanding</b> ...',
+            'url' => 'https://play.google.com/store/books/details/Kathleen_Dahlgren_Naive_Semantics_for_Natural_Lang?id=A4vTBwAAQBAJ',
+            'title' => 'Naive Semantics for <b>Natural</b> <b>Language</b> <b>Understanding</b> - Books on ...'
+          },
+          {
+            'content' => '<b>Download</b> Share. About This ... Ikhsanov <b>NATURAL</b> <b>LANGUAGE</b> <b>UNDERSTANDING</b> NEW PARADIGM FOR ... selection Form fill-in Command <b>language</b> <b>Natural</b> <b>language</b> Direct ...',
+            'title' => '<b>NATURAL</b> <b>LANGUAGE</b> <b>UNDERSTANDING</b> - PowerShow.com',
+            'url' => 'http://www.powershow.com/view4/5e75b2-NDQ4Z/NATURAL_LANGUAGE_UNDERSTANDING_powerpoint_ppt_presentation'
+          },
+          {
+            'content' => '... theories towards <b>understanding</b> a problem ... http://world.altavista ... <b>Download</b> Share. About This ... "<b>Natural</b> <b>Language</b> Processing" is the property of its ...',
+            'title' => '<b>Natural</b> <b>Language</b> Processing - PowerPoint PPT Presentation',
+            'url' => 'http://www.powershow.com/view/f4d3-MGI4M/Natural_Language_Processing_powerpoint_ppt_presentation'
+          },
+          {
+            'url' => 'https://www.researchgate.net/publication/2675676_Plan_Recognition_and_Natural_Language_Understanding',
+            'title' => 'Plan Recognition and <b>Natural</b> <b>Language</b> <b>Understanding</b> (PDF ...',
+            'content' => '... Plan Recognition and <b>Natural</b> <b>Language</b> <b>Understanding</b> ... Plan Recognition and <b>Natural</b> <b>Language</b> ... and for program <b>understanding</b> in the eld of <b>software</b> ...'
+          },
+          {
+            'url' => 'https://www.codeproject.com/articles/51026/true-natural-language-understanding-through-a-conc',
+            'title' => 'True <b>Natural</b> <b>Language</b> <b>Understanding</b> through a Conceptual ...',
+            'content' => 'True <b>Natural</b> <b>Language</b> <b>Understanding</b> through a Conceptual ... and then manipulated from <b>natural</b> <b>language</b> is ... is available for <b>download</b> by ...'
+          },
+          {
+            'title' => 'open-sourcing its AI <b>language</b> engine - WIRED',
+            'url' => 'https://www.wired.com/2016/05/google-open-sourced-syntaxnet-ai-natural-language/',
+            'content' => "WIRED's biggest stories ... \x{2014}networks of hardware and <b>software</b> that mimic the web ... and everyone who works on <b>natural</b> <b>language</b> understanding\x{2014}to move ..."
+          },
+          {
+            'title' => 'Semantic <b>natural</b> <b>language</b> <b>understanding</b> at scale using Spark ...',
+            'url' => 'https://conferences.oreilly.com/strata/strata-ca/public/schedule/detail/55548',
+            'content' => 'Semantic <b>natural</b> <b>language</b> <b>understanding</b> at scale using Spark, ... and <b>software</b> architects ... This is a <b>natural</b> <b>language</b> processing problem.'
+          },
+          {
+            'url' => 'https://eric.ed.gov/?id=ED566331',
+            'title' => 'ERIC - Human-Level <b>Natural</b> <b>Language</b> <b>Understanding</b>: False ...',
+            'content' => 'The field of <b>Natural</b> <b>Language</b> Processing ... Human-Level <b>Natural</b> <b>Language</b> <b>Understanding</b>: ... Semantics, Pragmatics, <b>Language</b> Proficiency, Computer <b>Software</b>, ...'
+          },
+          {
+            'content' => '<b>Software</b>. Analytics; Application Integration; ... Volume 7 <b>Natural</b> <b>Language</b> <b>Understanding</b> ... <b>Download</b> EPUB (2 MB)',
+            'url' => 'http://www.redbooks.ibm.com/redbooks.nsf/e9abd4a2a3406a7f852569de005c909f/fd9b62ff58c24a6e8525810b005c5116',
+            'title' => 'Building Cognitive Applications with IBM Watson Services ...'
+          },
+          {
+            'content' => 'Applying <b>Natural</b> <b>Language</b> Processing Techniques to an Assessment of Student Conceptual <b>Understanding</b> . ... is aided by the <b>natural</b> <b>language</b> <b>software\'s</b> ...',
+            'url' => 'https://peer.asee.org/applying-natural-language-processing-techniques-to-an-assessment-of-student-conceptual-understanding',
+            'title' => 'Applying <b>Natural</b> <b>Language</b> Processing Techniques to an ...'
+          },
+          {
+            'url' => 'http://www.downduck.com/tutorials/2849839-text-mining-natural-language-understanding-at-scale-training-video.html',
+            'title' => 'Text Mining &amp; <b>Natural</b> <b>Language</b> <b>Understanding</b> at Scale ...',
+            'content' => 'Text Mining &amp; <b>Natural</b> <b>Language</b> <b>Understanding</b> at ... Direct <b>Download</b> Free Movies Mp3\'s <b>Software</b> ... * Learn the meaning of <b>natural</b> <b>language</b> <b>understanding</b> ...'
+          },
+          {
+            'url' => 'http://www.redbooks.ibm.com/redpieces/abstracts/sg248398.html',
+            'title' => 'Building Cognitive Applications with IBM Watson Services ...',
+            'content' => '<b>Software</b>. Analytics; ... Volume 7 <b>Natural</b> <b>Language</b> <b>Understanding</b>, ... you can <b>download</b> an existing Git project to more quickly deploy the application.'
+          },
+          {
+            'title' => 'A probabilistic model for <b>natural</b> <b>language</b> <b>understanding</b>',
+            'url' => 'http://doi.acm.org/10.1145/162754.168688',
+            'content' => 'A probabilistic model for <b>natural</b> <b>language</b> <b>understanding</b>. Full Text: PDF Get ... Available for <b>download</b>: 1: ... An empirical study of three common <b>software</b> complexity ...'
+          },
+          {
+            'title' => 'GitHub - NaturalNode/<b>natural</b>: general <b>natural</b> <b>language</b> ...',
+            'url' => 'https://github.com/NaturalNode/natural',
+            'content' => 'NaturalNode / <b>natural</b>. Code. ... "<b>Natural</b>" is a general <b>natural</b> <b>language</b> facility for ... (<b>Download</b>) WordNet Release 3.0 This <b>software</b> and database is being provided ...'
+          },
+          {
+            'content' => '<b>Natural</b> <b>language</b> <b>understanding</b> in controlled virtual environments ... Department of Computer Science and <b>Software</b> Engineering, ... <b>Download</b> View/ Open.',
+            'url' => 'http://minerva-access.unimelb.edu.au/handle/11343/35152',
+            'title' => '<b>Natural</b> <b>language</b> <b>understanding</b> in controlled virtual environments'
+          },
+          {
+            'content' => 'General-Purpose Machine Learning. PHP. <b>Natural</b> <b>Language</b> Processing. ... nut - <b>Natural</b> <b>language</b> <b>Understanding</b> ... a machine learning server for <b>software</b> developers and ...',
+            'title' => 'GitHub - josephmisiti/awesome-machine-learning: A curated ...',
+            'url' => 'https://github.com/josephmisiti/awesome-machine-learning'
+          },
+          {
+            'title' => 'Aspect <b>Software</b> Announces Acquisition of the Technology ...',
+            'url' => 'https://www.aspect.com/company/news/press-releases/aspect-software-announces-acquisition-of-the-technology-assets-of-linguasys-a-leading-provider-of-natural-language-understanding-nlu-and-interactive-text-response-itr-technology',
+            'content' => '<b>Download</b> Aspect CXP and Aspect Prophecy, ... a Leading Provider of <b>Natural</b> <b>Language</b> <b>Understanding</b> ... Aspect <b>Software</b>, ...'
+          },
+          {
+            'title' => '<b>Natural</b> <b>Language</b> Processing with Python - O\'Reilly Media',
+            'url' => 'http://shop.oreilly.com/product/9780596516499.do',
+            'content' => 'NLTK is a great piece of <b>software</b>. ... very strongly recommend this book to Python lovers who would like to explore the world of <b>Natural</b> <b>Language</b> <b>understanding</b>, ...'
+          },
+          {
+            'title' => 'Watson\'s <b>natural</b> <b>language</b> processing takes crack at ...',
+            'url' => 'http://www.computerweekly.com/news/2240039357/Watsons-natural-language-processing-takes-crack-at-unstructured-data',
+            'content' => 'Watson\'s <b>natural</b> <b>language</b> processing takes crack at unstructured ... Can you work around SAP indirect access <b>software</b> licensing? <b>Download</b> ... is a <b>natural-language</b> ...'
+          },
+          {
+            'content' => '<b>Natural</b> <b>Language</b> <b>Understanding</b>. <b>Download</b> <b>Natural</b> <b>Language</b> <b>Understanding</b> Book or Ebook File with PDF Epub Audio and ... peter v brett skull throne epub <b>download</b> <b>software</b>;',
+            'title' => 'Ebook <b>Natural</b> <b>Language</b> <b>Understanding</b> <b>Download</b>',
+            'url' => 'http://www.ebooks-downloads.net/ebook-pdf/natural-language-understanding'
+          },
+          {
+            'content' => '... the work presented here infuses the questions generation process with <b>natural</b> <b>language</b> <b>understanding</b>. ... Generation with <b>Natural</b> <b>Language</b> ... <b>software</b> ...',
+            'title' => 'Infusing Automatic Question Generation with <b>Natural</b> <b>Language</b> ...',
+            'url' => 'https://digital.library.unt.edu/ark:/67531/metadc955021/m1/3/'
+          },
+          {
+            'content' => '<b>Natural</b> <b>language</b> <b>understanding</b>: ... Three tips for getting started with NLU. <b>Natural</b> <b>language</b> ... you can <b>download</b> and start using the same algorithms Google ...',
+            'title' => 'Three tips for getting started with NLU - O\'Reilly Media',
+            'url' => 'https://www.oreilly.com/ideas/three-tips-for-getting-started-with-nlu'
+          },
+          {
+            'title' => '<span class="result__type">PDF</span> <b>Natural</b> <b>Language</b> Processing',
+            'url' => 'http://www-nlpir.nist.gov/MINDS/FINAL/NLP.web.pdf',
+            'content' => 'One of the grandest challenges for <b>Natural</b> <b>Language</b> Processing ... <b>natural</b> <b>language</b> <b>understanding</b> in an open ... answering help desk questions regarding <b>software</b> ...'
+          },
+          {
+            'title' => '<b>Natural</b> <b>Language</b> Processing and Information Extraction',
+            'url' => 'http://www.bearcave.com/misl/misl_tech/nlp.html',
+            'content' => 'Information Extraction <b>Natural</b> <b>Language</b> ... By MUC-6 information extraction <b>software</b> was achieving scores ... <b>Understanding</b> <b>Language</b> <b>Understanding</b> edited ...'
+          },
+          {
+            'url' => 'http://www.asee.org/public/conferences/64/papers/16419/view',
+            'title' => 'Applying <b>Natural</b> <b>Language</b> Processing Techniques to an ...',
+            'content' => 'Applying <b>Natural</b> <b>Language</b> Processing ... is aided by the <b>natural</b> <b>language</b> <b>software\'s</b> ... conceptual <b>understanding</b> have the potential to ...'
+          },
+          {
+            'content' => 'Interoperability Initiative Adds ... some of the companies participating in Health Story are using <b>natural</b> <b>language</b> processing (NLP) <b>software</b> ... <b>Download</b> the report ...',
+            'title' => 'Interoperability Initiative Adds Structure To Clinical Text ...',
+            'url' => 'http://www.informationweek.com/interoperability/interoperability-initiative-adds-structure-to-clinical-text/d/d-id/1103141'
+          },
+          {
+            'content' => 'Artificial intelligence, machine learning, <b>natural</b> <b>language</b> processing ... machine learning, <b>natural</b> <b>language</b> processing ... <b>Software</b>, computers, machines ...',
+            'url' => 'http://www.electronicproducts.com/Robotics/AI/Artificial_intelligence_machine_learning_natural_language_processing_what_s_the_difference.aspx',
+            'title' => 'Artificial intelligence, machine learning, <b>natural</b> <b>language</b> ...'
+          },
+          {
+            'url' => 'https://ntrs.nasa.gov/search.jsp?R=19880037010',
+            'title' => 'NASA Technical Reports Server (NTRS) - <b>Understanding</b> <b>natural</b> ...',
+            'content' => 'The paper describes a <b>natural</b> <b>language</b> <b>understanding</b> system, ... COMPUTER PROGRAMMING AND <b>SOFTWARE</b>: Subject Terms DISTRIBUTED PROCESSING: EXPERT SYSTEMS:'
+          },
+          {
+            'content' => 'Building Pipelines for <b>Natural</b> <b>Language</b> <b>Understanding</b> with Spark HDRips ... Building a <b>natural</b> <b>language</b> processing and entity extraction ... <b>Download</b> from Rapidshare ...',
+            'title' => 'Building Pipelines for <b>Natural</b> <b>Language</b> <b>Understanding</b> with ...',
+            'url' => 'http://kobdasoft.com/other/1100455-building-pipelines-for-natural-language-understanding-with-spark.html'
+          },
+          {
+            'url' => 'https://cran.r-project.org/view=NaturalLanguageProcessing',
+            'title' => 'CRAN Task View: <b>Natural</b> <b>Language</b> Processing',
+            'content' => 'CRAN Task View: <b>Natural</b> <b>Language</b> ... <b>Software</b> article Text Mining ... Services Web <b>Language</b> Model API and can be used to ...'
+          },
+          {
+            'title' => 'Free Siri app offers <b>natural</b> <b>language</b> <b>understanding</b>, Other ...',
+            'url' => 'https://www.iphonelife.com/blog/5/free-app-siri-offers-natural-language-understanding-other-apps-offer-voice-recognition',
+            'content' => 'Free Siri app offers <b>natural</b> <b>language</b> <b>understanding</b>, ... is the first <b>natural</b> <b>language</b> <b>understanding</b> ... trial of their voice recognition <b>software</b> for ...'
+          }
+        ];

@@ -1,0 +1,36 @@
+<!-- Use of the Calais Web Service is governed by the Terms of Service located at http://www.opencalais.com. By using this service or the results of the service you agree to these terms of service. -->
+ <!--IndustryTerm: intelligent
+software, input output devices, search procedures, wireless
+adhoc  network, larger  systems, 
+OperatingSystem: Debian GNU/Linux, 
+ProvinceOrState: Iowa, 
+SportsGame: chess, 
+Technology: artificial intelligence, simulation, Linux
+system, intelligent  agent, existing technology, underlying  technology, 
+--><OpenCalaisSimple>
+  <Description>
+    <calaisRequestID>933732e7-ab8a-4896-8219-345d64b4eac5</calaisRequestID>
+    <id>http://id.opencalais.com/DaxRTB0ATC2qsIfmx-uDuQ</id>
+    <about>http://d.opencalais.com/dochash-1/44dee71d-3f27-3bb4-b7fe-9e6ecd25ae1d</about>
+  </Description>
+  <CalaisSimpleOutputFormat>
+    <Technology count="8" relevance="0.723">artificial intelligence</Technology>
+    <ProvinceOrState count="3" relevance="0.654" normalized="Iowa,United States">Iowa</ProvinceOrState>
+    <IndustryTerm count="2" relevance="0.186">intelligent
+software</IndustryTerm>
+    <SportsGame count="2" relevance="0.284">chess</SportsGame>
+    <Technology count="2" relevance="0.166">simulation</Technology>
+    <IndustryTerm count="1" relevance="0.155">input output devices</IndustryTerm>
+    <IndustryTerm count="1" relevance="0.067">search procedures</IndustryTerm>
+    <IndustryTerm count="1" relevance="0.133">wireless
+adhoc  network</IndustryTerm>
+    <IndustryTerm count="1" relevance="0.178">larger  systems</IndustryTerm>
+    <OperatingSystem count="1" relevance="0.048">Debian GNU/Linux</OperatingSystem>
+    <Technology count="1" relevance="0.048">Linux
+system</Technology>
+    <Technology count="1" relevance="0.133">intelligent  agent</Technology>
+    <Technology count="1" relevance="0.113">existing technology</Technology>
+    <Technology count="1" relevance="0.056">underlying  technology</Technology>
+    <Topics />
+  </CalaisSimpleOutputFormat>
+</OpenCalaisSimple>
