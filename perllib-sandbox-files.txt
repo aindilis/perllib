@@ -1,0 +1,50 @@
+/var/lib/myfrdcsa/sandbox/ape-6.6.110816/ape-6.6.110816							https://github.com/Attempto/APE
+/var/lib/myfrdcsa/sandbox/assert-0.14/assert-0.14							https://cemantix.org/software/assert.html
+/var/lib/myfrdcsa/sandbox/bart-20091005/bart-20091005							http://www.bart-coref.org/
+/var/lib/myfrdcsa/sandbox/candc-1.00/candc-1.00								https://github.com/valeriobasile/learningbyreading/tree/master/ext/candc/
+/var/lib/myfrdcsa/sandbox/celt-20091026/celt-20091026							https://services.frdcsa.org/debian/unstable/celt_2.65.orig.tar.gz
+/var/lib/myfrdcsa/sandbox/clipsjni-0.3/clipsjni-0.3							http://www.clipsrules.net/CLIPSJNI.html
+/var/lib/myfrdcsa/sandbox/easyccg-0.2/easyccg-0.2							https://github.com/mikelewis0/easyccg
+/var/lib/myfrdcsa/sandbox/edits-1.0/edits-1.0								http://edits.fbk.eu/
+/var/lib/myfrdcsa/sandbox/edits-3.0/edits-3.0								http://edits.fbk.eu/
+/var/lib/myfrdcsa/sandbox/enju-2.4.2/enju-2.4.2								https://mynlp.is.s.u-tokyo.ac.jp/enju/
+/var/lib/myfrdcsa/sandbox/factualstatementextractor-20100626/factualstatementextractor-20100626		http://www.cs.cmu.edu/~ark/mheilman/qg-2010-workshop/
+/var/lib/myfrdcsa/sandbox/gate-5.0/gate-5.0								https://gate.ac.uk/download/
+/var/lib/myfrdcsa/sandbox/glulxe-0.5.2/glulxe-0.5.2							https://www.eblong.com/zarf/glulx/
+/var/lib/myfrdcsa/sandbox/javarap-1.11/javarap-1.11							https://wing.comp.nus.edu.sg/~qiu/NLPTools/JavaRAP.html
+/var/lib/myfrdcsa/sandbox/jwnl-14/jwnl-14								https://sourceforge.net/projects/jwordnet/
+/var/lib/myfrdcsa/sandbox/link-grammar-4.4.2/link-grammar-4.4.2						https://www.link.cs.cmu.edu/link/
+/var/lib/myfrdcsa/sandbox/lucqe-20081020/lucqe-20081020							http://lucene-qe.sourceforge.net/
+/var/lib/myfrdcsa/sandbox/mead-3.12/mead-3.12								http://www.summarization.com/mead/
+/var/lib/myfrdcsa/sandbox/meteor-0.6/meteor-0.6								https://www.cs.cmu.edu/~alavie/METEOR/
+/var/lib/myfrdcsa/sandbox/minorthird-20080611/minorthird-20080611					https://sourceforge.net/projects/minorthird/
+/var/lib/myfrdcsa/sandbox/montylingua-2.1/montylingua-2.1						http://alumni.media.mit.edu/~hugo/montylingua/
+/var/lib/myfrdcsa/sandbox/nutcracker-1.0/nutcracker-1.0							https://github.com/davidar/candc-docker/wiki/nutcracker
+/var/lib/myfrdcsa/sandbox/ollie-20160516/ollie-20160516							https://knowitall.github.io/ollie/
+/var/lib/myfrdcsa/sandbox/opencyc-4.0/opencyc-4.0							https://sourceforge.net/projects/opencyc-backups/files/opencyc-4.0/
+/var/lib/myfrdcsa/sandbox/openephyra-0.1.2/openephyra-0.1.2						https://sourceforge.net/projects/openephyra/	
+/var/lib/myfrdcsa/sandbox/openephyra-20170320/openephyra-20170320					https://github.com/TScottJ/OpenEphyra
+/var/lib/myfrdcsa/sandbox/opennlp-0.9.0/opennlp-0.9.0							https://opennlp.apache.org/
+/var/lib/myfrdcsa/sandbox/opennlp-1.4.2/opennlp-1.4.2							https://opennlp.apache.org/
+/var/lib/myfrdcsa/sandbox/opennlp-tools-1.3.0/opennlp-tools-1.3.0					http://opennlp.sourceforge.net/models-1.5/
+/var/lib/myfrdcsa/sandbox/oskm-20091005/oskm-20091005							http://web.archive.org/web/20060718000255/http://www.cse.fau.edu:80/~zhong/software/oskm_matlab.zip
+/var/lib/myfrdcsa/sandbox/pcsensor-0.0.1/pcsensor-0.0.1							https://pcsensor.com/usb-thermometer/temper2.html
+/var/lib/myfrdcsa/sandbox/reasonablepy-20140307/reasonablepy-20140307					https://github.com/johannesloetzsch/reasonablepy
+/var/lib/myfrdcsa/sandbox/reasonablepy-20140309/reasonablepy-20140309					https://github.com/johannesloetzsch/reasonablepy
+/var/lib/myfrdcsa/sandbox/reasonablepython-0.1.2/reasonablepython-0.1.2					https://github.com/johannesloetzsch/reasonablepy
+/var/lib/myfrdcsa/sandbox/reconcile-20100208/reconcile-20100208						
+/var/lib/myfrdcsa/sandbox/relex-0.98.1/relex-0.98.1							https://github.com/opencog/relex
+/var/lib/myfrdcsa/sandbox/researchcyc-1.0/researchcyc-1.0						
+/var/lib/myfrdcsa/sandbox/researchcyc-4.0q/researchcyc-4.0q						
+/var/lib/myfrdcsa/sandbox/rtl-433-20170709/rtl-433-20170709						https://github.com/merbanan/rtl_433
+/var/lib/myfrdcsa/sandbox/shalmaneser-1.1.160307/shalmaneser-1.1.160307					http://www.coli.uni-saarland.de/projects/salsa/shal/
+/var/lib/myfrdcsa/sandbox/spade-2.2.1/spade-2.2.1							https://pypi.org/project/spade/
+/var/lib/myfrdcsa/sandbox/sst-1.0/sst-1.0								
+/var/lib/myfrdcsa/sandbox/stanford-corenlp-20120409/stanford-corenlp-20120409				https://stanfordnlp.github.io/CoreNLP/
+/var/lib/myfrdcsa/sandbox/stanford-corenlp-full-20140104/stanford-corenlp-full-20140104			https://stanfordnlp.github.io/CoreNLP/
+/var/lib/myfrdcsa/sandbox/stanford-ner-20080306/stanford-ner-20080306					https://nlp.stanford.edu/software/CRF-NER.shtml
+/var/lib/myfrdcsa/sandbox/stanford-parser-20100601/stanford-parser-20100601				https://nlp.stanford.edu/software/lex-parser.shtml
+/var/lib/myfrdcsa/sandbox/stanford-parser-20110627/stanford-parser-20110627				https://nlp.stanford.edu/software/lex-parser.shtml
+/var/lib/myfrdcsa/sandbox/tagen-20080306/tagen-20080306							
+/var/lib/myfrdcsa/sandbox/tarsqi-1.0/tarsqi-1.0								https://github.com/tarsqi/ttk
+/var/lib/myfrdcsa/sandbox/termex-1.49/termex-1.49							
